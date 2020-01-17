@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/about/index.html</loc>
+    <loc>http://yoursite.com/tags/index.html</loc>
     
-    <lastmod>2020-01-14T11:36:25.570Z</lastmod>
+    <lastmod>2020-01-17T09:31:22.844Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://yoursite.com/categories/index.html</loc>
     
-    <lastmod>2020-01-14T11:15:16.101Z</lastmod>
+    <lastmod>2020-01-17T09:31:09.955Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2020-01-17T09:30:26.388Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>http://yoursite.com/2020/01/14/AozoraNoTamago-Lines-in-Novel/</loc>
     
     <lastmod>2020-01-14T11:14:38.140Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
-    
-    <lastmod>2020-01-14T11:14:00.129Z</lastmod>
     
   </url>
   
