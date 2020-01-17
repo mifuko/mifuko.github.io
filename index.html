@@ -2,15 +2,24 @@
 
 
 
+  
 
-<html class="theme-next gemini" lang="zh-Hans">
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -36,16 +45,9 @@
 
 
 
-
-
-
-
-
-
-<link href="/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="//main.css?v=" rel="stylesheet" type="text/css" />
-
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -53,6 +55,27 @@
 
 
 
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -80,27 +103,29 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
-    version: '',
-    sidebar: "",
-    fancybox: ,
-    tabs: ,
-    motion: "",
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
-      userId: 'undefined',
+      userId: '0',
       author: '博主'
     },
     algolia: {
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: "",
-      labels: ""
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
+
+  <link rel="canonical" href="http://yoursite.com/"/>
 
 
 
@@ -122,8 +147,10 @@
 
   
   
+    
+  
 
-  <div class="container  
+  <div class="container sidebar-position-right 
   page-home">
     <div class="headband"></div>
 
@@ -163,6 +190,8 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
             首页
           </a>
         </li>
@@ -170,6 +199,8 @@
         
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
@@ -179,6 +210,8 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
             标签
           </a>
         </li>
@@ -186,6 +219,8 @@
         
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
           </a>
@@ -195,15 +230,51 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
             归档
           </a>
         </li>
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -237,7 +308,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shiro Wang">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/20180903112144835.jpg">
+      <meta itemprop="image" content="/images/head.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -257,6 +328,16 @@
         <div class="post-meta">
           <span class="post-time">
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-14T18:42:50+08:00">
+                2020-01-14
+              </time>
+            
 
             
 
@@ -264,6 +345,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%A7%81%E8%80%85%E8%90%BD%E6%B3%AA%E7%BB%9D%E7%BE%8E%E7%88%B1%E6%83%85/" itemprop="url" rel="index">
+                    <span itemprop="name">见者落泪绝美爱情</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -274,6 +377,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  531  word
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2  min
+                </span>
+              
+            </div>
           
 
           
@@ -293,29 +427,21 @@
       
         
           
-            <h1 id="青空の卵-名セリフ収録-坂木司"><a href="#青空の卵-名セリフ収録-坂木司" class="headerlink" title="青空の卵　名セリフ収録　坂木司"></a>青空の卵　名セリフ収録　坂木司</h1><h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><p>群れない獣のような印象を持つ彼に、僕はなんとなく憧れていた。</p>
-<h1 id="2"><a href="#2" class="headerlink" title="2"></a>2</h1><p>鳥井真一は、そんな僕の前に現れた、「理想な友達」だったのだ。</p>
-<h1 id="3"><a href="#3" class="headerlink" title="3"></a>3</h1><p>僕は鳥井と友達になりたい、よければ一番の親友に。</p>
-<h1 id="4"><a href="#4" class="headerlink" title="4"></a>4</h1><p>誰も彼を欲しがらなかった、僕は以外は。</p>
-<h1 id="5"><a href="#5" class="headerlink" title="5"></a>5</h1><p>人にものをたずねておきながら、この態度、どうやったらここまで殿様になれるのか、僕はいつも妙に感心する。</p>
-<h1 id="6"><a href="#6" class="headerlink" title="6"></a>6</h1><p>ストローを噛みながらうつむく姿はまるっきり子供のそれで彼の微妙な精神年齢を感じさせる。おそろしく冷静な大人の部分と、もろしく情熱な子供の部分が危ういバランスで混ざっているところ、そこに僕は強く魅かれるのだ。</p>
-<h1 id="7"><a href="#7" class="headerlink" title="7"></a>7</h1><p>彼は僕という一神教の熱烈な信者だ、僕を世界でたった一人大切にすべき存在だと思ってくれている。</p>
-<h1 id="8"><a href="#8" class="headerlink" title="8"></a>8</h1><p>そして僕に関することさえ安定していれば、他がどうなっても彼は揺らがない。けれど僕が傷つたり、彼との関係を上手に結べなくなったとたん、彼はパニックに陥る。</p>
-<h1 id="9"><a href="#9" class="headerlink" title="9"></a>9</h1><p>だから僕もまた、彼の信仰に応じえるべくきちんとした行動を心がけている。</p>
-<h1 id="10"><a href="#10" class="headerlink" title="10"></a>10</h1><p>彼の目に恥じない行動をとりたい、そうお互いに思うことで、僕らは強くなれるのかもしれない。</p>
-<h1 id="11"><a href="#11" class="headerlink" title="11"></a>11</h1><p>他人の視線がない安らぎ、もし鳥井がこの世界の住人だったら、安んしてあちこち連れ出すことができるかもしれない。</p>
-<h1 id="12"><a href="#12" class="headerlink" title="12"></a>12</h1><p>僕は時々、恐ろしいことを考える。もし、鳥井の身体がどこか不自由だったなら、もし、自分のせいで彼がそうなっていたのだとしたら、誰はばかることのない、それはそれは立派な大義名分が先に立って。僕は一生、鳥井のことを気にしながら生きていってもいいんじゃないのかと。</p>
-<h1 id="13"><a href="#13" class="headerlink" title="13"></a>13</h1><p>僕の涙を目にして、鳥井の表情が変わった。彼は精神の安定を僕に預けているので、僕がこうして悲しくなったりすると、彼もまた混乱してしまうのだ。</p>
-<h1 id="14"><a href="#14" class="headerlink" title="14"></a>14</h1><p>何が正しいのか、まだわからない。だた一つだけ言えることは、人は、生まれた瞬間から、誰かの喜びになることができるということだ。隣で銀杏の葉をもてあそんでいる鳥井をみて、僕は思うっやっぱり。嘘偽りのない彼の瞳の方がきれいだ。それから先、僕らとてどうなってゆくのか不安はある。けれどいつの日か、いつかこの瞳の中で、僕は、喜びになりたい。そう思ったのだ。</p>
-<h1 id="15"><a href="#15" class="headerlink" title="15"></a>15</h1><p>笑うことを知る人ほど、与えられる喜びもまた大きいものだ。僕はいつか、全ての銘菓を彼と共に食べ尽して、彼の中に幸せな記憶だけを詰め込んでやりたいと思っている。その前に、糖尿病にならなければいいけれど。</p>
-<h1 id="16"><a href="#16" class="headerlink" title="16"></a>16</h1><p>そこそこに混んでいる車内では、鳥井は人の中に十里もれてしまうため、ここは僕がしっかり見張って、おかなければならない。鳥井の左巻きのつむじを見下ろしながら、僕はくそっりと笑った。</p>
-<h1 id="17"><a href="#17" class="headerlink" title="17"></a>17</h1><p>僕は自分で恥じるよりも、鳥井の恥じられる方が恐いのだ。</p>
-<h1 id="18"><a href="#18" class="headerlink" title="18"></a>18</h1><p>いきなり意気投合した二人に、僕はちょっぴり疎外感を覚える。頭の回転のいい者同士、会話が気持ちいいいのだろう。なんとなくい、そら見たことかと思った。鳥井は、もともと人を会話することが嫌じゃない、だからもし外へ出て色々な人と触れあえば、こうして僕よりも気の合った会話ができるんが、簡単に見つかるはずだ。僕みたいにつまらない男なんかよりも、塚田くんのような滝本のような、頭が良くてかっこいい人たちが。</p>
-<h1 id="19"><a href="#19" class="headerlink" title="19"></a>19</h1><p>目は文字のためだけでなく、耳は音楽のためだけでなく、僕の耳は僕だけのためでなく、誰かの愛は誰かのためだけではなく。</p>
-<h1 id="20"><a href="#20" class="headerlink" title="20"></a>20</h1><p>けれど、鳥井はいつまでたっても僕以外の人間は、世界は自分と必要とはしていないそう思い込んでいる。そう、彼の全ては僕を基準にして動いているのだ。</p>
-<h1 id="21"><a href="#21" class="headerlink" title="21"></a>21</h1><p>「ほんとう？坂木はつらくないの？ならいいけど。」僕の上着の袖口をつかんで、鳥井は何度も念を押す。絶対、絶対だよ？僕はそのたびに深くうなずき、こう答える。「大丈夫、絶対、だいじょうぶだから。」</p>
-
-          
+          青空の卵　名セリフ収録　坂木司1群れない獣のような印象を持つ彼に、僕はなんとなく憧れていた。
+2鳥井真一は、そんな僕の前に現れた、「理想な友達」だったのだ。
+3僕は鳥井と友達になりたい、よければ一番の親友に。
+4誰も彼を欲しがらなかった、僕は以外は。
+5人にものをたずねておきながら、この態度、どうやったらここまで殿様になれるのか、僕はいつも妙に感心する。
+6ストローを噛みながらうつむく姿はまるっきり子供のそれで彼の微妙な精神年齢を感じさせる。おそろしく冷静な大人の部分と、もろしく情熱な子供の部分が危ういバランスで混ざっているところ、そこに僕は強く魅かれるのだ。
+7彼は僕という一神教の熱烈な信者
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/01/14/AozoraNoTamago-Lines-in-Novel/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -346,11 +472,6 @@
   
   
   </article>
-
-    <div>
-        
-    </div>
-
 
     
   </section>
@@ -389,7 +510,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/20180903112144835.jpg"
+                src="/images/head.jpeg"
                 alt="Shiro Wang" />
             
               <p class="site-author-name" itemprop="name">Shiro Wang</p>
@@ -401,7 +522,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%7C%7C%20archive%20/%E5%BD%92%E6%A1%A3">
+                <a href="/archives/%7C%7C%20archive">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
@@ -443,11 +564,41 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/mifuko" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:roroko.wang@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
 
           
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://weibo.com/1809529264/profile?topnav=1&wvr=6" title="Weibo" target="_blank">Weibo</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -457,6 +608,13 @@
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -469,20 +627,35 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020-01-17</span>
+        <div class="copyright">&copy; 2020.01.14 &mdash; <span itemprop="copyrightYear">2020-01-17</span>
   <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Shiro Wang</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">531</span>
+  
 </div>
 
 <!--
 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 -->
 
@@ -500,11 +673,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -527,6 +695,10 @@
 
 
 
+  
+
+
+  
 
 
 
@@ -540,55 +712,58 @@
 
   
   
-    <script type="text/javascript" src="//jquery/index.js?v=2.1.3"></script>
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="//fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
   
 
   
   
-    <script type="text/javascript" src="//jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
   
 
   
   
-    <script type="text/javascript" src="//velocity/velocity.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="//velocity/velocity.ui.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
   
 
 
-  <script type="text/javascript" src="//src/utils.js?v="></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
-  <script type="text/javascript" src="//src/motion.js?v="></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
 
 
 
   
   
-
-
-  <script type="text/javascript" src="//src/affix.js?v="></script>
-
-  <script type="text/javascript" src="//src/schemes/pisces.js?v="></script>
-
-
 
   
 
   
 
 
-  <script type="text/javascript" src="//src/bootstrap.js?v="></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
@@ -626,6 +801,323 @@
 
 
   
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 
