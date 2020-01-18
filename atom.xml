@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-17T12:33:10.409Z</updated>
+  <updated>2020-01-18T18:03:36.560Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我们哭着来到这个世界为了笑着一起看场雪——2020张韶涵寓言演唱会REPO</title>
+    <link href="http://yoursite.com/2020/01/19/1/"/>
+    <id>http://yoursite.com/2020/01/19/1/</id>
+    <published>2020-01-18T18:03:36.000Z</published>
+    <updated>2020-01-18T18:03:36.560Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo+New+Gitalk搭建个人博客</title>
