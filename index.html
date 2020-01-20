@@ -521,6 +521,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/GitHub/" itemprop="url" rel="index">
+                    <span itemprop="name">GitHub</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -542,7 +564,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0  word
+                  747  word
                 </span>
               
 
@@ -558,7 +580,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1  min
+                  2  min
                 </span>
               
             </div>
@@ -581,8 +603,10 @@
       
         
           
-          
-          
+          HexoNextGitalk坑为什么评论没有用Gitment吃着火锅唱着歌，部署到一半发现gitment停止更新了。但是因为改了好多东西，重新clone了一遍next主题，只不过是从头再来。
+新建页面/categories/%20/报错新建page的方法是一样的，无论是关于、标签、分类、留言板，但是在修改hexo\_config.yml时，需要把/和||之间的空格删掉才会生效，算是next的娘胎病。原来是：
+123456menu:  home: / || home  //首页  about: /about/ || user  //关于  tags: /tags/ || tags  //标签  
+          ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2020/01/17/1/#more" rel="contents">
@@ -1047,7 +1071,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1058,7 +1082,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1151,7 +1175,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2020.01.14 &mdash; <span itemprop="copyrightYear">2020-01-19</span>
+        <div class="copyright">&copy; 2020.01.14 &mdash; <span itemprop="copyrightYear">2020-01-20</span>
   <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
@@ -1165,7 +1189,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.6k</span>
+    <span title="Site words total count">3.3k</span>
   
 </div>
 
