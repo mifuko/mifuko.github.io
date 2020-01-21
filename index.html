@@ -386,7 +386,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  953  word
+                  1.2k  word
                 </span>
               
 
@@ -402,7 +402,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3  min
+                  4  min
                 </span>
               
             </div>
@@ -424,13 +424,9 @@
 
       
         
-          <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h1 id="Next"><a href="#Next" class="headerlink" title="Next"></a>Next</h1><h1 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h1><h1 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h1><h2 id="为什么评论没有用Gitment"><a href="#为什么评论没有用Gitment" class="headerlink" title="为什么评论没有用Gitment"></a>为什么评论没有用Gitment</h2><p>吃着火锅唱着歌，部署到一半发现gitment停止更新了。但是因为改了好多东西，重新clone了一遍next主题，只不过是从头再来。</p>
-<h2 id="新建页面-categories-20-报错"><a href="#新建页面-categories-20-报错" class="headerlink" title="新建页面/categories/%20/报错"></a>新建页面<code>/categories/%20/</code>报错</h2><p>新建page的方法是一样的，无论是关于、标签、分类、留言板，但是在修改<code>hexo\_config.yml</code>时，需要把<code>/</code>和<code>||</code>之间的空格删掉才会生效，算是next的娘胎病。<br>原来是：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span>  <span class="string">//首页</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span>  <span class="string">//关于</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span>  <span class="string">//标签</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span>   <span class="string">//分类</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span> <span class="string">//归档</span></span><br></pre></td></tr></table></figure>
-<p>修改后：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/||</span> <span class="string">home</span>  <span class="string">//首页</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/||</span> <span class="string">user</span>  <span class="string">//关于</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/||</span> <span class="string">tags</span>  <span class="string">//标签</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/||</span> <span class="string">th</span>   <span class="string">//分类</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/||</span> <span class="string">archive</span> <span class="string">//归档</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo预览正常上传显示404"><a href="#hexo预览正常上传显示404" class="headerlink" title="hexo预览正常上传显示404"></a>hexo预览正常上传显示404</h2><p>建立repo时，<code>username</code>是包括<code>.github.io</code>的，如果确认没问题，就多刷新几遍。</p>
+          <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">Hexo官方文档</a><br><a href="https://blog.csdn.net/qq_21682469/article/details/79005593" target="_blank" rel="noopener">部署参考</a></p>
+<h1 id="Next"><a href="#Next" class="headerlink" title="Next"></a>Next</h1><p><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next官方文档</a><br><a href="https://blog.csdn.net/qq_21682469/article/details/79005593" target="_blank" rel="noopener">部署参考</a></p>
+<h1 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h1><p><a href="https://asdfv1929.github.io/2018/01/20/gitalk/" target="_blank" rel="noopener">基本操作</a><br><a href="https://iochen.com/2018/01/06/use-gitalk-in-hexo/" target="_blank" rel="noopener">补充操作</a><br>其中这一步<code>/layout/_third-party/comments/gitalk.swig</code>文件并添加内容，我的配置是按照补充操作中修改后的版本，就完全按照这个填，至于里面自定义的字段是在<code>_config.yml</code>填而不是这里。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2020/01/20/1/#more" rel="contents">
@@ -1190,7 +1186,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.5k</span>
+    <span title="Site words total count">3.7k</span>
   
 </div>
 

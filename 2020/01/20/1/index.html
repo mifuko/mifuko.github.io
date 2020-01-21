@@ -86,14 +86,14 @@
 
 
 
-<meta name="description" content="HexoNextGitalk坑为什么评论没有用Gitment吃着火锅唱着歌，部署到一半发现gitment停止更新了。但是因为改了好多东西，重新clone了一遍next主题，只不过是从头再来。 新建页面&#x2F;categories&#x2F;%20&#x2F;报错新建page的方法是一样的，无论是关于、标签、分类、留言板，但是在修改hexo\_config.yml时，需要把&#x2F;和||之间的空格删掉才会生效，算是next的娘胎病">
+<meta name="description" content="HexoHexo官方文档部署参考 NextNext官方文档部署参考 Gitalk基本操作补充操作其中这一步&#x2F;layout&#x2F;_third-party&#x2F;comments&#x2F;gitalk.swig文件并添加内容，我的配置是按照补充操作中修改后的版本，就完全按照这个填，至于里面自定义的字段是在_config.yml填而不是这里。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+New+Gitalk搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2020/01/20/1/index.html">
 <meta property="og:site_name" content="❆ NightmareWalker ❆">
-<meta property="og:description" content="HexoNextGitalk坑为什么评论没有用Gitment吃着火锅唱着歌，部署到一半发现gitment停止更新了。但是因为改了好多东西，重新clone了一遍next主题，只不过是从头再来。 新建页面&#x2F;categories&#x2F;%20&#x2F;报错新建page的方法是一样的，无论是关于、标签、分类、留言板，但是在修改hexo\_config.yml时，需要把&#x2F;和||之间的空格删掉才会生效，算是next的娘胎病">
+<meta property="og:description" content="HexoHexo官方文档部署参考 NextNext官方文档部署参考 Gitalk基本操作补充操作其中这一步&#x2F;layout&#x2F;_third-party&#x2F;comments&#x2F;gitalk.swig文件并添加内容，我的配置是按照补充操作中修改后的版本，就完全按照这个填，至于里面自定义的字段是在_config.yml填而不是这里。">
 <meta property="article:published_time" content="2020-01-20T11:53:40.000Z">
-<meta property="article:modified_time" content="2020-01-21T06:47:01.033Z">
+<meta property="article:modified_time" content="2020-01-21T07:51:28.626Z">
 <meta property="article:author" content="Shiro Wang">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="next">
@@ -388,7 +388,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  953  word
+                  1.2k  word
                 </span>
               
 
@@ -404,7 +404,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3  min
+                  4  min
                 </span>
               
             </div>
@@ -425,14 +425,20 @@
       
 
       
-        <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><h1 id="Next"><a href="#Next" class="headerlink" title="Next"></a>Next</h1><h1 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h1><h1 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h1><h2 id="为什么评论没有用Gitment"><a href="#为什么评论没有用Gitment" class="headerlink" title="为什么评论没有用Gitment"></a>为什么评论没有用Gitment</h2><p>吃着火锅唱着歌，部署到一半发现gitment停止更新了。但是因为改了好多东西，重新clone了一遍next主题，只不过是从头再来。</p>
+        <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">Hexo官方文档</a><br><a href="https://blog.csdn.net/qq_21682469/article/details/79005593" target="_blank" rel="noopener">部署参考</a></p>
+<h1 id="Next"><a href="#Next" class="headerlink" title="Next"></a>Next</h1><p><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next官方文档</a><br><a href="https://blog.csdn.net/qq_21682469/article/details/79005593" target="_blank" rel="noopener">部署参考</a></p>
+<h1 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h1><p><a href="https://asdfv1929.github.io/2018/01/20/gitalk/" target="_blank" rel="noopener">基本操作</a><br><a href="https://iochen.com/2018/01/06/use-gitalk-in-hexo/" target="_blank" rel="noopener">补充操作</a><br>其中这一步<code>/layout/_third-party/comments/gitalk.swig</code>文件并添加内容，我的配置是按照补充操作中修改后的版本，就完全按照这个填，至于里面自定义的字段是在<code>_config.yml</code>填而不是这里。</p>
+<a id="more"></a>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#123;%</span> <span class="string">if</span> <span class="string">page.comments</span> <span class="string">&amp;&amp;</span> <span class="string">theme.gitalk.enable</span> <span class="string">%&#125;</span></span><br><span class="line">  <span class="string">&lt;link</span> <span class="string">rel="stylesheet"</span> <span class="string">href="https://unpkg.com/gitalk/dist/gitalk.css"&gt;</span></span><br><span class="line">  <span class="string">&lt;script</span> <span class="string">src="https://unpkg.com/gitalk/dist/gitalk.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line">  <span class="string">&lt;script</span> <span class="string">src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line">   <span class="string">&lt;script</span> <span class="string">type="text/javascript"&gt;</span></span><br><span class="line">        <span class="string">var</span> <span class="string">gitalk</span> <span class="string">=</span> <span class="string">new</span> <span class="string">Gitalk(&#123;</span></span><br><span class="line">          <span class="attr">clientID:</span> <span class="string">'<span class="template-variable">&#123;&#123; theme.gitalk.ClientID &#125;&#125;</span>'</span><span class="string">,</span></span><br><span class="line">          <span class="attr">clientSecret:</span> <span class="string">'<span class="template-variable">&#123;&#123; theme.gitalk.ClientSecret &#125;&#125;</span>'</span><span class="string">,</span></span><br><span class="line">          <span class="attr">repo:</span> <span class="string">'<span class="template-variable">&#123;&#123; theme.gitalk.repo &#125;&#125;</span>'</span><span class="string">,</span></span><br><span class="line">          <span class="attr">owner:</span> <span class="string">'<span class="template-variable">&#123;&#123; theme.gitalk.githubID &#125;&#125;</span>'</span><span class="string">,</span></span><br><span class="line">          <span class="attr">admin:</span> <span class="string">['&#123;&#123;</span> <span class="string">theme.gitalk.adminUser</span> <span class="string">&#125;&#125;'],</span></span><br><span class="line">          <span class="attr">id:</span> <span class="string">md5(window.location.pathname),</span></span><br><span class="line">          <span class="attr">distractionFreeMode:</span> <span class="string">'<span class="template-variable">&#123;&#123; theme.gitalk.distractionFreeMode &#125;&#125;</span>'</span></span><br><span class="line">        <span class="string">&#125;)</span></span><br><span class="line">        <span class="string">gitalk.render('gitalk-container')</span></span><br><span class="line">       <span class="string">&lt;/script&gt;</span></span><br><span class="line"><span class="string">&#123;%</span> <span class="string">endif</span> <span class="string">%&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h1><h2 id="为什么评论没有用Gitment"><a href="#为什么评论没有用Gitment" class="headerlink" title="为什么评论没有用Gitment"></a>为什么评论没有用Gitment</h2><p>吃着火锅唱着歌，部署到一半发现gitment停止更新了。但是因为改了好多东西，重新clone了一遍next主题，只不过是从头再来。</p>
 <h2 id="新建页面-categories-20-报错"><a href="#新建页面-categories-20-报错" class="headerlink" title="新建页面/categories/%20/报错"></a>新建页面<code>/categories/%20/</code>报错</h2><p>新建page的方法是一样的，无论是关于、标签、分类、留言板，但是在修改<code>hexo\_config.yml</code>时，需要把<code>/</code>和<code>||</code>之间的空格删掉才会生效，算是next的娘胎病。<br>原来是：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span>  <span class="string">//首页</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span>  <span class="string">//关于</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span>  <span class="string">//标签</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span>   <span class="string">//分类</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span> <span class="string">//归档</span></span><br></pre></td></tr></table></figure>
 <p>修改后：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/||</span> <span class="string">home</span>  <span class="string">//首页</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/||</span> <span class="string">user</span>  <span class="string">//关于</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/||</span> <span class="string">tags</span>  <span class="string">//标签</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/||</span> <span class="string">th</span>   <span class="string">//分类</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/||</span> <span class="string">archive</span> <span class="string">//归档</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="hexo预览正常上传显示404"><a href="#hexo预览正常上传显示404" class="headerlink" title="hexo预览正常上传显示404"></a>hexo预览正常上传显示404</h2><p>建立repo时，<code>username</code>是包括<code>.github.io</code>的，如果确认没问题，就多刷新几遍。</p>
-<a id="more"></a>
+<!--more-->
 
 <h2 id="hexo-d部署不成功"><a href="#hexo-d部署不成功" class="headerlink" title="hexo d部署不成功"></a>hexo d部署不成功</h2><p>先<code>hexo clean</code>再<code>hexo d</code></p>
 <h2 id="标题中文显示乱码"><a href="#标题中文显示乱码" class="headerlink" title="标题中文显示乱码"></a>标题中文显示乱码</h2><p><code>hexo\_config.yml</code>里语言设置为zh-Hans，并修改<code>hexo\_config.yml</code>和<code>hexo\themes\next\_config.yml</code>编码方式为UTF-8。</p>
@@ -450,7 +456,7 @@
 <h1 id="REF"><a href="#REF" class="headerlink" title="REF"></a>REF</h1><h2 id="Hexo搭建"><a href="#Hexo搭建" class="headerlink" title="Hexo搭建"></a>Hexo搭建</h2><p><a href="https://yxyuxuan.github.io/2019/07/16/GitHub-Hexo-Next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">GitHub+Hexo+Next搭建博客</a><br><a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">hexo的目录结构</a><br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">官方开始使用</a></p>
 <h2 id="Next美化"><a href="#Next美化" class="headerlink" title="Next美化"></a>Next美化</h2><p><a href="https://www.cnblogs.com/zhangxiaochn/p/Hexo_Theme_Next.html" target="_blank" rel="noopener">Hexo Next 主题启用及相关设置</a><br><a href="https://blog.csdn.net/zgcr654321/article/details/86751765" target="_blank" rel="noopener">hexo博客next主题6.0版本个性化设置</a><br><a href="https://blog.csdn.net/destinytaoer/article/details/78400023" target="_blank" rel="noopener">hexo + next主题高级配置</a><br><a href="https://segmentfault.com/a/1190000016565908" target="_blank" rel="noopener">Hexo搭建GitHub博客—打造炫酷的NexT主题–高级(三)</a><br><a href="http://www.shenzekun.cn/hexo的next主题个性化配置教程.html" target="_blank" rel="noopener">hexo的next主题个性化教程:打造炫酷网站</a><br><a href="https://www.cnblogs.com/liziczh/p/9318656.html" target="_blank" rel="noopener">Hexo | （二）Next主题个性化设置</a><br><a href="https://www.jianshu.com/p/78c218f9d1e7" target="_blank" rel="noopener">Hexo-设置阅读全文</a></p>
 <h2 id="Gitalk评论"><a href="#Gitalk评论" class="headerlink" title="Gitalk评论"></a>Gitalk评论</h2><p><a href="https://asdfv1929.github.io/2018/01/20/gitalk/" target="_blank" rel="noopener">Hexo NexT主题中集成gitalk评论系统</a></p>
-<h2 id="坑-1"><a href="#坑-1" class="headerlink" title="坑"></a>坑</h2><p><a href="https://github.com/hexojs/hexo/issues/350" target="_blank" rel="noopener">上传内容以后页面一直是404？</a><br><a href="https://blog.csdn.net/dajian790626/article/details/78595684" target="_blank" rel="noopener">hexo搭建Github博客上传后，网页显示404问题解决方案</a><br><a href="https://www.jianshu.com/p/b26b9b520c71" target="_blank" rel="noopener">Hexo主页中文显示乱码以及手机端乱码的解决办法</a><br><a href="https://blog.csdn.net/wsmrzx/article/details/81478945" target="_blank" rel="noopener">Hexo系列(五) 撰写文章</a><br><a href="https://blog.csdn.net/Likianta/article/details/78943573" target="_blank" rel="noopener">Hexo\scaffolds\post.md模板中的变量详解</a><br><a href="https://blog.csdn.net/qq_39195042/article/details/86135917" target="_blank" rel="noopener">gitment初始化评论跳回博客首页</a><br><a href="https://blog.csdn.net/weixin_38767131/article/details/89245214" target="_blank" rel="noopener">Gitalk评论系统如何只在文章和指定页面内出现</a><br><a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">官方添加「标签」页面</a></p>
+<h2 id="坑-1"><a href="#坑-1" class="headerlink" title="坑"></a>坑</h2><p><a href="https://github.com/hexojs/hexo/issues/350" target="_blank" rel="noopener">上传内容以后页面一直是404？</a><br><a href="https://blog.csdn.net/dajian790626/article/details/78595684" target="_blank" rel="noopener">hexo搭建Github博客上传后，网页显示404问题解决方案</a><br><a href="https://www.jianshu.com/p/b26b9b520c71" target="_blank" rel="noopener">Hexo主页中文显示乱码以及手机端乱码的解决办法</a><br><a href="https://blog.csdn.net/wsmrzx/article/details/81478945" target="_blank" rel="noopener">Hexo系列(五) 撰写文章</a><br><a href="https://blog.csdn.net/Likianta/article/details/78943573" target="_blank" rel="noopener">Hexo\scaffolds\post.md模板中的变量详解</a><br><a href="https://blog.csdn.net/qq_39195042/article/details/86135917" target="_blank" rel="noopener">gitment初始化评论跳回博客首页</a><br><a href="https://blog.csdn.net/weixin_38767131/article/details/89245214" target="_blank" rel="noopener">Gitalk评论系统如何只在文章和指定页面内出现</a><br><a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">官方添加「标签」页面</a><br><a href="https://blog.csdn.net/zhuzhuyule/article/details/58347687" target="_blank" rel="noopener">Hexo下的Markdown语法(GFM)写博客</a></p>
 
       
     </div>
@@ -738,7 +744,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.5k</span>
+    <span title="Site words total count">3.7k</span>
   
 </div>
 
