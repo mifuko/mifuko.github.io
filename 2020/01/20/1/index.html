@@ -89,11 +89,11 @@
 <meta name="description" content="HexoHexo官方文档部署参考 NextNext官方文档部署参考 Gitalk基本操作补充操作其中这一步&#x2F;layout&#x2F;_third-party&#x2F;comments&#x2F;gitalk.swig文件并添加内容，我的配置是按照补充操作中修改后的版本，就完全按照这个填，至于里面自定义的字段是在_config.yml填而不是这里。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+New+Gitalk搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2020/01/20/1/index.html">
+<meta property="og:url" content="https://mifuko.github.io/2020/01/20/1/index.html">
 <meta property="og:site_name" content="❆ NightmareWalker ❆">
 <meta property="og:description" content="HexoHexo官方文档部署参考 NextNext官方文档部署参考 Gitalk基本操作补充操作其中这一步&#x2F;layout&#x2F;_third-party&#x2F;comments&#x2F;gitalk.swig文件并添加内容，我的配置是按照补充操作中修改后的版本，就完全按照这个填，至于里面自定义的字段是在_config.yml填而不是这里。">
 <meta property="article:published_time" content="2020-01-20T11:53:40.000Z">
-<meta property="article:modified_time" content="2020-01-21T07:51:28.626Z">
+<meta property="article:modified_time" content="2020-01-21T10:31:42.126Z">
 <meta property="article:author" content="Shiro Wang">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="next">
@@ -128,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/01/20/1/"/>
+  <link rel="canonical" href="https://mifuko.github.io/2020/01/20/1/"/>
 
 
 
@@ -305,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/20/1/">
+    <link itemprop="mainEntityOfPage" href="https://mifuko.github.io/2020/01/20/1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Shiro Wang">
@@ -388,7 +388,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.2k  word
+                  1.4k  word
                 </span>
               
 
@@ -404,7 +404,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4  min
+                  5  min
                 </span>
               
             </div>
@@ -453,6 +453,8 @@
 <h2 id="配置gitalk某些页面禁用评论框"><a href="#配置gitalk某些页面禁用评论框" class="headerlink" title="配置gitalk某些页面禁用评论框"></a>配置gitalk某些页面禁用评论框</h2><p>按照asdfv1929这个大佬的方法配置的，一顿操作之后每页都出现了底下的评论框，但是我在关于页面、标签页面、目录页面都不希望出现评论框，希望评论框出现在某些固定的页面，找到了一个非常复杂的方法在REF里，但是因为要从头改，就放弃了，如果是从头开始部署的可以操作。<br>如果和我一样部署到一半的，需要这个功能的话，可以参考官方给出的方式，在某些固定的页面禁用评论。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">注意：如果有集成评论服务，页面也会带有评论。</span> <span class="string">若需要关闭的话，请添加字段</span> <span class="string">comments</span> <span class="string">并将值设置为</span> <span class="literal">false</span><span class="string">，如：</span></span><br><span class="line"></span><br><span class="line"><span class="string">禁用评论示例</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">标签</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2014</span><span class="number">-12</span><span class="number">-22</span> <span class="number">12</span><span class="string">:39:04</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">"tags"</span></span><br><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 
+<h2 id="页面底部添加版权信息"><a href="#页面底部添加版权信息" class="headerlink" title="页面底部添加版权信息"></a>页面底部添加版权信息</h2><p>在<code>hexo\themes\next\_config.yml</code>中找到<code>post_copyright</code>，将<code>false</code>改成<code>true</code>启用。启用完之后，生成链接可能会不对，需要检查<code>hexo\_config.yml</code>中的<code>URL</code>字段，修改成实际上的地址。</p>
+<h2 id="显示摘要阅读更多"><a href="#显示摘要阅读更多" class="headerlink" title="显示摘要阅读更多"></a>显示摘要阅读更多</h2><p>一开始使用的是修改<code>hexo\themes\next\_config.yml</code>中的<code>auto_excerpt:true</code>字段使能来分段，发现预览的内容会格式消失，并且限定300字也很尴尬，强迫症不能接受没有格式的预览。直接在文章中插入<code>&lt;!--more--&gt;</code>就可以在想分段的位置分段进行预览了，而且也不会造成预览的格式丢失。</p>
 <h1 id="REF"><a href="#REF" class="headerlink" title="REF"></a>REF</h1><h2 id="Hexo搭建"><a href="#Hexo搭建" class="headerlink" title="Hexo搭建"></a>Hexo搭建</h2><p><a href="https://yxyuxuan.github.io/2019/07/16/GitHub-Hexo-Next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">GitHub+Hexo+Next搭建博客</a><br><a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">hexo的目录结构</a><br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">官方开始使用</a></p>
 <h2 id="Next美化"><a href="#Next美化" class="headerlink" title="Next美化"></a>Next美化</h2><p><a href="https://www.cnblogs.com/zhangxiaochn/p/Hexo_Theme_Next.html" target="_blank" rel="noopener">Hexo Next 主题启用及相关设置</a><br><a href="https://blog.csdn.net/zgcr654321/article/details/86751765" target="_blank" rel="noopener">hexo博客next主题6.0版本个性化设置</a><br><a href="https://blog.csdn.net/destinytaoer/article/details/78400023" target="_blank" rel="noopener">hexo + next主题高级配置</a><br><a href="https://segmentfault.com/a/1190000016565908" target="_blank" rel="noopener">Hexo搭建GitHub博客—打造炫酷的NexT主题–高级(三)</a><br><a href="http://www.shenzekun.cn/hexo的next主题个性化配置教程.html" target="_blank" rel="noopener">hexo的next主题个性化教程:打造炫酷网站</a><br><a href="https://www.cnblogs.com/liziczh/p/9318656.html" target="_blank" rel="noopener">Hexo | （二）Next主题个性化设置</a><br><a href="https://www.jianshu.com/p/78c218f9d1e7" target="_blank" rel="noopener">Hexo-设置阅读全文</a></p>
 <h2 id="Gitalk评论"><a href="#Gitalk评论" class="headerlink" title="Gitalk评论"></a>Gitalk评论</h2><p><a href="https://asdfv1929.github.io/2018/01/20/gitalk/" target="_blank" rel="noopener">Hexo NexT主题中集成gitalk评论系统</a></p>
@@ -477,11 +479,11 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2020/01/20/1/" title="Hexo+New+Gitalk搭建个人博客">http://yoursite.com/2020/01/20/1/</a>
+    <a href="https://mifuko.github.io/2020/01/20/1/" title="Hexo+New+Gitalk搭建个人博客">https://mifuko.github.io/2020/01/20/1/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
-    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    本博客所有文章除特别声明外，均采用 <a href="" rel="external nofollow" target="_blank"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a></a> 许可协议。转载请注明出处！
   </li>
 </ul>
 
@@ -703,7 +705,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Next"><span class="nav-number">2.</span> <span class="nav-text">Next</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Gitalk"><span class="nav-number">3.</span> <span class="nav-text">Gitalk</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#坑"><span class="nav-number">4.</span> <span class="nav-text">坑</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么评论没有用Gitment"><span class="nav-number">4.1.</span> <span class="nav-text">为什么评论没有用Gitment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建页面-categories-20-报错"><span class="nav-number">4.2.</span> <span class="nav-text">新建页面&#x2F;categories&#x2F;%20&#x2F;报错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo预览正常上传显示404"><span class="nav-number">4.3.</span> <span class="nav-text">hexo预览正常上传显示404</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-d部署不成功"><span class="nav-number">4.4.</span> <span class="nav-text">hexo d部署不成功</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标题中文显示乱码"><span class="nav-number">4.5.</span> <span class="nav-text">标题中文显示乱码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建文章时的模板"><span class="nav-number">4.6.</span> <span class="nav-text">新建文章时的模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置gitalk无法初始化跳转到首页"><span class="nav-number">4.7.</span> <span class="nav-text">配置gitalk无法初始化跳转到首页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置gitalk某些页面禁用评论框"><span class="nav-number">4.8.</span> <span class="nav-text">配置gitalk某些页面禁用评论框</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#REF"><span class="nav-number">5.</span> <span class="nav-text">REF</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo搭建"><span class="nav-number">5.1.</span> <span class="nav-text">Hexo搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next美化"><span class="nav-number">5.2.</span> <span class="nav-text">Next美化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gitalk评论"><span class="nav-number">5.3.</span> <span class="nav-text">Gitalk评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#坑-1"><span class="nav-number">5.4.</span> <span class="nav-text">坑</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Next"><span class="nav-number">2.</span> <span class="nav-text">Next</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Gitalk"><span class="nav-number">3.</span> <span class="nav-text">Gitalk</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#坑"><span class="nav-number">4.</span> <span class="nav-text">坑</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么评论没有用Gitment"><span class="nav-number">4.1.</span> <span class="nav-text">为什么评论没有用Gitment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建页面-categories-20-报错"><span class="nav-number">4.2.</span> <span class="nav-text">新建页面&#x2F;categories&#x2F;%20&#x2F;报错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo预览正常上传显示404"><span class="nav-number">4.3.</span> <span class="nav-text">hexo预览正常上传显示404</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-d部署不成功"><span class="nav-number">4.4.</span> <span class="nav-text">hexo d部署不成功</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标题中文显示乱码"><span class="nav-number">4.5.</span> <span class="nav-text">标题中文显示乱码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建文章时的模板"><span class="nav-number">4.6.</span> <span class="nav-text">新建文章时的模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置gitalk无法初始化跳转到首页"><span class="nav-number">4.7.</span> <span class="nav-text">配置gitalk无法初始化跳转到首页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置gitalk某些页面禁用评论框"><span class="nav-number">4.8.</span> <span class="nav-text">配置gitalk某些页面禁用评论框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面底部添加版权信息"><span class="nav-number">4.9.</span> <span class="nav-text">页面底部添加版权信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示摘要阅读更多"><span class="nav-number">4.10.</span> <span class="nav-text">显示摘要阅读更多</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#REF"><span class="nav-number">5.</span> <span class="nav-text">REF</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo搭建"><span class="nav-number">5.1.</span> <span class="nav-text">Hexo搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next美化"><span class="nav-number">5.2.</span> <span class="nav-text">Next美化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gitalk评论"><span class="nav-number">5.3.</span> <span class="nav-text">Gitalk评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#坑-1"><span class="nav-number">5.4.</span> <span class="nav-text">坑</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -744,7 +746,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.7k</span>
+    <span title="Site words total count">3.9k</span>
   
 </div>
 
