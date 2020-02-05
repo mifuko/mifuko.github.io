@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mifuko.github.io/"/>
-  <updated>2020-02-05T07:03:42.597Z</updated>
+  <updated>2020-02-05T07:12:21.018Z</updated>
   <id>https://mifuko.github.io/</id>
   
   <author>
@@ -17,16 +17,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>1111</title>
+    <title>Github+Hexo+Next搭建个人博客踩雷记录[更新中]</title>
     <link href="https://mifuko.github.io/1.html"/>
     <id>https://mifuko.github.io/1.html</id>
-    <published>2020-02-05T07:03:42.000Z</published>
-    <updated>2020-02-05T07:03:42.597Z</updated>
+    <published>2020-02-05T07:10:41.000Z</published>
+    <updated>2020-02-05T07:12:21.018Z</updated>
+    
+    <content type="html"><![CDATA[<p>就……没了</p>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;p&gt;就……没了&lt;/p&gt;
+
+      
+    
     </summary>
     
+      <category term="Github" scheme="https://mifuko.github.io/categories/Github/"/>
+    
+    
+      <category term="Hexo" scheme="https://mifuko.github.io/tags/Hexo/"/>
+    
+      <category term="Github" scheme="https://mifuko.github.io/tags/Github/"/>
     
   </entry>
   
