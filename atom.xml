@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mifuko.github.io/"/>
-  <updated>2020-03-02T08:14:04.968Z</updated>
+  <updated>2020-03-02T08:18:51.643Z</updated>
   <id>https://mifuko.github.io/</id>
   
   <author>
@@ -18,15 +18,19 @@
   
   <entry>
     <title>换工作补课记事</title>
-    <link href="https://mifuko.github.io/1.html"/>
-    <id>https://mifuko.github.io/1.html</id>
+    <link href="https://mifuko.github.io/2020030201.html"/>
+    <id>https://mifuko.github.io/2020030201.html</id>
     <published>2020-03-02T08:14:04.000Z</published>
-    <updated>2020-03-02T08:14:04.968Z</updated>
+    <updated>2020-03-02T08:18:51.643Z</updated>
     
     <summary type="html">
     
     </summary>
     
+      <category term="出大门迈二门" scheme="https://mifuko.github.io/categories/%E5%87%BA%E5%A4%A7%E9%97%A8%E8%BF%88%E4%BA%8C%E9%97%A8/"/>
+    
+    
+      <category term="linux" scheme="https://mifuko.github.io/tags/linux/"/>
     
   </entry>
   
