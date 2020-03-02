@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mifuko.github.io/"/>
-  <updated>2020-03-02T08:18:51.643Z</updated>
+  <updated>2020-03-02T09:29:50.070Z</updated>
   <id>https://mifuko.github.io/</id>
   
   <author>
@@ -21,14 +21,22 @@
     <link href="https://mifuko.github.io/2020030201.html"/>
     <id>https://mifuko.github.io/2020030201.html</id>
     <published>2020-03-02T08:14:04.000Z</published>
-    <updated>2020-03-02T08:18:51.643Z</updated>
+    <updated>2020-03-02T09:29:50.070Z</updated>
+    
+    <content type="html"><![CDATA[<h1><span id="目标">目标:</span></h1><p>钱多&gt;离家近&gt;事少<br>A 继续在金融相关行业 考虑外企 养老 搞搞副业<br>B 另起炉灶 专做数据爬取 爬分 搞搞副业<br>C 家门口新建的华为研发中心【做梦</p><h1><span id="补课路线">补课路线：</span></h1><p>A 交易柜台 linux 数据库 shell 监控 这几个搞搞就行<br>B 欢迎来到新世界 Logix to Xzi:Welcome to OWL</p><h1><span id="新世界知识树">新世界知识树：</span></h1><h2><span id="hadoop">hadoop</span></h2><h3><span id="包括-hdfs-pig-hive-sqoop-oozie-zookeeper-spark-storm-kafka">包括 HDFS Pig Hive Sqoop oozie Zookeeper Spark Storm Kafka</span></h3><h2><span id="数据挖掘">数据挖掘</span></h2><h2><span id="信息检索">信息检索</span></h2><h2><span id="机器学习">机器学习</span></h2><h2><span id="html">HTML</span></h2><h3><span id="包括js-ajax-lucene-nutch-heritrix-larbin-htmlparse-scrapy-crawler4j-webmagic-webcollector">包括JS AJAX Lucene Nutch Heritrix Larbin HtmlParse Scrapy Crawler4j WebMagic WebCollector</span></h3><h2><span id="从结构化和非结构化的数据中获取信息">从结构化和非结构化的数据中获取信息</span></h2><h2><span id="php-python-java-nodejs-sql">PHP PYTHON JAVA NODE.JS SQL</span></h2><h2><span id="网络编程http传输协议-模拟浏览器操作爬虫">网络编程HTTP传输协议 模拟浏览器操作爬虫</span></h2><h2><span id="网页去重-网页信息抽取">网页去重 网页信息抽取</span></h2><a id="more"></a><h1><span id="课程表">课程表</span></h1><h2><span id="启动20200302">启动：20200302</span></h2><h2><span id="ch1">CH1：</span></h2><h2><span id="ch2">CH2:</span></h2><h2><span id="ch3">CH3:</span></h2><h2><span id="ch4">CH4:</span></h2><h2><span id="ch5">CH5:</span></h2><h2><span id="ch6">CH6:</span></h2><h2><span id="ch7">CH7:</span></h2><h2><span id="ch8">CH8:</span></h2><h2><span id="ch9">CH9:</span></h2><h2><span id="ch10">CH10:</span></h2><h2><span id="死线20200801">死线：20200801</span></h2><h1><span id="作业">作业</span></h1><h2><span id="proj1">PROJ1</span></h2><h2><span id="proj2">PROJ2</span></h2><h2><span id="proj3">PROJ3</span></h2><h2><span id="proj4">PROJ4</span></h2><h2><span id="proj5">PROJ5</span></h2>]]></content>
     
     <summary type="html">
     
+      &lt;h1 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot; title=&quot;目标:&quot;&gt;&lt;/a&gt;目标:&lt;/h1&gt;&lt;p&gt;钱多&amp;gt;离家近&amp;gt;事少&lt;br&gt;A 继续在金融相关行业 考虑外企 养老 搞搞副业&lt;br&gt;B 另起炉灶 专做数据爬取 爬分 搞搞副业&lt;br&gt;C 家门口新建的华为研发中心【做梦&lt;/p&gt;
+&lt;h1 id=&quot;补课路线：&quot;&gt;&lt;a href=&quot;#补课路线：&quot; class=&quot;headerlink&quot; title=&quot;补课路线：&quot;&gt;&lt;/a&gt;补课路线：&lt;/h1&gt;&lt;p&gt;A 交易柜台 linux 数据库 shell 监控 这几个搞搞就行&lt;br&gt;B 欢迎来到新世界 Logix to Xzi:Welcome to OWL&lt;/p&gt;
+&lt;h1 id=&quot;新世界知识树：&quot;&gt;&lt;a href=&quot;#新世界知识树：&quot; class=&quot;headerlink&quot; title=&quot;新世界知识树：&quot;&gt;&lt;/a&gt;新世界知识树：&lt;/h1&gt;&lt;h2 id=&quot;hadoop&quot;&gt;&lt;a href=&quot;#hadoop&quot; class=&quot;headerlink&quot; title=&quot;hadoop&quot;&gt;&lt;/a&gt;hadoop&lt;/h2&gt;&lt;h3 id=&quot;包括-HDFS-Pig-Hive-Sqoop-oozie-Zookeeper-Spark-Storm-Kafka&quot;&gt;&lt;a href=&quot;#包括-HDFS-Pig-Hive-Sqoop-oozie-Zookeeper-Spark-Storm-Kafka&quot; class=&quot;headerlink&quot; title=&quot;包括 HDFS Pig Hive Sqoop oozie Zookeeper Spark Storm Kafka&quot;&gt;&lt;/a&gt;包括 HDFS Pig Hive Sqoop oozie Zookeeper Spark Storm Kafka&lt;/h3&gt;&lt;h2 id=&quot;数据挖掘&quot;&gt;&lt;a href=&quot;#数据挖掘&quot; class=&quot;headerlink&quot; title=&quot;数据挖掘&quot;&gt;&lt;/a&gt;数据挖掘&lt;/h2&gt;&lt;h2 id=&quot;信息检索&quot;&gt;&lt;a href=&quot;#信息检索&quot; class=&quot;headerlink&quot; title=&quot;信息检索&quot;&gt;&lt;/a&gt;信息检索&lt;/h2&gt;&lt;h2 id=&quot;机器学习&quot;&gt;&lt;a href=&quot;#机器学习&quot; class=&quot;headerlink&quot; title=&quot;机器学习&quot;&gt;&lt;/a&gt;机器学习&lt;/h2&gt;&lt;h2 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h2&gt;&lt;h3 id=&quot;包括JS-AJAX-Lucene-Nutch-Heritrix-Larbin-HtmlParse-Scrapy-Crawler4j-WebMagic-WebCollector&quot;&gt;&lt;a href=&quot;#包括JS-AJAX-Lucene-Nutch-Heritrix-Larbin-HtmlParse-Scrapy-Crawler4j-WebMagic-WebCollector&quot; class=&quot;headerlink&quot; title=&quot;包括JS AJAX Lucene Nutch Heritrix Larbin HtmlParse Scrapy Crawler4j WebMagic WebCollector&quot;&gt;&lt;/a&gt;包括JS AJAX Lucene Nutch Heritrix Larbin HtmlParse Scrapy Crawler4j WebMagic WebCollector&lt;/h3&gt;&lt;h2 id=&quot;从结构化和非结构化的数据中获取信息&quot;&gt;&lt;a href=&quot;#从结构化和非结构化的数据中获取信息&quot; class=&quot;headerlink&quot; title=&quot;从结构化和非结构化的数据中获取信息&quot;&gt;&lt;/a&gt;从结构化和非结构化的数据中获取信息&lt;/h2&gt;&lt;h2 id=&quot;PHP-PYTHON-JAVA-NODE-JS-SQL&quot;&gt;&lt;a href=&quot;#PHP-PYTHON-JAVA-NODE-JS-SQL&quot; class=&quot;headerlink&quot; title=&quot;PHP PYTHON JAVA NODE.JS SQL&quot;&gt;&lt;/a&gt;PHP PYTHON JAVA NODE.JS SQL&lt;/h2&gt;&lt;h2 id=&quot;网络编程HTTP传输协议-模拟浏览器操作爬虫&quot;&gt;&lt;a href=&quot;#网络编程HTTP传输协议-模拟浏览器操作爬虫&quot; class=&quot;headerlink&quot; title=&quot;网络编程HTTP传输协议 模拟浏览器操作爬虫&quot;&gt;&lt;/a&gt;网络编程HTTP传输协议 模拟浏览器操作爬虫&lt;/h2&gt;&lt;h2 id=&quot;网页去重-网页信息抽取&quot;&gt;&lt;a href=&quot;#网页去重-网页信息抽取&quot; class=&quot;headerlink&quot; title=&quot;网页去重 网页信息抽取&quot;&gt;&lt;/a&gt;网页去重 网页信息抽取&lt;/h2&gt;
+    
     </summary>
     
-      <category term="出大门迈二门" scheme="https://mifuko.github.io/categories/%E5%87%BA%E5%A4%A7%E9%97%A8%E8%BF%88%E4%BA%8C%E9%97%A8/"/>
+      <category term="要恰饭的嘛" scheme="https://mifuko.github.io/categories/%E8%A6%81%E6%81%B0%E9%A5%AD%E7%9A%84%E5%98%9B/"/>
     
+    
+      <category term="KnowledgeTree" scheme="https://mifuko.github.io/tags/KnowledgeTree/"/>
     
       <category term="linux" scheme="https://mifuko.github.io/tags/linux/"/>
     
