@@ -132,7 +132,7 @@
 <meta property="og:description" content="因为是关于一些遇到的坑，所以安装过程就不贴了。   环境说明 删除_post下所有的文章后hexo g报错且页面404 官网说法转义符的问题 民间说法缺少index 解决方法   首页链接永远跳转到第一篇文章 解决方法   为头像增加超链接 分区修改字体颜色 归档Archive页面每页显示数量修改 支持emoji表情 修改文章标题样式 根据更新时间排序 markdown语法目录TOC失效 民间玄学">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-05T07:10:41.000Z">
-<meta property="article:modified_time" content="2020-02-06T10:55:50.821Z">
+<meta property="article:modified_time" content="2020-03-03T02:34:45.977Z">
 <meta property="article:author" content="Shiro Wang">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Github">
@@ -426,7 +426,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1.6k  word
+                  1.9k  word
                 </span>
               
 
@@ -442,7 +442,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  6  min
+                  8  min
                 </span>
               
             </div>
@@ -489,6 +489,13 @@
 <li><a href="#解决方法-2">解决方法</a></li>
 </ul>
 </li>
+<li><a href="#文章中引用图片">文章中引用图片</a><ul>
+<li><a href="#src-链接">src 链接</a></li>
+<li><a href="#本地绝对路径">本地绝对路径</a></li>
+<li><a href="#本地相对路径">本地相对路径</a></li>
+<li><a href="#base64-格式">Base64 格式</a></li>
+</ul>
+</li>
 <li><a href="#留待参考">留待参考</a></li>
 </ul>
 <!-- tocstop -->
@@ -514,7 +521,12 @@
 <h1><span id="根据更新时间排序">根据更新时间排序</span></h1><p>(<a href="https://aiellochan.com/2018/02/13/hexo/Hexo-%E6%96%87%E7%AB%A0%E6%8C%89%E7%85%A7%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E6%8E%92%E5%BA%8F/" target="_blank" rel="noopener">https://aiellochan.com/2018/02/13/hexo/Hexo-%E6%96%87%E7%AB%A0%E6%8C%89%E7%85%A7%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E6%8E%92%E5%BA%8F/</a>)</p>
 <h1><span id="markdown语法目录toc失效">markdown语法目录TOC失效</span></h1><h2><span id="民间玄学-toc-失败">民间玄学 @TOC 失败</span></h2><p><a href="https://github.com/iissnan/hexo-theme-next/issues/974" target="_blank" rel="noopener">TOC锚点初始化失败？ #974</a></p>
 <h2><span id="民间玄学-lt-toc__gt单边引用-失败">民间玄学 <code>&lt;!--toc__&gt;</code>单边引用 失败</span></h2><h2><span id="解决方法">解决方法</span></h2><p><a href="https://www.npmjs.com/package/hexo-toc" target="_blank" rel="noopener">Hexo-toc官方参考文档</a><br><a href="https://blog.csdn.net/sunsides/article/details/84914033" target="_blank" rel="noopener">Hexo 支持目录</a><br>安装<code>hexo-toc</code><br>修改<code>hexo\themes\next\_config.yml</code><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">toc:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">maxdepth:</span> <span class="number">3</span></span><br><span class="line">  <span class="attr">class:</span> <span class="string">toc</span></span><br><span class="line">  <span class="attr">slugify:</span> <span class="string">transliteration</span></span><br><span class="line">  <span class="attr">decodeEntities:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">anchor:</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">after</span></span><br><span class="line">    <span class="attr">symbol:</span> <span class="string">'#'</span></span><br><span class="line">    <span class="attr">style:</span> <span class="string">header-anchor</span></span><br></pre></td></tr></table></figure><br>在文章中引用时，TOC两边有空格，否则不生效。<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&lt;!--</span> <span class="string">toc</span> <span class="string">--&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h1><span id="留待参考">留待参考</span></h1><p><a href="https://blog.csdn.net/whjkm/article/details/81088518" target="_blank" rel="noopener">Hexo版本升级和Next主题升级之坑</a><br><a href="https://blog.csdn.net/qq_36759224/article/details/85420403#font_colorFF000009_font_271" target="_blank" rel="noopener">Hexo 博客优化之博客美化系列（持续更新）</a><br><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">【持续更新】最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析</a><br><a href="https://www.jianshu.com/p/4ef35521fee9" target="_blank" rel="noopener">Hexo-Next-主题优化(四)</a><br><a href="https://www.jianshu.com/p/9c087e19df3c" target="_blank" rel="noopener">Hexo加载优化</a><br><a href="https://blog.csdn.net/xianghongai/article/details/78976273" target="_blank" rel="noopener">markdown 需要转义的字符</a><br><a href="https://bestzuo.cn/" target="_blank" rel="noopener">Sanarous大佬的博客</a><br><a href="https://unnamed42.github.io/2016-09-10-Hexo%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0.html" target="_blank" rel="noopener">Hexo折腾笔记</a></p>
+<h1><span id="文章中引用图片">文章中引用图片</span></h1><p>安装图片插件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure></p>
+<h2><span id="src-链接">src 链接</span></h2><p>外部的 src 链接地址，使用 MD语法插入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![alt](https:&#x2F;&#x2F;ws3.sinaimg.cn&#x2F;large&#x2F;005BYqpgly1g29eohl7qhj31c00u0dkz.jpg)</span><br></pre></td></tr></table></figure></p>
+<h2><span id="本地绝对路径">本地绝对路径</span></h2><p>适用于只用到少量图片，将图片统一放在 <code>source/images</code>文件夹中，使用 MD语法插入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![alt](&#x2F;images&#x2F;test.jpg)</span><br></pre></td></tr></table></figure></p>
+<h2><span id="本地相对路径">本地相对路径</span></h2><p>除了可以放在统一的 images 文件夹中，还可以放在文章自己的目录中，文章的目录可以通过配置 <code>_config.yml</code>来生成。配置如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure><br>将 <code>_config.yml</code>文件中的配置项 <code>post_asset_folder</code>设为<code>true</code><br>执行<code>hexo new post_name</code>在<code>source/_posts</code>中会生成文章<code>post_name.md</code>和同名文件夹<code>post_name</code>，将图片资源放在 post_name 中，文章就可以使用相对路径引用图片。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![alt](test.jpg)</span><br></pre></td></tr></table></figure></p>
+<h2><span id="base64-格式">Base64 格式</span></h2><p>用MD语法插入Base64 格式图片和插入外链的方式类似，注意是圆括号 ()，而不是方括号 [] 。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![alt](data:image&#x2F;jpeg;base64,&#x2F;9...)</span><br></pre></td></tr></table></figure></p>
+<h1><span id="留待参考">留待参考</span></h1><p><a href="https://blog.csdn.net/whjkm/article/details/81088518" target="_blank" rel="noopener">Hexo版本升级和Next主题升级之坑</a><br><a href="https://blog.csdn.net/qq_36759224/article/details/85420403#font_colorFF000009_font_271" target="_blank" rel="noopener">Hexo 博客优化之博客美化系列（持续更新）</a><br><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">【持续更新】最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析</a><br><a href="https://www.jianshu.com/p/4ef35521fee9" target="_blank" rel="noopener">Hexo-Next-主题优化(四)</a><br><a href="https://www.jianshu.com/p/9c087e19df3c" target="_blank" rel="noopener">Hexo加载优化</a><br><a href="https://blog.csdn.net/xianghongai/article/details/78976273" target="_blank" rel="noopener">markdown 需要转义的字符</a><br><a href="https://bestzuo.cn/" target="_blank" rel="noopener">Sanarous大佬的博客</a><br><a href="https://unnamed42.github.io/2016-09-10-Hexo%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0.html" target="_blank" rel="noopener">Hexo折腾笔记</a><br><a href="https://blog.csdn.net/weixin_34348805/article/details/91389277" target="_blank" rel="noopener">在Hexo博客中插入图片</a></p>
 
       
     </div>
@@ -657,7 +669,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -769,7 +781,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">环境说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">删除_post下所有的文章后hexo g报错且页面404</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.1.</span> <span class="nav-text">官网说法转义符的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.2.</span> <span class="nav-text">民间说法缺少index</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.3.</span> <span class="nav-text">解决方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">首页链接永远跳转到第一篇文章</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">3.1.</span> <span class="nav-text">解决方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">4.</span> <span class="nav-text">为头像增加超链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">5.</span> <span class="nav-text">分区修改字体颜色</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">6.</span> <span class="nav-text">归档Archive页面每页显示数量修改</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">7.</span> <span class="nav-text">支持emoji表情</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">8.</span> <span class="nav-text">修改文章标题样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">9.</span> <span class="nav-text">根据更新时间排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">10.</span> <span class="nav-text">markdown语法目录TOC失效</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">10.1.</span> <span class="nav-text">民间玄学 @TOC 失败</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">10.2.</span> <span class="nav-text">民间玄学 &lt;!--toc__&gt;单边引用 失败</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">10.3.</span> <span class="nav-text">解决方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">11.</span> <span class="nav-text">留待参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">环境说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">删除_post下所有的文章后hexo g报错且页面404</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.1.</span> <span class="nav-text">官网说法转义符的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.2.</span> <span class="nav-text">民间说法缺少index</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">2.3.</span> <span class="nav-text">解决方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">首页链接永远跳转到第一篇文章</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">3.1.</span> <span class="nav-text">解决方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">4.</span> <span class="nav-text">为头像增加超链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">5.</span> <span class="nav-text">分区修改字体颜色</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">6.</span> <span class="nav-text">归档Archive页面每页显示数量修改</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">7.</span> <span class="nav-text">支持emoji表情</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">8.</span> <span class="nav-text">修改文章标题样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">9.</span> <span class="nav-text">根据更新时间排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">10.</span> <span class="nav-text">markdown语法目录TOC失效</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">10.1.</span> <span class="nav-text">民间玄学 @TOC 失败</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">10.2.</span> <span class="nav-text">民间玄学 &lt;!--toc__&gt;单边引用 失败</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">10.3.</span> <span class="nav-text">解决方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">11.</span> <span class="nav-text">文章中引用图片</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">11.1.</span> <span class="nav-text">src 链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">11.2.</span> <span class="nav-text">本地绝对路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">11.3.</span> <span class="nav-text">本地相对路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">11.4.</span> <span class="nav-text">Base64 格式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">12.</span> <span class="nav-text">留待参考</span></a></li></ol></div>
             
 
           </div>
@@ -796,7 +808,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2020.01.14 &mdash; <span itemprop="copyrightYear">2020-03-02</span>
+        <div class="copyright">&copy; 2020.01.14 &mdash; <span itemprop="copyrightYear">2020-03-13</span>
   <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
@@ -810,7 +822,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">7k</span>
+    <span title="Site words total count">8.6k</span>
   
 </div>
 
