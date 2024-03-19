@@ -1,6 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【APS临时抱佛脚】计算机网络-英文版大纲</title>
+    <url>/cnbrief.html</url>
+    <content><![CDATA[<p>Here is an even more detailed overview of computer networks:</p>
+<h1><span id="computer-networks">Computer Networks</span></h1><h2><span id="physical-layer">Physical Layer</span></h2><ul>
+<li>Data communication system models <ul>
+<li>Source system (information source, transmitter)</li>
+<li>Destination system (receiver, destination)</li>
+</ul>
+</li>
+<li>Channel multiplexing techniques<ul>
+<li>Frequency division multiplexing (FDM) - different frequencies for users</li>
+<li>Time division multiplexing (TDM) - time slots for users  </li>
+<li>Wave division multiplexing (WDM) - multiple optical signals on one fiber<ul>
+<li>WDM, Dense WDM (DWDM)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Wired broadband access technologies<ul>
+<li>Asymmetric DSL (ADSL) - more bandwidth downstream over phone lines</li>
+<li>Hybrid Fiber Coaxial (HFC) - fiber backbone, coaxial distribution</li>
+<li>Fiber to the Home (FTTH) - end-to-end fiber to residences<ul>
+<li>Optical Line Terminal (OLT), Optical Network Units (ONUs)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><span id="data-link-layer">Data Link Layer</span></h2><ul>
+<li>Point-to-point communication <ul>
+<li>Point-to-Point Protocol (PPP) - framing, link control protocol</li>
+</ul>
+</li>
+<li>Broadcast communication<ul>
+<li>Network topologies - star, ring, bus (traditional Ethernet)</li>
+<li>CSMA/CD protocol - carrier sensing, collision detection </li>
+</ul>
+</li>
+<li>Framing, error detection<ul>
+<li>Framing - encapsulating data into frames with headers/trailers</li>
+<li>Error detection using Cyclic Redundancy Check (CRC)</li>
+<li>Byte stuffing for transparent data transmission</li>
+</ul>
+</li>
+</ul>
+<h2><span id="network-layer">Network Layer</span></h2><ul>
+<li>Internet Protocol (IP) <ul>
+<li>IP addressing (IPv4 address classes A/B/C, subnetting)</li>
+<li>Supporting protocols - ICMP, ARP</li>
+</ul>
+</li>
+<li>Routing protocols<ul>
+<li>Interior Gateway Protocols (IGPs)<ul>
+<li>RIP (distance vector)</li>
+<li>OSPF (link state)  </li>
+</ul>
+</li>
+<li>Exterior Gateway Protocol <ul>
+<li>BGP (path vector protocol for interdomain routing)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><span id="transport-layer">Transport Layer</span></h2><ul>
+<li>User Datagram Protocol (UDP)<ul>
+<li>Connectionless, unreliable datagram delivery</li>
+<li>Used by DNS, SNMP, TFTP, etc.</li>
+</ul>
+</li>
+<li>Transmission Control Protocol (TCP)<ul>
+<li>Connection-oriented, reliable byte stream transfer</li>
+<li>Flow control via sliding window </li>
+<li>Error control via sequence numbers, ACKs, retransmissions</li>
+<li>Selective ACK (SACK), congestion control</li>
+</ul>
+</li>
+</ul>
+<h2><span id="application-layer">Application Layer</span></h2><ul>
+<li>Domain Name System (DNS)<ul>
+<li>Hierarchical domain name structure (root, TLDs, domains)  </li>
+<li>Name servers (root, TLD, authoritative)</li>
+<li>Resolution process (recursive, iterative queries)</li>
+</ul>
+</li>
+<li>File transfer protocols<ul>
+<li>FTP (file transfer protocol) - interactive file access </li>
+<li>TFTP (trivial FTP) - simple file transfer over UDP</li>
+</ul>
+</li>
+<li>Electronic mail<ul>
+<li>Mail user agents, mail servers  </li>
+<li>SMTP (mail transfer), POP3/IMAP (mail access)</li>
+</ul>
+</li>
+</ul>
+<h2><span id="network-security">Network Security</span></h2><ul>
+<li>Security threats<ul>
+<li>Passive threats (eavesdropping)</li>
+<li>Active threats (modification, spoofing, malware, DoS/DDoS)  </li>
+</ul>
+</li>
+<li>Firewalls<ul>
+<li>Packet filtering (at network/transport layer)</li>
+<li>Application gateways (with application data inspection)</li>
+</ul>
+</li>
+<li>Intrusion detection systems (IDS)  <ul>
+<li>Signature-based (attack pattern matching)</li>
+<li>Anomaly-based (profiles of normal behavior)</li>
+</ul>
+</li>
+</ul>
+<p>Let me know if you need any part explained in more detail!</p>
+]]></content>
+      <categories>
+        <category>APS</category>
+      </categories>
+      <tags>
+        <tag>APS</tag>
+        <tag>计算机网络</tag>
+        <tag>xmind</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo butterfly美化之更换字体思源宋体</title>
+    <url>/hbfont.html</url>
+    <content><![CDATA[<p>为了思源宋体，做了很多配置，以至于不知道哪个生效了，且作参考吧（。</p>
+<h1><span id="准备font">准备font</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source</code><br>的目录下新建<code>font</code></p>
+<p>因为思源黑体，很难找到TTF格式，所幸有大佬已经做完了，快港声多谢Tiac哥</p>
+<p><a href="https://www.cnblogs.com/tujia/p/15102730.html">思源黑体CN 思源宋体CN TTF 及 字段瘦身 - Tiac - 博客园</a></p>
+<p>还有这几位</p>
+<p><a href="https://www.v2ex.com/t/399030">思源黑体、思源宋体的 TTF 版本 - V2EX</a></p>
+<p>于是把tff放进font</p>
+<h1><span id="写css">写CSS</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css/</code>下创建<code>font.css</code>，我感觉这段就没用上</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Noto Serif SC&#x27;</span>;</span><br><span class="line">    <span class="attribute">font-display</span>: swap;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;../font/SourceHanSerifCN-Regular.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;JetBrains Mono&#x27;</span>,<span class="string">&#x27;HarmonyOS Sans SC&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1><span id="改varstyle">改var.style</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code>下修改<code>var.style</code><br>主要修改<code>font-family</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$</span><span class="language-bash">dafault-font-family = <span class="string">&#x27;Noto Serif SC&#x27;</span>, serif</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo部署完博客查看google是否收录github pages</title>
     <url>/gooio.html</url>
     <content><![CDATA[<p>参考文档来自</p>
@@ -19,9 +167,73 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>hexo</tag>
+        <tag>github</tag>
         <tag>google</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo butterfly美化之字数统计</title>
+    <url>/hbwords.html</url>
+    <content><![CDATA[<h1><span id="引入字数统计相关插件">引入字数统计相关插件</span></h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
+<h1><span id="修改配置文件">修改配置文件</span></h1><p>改的是路径<code>D:\nodejs\hexo</code><br>下的<code>_config.butterfly.yml</code></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wordcount (字數統計)</span></span><br><span class="line"><span class="comment"># see https://butterfly.js.org/posts/ceeb73f/#字數統計</span></span><br><span class="line"><span class="attr">wordcount:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_wordcount:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">min2read:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_wordcount:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo butterfly美化之换背景和页脚</title>
+    <url>/hbbgnfooter.html</url>
+    <content><![CDATA[<h1><span id="页脚">页脚</span></h1><h2><span id="写css">写css</span></h2><p>在路径<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个文件<code>background.css</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* footer样式 */</span></span><br><span class="line"><span class="selector-id">#footer</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="comment">/* background: #fff url(&quot;/images/footer.jpg&quot;); */</span></span><br><span class="line">    <span class="comment">/* opacity: 0.3; */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">    <span class="comment">/* color: var(--light-grey); */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#49b1f5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1><span id="背景">背景</span></h1><h2><span id="写css">写css</span></h2><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个<code>background.css</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#web_bg</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&quot;https://s2.loli.net/2024/03/07/KHV7dD18gFp6YiW.jpg&quot;</span>);</span><br><span class="line">	<span class="attribute">background-repeat</span>: repeat;</span><br><span class="line">	<span class="attribute">background-size</span>: cover;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2><span id="引入css">引入css</span></h2><p>修改配置文件<code>_config.butterfly.yml</code>的引入方式<br><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/background.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2><span id="没有生效再改_configbutterflyyml">没有生效，再改<code>_config.butterfly.yml</code></span></h2><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Website Background (設置網站背景)</span></span><br><span class="line"><span class="comment"># can set it to color or image (可設置圖片 或者 顔色)</span></span><br><span class="line"><span class="comment"># The formal of image: url(http://xxxxxx.com/xxx.jpg)</span></span><br><span class="line"><span class="attr">background:</span> <span class="string">&#x27;#efefef&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>参考文档在这里<br><a href="https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer">https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer</a></p>
+]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo butterfly美化之修改头图且文章内不显示头图</title>
+    <url>/hbtopimage.html</url>
+    <content><![CDATA[<h1><span id="修改头图">修改头图</span></h1><p>修改地址<br><code>D:\nodejs\hexo</code>下的<code>_config.butterfly.yml</code><br>其中<code>image</code>是相对地址，文件夹的路径在<code>D:\nodejs\hexo\themes\butterfly\source\image</code></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># The banner image of home page</span></span><br><span class="line"><span class="attr">index_img:</span> <span class="string">/image/微信图片_20240307025058.jpg</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)</span></span><br><span class="line"><span class="attr">index_top_img_height:</span> <span class="string">800px</span></span><br></pre></td></tr></table></figure>
+<h1><span id="只在首页显示且单篇文章内不显示">只在首页显示且单篇文章内不显示</span></h1><p><a href="https://blog.csdn.net/zzq0523/article/details/122954271">Hexo-Butterfly主题优化-设置网站首页显示背景、文章最上方不显示背景_butterfly设置top img-CSDN博客</a></p>
+<p>参考这位的需要修改显示逻辑，完美满足我的要求……要是没有这篇是真不知道从哪里改起好</p>
+<p>修改地址<br><code>D:\nodejs\hexo\themes\butterfly\layout\includes\header</code>下的<code>index.pug</code></p>
+<p>注释里是原来的，现在生效的就是修改后的</p>
+<p><img src="https://s2.loli.net/2024/03/07/4Ji7GCBUqrId1Es.png" alt="Pasted image 20240307060711.png"></p>
+<p>其中主要修改的是这两行</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">if</span> <span class="string">is_post()</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">var</span> <span class="string">top_img</span> <span class="string">=</span> <span class="literal">false</span> <span class="string">//page.top_img</span> <span class="string">||</span> <span class="string">page.cover</span> <span class="string">||</span> <span class="string">theme.default_top_img</span></span><br><span class="line"></span><br><span class="line"><span class="string">else</span> <span class="string">if</span> <span class="string">is_home()</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">var</span> <span class="string">top_img</span> <span class="string">=</span> <span class="string">theme.index_img</span> <span class="string">//</span> <span class="type">!==</span> <span class="literal">false</span> <span class="string">?</span> <span class="string">theme.index_img</span> <span class="string">||</span> <span class="attr">theme.default_top_img :</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>以下是文件完整内容仅供参考</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">if !theme.disable_top_img &amp;&amp; page.top_img !== false</span><br><span class="line">  if is_post()</span><br><span class="line">    - var top_img = false //page.top_img || page.cover || theme.default_top_img</span><br><span class="line">  else if is_page()</span><br><span class="line">    - var top_img = page.top_img || theme.default_top_img</span><br><span class="line">  else if is_tag()</span><br><span class="line">    - var top_img = theme.tag_per_img &amp;&amp; theme.tag_per_img[page.tag] </span><br><span class="line">    - top_img = top_img ? top_img : (theme.tag_img !== false ? theme.tag_img || theme.default_top_img : false)</span><br><span class="line">  else if is_category()</span><br><span class="line">    - var top_img = theme.category_per_img &amp;&amp; theme.category_per_img[page.category]</span><br><span class="line">    - top_img = top_img ? top_img : (theme.category_img !== false ? theme.category_img || theme.default_top_img : false)</span><br><span class="line">  else if is_home()</span><br><span class="line">    - var top_img = theme.index_img // !== false ? theme.index_img || theme.default_top_img : false</span><br><span class="line">  else if is_archive()</span><br><span class="line">    - var top_img = theme.archive_img !== false ? theme.archive_img || theme.default_top_img : false</span><br><span class="line">  else</span><br><span class="line">    - var top_img = page.top_img || theme.default_top_img</span><br><span class="line"></span><br><span class="line">  if top_img !== false</span><br><span class="line">    - var imgSource = top_img &amp;&amp; isImgOrUrl(top_img) ? `background-image: url(&#x27;$&#123;url_for(top_img)&#125;&#x27;)` : `background: $&#123;top_img&#125;`</span><br><span class="line">    - var bg_img = top_img ? imgSource : &#x27;&#x27;</span><br><span class="line">    - var site_title = page.title || page.tag || page.category || config.title</span><br><span class="line">    - var isHomeClass = is_home() ? &#x27;full_page&#x27; : &#x27;not-home-page&#x27;</span><br><span class="line">    - is_post() ? isHomeClass = &#x27;post-bg&#x27; : isHomeClass</span><br><span class="line">  else</span><br><span class="line">    - var isHomeClass = &#x27;not-top-img&#x27;</span><br><span class="line">else</span><br><span class="line">  - var top_img = false</span><br><span class="line">  - var isHomeClass = &#x27;not-top-img&#x27;</span><br><span class="line"></span><br><span class="line">- const isFixedClass = theme.nav.fixed ? &#x27; fixed&#x27; : &#x27;&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">header#</span><span class="language-bash">page-header(class=`<span class="variable">$&#123;isHomeClass+isFixedClass&#125;</span>` style=bg_img)</span></span><br><span class="line">  !=partial(&#x27;includes/header/nav&#x27;, &#123;&#125;, &#123;cache: true&#125;)</span><br><span class="line">  if top_img !== false</span><br><span class="line">    if is_post()</span><br><span class="line">      include ./post-info.pug</span><br><span class="line">    else if is_home() </span><br><span class="line">      #site-info</span><br><span class="line">        h1#site-title=site_title</span><br><span class="line">        if theme.subtitle.enable</span><br><span class="line">          - var loadSubJs = true</span><br><span class="line">          #site-subtitle</span><br><span class="line">            span#subtitle</span><br><span class="line">        if(theme.social)</span><br><span class="line">          #site_social_icons</span><br><span class="line">            !=partial(&#x27;includes/header/social&#x27;, &#123;&#125;, &#123;cache: true&#125;)</span><br><span class="line">      #scroll-down</span><br><span class="line">        i.fas.fa-angle-down.scroll-down-effects</span><br><span class="line">    else</span><br><span class="line">      #page-site-info</span><br><span class="line">        h1#site-title=site_title</span><br></pre></td></tr></table></figure>
+<p>显示效果如下：</p>
+<p>在首页时</p>
+<p><img src="https://s2.loli.net/2024/03/07/bp4lkycvHn9YaIo.jpg" alt="微信截图_20240307062136.png"></p>
+<p>在单独文章页面时</p>
+<p><img src="https://s2.loli.net/2024/03/07/te8jMx3OEwcTW7k.jpg" alt="微信截图_20240307062840.png"></p>
+]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -82,98 +294,11 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>hexo</tag>
         <tag>butterfly</tag>
+        <tag>github</tag>
         <tag>next</tag>
         <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo butterfly美化之换背景和页脚</title>
-    <url>/hbbgnfooter.html</url>
-    <content><![CDATA[<h1><span id="页脚">页脚</span></h1><h2><span id="写css">写css</span></h2><p>在路径<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个文件<code>background.css</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* footer样式 */</span></span><br><span class="line"><span class="selector-id">#footer</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="comment">/* background: #fff url(&quot;/images/footer.jpg&quot;); */</span></span><br><span class="line">    <span class="comment">/* opacity: 0.3; */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">    <span class="comment">/* color: var(--light-grey); */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#49b1f5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1><span id="背景">背景</span></h1><h2><span id="写css">写css</span></h2><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个<code>background.css</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#web_bg</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&quot;https://s2.loli.net/2024/03/07/KHV7dD18gFp6YiW.jpg&quot;</span>);</span><br><span class="line">	<span class="attribute">background-repeat</span>: repeat;</span><br><span class="line">	<span class="attribute">background-size</span>: cover;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2><span id="引入css">引入css</span></h2><p>修改配置文件<code>_config.butterfly.yml</code>的引入方式<br><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/background.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h2><span id="没有生效再改_configbutterflyyml">没有生效，再改<code>_config.butterfly.yml</code></span></h2><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Website Background (設置網站背景)</span></span><br><span class="line"><span class="comment"># can set it to color or image (可設置圖片 或者 顔色)</span></span><br><span class="line"><span class="comment"># The formal of image: url(http://xxxxxx.com/xxx.jpg)</span></span><br><span class="line"><span class="attr">background:</span> <span class="string">&#x27;#efefef&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>参考文档在这里<br><a href="https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer">https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer</a></p>
-]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo butterfly美化之更换字体思源宋体</title>
-    <url>/hbfont.html</url>
-    <content><![CDATA[<p>为了思源宋体，做了很多配置，以至于不知道哪个生效了，且作参考吧（。</p>
-<h1><span id="准备font">准备font</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source</code><br>的目录下新建<code>font</code></p>
-<p>因为思源黑体，很难找到TTF格式，所幸有大佬已经做完了，快港声多谢Tiac哥</p>
-<p><a href="https://www.cnblogs.com/tujia/p/15102730.html">思源黑体CN 思源宋体CN TTF 及 字段瘦身 - Tiac - 博客园</a></p>
-<p>还有这几位</p>
-<p><a href="https://www.v2ex.com/t/399030">思源黑体、思源宋体的 TTF 版本 - V2EX</a></p>
-<p>于是把tff放进font</p>
-<h1><span id="写css">写CSS</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css/</code>下创建<code>font.css</code>，我感觉这段就没用上</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Noto Serif SC&#x27;</span>;</span><br><span class="line">    <span class="attribute">font-display</span>: swap;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;../font/SourceHanSerifCN-Regular.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;JetBrains Mono&#x27;</span>,<span class="string">&#x27;HarmonyOS Sans SC&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1><span id="改varstyle">改var.style</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code>下修改<code>var.style</code><br>主要修改<code>font-family</code></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$</span><span class="language-bash">dafault-font-family = <span class="string">&#x27;Noto Serif SC&#x27;</span>, serif</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo butterfly美化之修改头图且文章内不显示头图</title>
-    <url>/hbtopimage.html</url>
-    <content><![CDATA[<h1><span id="修改头图">修改头图</span></h1><p>修改地址<br><code>D:\nodejs\hexo</code>下的<code>_config.butterfly.yml</code><br>其中<code>image</code>是相对地址，文件夹的路径在<code>D:\nodejs\hexo\themes\butterfly\source\image</code></p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># The banner image of home page</span></span><br><span class="line"><span class="attr">index_img:</span> <span class="string">/image/微信图片_20240307025058.jpg</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)</span></span><br><span class="line"><span class="attr">index_top_img_height:</span> <span class="string">800px</span></span><br></pre></td></tr></table></figure>
-<h1><span id="只在首页显示且单篇文章内不显示">只在首页显示且单篇文章内不显示</span></h1><p><a href="https://blog.csdn.net/zzq0523/article/details/122954271">Hexo-Butterfly主题优化-设置网站首页显示背景、文章最上方不显示背景_butterfly设置top img-CSDN博客</a></p>
-<p>参考这位的需要修改显示逻辑，完美满足我的要求……要是没有这篇是真不知道从哪里改起好</p>
-<p>修改地址<br><code>D:\nodejs\hexo\themes\butterfly\layout\includes\header</code>下的<code>index.pug</code></p>
-<p>注释里是原来的，现在生效的就是修改后的</p>
-<p><img src="https://s2.loli.net/2024/03/07/4Ji7GCBUqrId1Es.png" alt="Pasted image 20240307060711.png"></p>
-<p>其中主要修改的是这两行</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">if</span> <span class="string">is_post()</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">var</span> <span class="string">top_img</span> <span class="string">=</span> <span class="literal">false</span> <span class="string">//page.top_img</span> <span class="string">||</span> <span class="string">page.cover</span> <span class="string">||</span> <span class="string">theme.default_top_img</span></span><br><span class="line"></span><br><span class="line"><span class="string">else</span> <span class="string">if</span> <span class="string">is_home()</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">var</span> <span class="string">top_img</span> <span class="string">=</span> <span class="string">theme.index_img</span> <span class="string">//</span> <span class="type">!==</span> <span class="literal">false</span> <span class="string">?</span> <span class="string">theme.index_img</span> <span class="string">||</span> <span class="attr">theme.default_top_img :</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p>以下是文件完整内容仅供参考</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">if !theme.disable_top_img &amp;&amp; page.top_img !== false</span><br><span class="line">  if is_post()</span><br><span class="line">    - var top_img = false //page.top_img || page.cover || theme.default_top_img</span><br><span class="line">  else if is_page()</span><br><span class="line">    - var top_img = page.top_img || theme.default_top_img</span><br><span class="line">  else if is_tag()</span><br><span class="line">    - var top_img = theme.tag_per_img &amp;&amp; theme.tag_per_img[page.tag] </span><br><span class="line">    - top_img = top_img ? top_img : (theme.tag_img !== false ? theme.tag_img || theme.default_top_img : false)</span><br><span class="line">  else if is_category()</span><br><span class="line">    - var top_img = theme.category_per_img &amp;&amp; theme.category_per_img[page.category]</span><br><span class="line">    - top_img = top_img ? top_img : (theme.category_img !== false ? theme.category_img || theme.default_top_img : false)</span><br><span class="line">  else if is_home()</span><br><span class="line">    - var top_img = theme.index_img // !== false ? theme.index_img || theme.default_top_img : false</span><br><span class="line">  else if is_archive()</span><br><span class="line">    - var top_img = theme.archive_img !== false ? theme.archive_img || theme.default_top_img : false</span><br><span class="line">  else</span><br><span class="line">    - var top_img = page.top_img || theme.default_top_img</span><br><span class="line"></span><br><span class="line">  if top_img !== false</span><br><span class="line">    - var imgSource = top_img &amp;&amp; isImgOrUrl(top_img) ? `background-image: url(&#x27;$&#123;url_for(top_img)&#125;&#x27;)` : `background: $&#123;top_img&#125;`</span><br><span class="line">    - var bg_img = top_img ? imgSource : &#x27;&#x27;</span><br><span class="line">    - var site_title = page.title || page.tag || page.category || config.title</span><br><span class="line">    - var isHomeClass = is_home() ? &#x27;full_page&#x27; : &#x27;not-home-page&#x27;</span><br><span class="line">    - is_post() ? isHomeClass = &#x27;post-bg&#x27; : isHomeClass</span><br><span class="line">  else</span><br><span class="line">    - var isHomeClass = &#x27;not-top-img&#x27;</span><br><span class="line">else</span><br><span class="line">  - var top_img = false</span><br><span class="line">  - var isHomeClass = &#x27;not-top-img&#x27;</span><br><span class="line"></span><br><span class="line">- const isFixedClass = theme.nav.fixed ? &#x27; fixed&#x27; : &#x27;&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">header#</span><span class="language-bash">page-header(class=`<span class="variable">$&#123;isHomeClass+isFixedClass&#125;</span>` style=bg_img)</span></span><br><span class="line">  !=partial(&#x27;includes/header/nav&#x27;, &#123;&#125;, &#123;cache: true&#125;)</span><br><span class="line">  if top_img !== false</span><br><span class="line">    if is_post()</span><br><span class="line">      include ./post-info.pug</span><br><span class="line">    else if is_home() </span><br><span class="line">      #site-info</span><br><span class="line">        h1#site-title=site_title</span><br><span class="line">        if theme.subtitle.enable</span><br><span class="line">          - var loadSubJs = true</span><br><span class="line">          #site-subtitle</span><br><span class="line">            span#subtitle</span><br><span class="line">        if(theme.social)</span><br><span class="line">          #site_social_icons</span><br><span class="line">            !=partial(&#x27;includes/header/social&#x27;, &#123;&#125;, &#123;cache: true&#125;)</span><br><span class="line">      #scroll-down</span><br><span class="line">        i.fas.fa-angle-down.scroll-down-effects</span><br><span class="line">    else</span><br><span class="line">      #page-site-info</span><br><span class="line">        h1#site-title=site_title</span><br></pre></td></tr></table></figure>
-<p>显示效果如下：</p>
-<p>在首页时</p>
-<p><img src="https://s2.loli.net/2024/03/07/bp4lkycvHn9YaIo.jpg" alt="微信截图_20240307062136.png"></p>
-<p>在单独文章页面时</p>
-<p><img src="https://s2.loli.net/2024/03/07/te8jMx3OEwcTW7k.jpg" alt="微信截图_20240307062840.png"></p>
-]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo butterfly美化之字数统计</title>
-    <url>/hbwords.html</url>
-    <content><![CDATA[<h1><span id="引入字数统计相关插件">引入字数统计相关插件</span></h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
-<h1><span id="修改配置文件">修改配置文件</span></h1><p>改的是路径<code>D:\nodejs\hexo</code><br>下的<code>_config.butterfly.yml</code></p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wordcount (字數統計)</span></span><br><span class="line"><span class="comment"># see https://butterfly.js.org/posts/ceeb73f/#字數統計</span></span><br><span class="line"><span class="attr">wordcount:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_wordcount:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">min2read:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_wordcount:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
       </tags>
   </entry>
   <entry>
@@ -202,8 +327,8 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>hexo</tag>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -216,8 +341,8 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>hexo</tag>
+        <tag>github</tag>
       </tags>
   </entry>
 </search>

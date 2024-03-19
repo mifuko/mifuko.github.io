@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mifuko.github.io/"/>
-  <updated>2024-03-07T09:06:27.619Z</updated>
+  <updated>2024-03-19T03:55:37.965Z</updated>
   <id>https://mifuko.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【APS临时抱佛脚】计算机网络-英文版大纲</title>
+    <link href="https://mifuko.github.io/cnbrief.html"/>
+    <id>https://mifuko.github.io/cnbrief.html</id>
+    <published>2024-03-19T03:55:37.965Z</published>
+    <updated>2024-03-19T03:55:37.965Z</updated>
+    
+    <content type="html"><![CDATA[<p>Here is an even more detailed overview of computer networks:</p><h1><span id="computer-networks">Computer Networks</span></h1><h2><span id="physical-layer">Physical Layer</span></h2><ul><li>Data communication system models <ul><li>Source system (information source, transmitter)</li><li>Destination system (receiver, destination)</li></ul></li><li>Channel multiplexing techniques<ul><li>Frequency division multiplexing (FDM) - different frequencies for users</li><li>Time division multiplexing (TDM) - time slots for users  </li><li>Wave division multiplexing (WDM) - multiple optical signals on one fiber<ul><li>WDM, Dense WDM (DWDM)</li></ul></li></ul></li><li>Wired broadband access technologies<ul><li>Asymmetric DSL (ADSL) - more bandwidth downstream over phone lines</li><li>Hybrid Fiber Coaxial (HFC) - fiber backbone, coaxial distribution</li><li>Fiber to the Home (FTTH) - end-to-end fiber to residences<ul><li>Optical Line Terminal (OLT), Optical Network Units (ONUs)</li></ul></li></ul></li></ul><h2><span id="data-link-layer">Data Link Layer</span></h2><ul><li>Point-to-point communication <ul><li>Point-to-Point Protocol (PPP) - framing, link control protocol</li></ul></li><li>Broadcast communication<ul><li>Network topologies - star, ring, bus (traditional Ethernet)</li><li>CSMA/CD protocol - carrier sensing, collision detection </li></ul></li><li>Framing, error detection<ul><li>Framing - encapsulating data into frames with headers/trailers</li><li>Error detection using Cyclic Redundancy Check (CRC)</li><li>Byte stuffing for transparent data transmission</li></ul></li></ul><h2><span id="network-layer">Network Layer</span></h2><ul><li>Internet Protocol (IP) <ul><li>IP addressing (IPv4 address classes A/B/C, subnetting)</li><li>Supporting protocols - ICMP, ARP</li></ul></li><li>Routing protocols<ul><li>Interior Gateway Protocols (IGPs)<ul><li>RIP (distance vector)</li><li>OSPF (link state)  </li></ul></li><li>Exterior Gateway Protocol <ul><li>BGP (path vector protocol for interdomain routing)</li></ul></li></ul></li></ul><h2><span id="transport-layer">Transport Layer</span></h2><ul><li>User Datagram Protocol (UDP)<ul><li>Connectionless, unreliable datagram delivery</li><li>Used by DNS, SNMP, TFTP, etc.</li></ul></li><li>Transmission Control Protocol (TCP)<ul><li>Connection-oriented, reliable byte stream transfer</li><li>Flow control via sliding window </li><li>Error control via sequence numbers, ACKs, retransmissions</li><li>Selective ACK (SACK), congestion control</li></ul></li></ul><h2><span id="application-layer">Application Layer</span></h2><ul><li>Domain Name System (DNS)<ul><li>Hierarchical domain name structure (root, TLDs, domains)  </li><li>Name servers (root, TLD, authoritative)</li><li>Resolution process (recursive, iterative queries)</li></ul></li><li>File transfer protocols<ul><li>FTP (file transfer protocol) - interactive file access </li><li>TFTP (trivial FTP) - simple file transfer over UDP</li></ul></li><li>Electronic mail<ul><li>Mail user agents, mail servers  </li><li>SMTP (mail transfer), POP3/IMAP (mail access)</li></ul></li></ul><h2><span id="network-security">Network Security</span></h2><ul><li>Security threats<ul><li>Passive threats (eavesdropping)</li><li>Active threats (modification, spoofing, malware, DoS/DDoS)  </li></ul></li><li>Firewalls<ul><li>Packet filtering (at network/transport layer)</li><li>Application gateways (with application data inspection)</li></ul></li><li>Intrusion detection systems (IDS)  <ul><li>Signature-based (attack pattern matching)</li><li>Anomaly-based (profiles of normal behavior)</li></ul></li></ul><p>Let me know if you need any part explained in more detail!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Here is an even more detailed overview of computer networks:&lt;/p&gt;
+&lt;h1&gt;&lt;span id=&quot;computer-networks&quot;&gt;Computer Networks&lt;/span&gt;&lt;/h1&gt;&lt;h2&gt;&lt;span 
+      
+    
+    </summary>
+    
+      <category term="APS" scheme="https://mifuko.github.io/categories/APS/"/>
+    
+    
+      <category term="APS" scheme="https://mifuko.github.io/tags/APS/"/>
+    
+      <category term="计算机网络" scheme="https://mifuko.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="xmind" scheme="https://mifuko.github.io/tags/xmind/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo部署完博客查看google是否收录github pages</title>
@@ -38,9 +68,9 @@
       <category term="mifukoIO" scheme="https://mifuko.github.io/categories/mifukoIO/"/>
     
     
-      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://mifuko.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
     
       <category term="google" scheme="https://mifuko.github.io/tags/google/"/>
     
@@ -67,11 +97,11 @@
       <category term="mifukoIO" scheme="https://mifuko.github.io/categories/mifukoIO/"/>
     
     
-      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://mifuko.github.io/tags/hexo/"/>
     
       <category term="butterfly" scheme="https://mifuko.github.io/tags/butterfly/"/>
+    
+      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
     
   </entry>
   
@@ -96,11 +126,11 @@
       <category term="mifukoIO" scheme="https://mifuko.github.io/categories/mifukoIO/"/>
     
     
-      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://mifuko.github.io/tags/hexo/"/>
     
       <category term="butterfly" scheme="https://mifuko.github.io/tags/butterfly/"/>
+    
+      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
     
   </entry>
   
@@ -126,11 +156,11 @@
       <category term="mifukoIO" scheme="https://mifuko.github.io/categories/mifukoIO/"/>
     
     
-      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://mifuko.github.io/tags/hexo/"/>
     
       <category term="butterfly" scheme="https://mifuko.github.io/tags/butterfly/"/>
+    
+      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
     
   </entry>
   
@@ -155,11 +185,11 @@
       <category term="mifukoIO" scheme="https://mifuko.github.io/categories/mifukoIO/"/>
     
     
-      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://mifuko.github.io/tags/hexo/"/>
     
       <category term="butterfly" scheme="https://mifuko.github.io/tags/butterfly/"/>
+    
+      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
     
   </entry>
   
@@ -185,9 +215,9 @@
       <category term="mifukoIO" scheme="https://mifuko.github.io/categories/mifukoIO/"/>
     
     
-      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://mifuko.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
     
   </entry>
   
@@ -213,9 +243,9 @@
       <category term="mifukoIO" scheme="https://mifuko.github.io/categories/mifukoIO/"/>
     
     
-      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://mifuko.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
     
   </entry>
   
@@ -243,11 +273,11 @@
       <category term="mifukoIO" scheme="https://mifuko.github.io/categories/mifukoIO/"/>
     
     
-      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
-    
       <category term="hexo" scheme="https://mifuko.github.io/tags/hexo/"/>
     
       <category term="butterfly" scheme="https://mifuko.github.io/tags/butterfly/"/>
+    
+      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
     
       <category term="next" scheme="https://mifuko.github.io/tags/next/"/>
     
