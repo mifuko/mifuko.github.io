@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo部署完博客查看google是否收录github pages</title>
-    <url>/gooio.html</url>
-    <content><![CDATA[<p>参考文档来自</p>
-<p><a href="https://huanglizhu.github.io/2020/02/21/让google收录github pages（hexo）/#:~:text=查看是否被收录 首先查看你的博客地址是否已经被Google收录，在Google的搜索栏中搜索： 1 site%3Ahttps%3A%2F%2Fxxxx.github.io,其中 https%3A%2F%2Fxxxx.github.io为你的博客地址，如果结果是尝试使用Google Search Console，则意味着没有被收录。">让google收录github pages（hexo） | 珠 (huanglizhu.github.io)</a></p>
-<h1><span id="确定是否被收录">确定是否被收录</span></h1><p>去google输入网址<code>http://oushiro.xyz</code></p>
-<p>如果是Google Search Console，则意味着没有被收录</p>
-<p><img src="https://s2.loli.net/2024/03/07/ENI6cQyCW1ta5po.jpg" alt="微信截图_20240307100750.png"></p>
-<h1><span id="点开google-search-console">点开Google Search Console</span></h1><p>顺其自然登陆一网通（。<br>有两个选择，网域和网域前缀，选择前缀验证</p>
-<p><img src="https://s2.loli.net/2024/03/07/upLcf6kmj9QIbTy.jpg" alt="微信截图_20240307101044.png"></p>
-<h1><span id="下载html文件放到指定位置">下载html文件放到指定位置</span></h1><p>这里下载没有问题，但是大佬是这样操作的，多了一步修改html文件，我试了一下验证没有通过，最后是重新放了一个没修改的html文件过去就通过了<br>比如下载的文件叫做<code>google233.html</code>，我先根据下面的修改了放到<code>D:\nodejs\hexo\source</code><br>下，验证失败，我再把原文件拖到相同目录比如文件叫<code>google233（1）.html</code>，验证通过了</p>
-<p><strong>修改HTML文件<br>注意！！：<br>为了使 hexo 不处理这个HTML验证文件，并且不生成关于这个文件的 sitemap，我们需要打开验证文件，在最上面添加以下代码，总共3行最后一行是空行需保留</strong></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">layout: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://s2.loli.net/2024/03/07/SuMUdeKhzFPT2p5.jpg" alt="微信截图_20240307102330.png"></p>
-]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
-        <tag>google</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo升级后用butterfly新主题替换next旧主题</title>
     <url>/butterfly2next.html</url>
     <content><![CDATA[<p><img src="https://s2.loli.net/2024/03/06/PzdmfJxOqZMkS9i.png" alt="Pasted image 20240305054228.png"></p>
@@ -82,31 +58,11 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>hexo</tag>
+        <tag>github</tag>
         <tag>butterfly</tag>
         <tag>next</tag>
         <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo butterfly美化之换背景和页脚</title>
-    <url>/hbbgnfooter.html</url>
-    <content><![CDATA[<h1><span id="页脚">页脚</span></h1><h2><span id="写css">写css</span></h2><p>在路径<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个文件<code>background.css</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* footer样式 */</span></span><br><span class="line"><span class="selector-id">#footer</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="comment">/* background: #fff url(&quot;/images/footer.jpg&quot;); */</span></span><br><span class="line">    <span class="comment">/* opacity: 0.3; */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">    <span class="comment">/* color: var(--light-grey); */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#49b1f5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1><span id="背景">背景</span></h1><h2><span id="写css">写css</span></h2><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个<code>background.css</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#web_bg</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&quot;https://s2.loli.net/2024/03/07/KHV7dD18gFp6YiW.jpg&quot;</span>);</span><br><span class="line">	<span class="attribute">background-repeat</span>: repeat;</span><br><span class="line">	<span class="attribute">background-size</span>: cover;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2><span id="引入css">引入css</span></h2><p>修改配置文件<code>_config.butterfly.yml</code>的引入方式<br><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/background.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h2><span id="没有生效再改_configbutterflyyml">没有生效，再改<code>_config.butterfly.yml</code></span></h2><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Website Background (設置網站背景)</span></span><br><span class="line"><span class="comment"># can set it to color or image (可設置圖片 或者 顔色)</span></span><br><span class="line"><span class="comment"># The formal of image: url(http://xxxxxx.com/xxx.jpg)</span></span><br><span class="line"><span class="attr">background:</span> <span class="string">&#x27;#efefef&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>参考文档在这里<br><a href="https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer">https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer</a></p>
-]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
       </tags>
   </entry>
   <entry>
@@ -235,6 +191,50 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo butterfly美化之换背景和页脚</title>
+    <url>/hbbgnfooter.html</url>
+    <content><![CDATA[<h1><span id="页脚">页脚</span></h1><h2><span id="写css">写css</span></h2><p>在路径<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个文件<code>background.css</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* footer样式 */</span></span><br><span class="line"><span class="selector-id">#footer</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="comment">/* background: #fff url(&quot;/images/footer.jpg&quot;); */</span></span><br><span class="line">    <span class="comment">/* opacity: 0.3; */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">    <span class="comment">/* color: var(--light-grey); */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#49b1f5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1><span id="背景">背景</span></h1><h2><span id="写css">写css</span></h2><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个<code>background.css</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#web_bg</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&quot;https://s2.loli.net/2024/03/07/KHV7dD18gFp6YiW.jpg&quot;</span>);</span><br><span class="line">	<span class="attribute">background-repeat</span>: repeat;</span><br><span class="line">	<span class="attribute">background-size</span>: cover;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2><span id="引入css">引入css</span></h2><p>修改配置文件<code>_config.butterfly.yml</code>的引入方式<br><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/background.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2><span id="没有生效再改_configbutterflyyml">没有生效，再改<code>_config.butterfly.yml</code></span></h2><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Website Background (設置網站背景)</span></span><br><span class="line"><span class="comment"># can set it to color or image (可設置圖片 或者 顔色)</span></span><br><span class="line"><span class="comment"># The formal of image: url(http://xxxxxx.com/xxx.jpg)</span></span><br><span class="line"><span class="attr">background:</span> <span class="string">&#x27;#efefef&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>参考文档在这里<br><a href="https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer">https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer</a></p>
+]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>butterfly</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo部署完博客查看google是否收录github pages</title>
+    <url>/gooio.html</url>
+    <content><![CDATA[<p>参考文档来自</p>
+<p><a href="https://huanglizhu.github.io/2020/02/21/让google收录github pages（hexo）/#:~:text=查看是否被收录 首先查看你的博客地址是否已经被Google收录，在Google的搜索栏中搜索： 1 site%3Ahttps%3A%2F%2Fxxxx.github.io,其中 https%3A%2F%2Fxxxx.github.io为你的博客地址，如果结果是尝试使用Google Search Console，则意味着没有被收录。">让google收录github pages（hexo） | 珠 (huanglizhu.github.io)</a></p>
+<h1><span id="确定是否被收录">确定是否被收录</span></h1><p>去google输入网址<code>http://oushiro.xyz</code></p>
+<p>如果是Google Search Console，则意味着没有被收录</p>
+<p><img src="https://s2.loli.net/2024/03/07/ENI6cQyCW1ta5po.jpg" alt="微信截图_20240307100750.png"></p>
+<h1><span id="点开google-search-console">点开Google Search Console</span></h1><p>顺其自然登陆一网通（。<br>有两个选择，网域和网域前缀，选择前缀验证</p>
+<p><img src="https://s2.loli.net/2024/03/07/upLcf6kmj9QIbTy.jpg" alt="微信截图_20240307101044.png"></p>
+<h1><span id="下载html文件放到指定位置">下载html文件放到指定位置</span></h1><p>这里下载没有问题，但是大佬是这样操作的，多了一步修改html文件，我试了一下验证没有通过，最后是重新放了一个没修改的html文件过去就通过了<br>比如下载的文件叫做<code>google233.html</code>，我先根据下面的修改了放到<code>D:\nodejs\hexo\source</code><br>下，验证失败，我再把原文件拖到相同目录比如文件叫<code>google233（1）.html</code>，验证通过了</p>
+<p><strong>修改HTML文件<br>注意！！：<br>为了使 hexo 不处理这个HTML验证文件，并且不生成关于这个文件的 sitemap，我们需要打开验证文件，在最上面添加以下代码，总共3行最后一行是空行需保留</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">layout: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://s2.loli.net/2024/03/07/SuMUdeKhzFPT2p5.jpg" alt="微信截图_20240307102330.png"></p>
+]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>google</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo butterfly美化之更换字体思源宋体</title>
     <url>/hbfont.html</url>
     <content><![CDATA[<p>为了思源宋体，做了很多配置，以至于不知道哪个生效了，且作参考吧（。</p>
@@ -252,8 +252,8 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>hexo</tag>
+        <tag>github</tag>
         <tag>butterfly</tag>
       </tags>
   </entry>
@@ -267,8 +267,8 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>hexo</tag>
+        <tag>github</tag>
         <tag>butterfly</tag>
       </tags>
   </entry>
@@ -296,23 +296,9 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>hexo</tag>
+        <tag>github</tag>
         <tag>butterfly</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>更新hexo报错spawn failed解决办法</title>
-    <url>/spawnfailed.html</url>
-    <content><![CDATA[<p>执行<code>hexo -d</code>时，出现<code>spawn failed</code>报错</p>
-<p><img src="https://s2.loli.net/2024/03/07/Nc2RAxvjESeTKYO.png" alt="Pasted image 20240307021936.png"></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">删除`.deploy_git`文件之后</span><br><span class="line">执行命令行`git config --global core.autocrlf false`</span><br><span class="line">最后：`hexo g -d`</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -393,8 +379,22 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>github</tag>
         <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更新hexo报错spawn failed解决办法</title>
+    <url>/spawnfailed.html</url>
+    <content><![CDATA[<p>执行<code>hexo -d</code>时，出现<code>spawn failed</code>报错</p>
+<p><img src="https://s2.loli.net/2024/03/07/Nc2RAxvjESeTKYO.png" alt="Pasted image 20240307021936.png"></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">删除`.deploy_git`文件之后</span><br><span class="line">执行命令行`git config --global core.autocrlf false`</span><br><span class="line">最后：`hexo g -d`</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
       </tags>
   </entry>
 </search>
