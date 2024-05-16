@@ -66,6 +66,30 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo部署完博客查看google是否收录github pages</title>
+    <url>/gooio.html</url>
+    <content><![CDATA[<p>参考文档来自</p>
+<p><a href="https://huanglizhu.github.io/2020/02/21/让google收录github pages（hexo）/#:~:text=查看是否被收录 首先查看你的博客地址是否已经被Google收录，在Google的搜索栏中搜索： 1 site%3Ahttps%3A%2F%2Fxxxx.github.io,其中 https%3A%2F%2Fxxxx.github.io为你的博客地址，如果结果是尝试使用Google Search Console，则意味着没有被收录。">让google收录github pages（hexo） | 珠 (huanglizhu.github.io)</a></p>
+<h1><span id="确定是否被收录">确定是否被收录</span></h1><p>去google输入网址<code>http://oushiro.xyz</code></p>
+<p>如果是Google Search Console，则意味着没有被收录</p>
+<p><img src="https://s2.loli.net/2024/03/07/ENI6cQyCW1ta5po.jpg" alt="微信截图_20240307100750.png"></p>
+<h1><span id="点开google-search-console">点开Google Search Console</span></h1><p>顺其自然登陆一网通（。<br>有两个选择，网域和网域前缀，选择前缀验证</p>
+<p><img src="https://s2.loli.net/2024/03/07/upLcf6kmj9QIbTy.jpg" alt="微信截图_20240307101044.png"></p>
+<h1><span id="下载html文件放到指定位置">下载html文件放到指定位置</span></h1><p>这里下载没有问题，但是大佬是这样操作的，多了一步修改html文件，我试了一下验证没有通过，最后是重新放了一个没修改的html文件过去就通过了<br>比如下载的文件叫做<code>google233.html</code>，我先根据下面的修改了放到<code>D:\nodejs\hexo\source</code><br>下，验证失败，我再把原文件拖到相同目录比如文件叫<code>google233（1）.html</code>，验证通过了</p>
+<p><strong>修改HTML文件<br>注意！！：<br>为了使 hexo 不处理这个HTML验证文件，并且不生成关于这个文件的 sitemap，我们需要打开验证文件，在最上面添加以下代码，总共3行最后一行是空行需保留</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">layout: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://s2.loli.net/2024/03/07/SuMUdeKhzFPT2p5.jpg" alt="微信截图_20240307102330.png"></p>
+]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>google</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【APS临时抱佛脚】计算机网络-英文版大纲</title>
     <url>/cnbrief.html</url>
     <content><![CDATA[<p>This course covers the fundamental concepts and technologies behind computer networks. It explains the layered architecture, starting from the physical layer that deals with transmitting raw data, up to the application layer protocols that enable services like the web, email, and file transfer. Key areas include data link protocols for reliable communication, the Internet Protocol and routing principles that form the network infrastructure, and transport protocols like TCP that enable end-to-end communication between applications. The course also highlights important network services like DNS for naming, as well as security aspects like firewalls and intrusion detection systems.</p>
@@ -191,53 +215,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo部署完博客查看google是否收录github pages</title>
-    <url>/gooio.html</url>
-    <content><![CDATA[<p>参考文档来自</p>
-<p><a href="https://huanglizhu.github.io/2020/02/21/让google收录github pages（hexo）/#:~:text=查看是否被收录 首先查看你的博客地址是否已经被Google收录，在Google的搜索栏中搜索： 1 site%3Ahttps%3A%2F%2Fxxxx.github.io,其中 https%3A%2F%2Fxxxx.github.io为你的博客地址，如果结果是尝试使用Google Search Console，则意味着没有被收录。">让google收录github pages（hexo） | 珠 (huanglizhu.github.io)</a></p>
-<h1><span id="确定是否被收录">确定是否被收录</span></h1><p>去google输入网址<code>http://oushiro.xyz</code></p>
-<p>如果是Google Search Console，则意味着没有被收录</p>
-<p><img src="https://s2.loli.net/2024/03/07/ENI6cQyCW1ta5po.jpg" alt="微信截图_20240307100750.png"></p>
-<h1><span id="点开google-search-console">点开Google Search Console</span></h1><p>顺其自然登陆一网通（。<br>有两个选择，网域和网域前缀，选择前缀验证</p>
-<p><img src="https://s2.loli.net/2024/03/07/upLcf6kmj9QIbTy.jpg" alt="微信截图_20240307101044.png"></p>
-<h1><span id="下载html文件放到指定位置">下载html文件放到指定位置</span></h1><p>这里下载没有问题，但是大佬是这样操作的，多了一步修改html文件，我试了一下验证没有通过，最后是重新放了一个没修改的html文件过去就通过了<br>比如下载的文件叫做<code>google233.html</code>，我先根据下面的修改了放到<code>D:\nodejs\hexo\source</code><br>下，验证失败，我再把原文件拖到相同目录比如文件叫<code>google233（1）.html</code>，验证通过了</p>
-<p><strong>修改HTML文件<br>注意！！：<br>为了使 hexo 不处理这个HTML验证文件，并且不生成关于这个文件的 sitemap，我们需要打开验证文件，在最上面添加以下代码，总共3行最后一行是空行需保留</strong></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">layout: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://s2.loli.net/2024/03/07/SuMUdeKhzFPT2p5.jpg" alt="微信截图_20240307102330.png"></p>
-]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>google</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo butterfly美化之更换字体思源宋体</title>
-    <url>/hbfont.html</url>
-    <content><![CDATA[<p>为了思源宋体，做了很多配置，以至于不知道哪个生效了，且作参考吧（。</p>
-<h1><span id="准备font">准备font</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source</code><br>的目录下新建<code>font</code></p>
-<p>因为思源黑体，很难找到TTF格式，所幸有大佬已经做完了，快港声多谢Tiac哥</p>
-<p><a href="https://www.cnblogs.com/tujia/p/15102730.html">思源黑体CN 思源宋体CN TTF 及 字段瘦身 - Tiac - 博客园</a></p>
-<p>还有这几位</p>
-<p><a href="https://www.v2ex.com/t/399030">思源黑体、思源宋体的 TTF 版本 - V2EX</a></p>
-<p>于是把tff放进font</p>
-<h1><span id="写css">写CSS</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css/</code>下创建<code>font.css</code>，我感觉这段就没用上</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Noto Serif SC&#x27;</span>;</span><br><span class="line">    <span class="attribute">font-display</span>: swap;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;../font/SourceHanSerifCN-Regular.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;JetBrains Mono&#x27;</span>,<span class="string">&#x27;HarmonyOS Sans SC&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1><span id="改varstyle">改var.style</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code>下修改<code>var.style</code><br>主要修改<code>font-family</code></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$</span><span class="language-bash">dafault-font-family = <span class="string">&#x27;Noto Serif SC&#x27;</span>, serif</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>butterfly</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo butterfly美化之换背景和页脚</title>
     <url>/hbbgnfooter.html</url>
     <content><![CDATA[<h1><span id="页脚">页脚</span></h1><h2><span id="写css">写css</span></h2><p>在路径<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个文件<code>background.css</code></p>
@@ -287,11 +264,19 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo butterfly美化之字数统计</title>
-    <url>/hbwords.html</url>
-    <content><![CDATA[<h1><span id="引入字数统计相关插件">引入字数统计相关插件</span></h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
-<h1><span id="修改配置文件">修改配置文件</span></h1><p>改的是路径<code>D:\nodejs\hexo</code><br>下的<code>_config.butterfly.yml</code></p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wordcount (字數統計)</span></span><br><span class="line"><span class="comment"># see https://butterfly.js.org/posts/ceeb73f/#字數統計</span></span><br><span class="line"><span class="attr">wordcount:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_wordcount:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">min2read:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_wordcount:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>]]></content>
+    <title>hexo butterfly美化之更换字体思源宋体</title>
+    <url>/hbfont.html</url>
+    <content><![CDATA[<p>为了思源宋体，做了很多配置，以至于不知道哪个生效了，且作参考吧（。</p>
+<h1><span id="准备font">准备font</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source</code><br>的目录下新建<code>font</code></p>
+<p>因为思源黑体，很难找到TTF格式，所幸有大佬已经做完了，快港声多谢Tiac哥</p>
+<p><a href="https://www.cnblogs.com/tujia/p/15102730.html">思源黑体CN 思源宋体CN TTF 及 字段瘦身 - Tiac - 博客园</a></p>
+<p>还有这几位</p>
+<p><a href="https://www.v2ex.com/t/399030">思源黑体、思源宋体的 TTF 版本 - V2EX</a></p>
+<p>于是把tff放进font</p>
+<h1><span id="写css">写CSS</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css/</code>下创建<code>font.css</code>，我感觉这段就没用上</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Noto Serif SC&#x27;</span>;</span><br><span class="line">    <span class="attribute">font-display</span>: swap;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;../font/SourceHanSerifCN-Regular.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;JetBrains Mono&#x27;</span>,<span class="string">&#x27;HarmonyOS Sans SC&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1><span id="改varstyle">改var.style</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code>下修改<code>var.style</code><br>主要修改<code>font-family</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$</span><span class="language-bash">dafault-font-family = <span class="string">&#x27;Noto Serif SC&#x27;</span>, serif</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>mifukoIO</category>
       </categories>
@@ -358,17 +343,84 @@
       </tags>
   </entry>
   <entry>
-    <title>更新hexo报错spawn failed解决办法</title>
-    <url>/spawnfailed.html</url>
-    <content><![CDATA[<p>执行<code>hexo -d</code>时，出现<code>spawn failed</code>报错</p>
-<p><img src="https://s2.loli.net/2024/03/07/Nc2RAxvjESeTKYO.png" alt="Pasted image 20240307021936.png"></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">删除`.deploy_git`文件之后</span><br><span class="line">执行命令行`git config --global core.autocrlf false`</span><br><span class="line">最后：`hexo g -d`</span><br></pre></td></tr></table></figure>]]></content>
+    <title>hexo butterfly美化之字数统计</title>
+    <url>/hbwords.html</url>
+    <content><![CDATA[<h1><span id="引入字数统计相关插件">引入字数统计相关插件</span></h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
+<h1><span id="修改配置文件">修改配置文件</span></h1><p>改的是路径<code>D:\nodejs\hexo</code><br>下的<code>_config.butterfly.yml</code></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wordcount (字數統計)</span></span><br><span class="line"><span class="comment"># see https://butterfly.js.org/posts/ceeb73f/#字數統計</span></span><br><span class="line"><span class="attr">wordcount:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_wordcount:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">min2read:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_wordcount:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>mifukoIO</category>
       </categories>
       <tags>
         <tag>hexo</tag>
         <tag>github</tag>
+        <tag>butterfly</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo butterfly更换思源字体</title>
+    <url>/hexofont.html</url>
+    <content><![CDATA[<p>没有思源字体我要死了，其他字体的中文真的巨丑</p>
+<h2><span id="创建font文件夹">创建font文件夹</span></h2><p>在<code>themes/butterfly/source/</code>下创建<code>font</code>文件夹</p>
+<p>将<code>SourceHanSerifCN-Regular.ttf</code>和<code>SourceHanSerifCN-Normal.ttf</code>放进<code>font</code></p>
+<h2><span id="创建css">创建css</span></h2><p>在<code>themes/butterfly/source/css/</code>下创建<code>font.css</code></p>
+<p>编辑<code>font.css</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Source Han Serif SC&#x27;</span>;</span><br><span class="line">    <span class="attribute">font-display</span>: swap;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;../font/SourceHanSerifCN-Regular.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Noto Serif&#x27;</span>, <span class="string">&#x27;Noto Serif CJK SC&#x27;</span>, <span class="string">&#x27;Noto Serif CJK&#x27;</span>, <span class="string">&#x27;Source Han Serif SC&#x27;</span>, ‘Source Han Serif’, source-han-serif-sc, serif;</span><br><span class="line">;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2><span id="编辑dnodejshexothemesbutterfly_configbutterflyyml">编辑<code>D:\nodejs\hexo\themes\butterfly\_config.butterfly.yml</code></span></h2><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># - &lt;link rel=&quot;stylesheet&quot; href=&quot;/xxx.css&quot;&gt;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/font.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>1234</category>
+      </categories>
+      <tags>
+        <tag>tag1</tag>
+        <tag>tag2</tag>
+        <tag>...</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>leetcode小抄：9. Palindrome Number</title>
+    <url>/lc2.html</url>
+    <content><![CDATA[<p>“level”、“radar”、“Kayak”、“Madam”、“Racecar”、“Noon”和“12321”都是回文</p>
+<ol start="9">
+<li>Palindrome Number<br>Easy<br>Topics<br>Companies<br>Hint<br>Given an integer x, return true if x is a<br>palindrome<br>, and false otherwise.</li>
+</ol>
+<p>Example 1:</p>
+<p>Input: x = 121<br>Output: true<br>Explanation: 121 reads as 121 from left to right and from right to left.<br>Example 2:</p>
+<p>Input: x = -121<br>Output: false<br>Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.<br>Example 3:</p>
+<p>Input: x = 10<br>Output: false<br>Explanation: Reads 01 from right to left. Therefore it is not a palindrome.</p>
+<p>Constraints:</p>
+<p>-2^31^ &lt;= x &lt;= 2^31^ - 1</p>
+<h2><span id="solution-1-笨蛋方法">solution 1 笨蛋方法</span></h2><p>转换成字符串一个个比较，负数一定不是回文，再判断正数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="comment"># Check if the number is negative, which cannot be a palindrome</span></span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Convert the integer to a string</span></span><br><span class="line">        str_x = <span class="built_in">str</span>(x)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Initialize pointers for the start and end of the string</span></span><br><span class="line">        left, right = <span class="number">0</span>, <span class="built_in">len</span>(str_x) - <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Loop until the pointers meet in the middle</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            <span class="comment"># If the characters at the current pointers don&#x27;t match, it&#x27;s not a palindrome</span></span><br><span class="line">            <span class="keyword">if</span> str_x[left] != str_x[right]:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="comment"># Move the pointers towards the center</span></span><br><span class="line">            left += <span class="number">1</span></span><br><span class="line">            right -= <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># If all checks pass, it&#x27;s a palindrome</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<p>其中<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">left, right = <span class="number">0</span>, <span class="built_in">len</span>(str_x) - <span class="number">1</span></span><br></pre></td></tr></table></figure></p>
+<p>用来初始化两个变量left和right的赋值语句</p>
+<p><code>left = 0</code>: 这表示开始时，左侧的指针（或索引）left位于字符串的最左边，即字符串的第一个字符的位置。在Python中，字符串的索引是从0开始的，所以第一个字符的索引是0。</p>
+<p><code>right = len(str_x) - 1</code>: 这表示右侧的指针（或索引）right最初指向字符串的最右边的字符。len(str_x)获取字符串str_x的长度，然后减一，是因为索引是从0开始的，所以一个长度为n的字符串的最后一个字符的索引是n-1。</p>
+<p>在循环中，比较<code>str_x[left]</code>和<code>str_x[right]</code>这两个位置的字符是否相同，随着循环的进行，left会逐渐增加，right会逐渐减少，直到它们相遇或者交错，从而完成对整个字符串是否为回文的检查。</p>
+<h2><span id="solution-2-聪明方法">solution 2 聪明方法</span></h2><p>直接用字符串的切片功能</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="comment"># 将整数x转换为字符串y</span></span><br><span class="line">        y = <span class="built_in">str</span>(x)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 使用字符串切片功能 [::-1] 来翻转字符串y，得到z</span></span><br><span class="line">        <span class="comment"># 字符串切片语法 [start:end:step] 中，当step为-1时，会从右向左提取字符，实现反转</span></span><br><span class="line">        z = y[::-<span class="number">1</span>]</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 比较原字符串y和翻转后的字符串z是否相等</span></span><br><span class="line">        <span class="keyword">if</span> y == z:</span><br><span class="line">            <span class="comment"># 如果相等，说明x是一个回文数，返回True</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># 如果不相等，说明x不是一个回文数，返回False</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用字符串，切片</span></span><br></pre></td></tr></table></figure>
+<h2><span id="exploration-不转换成字符串">exploration 不转换成字符串</span></h2><p>Follow up: Could you solve it without converting the integer to a string?</p>
+<p>利用数学运算逐步比较数字的前后部分，构建翻转数字</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:  <span class="comment"># 负数不是回文数</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        original_x = x</span><br><span class="line">        reversed_x = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> x &gt; <span class="number">0</span>:</span><br><span class="line">            <span class="comment"># 提取最低位数字并添加到反转数的末尾</span></span><br><span class="line">            reversed_x = (reversed_x * <span class="number">10</span>) + (x % <span class="number">10</span>)</span><br><span class="line">            <span class="comment"># 移除x的最低位</span></span><br><span class="line">            x //= <span class="number">10</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 比较原数和反转后的数是否相等</span></span><br><span class="line">        <span class="keyword">return</span> original_x == reversed_x</span><br></pre></td></tr></table></figure>
+<h3><span id="关键句">关键句</span></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">reversed_x = (reversed_x * <span class="number">10</span>) + (x % <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<p>假设我们有一个整数 x，我们的目标是得到它的翻转版本，记作<code>reversed_x</code>。</p>
+<p><code>x % 10</code>：这一步是取 x 的个位数。<code>%</code>是取余运算符，<code>x % 10</code>的结果就是 x 除以 10 后的余数，对于任何整数 x，这都将给出其个位上的数字。</p>
+<p><code>(reversed_x * 10) + ...</code>：在开始时，<code>reversed_x</code> 通常初始化为 0。每次循环中，我们先将 <code>reversed_x</code> 左移一位（等效于乘以 10），为添加新的数字到其个位上做准备。</p>
+<p><code>+ (x % 10)</code>：然后，将当前 x 的个位数加到 <code>reversed_x</code> 的末尾。这样逐步构建了 x 翻转后的数字。</p>
+<h3><span id="核心思路">核心思路</span></h3><p><strong>1、逐位访问的需求：</strong><br>要反转一个整数，我们需要逐位访问它，这意味着从最低位（个位）开始，一直到最高位。但是，在大多数编程语言中，直接访问整数的某一位并不直接支持，所以我们需要间接方法。</p>
+<p><strong>2、取模运算<code>（%）</code>和整除运算<code>（//）</code>的利用：</strong></p>
+<ul>
+<li>取模运算（%）：<code>x % 10</code> 可以得到 x 的个位数。这是因为任何整数除以10的余数就是它的个位数。</li>
+<li>整除运算（//）：<code>x //= 10</code> 可以去掉 x 的个位数。这实际上是对 x 进行了右移操作，相当于抛弃了当前的个位数，让 x 变成只有高位数字的数。</li>
+</ul>
+<p><strong>3、数字构建：</strong><br>为了构建反转数，每次循环我们都需要把当前的最低位数加到已构建数的末尾。由于数字是以十进制表示的，每向左移动一位，数值就相当于乘以10。因此，我们先将已构建的反转数乘以10，再加当前的最低位数，就能正确地将新位数放置到反转数的末尾。</p>
+<p><strong>4、循环终止条件：</strong><br>选择 <code>while x &gt; 0</code>作为循环终止条件是因为一旦 x 变为0，说明所有的位都已经被处理过了，没有剩余的位需要反转。这也是自然数（正整数）在逐位处理后必然会达到的状态。</p>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>palindrome</tag>
       </tags>
   </entry>
   <entry>
@@ -393,6 +445,20 @@
 <p><img src="https://s2.loli.net/2024/03/07/utpfIj5Hnv3oNds.png" alt="Pasted image 20240305014915.png"></p>
 <p>重新执行<code>hexo g -d</code>，还是有两次登录框，在密码的地方输入token</p>
 ]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更新hexo报错spawn failed解决办法</title>
+    <url>/spawnfailed.html</url>
+    <content><![CDATA[<p>执行<code>hexo -d</code>时，出现<code>spawn failed</code>报错</p>
+<p><img src="https://s2.loli.net/2024/03/07/Nc2RAxvjESeTKYO.png" alt="Pasted image 20240307021936.png"></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">删除`.deploy_git`文件之后</span><br><span class="line">执行命令行`git config --global core.autocrlf false`</span><br><span class="line">最后：`hexo g -d`</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>mifukoIO</category>
       </categories>
