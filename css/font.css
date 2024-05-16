@@ -1,8 +1,9 @@
 @font-face{
-    font-family: 'Noto Serif SC';
+    font-family: 'Source Han Serif SC';
     font-display: swap;
     src: url('../font/SourceHanSerifCN-Regular.ttf') format("truetype");
 }
 body {
-    font-family: 'JetBrains Mono','HarmonyOS Sans SC';
+    font-family: 'Noto Serif', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, serif;
+;
 }
