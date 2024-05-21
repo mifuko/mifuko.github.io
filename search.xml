@@ -191,26 +191,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo butterfly美化之换背景和页脚</title>
-    <url>/hbbgnfooter.html</url>
-    <content><![CDATA[<h1><span id="页脚">页脚</span></h1><h2><span id="写css">写css</span></h2><p>在路径<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个文件<code>background.css</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* footer样式 */</span></span><br><span class="line"><span class="selector-id">#footer</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="comment">/* background: #fff url(&quot;/images/footer.jpg&quot;); */</span></span><br><span class="line">    <span class="comment">/* opacity: 0.3; */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">    <span class="comment">/* color: var(--light-grey); */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#49b1f5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1><span id="背景">背景</span></h1><h2><span id="写css">写css</span></h2><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个<code>background.css</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#web_bg</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&quot;https://s2.loli.net/2024/03/07/KHV7dD18gFp6YiW.jpg&quot;</span>);</span><br><span class="line">	<span class="attribute">background-repeat</span>: repeat;</span><br><span class="line">	<span class="attribute">background-size</span>: cover;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2><span id="引入css">引入css</span></h2><p>修改配置文件<code>_config.butterfly.yml</code>的引入方式<br><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/background.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h2><span id="没有生效再改_configbutterflyyml">没有生效，再改<code>_config.butterfly.yml</code></span></h2><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Website Background (設置網站背景)</span></span><br><span class="line"><span class="comment"># can set it to color or image (可設置圖片 或者 顔色)</span></span><br><span class="line"><span class="comment"># The formal of image: url(http://xxxxxx.com/xxx.jpg)</span></span><br><span class="line"><span class="attr">background:</span> <span class="string">&#x27;#efefef&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>参考文档在这里<br><a href="https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer">https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer</a></p>
-]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>butterfly</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo部署完博客查看google是否收录github pages</title>
     <url>/gooio.html</url>
     <content><![CDATA[<p>参考文档来自</p>
@@ -248,6 +228,26 @@
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Noto Serif SC&#x27;</span>;</span><br><span class="line">    <span class="attribute">font-display</span>: swap;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;../font/SourceHanSerifCN-Regular.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;JetBrains Mono&#x27;</span>,<span class="string">&#x27;HarmonyOS Sans SC&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1><span id="改varstyle">改var.style</span></h1><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code>下修改<code>var.style</code><br>主要修改<code>font-family</code></p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$</span><span class="language-bash">dafault-font-family = <span class="string">&#x27;Noto Serif SC&#x27;</span>, serif</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>butterfly</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo butterfly美化之换背景和页脚</title>
+    <url>/hbbgnfooter.html</url>
+    <content><![CDATA[<h1><span id="页脚">页脚</span></h1><h2><span id="写css">写css</span></h2><p>在路径<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个文件<code>background.css</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* footer样式 */</span></span><br><span class="line"><span class="selector-id">#footer</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="comment">/* background: #fff url(&quot;/images/footer.jpg&quot;); */</span></span><br><span class="line">    <span class="comment">/* opacity: 0.3; */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">    <span class="comment">/* color: var(--light-grey); */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#49b1f5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1><span id="背景">背景</span></h1><h2><span id="写css">写css</span></h2><p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code><br>下新建一个<code>background.css</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#web_bg</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&quot;https://s2.loli.net/2024/03/07/KHV7dD18gFp6YiW.jpg&quot;</span>);</span><br><span class="line">	<span class="attribute">background-repeat</span>: repeat;</span><br><span class="line">	<span class="attribute">background-size</span>: cover;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2><span id="引入css">引入css</span></h2><p>修改配置文件<code>_config.butterfly.yml</code>的引入方式<br><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/background.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2><span id="没有生效再改_configbutterflyyml">没有生效，再改<code>_config.butterfly.yml</code></span></h2><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Website Background (設置網站背景)</span></span><br><span class="line"><span class="comment"># can set it to color or image (可設置圖片 或者 顔色)</span></span><br><span class="line"><span class="comment"># The formal of image: url(http://xxxxxx.com/xxx.jpg)</span></span><br><span class="line"><span class="attr">background:</span> <span class="string">&#x27;#efefef&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>参考文档在这里<br><a href="https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer">https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer</a></p>
+]]></content>
       <categories>
         <category>mifukoIO</category>
       </categories>
@@ -425,190 +425,7 @@
       </tags>
   </entry>
   <entry>
-    <title>leetcode小抄：9. Palindrome Number</title>
-    <url>/lc2.html</url>
-    <content><![CDATA[<span id="more"></span>
-<!-- toc -->
-<ul>
-<li><a href="#solution-1-笨蛋方法">solution 1 笨蛋方法</a></li>
-<li><a href="#solution-2-聪明方法">solution 2 聪明方法</a></li>
-<li><a href="#exploration-不转换成字符串">exploration 不转换成字符串</a><ul>
-<li><a href="#关键句">关键句</a></li>
-<li><a href="#核心思路">核心思路</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-<p>“level”、“radar”、“Kayak”、“Madam”、“Racecar”、“Noon”和“12321”都是回文</p>
-<ol start="9">
-<li>Palindrome Number<br> Given an integer x, return true if x is a palindrome, and false otherwise.</li>
-</ol>
-<p>Example 1:</p>
-<p>Input: x = 121<br>Output: true<br>Explanation: 121 reads as 121 from left to right and from right to left.<br>Example 2:</p>
-<p>Input: x = -121<br>Output: false<br>Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.<br>Example 3:</p>
-<p>Input: x = 10<br>Output: false<br>Explanation: Reads 01 from right to left. Therefore it is not a palindrome.</p>
-<p>Constraints:</p>
-<p>-2^31^ &lt;= x &lt;= 2^31^ - 1</p>
-<h2><span id="solution-1-笨蛋方法">solution 1 笨蛋方法</span></h2><p>转换成字符串一个个比较，负数一定不是回文，再判断正数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="comment"># Check if the number is negative, which cannot be a palindrome</span></span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Convert the integer to a string</span></span><br><span class="line">        str_x = <span class="built_in">str</span>(x)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Initialize pointers for the start and end of the string</span></span><br><span class="line">        left, right = <span class="number">0</span>, <span class="built_in">len</span>(str_x) - <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Loop until the pointers meet in the middle</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            <span class="comment"># If the characters at the current pointers don&#x27;t match, it&#x27;s not a palindrome</span></span><br><span class="line">            <span class="keyword">if</span> str_x[left] != str_x[right]:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="comment"># Move the pointers towards the center</span></span><br><span class="line">            left += <span class="number">1</span></span><br><span class="line">            right -= <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># If all checks pass, it&#x27;s a palindrome</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
-<p>其中<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">left, right = <span class="number">0</span>, <span class="built_in">len</span>(str_x) - <span class="number">1</span></span><br></pre></td></tr></table></figure></p>
-<p>用来初始化两个变量left和right的赋值语句</p>
-<p><code>left = 0</code>: 这表示开始时，左侧的指针（或索引）left位于字符串的最左边，即字符串的第一个字符的位置。在Python中，字符串的索引是从0开始的，所以第一个字符的索引是0。</p>
-<p><code>right = len(str_x) - 1</code>: 这表示右侧的指针（或索引）right最初指向字符串的最右边的字符。len(str_x)获取字符串str_x的长度，然后减一，是因为索引是从0开始的，所以一个长度为n的字符串的最后一个字符的索引是n-1。</p>
-<p>在循环中，比较<code>str_x[left]</code>和<code>str_x[right]</code>这两个位置的字符是否相同，随着循环的进行，left会逐渐增加，right会逐渐减少，直到它们相遇或者交错，从而完成对整个字符串是否为回文的检查。</p>
-<h2><span id="solution-2-聪明方法">solution 2 聪明方法</span></h2><p>直接用字符串的切片功能</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="comment"># 将整数x转换为字符串y</span></span><br><span class="line">        y = <span class="built_in">str</span>(x)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 使用字符串切片功能 [::-1] 来翻转字符串y，得到z</span></span><br><span class="line">        <span class="comment"># 字符串切片语法 [start:end:step] 中，当step为-1时，会从右向左提取字符，实现反转</span></span><br><span class="line">        z = y[::-<span class="number">1</span>]</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 比较原字符串y和翻转后的字符串z是否相等</span></span><br><span class="line">        <span class="keyword">if</span> y == z:</span><br><span class="line">            <span class="comment"># 如果相等，说明x是一个回文数，返回True</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># 如果不相等，说明x不是一个回文数，返回False</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用字符串，切片</span></span><br></pre></td></tr></table></figure>
-<h2><span id="exploration-不转换成字符串">exploration 不转换成字符串</span></h2><p>Follow up: Could you solve it without converting the integer to a string?</p>
-<p>利用数学运算逐步比较数字的前后部分，构建翻转数字</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:  <span class="comment"># 负数不是回文数</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        original_x = x</span><br><span class="line">        reversed_x = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> x &gt; <span class="number">0</span>:</span><br><span class="line">            <span class="comment"># 提取最低位数字并添加到反转数的末尾</span></span><br><span class="line">            reversed_x = (reversed_x * <span class="number">10</span>) + (x % <span class="number">10</span>)</span><br><span class="line">            <span class="comment"># 移除x的最低位</span></span><br><span class="line">            x //= <span class="number">10</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 比较原数和反转后的数是否相等</span></span><br><span class="line">        <span class="keyword">return</span> original_x == reversed_x</span><br></pre></td></tr></table></figure>
-<h3><span id="关键句">关键句</span></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">reversed_x = (reversed_x * <span class="number">10</span>) + (x % <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
-<p>假设我们有一个整数 x，我们的目标是得到它的翻转版本，记作<code>reversed_x</code>。</p>
-<p><code>x % 10</code>：这一步是取 x 的个位数。<code>%</code>是取余运算符，<code>x % 10</code>的结果就是 x 除以 10 后的余数，对于任何整数 x，这都将给出其个位上的数字。</p>
-<p><code>(reversed_x * 10) + ...</code>：在开始时，<code>reversed_x</code> 通常初始化为 0。每次循环中，我们先将 <code>reversed_x</code> 左移一位（等效于乘以 10），为添加新的数字到其个位上做准备。</p>
-<p><code>+ (x % 10)</code>：然后，将当前 x 的个位数加到 <code>reversed_x</code> 的末尾。这样逐步构建了 x 翻转后的数字。</p>
-<h3><span id="核心思路">核心思路</span></h3><p><strong>1、逐位访问的需求：</strong><br>要反转一个整数，我们需要逐位访问它，这意味着从最低位（个位）开始，一直到最高位。但是，在大多数编程语言中，直接访问整数的某一位并不直接支持，所以我们需要间接方法。</p>
-<p><strong>2、取模运算<code>（%）</code>和整除运算<code>（//）</code>的利用：</strong></p>
-<ul>
-<li>取模运算（%）：<code>x % 10</code> 可以得到 x 的个位数。这是因为任何整数除以10的余数就是它的个位数。</li>
-<li>整除运算（//）：<code>x //= 10</code> 可以去掉 x 的个位数。这实际上是对 x 进行了右移操作，相当于抛弃了当前的个位数，让 x 变成只有高位数字的数。</li>
-</ul>
-<p><strong>3、数字构建：</strong><br>为了构建反转数，每次循环我们都需要把当前的最低位数加到已构建数的末尾。由于数字是以十进制表示的，每向左移动一位，数值就相当于乘以10。因此，我们先将已构建的反转数乘以10，再加当前的最低位数，就能正确地将新位数放置到反转数的末尾。</p>
-<p><strong>4、循环终止条件：</strong><br>选择 <code>while x &gt; 0</code>作为循环终止条件是因为一旦 x 变为0，说明所有的位都已经被处理过了，没有剩余的位需要反转。这也是自然数（正整数）在逐位处理后必然会达到的状态。</p>
-]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>leetcode</tag>
-        <tag>palindrome</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>leetcode小抄：13. Roman to Integer</title>
-    <url>/lc3.html</url>
-    <content><![CDATA[<span id="more"></span>
-<!-- toc -->
-<ul>
-<li><a href="#solution-1-笨蛋方法">solution 1 笨蛋方法</a></li>
-<li><a href="#solution-2-笨蛋方法优化版">solution 2 笨蛋方法优化版</a></li>
-<li><a href="#solution-3-聪明方法">solution 3 聪明方法</a><ul>
-<li><a href="#核心思路">核心思路</a></li>
-<li><a href="#1-逆序遍历从右到左">1. 逆序遍历（从右到左）</a></li>
-<li><a href="#2-累积求和与减法规则的隐式应用">2. 累积求和与减法规则的隐式应用</a></li>
-<li><a href="#3-代码中的实现">3. 代码中的实现</a></li>
-<li><a href="#特例处理也通过49-xlix">特例处理也通过：49 = “XLIX”</a></li>
-<li><a href="#时空复杂度">时空复杂度</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-<p>Roman numerals are represented by seven different symbols: <code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.</p>
-<p><strong>Symbol</strong>       <strong>Value</strong><br>I             1<br>V             5<br>X             10<br>L             50<br>C             100<br>D             500<br>M             1000</p>
-<p>For example, <code>2</code> is written as <code>II</code> in Roman numeral, just two ones added together. <code>12</code> is written as <code>XII</code>, which is simply <code>X + II</code>. The number <code>27</code> is written as <code>XXVII</code>, which is <code>XX + V + II</code>.</p>
-<p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not <code>IIII</code>. Instead, the number four is written as <code>IV</code>. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as <code>IX</code>. There are six instances where subtraction is used:</p>
-<ul>
-<li><code>I</code> can be placed before <code>V</code> (5) and <code>X</code> (10) to make 4 and 9. </li>
-<li><code>X</code> can be placed before <code>L</code> (50) and <code>C</code> (100) to make 40 and 90. </li>
-<li><code>C</code> can be placed before <code>D</code> (500) and <code>M</code> (1000) to make 400 and 900.</li>
-</ul>
-<p>Given a roman numeral, convert it to an integer.</p>
-<p><strong>Example 1:</strong></p>
-<p><strong>Input:</strong> s = “III”<br><strong>Output:</strong> 3<br><strong>Explanation:</strong> III = 3.</p>
-<p><strong>Example 2:</strong></p>
-<p><strong>Input:</strong> s = “LVIII”<br><strong>Output:</strong> 58<br><strong>Explanation:</strong> L = 50, V= 5, III = 3.</p>
-<p><strong>Example 3:</strong></p>
-<p><strong>Input:</strong> s = “MCMXCIV”<br><strong>Output:</strong> 1994<br><strong>Explanation:</strong> M = 1000, CM = 900, XC = 90 and IV = 4.</p>
-<p><strong>Constraints:</strong></p>
-<ul>
-<li><code>1 &lt;= s.length &lt;= 15</code></li>
-<li><code>s</code> contains only the characters <code>(&#39;I&#39;, &#39;V&#39;, &#39;X&#39;, &#39;L&#39;, &#39;C&#39;, &#39;D&#39;, &#39;M&#39;)</code>.</li>
-<li>It is <strong>guaranteed</strong> that <code>s</code> is a valid roman numeral in the range <code>[1, 3999]</code>.</li>
-</ul>
-<h2><span id="solution-1-笨蛋方法">solution 1 笨蛋方法</span></h2><p>定义了一个映射表<code>roman_to_int_map</code>，用于快速查找每个罗马数字字符对应的整数值。然后，通过遍历输入的罗马数字字符串，逐个字符进行处理。</p>
-<p>对于每一个字符，先获取其对应的整数值，如果这个值大于前一个字符的值（表明可能涉及到减法规则），则从总结果中减去两倍的前一个值再加当前值（这样做是为了抵消之前加上去的前一个值，并加上当前值）。否则，直接加上当前值。</p>
-<p>在每次迭代后，更新 <code>prev_value</code> 为当前值，以便于下一次迭代时进行比较。最后返回累加的结果 result 即可。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">romanToInt</span>(<span class="params">self, s</span>):</span><br><span class="line"><span class="comment"># 定义一个字典来映射每个罗马数字字符到其对应的整数值</span></span><br><span class="line">        roman_to_int_map = &#123;</span><br><span class="line">            <span class="string">&#x27;I&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">            <span class="string">&#x27;V&#x27;</span>: <span class="number">5</span>,</span><br><span class="line">            <span class="string">&#x27;X&#x27;</span>: <span class="number">10</span>,</span><br><span class="line">            <span class="string">&#x27;L&#x27;</span>: <span class="number">50</span>,</span><br><span class="line">            <span class="string">&#x27;C&#x27;</span>: <span class="number">100</span>,</span><br><span class="line">            <span class="string">&#x27;D&#x27;</span>: <span class="number">500</span>,</span><br><span class="line">            <span class="string">&#x27;M&#x27;</span>: <span class="number">1000</span></span><br><span class="line">        &#125;</span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        prev_value = <span class="number">0</span>  <span class="comment"># 用于存储前一个字符对应的整数值</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> char <span class="keyword">in</span> s:</span><br><span class="line">            current_value = roman_to_int_map[char]  <span class="comment"># 当前字符对应的整数值</span></span><br><span class="line">            <span class="comment"># 如果当前值小于前一个值，说明需要减去这个值（如 IV = 4）</span></span><br><span class="line">            <span class="keyword">if</span> current_value &gt; prev_value:</span><br><span class="line">                result += current_value - <span class="number">2</span> * prev_value</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                result += current_value</span><br><span class="line">            prev_value = current_value  <span class="comment"># 更新前一个值</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2><span id="solution-2-笨蛋方法优化版">solution 2 笨蛋方法优化版</span></h2><p>不临时判断，直接增加字典里面的对应关系</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">romanToInt</span>(<span class="params">self, s: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="comment"># 定义罗马数字到整数的映射，同时处理减法规则</span></span><br><span class="line">        roman_values = &#123;</span><br><span class="line">            <span class="string">&#x27;I&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">            <span class="string">&#x27;V&#x27;</span>: <span class="number">5</span>,</span><br><span class="line">            <span class="string">&#x27;X&#x27;</span>: <span class="number">10</span>,</span><br><span class="line">            <span class="string">&#x27;L&#x27;</span>: <span class="number">50</span>,</span><br><span class="line">            <span class="string">&#x27;C&#x27;</span>: <span class="number">100</span>,</span><br><span class="line">            <span class="string">&#x27;D&#x27;</span>: <span class="number">500</span>,</span><br><span class="line">            <span class="string">&#x27;M&#x27;</span>: <span class="number">1000</span>,</span><br><span class="line">            <span class="string">&#x27;IV&#x27;</span>: <span class="number">4</span>,</span><br><span class="line">            <span class="string">&#x27;IX&#x27;</span>: <span class="number">9</span>,</span><br><span class="line">            <span class="string">&#x27;XL&#x27;</span>: <span class="number">40</span>,</span><br><span class="line">            <span class="string">&#x27;XC&#x27;</span>: <span class="number">90</span>,</span><br><span class="line">            <span class="string">&#x27;CD&#x27;</span>: <span class="number">400</span>,</span><br><span class="line">            <span class="string">&#x27;CM&#x27;</span>: <span class="number">900</span></span><br><span class="line">        &#125;</span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> i &lt; <span class="built_in">len</span>(s):</span><br><span class="line">            <span class="comment"># 首先检查是否有特殊的两位数减法规则</span></span><br><span class="line">            <span class="keyword">if</span> i + <span class="number">1</span> &lt; <span class="built_in">len</span>(s) <span class="keyword">and</span> s[i:i+<span class="number">2</span>] <span class="keyword">in</span> roman_values:</span><br><span class="line">                result += roman_values[s[i:i+<span class="number">2</span>]]</span><br><span class="line">                i += <span class="number">2</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                result += roman_values[s[i]]</span><br><span class="line">                i += <span class="number">1</span></span><br><span class="line">                </span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2><span id="solution-3-聪明方法">solution 3 聪明方法</span></h2><p>通过一次遍历来完成转换，从右向左遍历字符串，这样可以避免显式地检查特殊减法规则组合，而是通过比较当前字符代表的值和前一个字符的值来自动处理加法和减法。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">romanToInt</span>(<span class="params">self, s: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="comment"># 罗马数字到整数的映射，考虑减法规则</span></span><br><span class="line">        roman_map = &#123;<span class="string">&#x27;I&#x27;</span>: <span class="number">1</span>, <span class="string">&#x27;V&#x27;</span>: <span class="number">5</span>, <span class="string">&#x27;X&#x27;</span>: <span class="number">10</span>, <span class="string">&#x27;L&#x27;</span>: <span class="number">50</span>, <span class="string">&#x27;C&#x27;</span>: <span class="number">100</span>, <span class="string">&#x27;D&#x27;</span>: <span class="number">500</span>, <span class="string">&#x27;M&#x27;</span>: <span class="number">1000</span>&#125;</span><br><span class="line">        total = <span class="number">0</span></span><br><span class="line">        prev_value = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> char <span class="keyword">in</span> <span class="built_in">reversed</span>(s):</span><br><span class="line">            curr_value = roman_map[char]</span><br><span class="line">            <span class="comment"># 如果当前值小于等于前一个值，则直接相加；否则，需要减去两倍的前一个值再加当前值</span></span><br><span class="line">            <span class="keyword">if</span> curr_value &gt;= prev_value:</span><br><span class="line">                total += curr_value</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                total -= curr_value</span><br><span class="line">            prev_value = curr_value</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> total</span><br></pre></td></tr></table></figure>
-<h3><span id="核心思路">核心思路</span></h3><h3><span id="1-逆序遍历从右到左">1. 逆序遍历（从右到左）</span></h3><ul>
-<li><strong>原因</strong>：罗马数字的减法规则（如 IV 表示 4，CM 表示 900）要求我们理解每个字符在序列中的相对位置。从右到左遍历，我们可以自然地应用这些规则，无需特别检查每个可能的减法规则组合。每个字符仅需与前一个字符的关系来决定其对总和的贡献。</li>
-</ul>
-<h3><span id="2-累积求和与减法规则的隐式应用">2. 累积求和与减法规则的隐式应用</span></h3><ul>
-<li><p><strong>累积求和</strong>：遍历过程中，我们对每个字符对应的数值进行累加。但是，如果遇到一个比前一个字符数值小的情况（例如，从左向右看是“大数在前，小数在后”的情况，逆序遍历时则是相反），我们知道这是一个减法规则的应用，需要从前一个累计值中减去这个较小数值的两倍（实际上就是抵消前一数值的贡献，加上当前的实际贡献）。</p>
-</li>
-<li><p><strong>例子</strong>：考虑 “CM”（900），逆序遍历时我们先遇到”M”（1000），然后是”C”（100）。正常情况下，我们应该加上”C”的值，但由于”C”在”M”之前且值小，实际上我们应当理解为”C”是从”M”中减去的，即减去1000再加回100，等同于加上<code>-100（即减去100）</code>。</p>
-</li>
-</ul>
-<h3><span id="3-代码中的实现">3. 代码中的实现</span></h3><ul>
-<li><p><strong>初始化</strong>：设置 <code>total = 0</code> 作为累计总和的起始值，<code>prev_value = 0</code> 作为前一个字符值的初始值，用于比较。</p>
-</li>
-<li><p><strong>遍历与计算</strong>：对字符串 <code>s</code> 进行逆序遍历，对于每个字符 <code>char</code>：</p>
-<ul>
-<li>查找其对应的数值 <code>curr_value</code>。</li>
-<li>比较 <code>curr_value</code> 和 <code>prev_value</code>：<ul>
-<li>如果 <code>curr_value &gt;= prev_value</code>，说明是正常累加，<code>total += curr_value</code>。</li>
-<li>如果 <code>curr_value &lt; prev_value</code>，说明遇到了减法规则，实际上我们已经通过逆序遍历和直接减法处理了这种情况，直接累加即可。</li>
-</ul>
-</li>
-<li>更新 <code>prev_value = curr_value</code> 以供下一次迭代使用。</li>
-</ul>
-</li>
-<li><strong>返回结果</strong>：遍历完成后，<code>total</code> 就是罗马数字字符串转换成的整数值。</li>
-</ul>
-<h3><span id="特例处理也通过49-xlix">特例处理也通过：49 = “XLIX”</span></h3><p>“XL” 表示 40（即 50 - 10，但作为一个整体它有特定值40）<br>“IX” 表示 9（即 10 - 1，同理作为一个整体代表9）</p>
-<ol>
-<li><p><strong>初始化</strong>: 首先，定义了一个罗马数字到整数的映射 <code>roman_map</code>，并初始化了总和 <code>total</code> 为 0，以及前一个字符的索引 <code>prev_index</code> 为 0。</p>
-</li>
-<li><p><strong>遍历字符串</strong>: 使用 <code>enumerate</code> 函数遍历字符串 <code>s</code>，这样可以在每个循环中同时获得当前字符 <code>char</code> 和它的索引 <code>i</code>。</p>
-</li>
-<li><p><strong>计算当前值</strong>: 对于每个字符，通过 <code>roman_map[char]</code> 获取其对应的整数值 <code>curr_value</code>。</p>
-</li>
-<li><p><strong>减法规则处理</strong>:</p>
-<ul>
-<li>通过条件 <code>if i &gt; 0 and curr_value &gt; roman_map[s[prev_index]]</code> 检查当前字符是否比前一个字符代表的数值大，这暗示着可能遇到了减法规则。例如，在 “XLIX” 中，当遍历到 “L” 时，它比前一个字符 “X” 大，符合减法规则。</li>
-<li>如果满足条件，说明当前字符和前一个字符构成减法规则组合，如 “XL” 或 “IX”。这时，不是简单相加，而是要从当前值 <code>curr_value</code> 中减去两倍的前一个值，再加上当前值（实际上这里表述稍有误导，正确理解应该是直接计算减法规则的值，例如 “XL” 直接理解为 40，而不是 50 - 2*10），但核心思想是识别并应用减法规则。</li>
-<li>如果不满足条件，即当前字符不比前一个字符大，就直接将当前值累加到总和 <code>total</code> 中。</li>
-</ul>
-</li>
-<li><p><strong>更新前一索引</strong>: 在每次循环结束时，更新 <code>prev_index = i</code>，以便在下一次迭代时可以正确地与当前字符进行比较。</p>
-</li>
-<li><p><strong>返回结果</strong>: 遍历完成后，返回累计的总和 <code>total</code>，即罗马数字字符串转换后的整数值。</p>
-</li>
-</ol>
-<p>针对 “XLIX” 的具体处理流程：</p>
-<ul>
-<li>遇到 “X”，加 10；</li>
-<li>遇到 “L”，发现它比前一个字符 “X” 大，这是 “XL” 的减法规则，直接理解为加 40（而不是50-10的过程）；</li>
-<li>遇到 “I”，加 1；</li>
-<li>遇到 “X” 后的 “IX”，发现 “I” 比 “X” 小，这是 “IX” 的减法规则，直接理解为加 9（而不是10-1的过程）。</li>
-</ul>
-<p>最终，累加得到 10 + 40 + 1 + 9 = 49，正确转换了 “XLIX” 到整数 49。</p>
-<h3><span id="时空复杂度">时空复杂度</span></h3><p><strong>时间复杂度 (Time Complexity)</strong></p>
-<p>代码的核心是一个遍历罗马数字字符串<code>s</code>的循环，使用<code>for char in reversed(s):</code>。这意味着循环会遍历字符串<code>s</code>中的每一个字符一次。因为循环是基于字符串的长度进行的，所以循环的次数与字符串<code>s</code>的长度成正比。</p>
-<ul>
-<li><strong>循环内操作</strong>：循环内的操作主要是查找字符对应的整数值、比较当前值与前一个值、以及进行加法或减法运算，这些操作的时间复杂度都是常数时间O(1)。</li>
-</ul>
-<p>综上所述，整体的时间复杂度由循环决定，即O(n)，其中n为字符串<code>s</code>的长度。这是因为我们必须至少查看字符串中的每个字符一次来确定其对应的数值并累计结果。</p>
-<p><strong>空间复杂度 (Space Complexity)</strong></p>
-<ul>
-<li><p><strong>局部变量</strong>：代码中定义了几个局部变量，包括<code>roman_map</code>（一个固定大小的字典）、<code>total</code>、<code>prev_value</code>和<code>char</code>。<code>roman_map</code>的大小是固定的，不依赖于输入字符串的长度，因此占用的空间是常量级别的。<code>total</code>、<code>prev_value</code>和<code>char</code>也都是存储单个值的变量，因此它们的空间复杂度也是O(1)。</p>
-</li>
-<li><p><strong>输入字符串</strong>：虽然输入字符串<code>s</code>是函数的参数，但在分析空间复杂度时通常不考虑输入数据所占用的空间，除非对其进行复制或修改导致额外的空间消耗。这里没有对<code>s</code>进行复制，只是原地遍历。</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>leetcode</tag>
-        <tag>RomanNumerals</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>leetcode小抄：14. Longest Common Prefix]</title>
+    <title>leetcode小抄：14. Longest Common Prefix</title>
     <url>/lc4.html</url>
     <content><![CDATA[<span id="more"></span>
 <!-- toc -->
@@ -757,6 +574,214 @@
         <tag>python</tag>
         <tag>string</tag>
         <tag>zip</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>leetcode小抄：9. Palindrome Number</title>
+    <url>/lc2.html</url>
+    <content><![CDATA[<span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#solution-1-笨蛋方法">solution 1 笨蛋方法</a></li>
+<li><a href="#solution-2-聪明方法">solution 2 聪明方法</a></li>
+<li><a href="#exploration-不转换成字符串">exploration 不转换成字符串</a><ul>
+<li><a href="#关键句">关键句</a></li>
+<li><a href="#核心思路">核心思路</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<p>“level”、“radar”、“Kayak”、“Madam”、“Racecar”、“Noon”和“12321”都是回文</p>
+<ol start="9">
+<li>Palindrome Number<br> Given an integer x, return true if x is a palindrome, and false otherwise.</li>
+</ol>
+<p>Example 1:</p>
+<p>Input: x = 121<br>Output: true<br>Explanation: 121 reads as 121 from left to right and from right to left.<br>Example 2:</p>
+<p>Input: x = -121<br>Output: false<br>Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.<br>Example 3:</p>
+<p>Input: x = 10<br>Output: false<br>Explanation: Reads 01 from right to left. Therefore it is not a palindrome.</p>
+<p>Constraints:</p>
+<p>-2^31^ &lt;= x &lt;= 2^31^ - 1</p>
+<h2><span id="solution-1-笨蛋方法">solution 1 笨蛋方法</span></h2><p>转换成字符串一个个比较，负数一定不是回文，再判断正数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="comment"># Check if the number is negative, which cannot be a palindrome</span></span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Convert the integer to a string</span></span><br><span class="line">        str_x = <span class="built_in">str</span>(x)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Initialize pointers for the start and end of the string</span></span><br><span class="line">        left, right = <span class="number">0</span>, <span class="built_in">len</span>(str_x) - <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Loop until the pointers meet in the middle</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            <span class="comment"># If the characters at the current pointers don&#x27;t match, it&#x27;s not a palindrome</span></span><br><span class="line">            <span class="keyword">if</span> str_x[left] != str_x[right]:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="comment"># Move the pointers towards the center</span></span><br><span class="line">            left += <span class="number">1</span></span><br><span class="line">            right -= <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># If all checks pass, it&#x27;s a palindrome</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<p>其中<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">left, right = <span class="number">0</span>, <span class="built_in">len</span>(str_x) - <span class="number">1</span></span><br></pre></td></tr></table></figure></p>
+<p>用来初始化两个变量left和right的赋值语句</p>
+<p><code>left = 0</code>: 这表示开始时，左侧的指针（或索引）left位于字符串的最左边，即字符串的第一个字符的位置。在Python中，字符串的索引是从0开始的，所以第一个字符的索引是0。</p>
+<p><code>right = len(str_x) - 1</code>: 这表示右侧的指针（或索引）right最初指向字符串的最右边的字符。len(str_x)获取字符串str_x的长度，然后减一，是因为索引是从0开始的，所以一个长度为n的字符串的最后一个字符的索引是n-1。</p>
+<p>在循环中，比较<code>str_x[left]</code>和<code>str_x[right]</code>这两个位置的字符是否相同，随着循环的进行，left会逐渐增加，right会逐渐减少，直到它们相遇或者交错，从而完成对整个字符串是否为回文的检查。</p>
+<h2><span id="solution-2-聪明方法">solution 2 聪明方法</span></h2><p>直接用字符串的切片功能</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="comment"># 将整数x转换为字符串y</span></span><br><span class="line">        y = <span class="built_in">str</span>(x)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 使用字符串切片功能 [::-1] 来翻转字符串y，得到z</span></span><br><span class="line">        <span class="comment"># 字符串切片语法 [start:end:step] 中，当step为-1时，会从右向左提取字符，实现反转</span></span><br><span class="line">        z = y[::-<span class="number">1</span>]</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 比较原字符串y和翻转后的字符串z是否相等</span></span><br><span class="line">        <span class="keyword">if</span> y == z:</span><br><span class="line">            <span class="comment"># 如果相等，说明x是一个回文数，返回True</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># 如果不相等，说明x不是一个回文数，返回False</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用字符串，切片</span></span><br></pre></td></tr></table></figure>
+<h2><span id="exploration-不转换成字符串">exploration 不转换成字符串</span></h2><p>Follow up: Could you solve it without converting the integer to a string?</p>
+<p>利用数学运算逐步比较数字的前后部分，构建翻转数字</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:  <span class="comment"># 负数不是回文数</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        original_x = x</span><br><span class="line">        reversed_x = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> x &gt; <span class="number">0</span>:</span><br><span class="line">            <span class="comment"># 提取最低位数字并添加到反转数的末尾</span></span><br><span class="line">            reversed_x = (reversed_x * <span class="number">10</span>) + (x % <span class="number">10</span>)</span><br><span class="line">            <span class="comment"># 移除x的最低位</span></span><br><span class="line">            x //= <span class="number">10</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 比较原数和反转后的数是否相等</span></span><br><span class="line">        <span class="keyword">return</span> original_x == reversed_x</span><br></pre></td></tr></table></figure>
+<h3><span id="关键句">关键句</span></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">reversed_x = (reversed_x * <span class="number">10</span>) + (x % <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<p>假设我们有一个整数 x，我们的目标是得到它的翻转版本，记作<code>reversed_x</code>。</p>
+<p><code>x % 10</code>：这一步是取 x 的个位数。<code>%</code>是取余运算符，<code>x % 10</code>的结果就是 x 除以 10 后的余数，对于任何整数 x，这都将给出其个位上的数字。</p>
+<p><code>(reversed_x * 10) + ...</code>：在开始时，<code>reversed_x</code> 通常初始化为 0。每次循环中，我们先将 <code>reversed_x</code> 左移一位（等效于乘以 10），为添加新的数字到其个位上做准备。</p>
+<p><code>+ (x % 10)</code>：然后，将当前 x 的个位数加到 <code>reversed_x</code> 的末尾。这样逐步构建了 x 翻转后的数字。</p>
+<h3><span id="核心思路">核心思路</span></h3><p><strong>1、逐位访问的需求：</strong><br>要反转一个整数，我们需要逐位访问它，这意味着从最低位（个位）开始，一直到最高位。但是，在大多数编程语言中，直接访问整数的某一位并不直接支持，所以我们需要间接方法。</p>
+<p><strong>2、取模运算<code>（%）</code>和整除运算<code>（//）</code>的利用：</strong></p>
+<ul>
+<li>取模运算（%）：<code>x % 10</code> 可以得到 x 的个位数。这是因为任何整数除以10的余数就是它的个位数。</li>
+<li>整除运算（//）：<code>x //= 10</code> 可以去掉 x 的个位数。这实际上是对 x 进行了右移操作，相当于抛弃了当前的个位数，让 x 变成只有高位数字的数。</li>
+</ul>
+<p><strong>3、数字构建：</strong><br>为了构建反转数，每次循环我们都需要把当前的最低位数加到已构建数的末尾。由于数字是以十进制表示的，每向左移动一位，数值就相当于乘以10。因此，我们先将已构建的反转数乘以10，再加当前的最低位数，就能正确地将新位数放置到反转数的末尾。</p>
+<p><strong>4、循环终止条件：</strong><br>选择 <code>while x &gt; 0</code>作为循环终止条件是因为一旦 x 变为0，说明所有的位都已经被处理过了，没有剩余的位需要反转。这也是自然数（正整数）在逐位处理后必然会达到的状态。</p>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>palindrome</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>leetcode小抄：15. 3Sum</title>
+    <url>/lc5.html</url>
+    <content><![CDATA[<span id="more"></span>
+<!-- toc -->
+<!-- tocstop -->
+<p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code> such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p>
+<p>Notice that the solution set must not contain duplicate triplets.</p>
+<p><strong>Example 1:</strong></p>
+<p><strong>Input:</strong> nums = [-1,0,1,2,-1,-4]<br><strong>Output:</strong> [[-1,-1,2],[-1,0,1]]<br><strong>Explanation:</strong><br>nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.<br>nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.<br>nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.<br>The distinct triplets are [-1,0,1] and [-1,-1,2].<br>Notice that the order of the output and the order of the triplets does not matter.</p>
+<p><strong>Example 2:</strong></p>
+<p><strong>Input:</strong> nums = [0,1,1]<br><strong>Output:</strong> []<br><strong>Explanation:</strong> The only possible triplet does not sum up to 0.</p>
+<p><strong>Example 3:</strong></p>
+<p><strong>Input:</strong> nums = [0,0,0]<br><strong>Output:</strong> [[0,0,0]]<br><strong>Explanation:</strong> The only possible triplet sums up to 0.</p>
+<p><strong>Constraints:</strong><br>$$<br>3 &lt;= nums.length &lt;= 3000<br>$$<br>$$<br>-10^{5}  &lt;= nums[i] &lt;= 10^{5}<br>$$</p>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>python</tag>
+        <tag>sum</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>leetcode小抄：13. Roman to Integer</title>
+    <url>/lc3.html</url>
+    <content><![CDATA[<span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#solution-1-笨蛋方法">solution 1 笨蛋方法</a></li>
+<li><a href="#solution-2-笨蛋方法优化版">solution 2 笨蛋方法优化版</a></li>
+<li><a href="#solution-3-聪明方法">solution 3 聪明方法</a><ul>
+<li><a href="#核心思路">核心思路</a></li>
+<li><a href="#1-逆序遍历从右到左">1. 逆序遍历（从右到左）</a></li>
+<li><a href="#2-累积求和与减法规则的隐式应用">2. 累积求和与减法规则的隐式应用</a></li>
+<li><a href="#3-代码中的实现">3. 代码中的实现</a></li>
+<li><a href="#特例处理也通过49-xlix">特例处理也通过：49 = “XLIX”</a></li>
+<li><a href="#时空复杂度">时空复杂度</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<p>Roman numerals are represented by seven different symbols: <code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.</p>
+<p><strong>Symbol</strong>       <strong>Value</strong><br>I             1<br>V             5<br>X             10<br>L             50<br>C             100<br>D             500<br>M             1000</p>
+<p>For example, <code>2</code> is written as <code>II</code> in Roman numeral, just two ones added together. <code>12</code> is written as <code>XII</code>, which is simply <code>X + II</code>. The number <code>27</code> is written as <code>XXVII</code>, which is <code>XX + V + II</code>.</p>
+<p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not <code>IIII</code>. Instead, the number four is written as <code>IV</code>. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as <code>IX</code>. There are six instances where subtraction is used:</p>
+<ul>
+<li><code>I</code> can be placed before <code>V</code> (5) and <code>X</code> (10) to make 4 and 9. </li>
+<li><code>X</code> can be placed before <code>L</code> (50) and <code>C</code> (100) to make 40 and 90. </li>
+<li><code>C</code> can be placed before <code>D</code> (500) and <code>M</code> (1000) to make 400 and 900.</li>
+</ul>
+<p>Given a roman numeral, convert it to an integer.</p>
+<p><strong>Example 1:</strong></p>
+<p><strong>Input:</strong> s = “III”<br><strong>Output:</strong> 3<br><strong>Explanation:</strong> III = 3.</p>
+<p><strong>Example 2:</strong></p>
+<p><strong>Input:</strong> s = “LVIII”<br><strong>Output:</strong> 58<br><strong>Explanation:</strong> L = 50, V= 5, III = 3.</p>
+<p><strong>Example 3:</strong></p>
+<p><strong>Input:</strong> s = “MCMXCIV”<br><strong>Output:</strong> 1994<br><strong>Explanation:</strong> M = 1000, CM = 900, XC = 90 and IV = 4.</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= s.length &lt;= 15</code></li>
+<li><code>s</code> contains only the characters <code>(&#39;I&#39;, &#39;V&#39;, &#39;X&#39;, &#39;L&#39;, &#39;C&#39;, &#39;D&#39;, &#39;M&#39;)</code>.</li>
+<li>It is <strong>guaranteed</strong> that <code>s</code> is a valid roman numeral in the range <code>[1, 3999]</code>.</li>
+</ul>
+<h2><span id="solution-1-笨蛋方法">solution 1 笨蛋方法</span></h2><p>定义了一个映射表<code>roman_to_int_map</code>，用于快速查找每个罗马数字字符对应的整数值。然后，通过遍历输入的罗马数字字符串，逐个字符进行处理。</p>
+<p>对于每一个字符，先获取其对应的整数值，如果这个值大于前一个字符的值（表明可能涉及到减法规则），则从总结果中减去两倍的前一个值再加当前值（这样做是为了抵消之前加上去的前一个值，并加上当前值）。否则，直接加上当前值。</p>
+<p>在每次迭代后，更新 <code>prev_value</code> 为当前值，以便于下一次迭代时进行比较。最后返回累加的结果 result 即可。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">romanToInt</span>(<span class="params">self, s</span>):</span><br><span class="line"><span class="comment"># 定义一个字典来映射每个罗马数字字符到其对应的整数值</span></span><br><span class="line">        roman_to_int_map = &#123;</span><br><span class="line">            <span class="string">&#x27;I&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">            <span class="string">&#x27;V&#x27;</span>: <span class="number">5</span>,</span><br><span class="line">            <span class="string">&#x27;X&#x27;</span>: <span class="number">10</span>,</span><br><span class="line">            <span class="string">&#x27;L&#x27;</span>: <span class="number">50</span>,</span><br><span class="line">            <span class="string">&#x27;C&#x27;</span>: <span class="number">100</span>,</span><br><span class="line">            <span class="string">&#x27;D&#x27;</span>: <span class="number">500</span>,</span><br><span class="line">            <span class="string">&#x27;M&#x27;</span>: <span class="number">1000</span></span><br><span class="line">        &#125;</span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        prev_value = <span class="number">0</span>  <span class="comment"># 用于存储前一个字符对应的整数值</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> char <span class="keyword">in</span> s:</span><br><span class="line">            current_value = roman_to_int_map[char]  <span class="comment"># 当前字符对应的整数值</span></span><br><span class="line">            <span class="comment"># 如果当前值小于前一个值，说明需要减去这个值（如 IV = 4）</span></span><br><span class="line">            <span class="keyword">if</span> current_value &gt; prev_value:</span><br><span class="line">                result += current_value - <span class="number">2</span> * prev_value</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                result += current_value</span><br><span class="line">            prev_value = current_value  <span class="comment"># 更新前一个值</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2><span id="solution-2-笨蛋方法优化版">solution 2 笨蛋方法优化版</span></h2><p>不临时判断，直接增加字典里面的对应关系</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">romanToInt</span>(<span class="params">self, s: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="comment"># 定义罗马数字到整数的映射，同时处理减法规则</span></span><br><span class="line">        roman_values = &#123;</span><br><span class="line">            <span class="string">&#x27;I&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">            <span class="string">&#x27;V&#x27;</span>: <span class="number">5</span>,</span><br><span class="line">            <span class="string">&#x27;X&#x27;</span>: <span class="number">10</span>,</span><br><span class="line">            <span class="string">&#x27;L&#x27;</span>: <span class="number">50</span>,</span><br><span class="line">            <span class="string">&#x27;C&#x27;</span>: <span class="number">100</span>,</span><br><span class="line">            <span class="string">&#x27;D&#x27;</span>: <span class="number">500</span>,</span><br><span class="line">            <span class="string">&#x27;M&#x27;</span>: <span class="number">1000</span>,</span><br><span class="line">            <span class="string">&#x27;IV&#x27;</span>: <span class="number">4</span>,</span><br><span class="line">            <span class="string">&#x27;IX&#x27;</span>: <span class="number">9</span>,</span><br><span class="line">            <span class="string">&#x27;XL&#x27;</span>: <span class="number">40</span>,</span><br><span class="line">            <span class="string">&#x27;XC&#x27;</span>: <span class="number">90</span>,</span><br><span class="line">            <span class="string">&#x27;CD&#x27;</span>: <span class="number">400</span>,</span><br><span class="line">            <span class="string">&#x27;CM&#x27;</span>: <span class="number">900</span></span><br><span class="line">        &#125;</span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> i &lt; <span class="built_in">len</span>(s):</span><br><span class="line">            <span class="comment"># 首先检查是否有特殊的两位数减法规则</span></span><br><span class="line">            <span class="keyword">if</span> i + <span class="number">1</span> &lt; <span class="built_in">len</span>(s) <span class="keyword">and</span> s[i:i+<span class="number">2</span>] <span class="keyword">in</span> roman_values:</span><br><span class="line">                result += roman_values[s[i:i+<span class="number">2</span>]]</span><br><span class="line">                i += <span class="number">2</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                result += roman_values[s[i]]</span><br><span class="line">                i += <span class="number">1</span></span><br><span class="line">                </span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2><span id="solution-3-聪明方法">solution 3 聪明方法</span></h2><p>通过一次遍历来完成转换，从右向左遍历字符串，这样可以避免显式地检查特殊减法规则组合，而是通过比较当前字符代表的值和前一个字符的值来自动处理加法和减法。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">romanToInt</span>(<span class="params">self, s: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="comment"># 罗马数字到整数的映射，考虑减法规则</span></span><br><span class="line">        roman_map = &#123;<span class="string">&#x27;I&#x27;</span>: <span class="number">1</span>, <span class="string">&#x27;V&#x27;</span>: <span class="number">5</span>, <span class="string">&#x27;X&#x27;</span>: <span class="number">10</span>, <span class="string">&#x27;L&#x27;</span>: <span class="number">50</span>, <span class="string">&#x27;C&#x27;</span>: <span class="number">100</span>, <span class="string">&#x27;D&#x27;</span>: <span class="number">500</span>, <span class="string">&#x27;M&#x27;</span>: <span class="number">1000</span>&#125;</span><br><span class="line">        total = <span class="number">0</span></span><br><span class="line">        prev_value = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> char <span class="keyword">in</span> <span class="built_in">reversed</span>(s):</span><br><span class="line">            curr_value = roman_map[char]</span><br><span class="line">            <span class="comment"># 如果当前值小于等于前一个值，则直接相加；否则，需要减去两倍的前一个值再加当前值</span></span><br><span class="line">            <span class="keyword">if</span> curr_value &gt;= prev_value:</span><br><span class="line">                total += curr_value</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                total -= curr_value</span><br><span class="line">            prev_value = curr_value</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> total</span><br></pre></td></tr></table></figure>
+<h3><span id="核心思路">核心思路</span></h3><h3><span id="1-逆序遍历从右到左">1. 逆序遍历（从右到左）</span></h3><ul>
+<li><strong>原因</strong>：罗马数字的减法规则（如 IV 表示 4，CM 表示 900）要求我们理解每个字符在序列中的相对位置。从右到左遍历，我们可以自然地应用这些规则，无需特别检查每个可能的减法规则组合。每个字符仅需与前一个字符的关系来决定其对总和的贡献。</li>
+</ul>
+<h3><span id="2-累积求和与减法规则的隐式应用">2. 累积求和与减法规则的隐式应用</span></h3><ul>
+<li><p><strong>累积求和</strong>：遍历过程中，我们对每个字符对应的数值进行累加。但是，如果遇到一个比前一个字符数值小的情况（例如，从左向右看是“大数在前，小数在后”的情况，逆序遍历时则是相反），我们知道这是一个减法规则的应用，需要从前一个累计值中减去这个较小数值的两倍（实际上就是抵消前一数值的贡献，加上当前的实际贡献）。</p>
+</li>
+<li><p><strong>例子</strong>：考虑 “CM”（900），逆序遍历时我们先遇到”M”（1000），然后是”C”（100）。正常情况下，我们应该加上”C”的值，但由于”C”在”M”之前且值小，实际上我们应当理解为”C”是从”M”中减去的，即减去1000再加回100，等同于加上<code>-100（即减去100）</code>。</p>
+</li>
+</ul>
+<h3><span id="3-代码中的实现">3. 代码中的实现</span></h3><ul>
+<li><p><strong>初始化</strong>：设置 <code>total = 0</code> 作为累计总和的起始值，<code>prev_value = 0</code> 作为前一个字符值的初始值，用于比较。</p>
+</li>
+<li><p><strong>遍历与计算</strong>：对字符串 <code>s</code> 进行逆序遍历，对于每个字符 <code>char</code>：</p>
+<ul>
+<li>查找其对应的数值 <code>curr_value</code>。</li>
+<li>比较 <code>curr_value</code> 和 <code>prev_value</code>：<ul>
+<li>如果 <code>curr_value &gt;= prev_value</code>，说明是正常累加，<code>total += curr_value</code>。</li>
+<li>如果 <code>curr_value &lt; prev_value</code>，说明遇到了减法规则，实际上我们已经通过逆序遍历和直接减法处理了这种情况，直接累加即可。</li>
+</ul>
+</li>
+<li>更新 <code>prev_value = curr_value</code> 以供下一次迭代使用。</li>
+</ul>
+</li>
+<li><strong>返回结果</strong>：遍历完成后，<code>total</code> 就是罗马数字字符串转换成的整数值。</li>
+</ul>
+<h3><span id="特例处理也通过49-xlix">特例处理也通过：49 = “XLIX”</span></h3><p>“XL” 表示 40（即 50 - 10，但作为一个整体它有特定值40）<br>“IX” 表示 9（即 10 - 1，同理作为一个整体代表9）</p>
+<ol>
+<li><p><strong>初始化</strong>: 首先，定义了一个罗马数字到整数的映射 <code>roman_map</code>，并初始化了总和 <code>total</code> 为 0，以及前一个字符的索引 <code>prev_index</code> 为 0。</p>
+</li>
+<li><p><strong>遍历字符串</strong>: 使用 <code>enumerate</code> 函数遍历字符串 <code>s</code>，这样可以在每个循环中同时获得当前字符 <code>char</code> 和它的索引 <code>i</code>。</p>
+</li>
+<li><p><strong>计算当前值</strong>: 对于每个字符，通过 <code>roman_map[char]</code> 获取其对应的整数值 <code>curr_value</code>。</p>
+</li>
+<li><p><strong>减法规则处理</strong>:</p>
+<ul>
+<li>通过条件 <code>if i &gt; 0 and curr_value &gt; roman_map[s[prev_index]]</code> 检查当前字符是否比前一个字符代表的数值大，这暗示着可能遇到了减法规则。例如，在 “XLIX” 中，当遍历到 “L” 时，它比前一个字符 “X” 大，符合减法规则。</li>
+<li>如果满足条件，说明当前字符和前一个字符构成减法规则组合，如 “XL” 或 “IX”。这时，不是简单相加，而是要从当前值 <code>curr_value</code> 中减去两倍的前一个值，再加上当前值（实际上这里表述稍有误导，正确理解应该是直接计算减法规则的值，例如 “XL” 直接理解为 40，而不是 50 - 2*10），但核心思想是识别并应用减法规则。</li>
+<li>如果不满足条件，即当前字符不比前一个字符大，就直接将当前值累加到总和 <code>total</code> 中。</li>
+</ul>
+</li>
+<li><p><strong>更新前一索引</strong>: 在每次循环结束时，更新 <code>prev_index = i</code>，以便在下一次迭代时可以正确地与当前字符进行比较。</p>
+</li>
+<li><p><strong>返回结果</strong>: 遍历完成后，返回累计的总和 <code>total</code>，即罗马数字字符串转换后的整数值。</p>
+</li>
+</ol>
+<p>针对 “XLIX” 的具体处理流程：</p>
+<ul>
+<li>遇到 “X”，加 10；</li>
+<li>遇到 “L”，发现它比前一个字符 “X” 大，这是 “XL” 的减法规则，直接理解为加 40（而不是50-10的过程）；</li>
+<li>遇到 “I”，加 1；</li>
+<li>遇到 “X” 后的 “IX”，发现 “I” 比 “X” 小，这是 “IX” 的减法规则，直接理解为加 9（而不是10-1的过程）。</li>
+</ul>
+<p>最终，累加得到 10 + 40 + 1 + 9 = 49，正确转换了 “XLIX” 到整数 49。</p>
+<h3><span id="时空复杂度">时空复杂度</span></h3><p><strong>时间复杂度 (Time Complexity)</strong></p>
+<p>代码的核心是一个遍历罗马数字字符串<code>s</code>的循环，使用<code>for char in reversed(s):</code>。这意味着循环会遍历字符串<code>s</code>中的每一个字符一次。因为循环是基于字符串的长度进行的，所以循环的次数与字符串<code>s</code>的长度成正比。</p>
+<ul>
+<li><strong>循环内操作</strong>：循环内的操作主要是查找字符对应的整数值、比较当前值与前一个值、以及进行加法或减法运算，这些操作的时间复杂度都是常数时间O(1)。</li>
+</ul>
+<p>综上所述，整体的时间复杂度由循环决定，即O(n)，其中n为字符串<code>s</code>的长度。这是因为我们必须至少查看字符串中的每个字符一次来确定其对应的数值并累计结果。</p>
+<p><strong>空间复杂度 (Space Complexity)</strong></p>
+<ul>
+<li><p><strong>局部变量</strong>：代码中定义了几个局部变量，包括<code>roman_map</code>（一个固定大小的字典）、<code>total</code>、<code>prev_value</code>和<code>char</code>。<code>roman_map</code>的大小是固定的，不依赖于输入字符串的长度，因此占用的空间是常量级别的。<code>total</code>、<code>prev_value</code>和<code>char</code>也都是存储单个值的变量，因此它们的空间复杂度也是O(1)。</p>
+</li>
+<li><p><strong>输入字符串</strong>：虽然输入字符串<code>s</code>是函数的参数，但在分析空间复杂度时通常不考虑输入数据所占用的空间，除非对其进行复制或修改导致额外的空间消耗。这里没有对<code>s</code>进行复制，只是原地遍历。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>RomanNumerals</tag>
       </tags>
   </entry>
   <entry>

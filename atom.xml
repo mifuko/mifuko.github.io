@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mifuko.github.io/"/>
-  <updated>2024-05-20T13:10:23.000Z</updated>
+  <updated>2024-05-21T15:19:52.000Z</updated>
   <id>https://mifuko.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode小抄：15. 3Sum</title>
+    <link href="https://mifuko.github.io/lc5.html"/>
+    <id>https://mifuko.github.io/lc5.html</id>
+    <published>2024-05-21T15:19:52.000Z</published>
+    <updated>2024-05-21T15:19:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><!-- toc --><!-- tocstop --><p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code> such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p><p>Notice that the solution set must not contain duplicate triplets.</p><p><strong>Example 1:</strong></p><p><strong>Input:</strong> nums = [-1,0,1,2,-1,-4]<br><strong>Output:</strong> [[-1,-1,2],[-1,0,1]]<br><strong>Explanation:</strong><br>nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.<br>nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.<br>nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.<br>The distinct triplets are [-1,0,1] and [-1,-1,2].<br>Notice that the order of the output and the order of the triplets does not matter.</p><p><strong>Example 2:</strong></p><p><strong>Input:</strong> nums = [0,1,1]<br><strong>Output:</strong> []<br><strong>Explanation:</strong> The only possible triplet does not sum up to 0.</p><p><strong>Example 3:</strong></p><p><strong>Input:</strong> nums = [0,0,0]<br><strong>Output:</strong> [[0,0,0]]<br><strong>Explanation:</strong> The only possible triplet sums up to 0.</p><p><strong>Constraints:</strong><br>$$<br>3 &lt;= nums.length &lt;= 3000<br>$$<br>$$<br>-10^{5}  &lt;= nums[i] &lt;= 10^{5}<br>$$</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;!-- toc --&gt;
+&lt;!-- tocstop --&gt;
+&lt;p&gt;Given an integer array nums, return all the triplets &lt;code&gt;[nums[i], nums[j], nums[
+      
+    
+    </summary>
+    
+      <category term="leetcode" scheme="https://mifuko.github.io/categories/leetcode/"/>
+    
+    
+      <category term="leetcode" scheme="https://mifuko.github.io/tags/leetcode/"/>
+    
+      <category term="python" scheme="https://mifuko.github.io/tags/python/"/>
+    
+      <category term="sum" scheme="https://mifuko.github.io/tags/sum/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo butterfly让TOC生效</title>
@@ -53,7 +85,7 @@
   </entry>
   
   <entry>
-    <title>leetcode小抄：14. Longest Common Prefix]</title>
+    <title>leetcode小抄：14. Longest Common Prefix</title>
     <link href="https://mifuko.github.io/lc4.html"/>
     <id>https://mifuko.github.io/lc4.html</id>
     <published>2024-05-17T08:01:35.000Z</published>
