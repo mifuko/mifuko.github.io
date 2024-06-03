@@ -1,6 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>IBM Data Analyst Capstone Project-How to Get Data</title>
+    <url>/cagetdata.html</url>
+    <content><![CDATA[<span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#optional-hands-on-lab-1-review-of-accessing-apis">(Optional) Hands-on Lab 1: Review Of Accessing APIs</a>
+<ul>
+<li>[Overview of HTTP<a href="https://jupyterlab-2-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/jupyterlite/files/Module%205/PY0101EN-5.3_Requests_HTTP.ipynb#Overview-of-HTTP"></a>](#overview-of-httphttpsjupyterlab-2-labs-prod-jupyterlab-us-east-0labscognitiveclassaiuserrorokowanglabtreejupyterlitefilesmodule205py0101en-53_requests_httpipynboverview-of-http)</li>
+<li>[Uniform Resource Locator:URL<a href="https://jupyterlab-2-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/jupyterlite/files/Module%205/PY0101EN-5.3_Requests_HTTP.ipynb#Uniform-Resource-Locator:URL"></a>](#uniform-resource-locatorurlhttpsjupyterlab-2-labs-prod-jupyterlab-us-east-0labscognitiveclassaiuserrorokowanglabtreejupyterlitefilesmodule205py0101en-53_requests_httpipynbuniform-resource-locatorurl)</li>
+<li>[Request<a href="https://jupyterlab-2-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/jupyterlite/files/Module%205/PY0101EN-5.3_Requests_HTTP-Copy1.ipynb#Request"></a>](#requesthttpsjupyterlab-2-labs-prod-jupyterlab-us-east-0labscognitiveclassaiuserrorokowanglabtreejupyterlitefilesmodule205py0101en-53_requests_http-copy1ipynbrequest)</li>
+<li>[Response<a href="https://jupyterlab-2-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/jupyterlite/files/Module%205/PY0101EN-5.3_Requests_HTTP-Copy1.ipynb#Response"></a>](#responsehttpsjupyterlab-2-labs-prod-jupyterlab-us-east-0labscognitiveclassaiuserrorokowanglabtreejupyterlitefilesmodule205py0101en-53_requests_http-copy1ipynbresponse)</li>
+<li>[Requests in Python<a href="https://jupyterlab-2-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/jupyterlite/files/Module%205/PY0101EN-5.3_Requests_HTTP-Copy1.ipynb#Requests-in-Python"></a>](#requests-in-pythonhttpsjupyterlab-2-labs-prod-jupyterlab-us-east-0labscognitiveclassaiuserrorokowanglabtreejupyterlitefilesmodule205py0101en-53_requests_http-copy1ipynbrequests-in-python)
+<ul>
+<li>[Question: Download a file <a href="https://jupyterlab-2-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/jupyterlite/files/Module%205/PY0101EN-5.3_Requests_HTTP-Copy1.ipynb#Question:-Download-a-file-"></a>](#question-download-a-file-httpsjupyterlab-2-labs-prod-jupyterlab-us-east-0labscognitiveclassaiuserrorokowanglabtreejupyterlitefilesmodule205py0101en-53_requests_http-copy1ipynbquestion-download-a-file-)</li>
+</ul>
+</li>
+<li>[Get Request with URL Parameters<a href="https://jupyterlab-2-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/jupyterlite/files/Module%205/PY0101EN-5.3_Requests_HTTP-Copy1.ipynb#Get-Request-with-URL-Parameters"></a>](#get-request-with-url-parametershttpsjupyterlab-2-labs-prod-jupyterlab-us-east-0labscognitiveclassaiuserrorokowanglabtreejupyterlitefilesmodule205py0101en-53_requests_http-copy1ipynbget-request-with-url-parameters)</li>
+<li>[Post Requests<a href="https://jupyterlab-2-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/jupyterlite/files/Module%205/PY0101EN-5.3_Requests_HTTP-Copy1.ipynb#Post-Requests"></a>](#post-requestshttpsjupyterlab-2-labs-prod-jupyterlab-us-east-0labscognitiveclassaiuserrorokowanglabtreejupyterlitefilesmodule205py0101en-53_requests_http-copy1ipynbpost-requests)</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<p>作业材料来自：</p>
+<p><a href="https://author-ide.skills.network/render?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZF9pbnN0cnVjdGlvbnNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuczMudXMuY2xvdWQtb2JqZWN0LXN0b3JhZ2UuYXBwZG9tYWluLmNsb3VkL0lCTS1EQTAzMjFFTi1Ta2lsbHNOZXR3b3JrL2xhYnMvbW9kdWxlJTIwMS9BY2Nlc3NpbmclMjBEYXRhJTIwVXNpbmclMjBBUElzL0dpdEh1Yl9Kb2JzX0FQSS5tZCIsInRvb2xfdHlwZSI6Imluc3RydWN0aW9uYWwtbGFiIiwiYWRtaW4iOmZhbHNlLCJpYXQiOjE3MTE0MjYzMjZ9.EnpGxUGQiOEIy9JeYFJCP0DCe9pRoeBnXupyle6QJ2o">VIA LINK</a></p>
+<p>很好，2021年就失效了，所以其实是这个作业给了个要求把github用户状态是hireable的列出来，可能每次最多50个，需要分页</p>
+<h1><span id="optional-hands-on-lab-1-review-of-accessing-apis"> (Optional) Hands-on Lab 1: Review Of Accessing APIs</span></h1>
+<h2><span id="overview-of-http"> Overview of HTTP</span></h2>
+<p>When you, the <strong>client</strong>, use a web page your browser sends an <strong>HTTP</strong> request to the <strong>server</strong> where the page is hosted. The server tries to find the desired <strong>resource</strong> by default &quot;<code>index.html</code>&quot;. If your request is successful, the server will send the object to the client in an <strong>HTTP response</strong>. This includes information like the type of the <strong>resource</strong>, the length of the <strong>resource</strong>, and other information.</p>
+<p>The figure below represents the process. The circle on the left represents the client, the circle on the right represents the Web server. The table under the Web server represents a list of resources stored in the web server. In this case an <code>HTML</code> file, <code>png</code> image, and <code>txt</code> file .</p>
+<p>The <strong>HTTP</strong> protocol allows you to send and receive information through the web including webpages, images, and other web resources. In this lab, we will provide an overview of the Requests library for interacting with the <code>HTTP</code> protocol.</p>
+<h2><span id="uniform-resource-locatorurl"> Uniform Resource Locator:URL</span></h2>
+<p>Uniform resource locator (URL) is the most popular way to find resources on the web. We can break the URL into three parts.</p>
+<ul>
+<li><strong>Scheme</strong>:- This is this protocol, for this lab it will always be <code>http://</code></li>
+<li><strong>Internet address or Base URL</strong> :- This will be used to find the location here are some examples: <code>www.ibm.com</code> and  <code>www.gitlab.com</code></li>
+<li><strong>Route</strong>:- Location on the web server for example: <code>/images/IDSNlogo.png</code></li>
+</ul>
+<p>You may also hear the term Uniform Resource Identifier (URI), URL are actually a subset of URIs. Another popular term is endpoint, this is the URL of an operation provided by a Web server.</p>
+<h2><span id="request"> Request</span></h2>
+<p>The process can be broken into the <strong>Request</strong> and <strong>Response</strong> process. The request using the get method is partially illustrated below. In the start line we have the <code>GET</code> method, this is an <code>HTTP</code> method. Also the location of the resource <code>/index.html</code> and the <code>HTTP</code> version. The Request header passes additional information with an <code>HTTP</code> request:</p>
+<p><img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/images/reqest_messege.png" alt="Image"></p>
+<p>When an <code>HTTP</code> request is made, an <code>HTTP</code> method is sent, this tells the server what action to perform. A list of several <code>HTTP</code> methods is shown below. We will go over more examples later.</p>
+<p><img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/images/http_methods.png" alt="Image"></p>
+<h2><span id="response"> Response</span></h2>
+<p>The figure below represents the response; the response start line contains the version number <code>HTTP/1.0</code>, a status code (200) meaning success, followed by a descriptive phrase (OK). The response header contains useful information. Finally, we have the response body containing the requested file, an  <code>HTML</code> document. It should be noted that some requests have headers.</p>
+<p><img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/images/response_message.png" alt="Image"></p>
+<p>Some status code examples are shown in the table below, the prefix indicates the class. These are shown in yellow, with actual status codes shown in white. Check out the following <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status?utm_medium=Exinfluencer&amp;utm_source=Exinfluencer&amp;utm_content=000026UJ&amp;utm_term=10006555&amp;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01">link</a> for more descriptions.</p>
+<p><img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/images/status_code.png" alt="Image"></p>
+<h2><span id="requests-in-python"> Requests in Python</span></h2>
+<p>Requests is a Python Library that allows you to send <code>HTTP/1.1</code> requests easily.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">url=<span class="string">&#x27;https://www.ibm.com/&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>You can make a <code>GET</code> request via the method <code>get</code> to <a href="http://www.ibm.com/?utm_source=Exinfluencer&amp;utm_content=000026UJ&amp;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01&amp;utm_medium=Exinfluencer&amp;utm_term=10006555">www.ibm.com</a>:
+We have the response object <code>r</code>, this has information about the request, like the status of the request. We can view the status code using the attribute <code>status_code</code>.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = requests.get(url)</span><br><span class="line">r.status_code</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line"><span class="number">200</span></span><br></pre></td></tr></table></figure>
+<p>You can view the request headers:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(r.request.headers)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">&#123;<span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;python-requests/2.29.0&#x27;</span>, <span class="string">&#x27;Accept-Encoding&#x27;</span>: <span class="string">&#x27;gzip, deflate, br&#x27;</span>, <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;*/*&#x27;</span>, <span class="string">&#x27;Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>, <span class="string">&#x27;Cookie&#x27;</span>: <span class="string">&#x27;_abck=1AA0C6F44F5A1ED2C8BBA1F9909636DE~-1~YAAQh2rcF0xOVryPAQAA8VGW3AuljRoJIAep4OMl8gdNpuPAV38dIn7plWWizccjiZorgrigkvF11sUHOt7OHwYw5nDCCXTT2xQuF8cy7ndCWEK/DOX22/GwPci9Jyc4f+qiG0uzVjKiUaXAHdhA876+rjE2HtqEhNvoMG23hP3oX3mVPSpVP7DhcDTUvMfrbzsMYqe8t3QelZePBeBF4QQu7TOB6Le3JuhzQjhmfh1R7lyjfwmjH0KbaqTFP4tt0Fw30euE6ompZ9h0brW+GmGkXMW4dk57bu554CJGePlBVfq6SCqVVwhLUVuC7jVzjMjBCCoYaVSBcxhbGa6JaLkLxlD6f4tnvMZ6Todti/xRt+WJ5R8=~-1~-1~-1; bm_sz=14D566E41C75B101D0F05C73DD101EB1~YAAQh2rcF01OVryPAQAA8VGW3Bf/vZR72epxwrkCjnxKPRYMjIPk/zAQzky9vWvEtPnNAFByk5bw9gHG7JMZlz4RHGdiRI0cxVydzzjmmeb15wtsxdpfrqHJ6N+4kkZ5DcshEYvOQw1SlVTbp8fVzrctiITQdulNE8MaaQDFBoaPipshPSzKr+fVW+4gkOnX4qoIqBp1BRz0lrgdHF2QH8K9aY0kdzGFSEEoV4DlxbP/ggJ4BmiwKf3FRpHtdey9A6wRV22fpvFYEv7yIoqyhOSq1RhWAWd/SH2P+7lKRq6dU/c5/HNBHIZsNkywDHlJadLF6f2k4vWzf08Fpbo9WE7RjGvEXaLov3S9~3159108~3420994&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>You can view the request body, in the following line, as there is no body for a get request we get a <code>None</code>:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;request body:&quot;</span>, r.request.body)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line"><span class="literal">None</span></span><br></pre></td></tr></table></figure>
+<p>You can view the <code>HTTP</code> response header using the attribute <code>headers</code>. This returns a python dictionary of <code>HTTP</code> response headers.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">header=r.headers</span><br><span class="line"><span class="built_in">print</span>(r.headers)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">&#123;<span class="string">&#x27;Content-Security-Policy&#x27;</span>: <span class="string">&#x27;upgrade-insecure-requests&#x27;</span>, <span class="string">&#x27;x-frame-options&#x27;</span>: <span class="string">&#x27;SAMEORIGIN&#x27;</span>, <span class="string">&#x27;Last-Modified&#x27;</span>: <span class="string">&#x27;Mon, 03 Jun 2024 05:28:26 GMT&#x27;</span>, <span class="string">&#x27;ETag&#x27;</span>: <span class="string">&#x27;W/&quot;1b0ec-619f59a47e8aa-gzip&quot;&#x27;</span>, <span class="string">&#x27;Accept-Ranges&#x27;</span>: <span class="string">&#x27;bytes&#x27;</span>, <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;text/html;charset=utf-8&#x27;</span>, <span class="string">&#x27;X-Content-Type-Options&#x27;</span>: <span class="string">&#x27;nosniff&#x27;</span>, <span class="string">&#x27;Cache-Control&#x27;</span>: <span class="string">&#x27;max-age=41&#x27;</span>, <span class="string">&#x27;Expires&#x27;</span>: <span class="string">&#x27;Mon, 03 Jun 2024 05:33:51 GMT&#x27;</span>, <span class="string">&#x27;X-Akamai-Transformed&#x27;</span>: <span class="string">&#x27;9 13826 0 pmb=mTOE,2&#x27;</span>, <span class="string">&#x27;Content-Encoding&#x27;</span>: <span class="string">&#x27;gzip&#x27;</span>, <span class="string">&#x27;Date&#x27;</span>: <span class="string">&#x27;Mon, 03 Jun 2024 05:33:10 GMT&#x27;</span>, <span class="string">&#x27;Content-Length&#x27;</span>: <span class="string">&#x27;14011&#x27;</span>, <span class="string">&#x27;Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>, <span class="string">&#x27;Vary&#x27;</span>: <span class="string">&#x27;Accept-Encoding&#x27;</span>, <span class="string">&#x27;Strict-Transport-Security&#x27;</span>: <span class="string">&#x27;max-age=31536000&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>We can obtain the date the request was sent using the key <code>Date</code>.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">header[<span class="string">&#x27;date&#x27;</span>]</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line"><span class="string">&#x27;Mon, 03 Jun 2024 05:33:10 GMT&#x27;</span></span><br></pre></td></tr></table></figure>
+<p><code>Content-Type</code> indicates the type of data. You can also check the <code>encoding</code>:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">header[<span class="string">&#x27;Content-Type&#x27;</span>]</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line"><span class="string">&#x27;text/html;charset=utf-8&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r.encoding</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line"><span class="string">&#x27;utf-8&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>As the <code>Content-Type</code> is <code>text/html</code> we can use the attribute <code>text</code> to display the <code>HTML</code> in the body. We can review the first 100 characters:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r.text[<span class="number">0</span>:<span class="number">100</span>]</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line"><span class="string">&#x27;\n&lt;!DOCTYPE HTML&gt;\n&lt;html lang=&quot;en-us&quot;&gt;\n&lt;head&gt;\r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    &lt;meta charset=&quot;&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>You can load other types of data for non-text requests, like images. Consider the URL of the following image:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">url = <span class="string">&#x27;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/IDSNlogo.png&#x27;</span></span><br><span class="line">r = requests.get(url)</span><br><span class="line"><span class="built_in">print</span>(r.headers)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">&#123;<span class="string">&#x27;Date&#x27;</span>: <span class="string">&#x27;Mon, 03 Jun 2024 06:27:07 GMT&#x27;</span>, <span class="string">&#x27;X-Clv-Request-Id&#x27;</span>: <span class="string">&#x27;93928bdb-bd39-45f8-9299-6f965a6e00d1&#x27;</span>, <span class="string">&#x27;Server&#x27;</span>: <span class="string">&#x27;Cleversafe&#x27;</span>, <span class="string">&#x27;X-Clv-S3-Version&#x27;</span>: <span class="string">&#x27;2.5&#x27;</span>, <span class="string">&#x27;Accept-Ranges&#x27;</span>: <span class="string">&#x27;bytes&#x27;</span>, <span class="string">&#x27;x-amz-request-id&#x27;</span>: <span class="string">&#x27;93928bdb-bd39-45f8-9299-6f965a6e00d1&#x27;</span>, <span class="string">&#x27;ETag&#x27;</span>: <span class="string">&#x27;&quot;8bb44578fff8fdcc3d2972be9ece0164&quot;&#x27;</span>, <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;image/png&#x27;</span>, <span class="string">&#x27;Last-Modified&#x27;</span>: <span class="string">&#x27;Wed, 16 Nov 2022 03:32:41 GMT&#x27;</span>, <span class="string">&#x27;Content-Length&#x27;</span>: <span class="string">&#x27;78776&#x27;</span>&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>We can see the <code>Content-Type</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r.headers[<span class="string">&#x27;Content-Type&#x27;</span>]</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line"><span class="string">&#x27;image/png&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>An image is a response object that contains the image as a <a href="https://docs.python.org/3/glossary.html?utm_medium=Exinfluencer&amp;utm_source=Exinfluencer&amp;utm_content=000026UJ&amp;utm_term=10006555&amp;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01#term-bytes-like-object">bytes-like object</a>. As a result, we must save it using a file object. First, we specify the file path and name</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">path=os.path.join(os.getcwd(),<span class="string">&#x27;image.png&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>We save the file, in order to access the body of the response we use the attribute <code>content</code> then save it using the <code>open</code> function and write <code>method</code>:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(path,<span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(r.content)</span><br></pre></td></tr></table></figure>
+<p>We can view the image:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Image.<span class="built_in">open</span>(path)</span><br></pre></td></tr></table></figure>
+<h3><span id="question-download-a-file"> Question: Download a file </span></h3>
+<p>Consider the following URL.</p>
+<p><code>URL = &lt;[https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/data/Example1.txt](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/data/Example1.txt)</code></p>
+<p>Write the commands to download the txt file in the given link.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">url=<span class="string">&#x27;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/data/Example1.txt&#x27;</span></span><br><span class="line">path=os.path.join(os.getcwd(),<span class="string">&#x27;example1.txt&#x27;</span>)</span><br><span class="line">r=requests.get(url)</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(path,<span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">     f.write(r.content)</span><br></pre></td></tr></table></figure>
+<h2><span id="get-request-with-url-parameters"> Get Request with URL Parameters</span></h2>
+<p>You can use the <strong>GET</strong> method to modify the results of your query, for example retrieving data from an API. We send a <strong>GET</strong> request to the server. Like before we have the <strong>Base URL</strong>, in the <strong>Route</strong> we append <code>/get</code>, this indicates we would like to preform a <code>GET</code> request. This is demonstrated in the following table:</p>
+<p><img src="https://jupyterlab-5-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/madhusudanm/files/base_URL_Route.png" alt="Image"></p>
+<p>The Base URL is for <code>[http://httpbin.org/](http://httpbin.org/?utm_medium=Exinfluencer&amp;utm_source=Exinfluencer&amp;utm_content=000026UJ&amp;utm_term=10006555&amp;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01)</code> is a simple HTTP Request &amp; Response Service. The <code>URL</code> in Python is given by:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">url_get=<span class="string">&#x27;http://httpbin.org/get&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>A <a href="https://en.wikipedia.org/wiki/Query_string?utm_medium=Exinfluencer&amp;utm_source=Exinfluencer&amp;utm_content=000026UJ&amp;utm_term=10006555&amp;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01">query string</a> is a part of a uniform resource locator (URL), this sends other information to the web server. The start of the query is a <code>?</code>, followed by a series of parameter and value pairs, as shown in the table below. The first parameter name is <code>name</code> and the value is <code>Joseph</code>. The second parameter name is <code>ID</code> and the Value is <code>123</code>. Each pair, parameter, and value is separated by an equals sign, <code>=</code>. The series of pairs is separated by the ampersand <code>&amp;</code>.</p>
+<p><img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%205/images/query_string.png" alt="Image"></p>
+<p>To create a Query string, add a dictionary. The keys are the parameter names and the values are the value of the Query string.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">payload=&#123;<span class="string">&quot;name&quot;</span>:<span class="string">&quot;Joseph&quot;</span>,<span class="string">&quot;ID&quot;</span>:<span class="string">&quot;123&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>Then passing the dictionary <code>payload</code> to the <code>params</code> parameter of the  <code>get()</code> function:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = requests.get(url_get,params=payload)</span><br></pre></td></tr></table></figure>
+<p>We can print out the <code>URL</code> and see the name and values.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r.url</span><br></pre></td></tr></table></figure>
+<p>There is no request body.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;request body:&quot;</span>, r.request.body)</span><br></pre></td></tr></table></figure>
+<p>We can print out the status code.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(r.status_code)</span><br></pre></td></tr></table></figure>
+<p>We can view the response as text:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(r.text)</span><br></pre></td></tr></table></figure>
+<p>We can look at the <code>'Content-Type'</code>.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r.headers[<span class="string">&#x27;Content-Type&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p>As the content <code>'Content-Type'</code> is in the <code>JSON</code> format we can use the method <code>json()</code>, it returns a Python <code>dict</code>:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r.json()</span><br></pre></td></tr></table></figure>
+<p>The key <code>args</code> has the name and values:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r.json()[<span class="string">&#x27;args&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<h2><span id="post-requests"> Post Requests</span></h2>
+<p>Like a <code>GET</code> request, a <code>POST</code> is used to send data to a server, but the <code>POST</code> request sends the data in a request body. In order to send the Post Request in Python, in the <code>URL</code> we change the route to <code>POST</code>:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">url_post=<span class="string">&#x27;http://httpbin.org/post&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>This endpoint will expect data as a file or as a form. A form is convenient way to configure an HTTP request to send data to a server.</p>
+<p>To make a <code>POST</code> request we use the <code>post()</code> function, the variable <code>payload</code> is passed to the parameter  <code>data</code> :</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r_post = requests.post(url_post,data=payload)</span><br></pre></td></tr></table></figure>
+<p>Comparing the URL from the response object of the <code>GET</code> and <code>POST</code> request we see the <code>POST</code> request has no name or value pairs.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;POST request URL:&quot;</span>,r_post.url )</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;GET request URL:&quot;</span>,r.url)</span><br></pre></td></tr></table></figure>
+<p>We can compare the <code>POST</code> and <code>GET</code> request body, we see only the <code>POST</code> request has a body:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;POST request body:&quot;</span>,r_post.request.body)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;GET request body:&quot;</span>,r.request.body)</span><br></pre></td></tr></table></figure>
+<p>We can view the form as well:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r_post.json()[<span class="string">&#x27;form&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p>There is a lot more you can do. Check out <a href="https://requests.readthedocs.io/en/master/?utm_medium=Exinfluencer&amp;utm_source=Exinfluencer&amp;utm_content=000026UJ&amp;utm_term=10006555&amp;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkPY0101ENSkillsNetwork19487395-2021-01-01">Requests</a> for more.</p>
+]]></content>
+      <categories>
+        <category>coursera</category>
+      </categories>
+      <tags>
+        <tag>DataAnalysis</tag>
+        <tag>coursera</tag>
+        <tag>github</tag>
+        <tag>IBM</tag>
+        <tag>request</tag>
+        <tag>response</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo升级后用butterfly新主题替换next旧主题</title>
     <url>/butterfly2next.html</url>
     <content><![CDATA[<p><img src="https://s2.loli.net/2024/03/06/PzdmfJxOqZMkS9i.png" alt="Pasted image 20240305054228.png"></p>
@@ -74,8 +208,8 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>github</tag>
+        <tag>hexo</tag>
         <tag>butterfly</tag>
         <tag>next</tag>
         <tag>npm</tag>
@@ -234,6 +368,34 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo butterfly美化之更换字体思源宋体</title>
+    <url>/hbfont.html</url>
+    <content><![CDATA[<p>为了思源宋体，做了很多配置，以至于不知道哪个生效了，且作参考吧（。</p>
+<h1><span id="准备font"> 准备font</span></h1>
+<p>在<code>D:\nodejs\hexo\themes\butterfly\source</code>
+的目录下新建<code>font</code></p>
+<p>因为思源黑体，很难找到TTF格式，所幸有大佬已经做完了，快港声多谢Tiac哥</p>
+<p><a href="https://www.cnblogs.com/tujia/p/15102730.html">思源黑体CN 思源宋体CN TTF 及 字段瘦身 - Tiac - 博客园</a></p>
+<p>还有这几位</p>
+<p><a href="https://www.v2ex.com/t/399030">思源黑体、思源宋体的 TTF 版本 - V2EX</a></p>
+<p>于是把tff放进font</p>
+<h1><span id="写css"> 写CSS</span></h1>
+<p>在<code>D:\nodejs\hexo\themes\butterfly\source\css/</code>下创建<code>font.css</code>，我感觉这段就没用上</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Noto Serif SC&#x27;</span>;</span><br><span class="line">    <span class="attribute">font-display</span>: swap;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;../font/SourceHanSerifCN-Regular.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;JetBrains Mono&#x27;</span>,<span class="string">&#x27;HarmonyOS Sans SC&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1><span id="改varstyle"> 改var.style</span></h1>
+<p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code>下修改<code>var.style</code>
+主要修改<code>font-family</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$</span><span class="language-bash">dafault-font-family = <span class="string">&#x27;Noto Serif SC&#x27;</span>, serif</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo部署完博客查看google是否收录github pages</title>
     <url>/gooio.html</url>
     <content><![CDATA[<p>参考文档来自</p>
@@ -260,67 +422,9 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>github</tag>
+        <tag>hexo</tag>
         <tag>google</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo butterfly美化之换背景和页脚</title>
-    <url>/hbbgnfooter.html</url>
-    <content><![CDATA[<h1><span id="页脚"> 页脚</span></h1>
-<h2><span id="写css"> 写css</span></h2>
-<p>在路径<code>D:\nodejs\hexo\themes\butterfly\source\css</code>
-下新建一个文件<code>background.css</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* footer样式 */</span></span><br><span class="line"><span class="selector-id">#footer</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="comment">/* background: #fff url(&quot;/images/footer.jpg&quot;); */</span></span><br><span class="line">    <span class="comment">/* opacity: 0.3; */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">    <span class="comment">/* color: var(--light-grey); */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#49b1f5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1><span id="背景"> 背景</span></h1>
-<h2><span id="写css"> 写css</span></h2>
-<p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code>
-下新建一个<code>background.css</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#web_bg</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&quot;https://s2.loli.net/2024/03/07/KHV7dD18gFp6YiW.jpg&quot;</span>);</span><br><span class="line">	<span class="attribute">background-repeat</span>: repeat;</span><br><span class="line">	<span class="attribute">background-size</span>: cover;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2><span id="引入css"> 引入css</span></h2>
-<p>修改配置文件<code>_config.butterfly.yml</code>的引入方式</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/background.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
-<h2><span id="没有生效再改_configbutterflyyml"> 没有生效，再改<code>_config.butterfly.yml</code></span></h2>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Website Background (設置網站背景)</span></span><br><span class="line"><span class="comment"># can set it to color or image (可設置圖片 或者 顔色)</span></span><br><span class="line"><span class="comment"># The formal of image: url(http://xxxxxx.com/xxx.jpg)</span></span><br><span class="line"><span class="attr">background:</span> <span class="string">&#x27;#efefef&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>参考文档在这里
-<a href="https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer">https://hr-insist.github.io/Hexo/关于我的Butterfly主题的所有优化/#footer</a></p>
-]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>butterfly</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo butterfly美化之更换字体思源宋体</title>
-    <url>/hbfont.html</url>
-    <content><![CDATA[<p>为了思源宋体，做了很多配置，以至于不知道哪个生效了，且作参考吧（。</p>
-<h1><span id="准备font"> 准备font</span></h1>
-<p>在<code>D:\nodejs\hexo\themes\butterfly\source</code>
-的目录下新建<code>font</code></p>
-<p>因为思源黑体，很难找到TTF格式，所幸有大佬已经做完了，快港声多谢Tiac哥</p>
-<p><a href="https://www.cnblogs.com/tujia/p/15102730.html">思源黑体CN 思源宋体CN TTF 及 字段瘦身 - Tiac - 博客园</a></p>
-<p>还有这几位</p>
-<p><a href="https://www.v2ex.com/t/399030">思源黑体、思源宋体的 TTF 版本 - V2EX</a></p>
-<p>于是把tff放进font</p>
-<h1><span id="写css"> 写CSS</span></h1>
-<p>在<code>D:\nodejs\hexo\themes\butterfly\source\css/</code>下创建<code>font.css</code>，我感觉这段就没用上</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Noto Serif SC&#x27;</span>;</span><br><span class="line">    <span class="attribute">font-display</span>: swap;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;../font/SourceHanSerifCN-Regular.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;JetBrains Mono&#x27;</span>,<span class="string">&#x27;HarmonyOS Sans SC&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1><span id="改varstyle"> 改var.style</span></h1>
-<p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code>下修改<code>var.style</code>
-主要修改<code>font-family</code></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">$</span><span class="language-bash">dafault-font-family = <span class="string">&#x27;Noto Serif SC&#x27;</span>, serif</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>butterfly</tag>
       </tags>
   </entry>
   <entry>
@@ -352,8 +456,8 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>github</tag>
+        <tag>hexo</tag>
         <tag>butterfly</tag>
       </tags>
   </entry>
@@ -370,8 +474,38 @@
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>github</tag>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo butterfly美化之换背景和页脚</title>
+    <url>/hbbgnfooter.html</url>
+    <content><![CDATA[<h1><span id="页脚"> 页脚</span></h1>
+<h2><span id="写css"> 写css</span></h2>
+<p>在路径<code>D:\nodejs\hexo\themes\butterfly\source\css</code>
+下新建一个文件<code>background.css</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* footer样式 */</span></span><br><span class="line"><span class="selector-id">#footer</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="comment">/* background: #fff url(&quot;/images/footer.jpg&quot;); */</span></span><br><span class="line">    <span class="comment">/* opacity: 0.3; */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> &#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">    <span class="comment">/* color: var(--light-grey); */</span></span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#footer-wrap</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#49b1f5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1><span id="背景"> 背景</span></h1>
+<h2><span id="写css"> 写css</span></h2>
+<p>在<code>D:\nodejs\hexo\themes\butterfly\source\css</code>
+下新建一个<code>background.css</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#web_bg</span> &#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&quot;https://s2.loli.net/2024/03/07/KHV7dD18gFp6YiW.jpg&quot;</span>);</span><br><span class="line">	<span class="attribute">background-repeat</span>: repeat;</span><br><span class="line">	<span class="attribute">background-size</span>: cover;</span><br><span class="line">	<span class="attribute">opacity</span>: <span class="number">0.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2><span id="引入css"> 引入css</span></h2>
+<p>修改配置文件<code>_config.butterfly.yml</code>的引入方式</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;/css/background.css&quot;&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="comment"># - &lt;script src=&quot;xxxx&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h2><span id="没有生效再改_configbutterflyyml"> 没有生效，再改<code>_config.butterfly.yml</code></span></h2>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Website Background (設置網站背景)</span></span><br><span class="line"><span class="comment"># can set it to color or image (可設置圖片 或者 顔色)</span></span><br><span class="line"><span class="comment"># The formal of image: url(http://xxxxxx.com/xxx.jpg)</span></span><br><span class="line"><span class="attr">background:</span> <span class="string">&#x27;#efefef&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>参考文档在这里
+<a href="https://hr-insist.github.io/Hexo/%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84Butterfly%E4%B8%BB%E9%A2%98%E7%9A%84%E6%89%80%E6%9C%89%E4%BC%98%E5%8C%96/#footer">https://hr-insist.github.io/Hexo/关于我的Butterfly主题的所有优化/#footer</a></p>
+]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>hexo</tag>
         <tag>butterfly</tag>
       </tags>
   </entry>
@@ -403,109 +537,6 @@
         <tag>hexo</tag>
         <tag>butterfly</tag>
         <tag>font</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo butterfly让TOC生效</title>
-    <url>/hexotoc.html</url>
-    <content><![CDATA[<span id="more"></span>
-<!-- toc -->
-<ul>
-<li><a href="#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6">安装插件</a></li>
-<li><a href="#%E5%8A%A0%E5%85%A5%E7%9B%AE%E5%BD%95">加入目录</a></li>
-</ul>
-<!-- tocstop -->
-<p>习惯typora的TOC，发现hexo butterfly的侧边栏不太一样，这里没有，新加一个插件</p>
-<h2><span id="安装插件"> 安装插件</span></h2>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-toc --save</span><br></pre></td></tr></table></figure>
-<h2><span id="加入目录"> 加入目录</span></h2>
-<p>带展开的，在每篇文章开头加上</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>toc</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>leetcode小抄：9. Palindrome Number</title>
-    <url>/lc2.html</url>
-    <content><![CDATA[<span id="more"></span>
-<!-- toc -->
-<ul>
-<li><a href="#solution-1-%E7%AC%A8%E8%9B%8B%E6%96%B9%E6%B3%95">solution 1 笨蛋方法</a></li>
-<li><a href="#solution-2-%E8%81%AA%E6%98%8E%E6%96%B9%E6%B3%95">solution 2 聪明方法</a></li>
-<li><a href="#exploration-%E4%B8%8D%E8%BD%AC%E6%8D%A2%E6%88%90%E5%AD%97%E7%AC%A6%E4%B8%B2">exploration 不转换成字符串</a>
-<ul>
-<li><a href="#%E5%85%B3%E9%94%AE%E5%8F%A5">关键句</a></li>
-<li><a href="#%E6%A0%B8%E5%BF%83%E6%80%9D%E8%B7%AF">核心思路</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-<p>“level”、“radar”、“Kayak”、“Madam”、“Racecar”、“Noon”和“12321”都是回文
-9. Palindrome Number
-Given an integer x, return true if x is a palindrome, and false otherwise.</p>
-<p>Example 1:</p>
-<p>Input: x = 121
-Output: true
-Explanation: 121 reads as 121 from left to right and from right to left.
-Example 2:</p>
-<p>Input: x = -121
-Output: false
-Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
-Example 3:</p>
-<p>Input: x = 10
-Output: false
-Explanation: Reads 01 from right to left. Therefore it is not a palindrome.</p>
-<p>Constraints:</p>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><msup><mn>2</mn><mn>31</mn></msup><mo>&lt;</mo><mo>=</mo><mi>x</mi><mo>&lt;</mo><mo>=</mo><msup><mn>2</mn><mn>31</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
--2^{31} &lt;= x &lt;= 2^{31} - 1
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></p>
-<h2><span id="solution-1-笨蛋方法"> solution 1 笨蛋方法</span></h2>
-<p>转换成字符串一个个比较，负数一定不是回文，再判断正数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="comment"># Check if the number is negative, which cannot be a palindrome</span></span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Convert the integer to a string</span></span><br><span class="line">        str_x = <span class="built_in">str</span>(x)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Initialize pointers for the start and end of the string</span></span><br><span class="line">        left, right = <span class="number">0</span>, <span class="built_in">len</span>(str_x) - <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Loop until the pointers meet in the middle</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            <span class="comment"># If the characters at the current pointers don&#x27;t match, it&#x27;s not a palindrome</span></span><br><span class="line">            <span class="keyword">if</span> str_x[left] != str_x[right]:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="comment"># Move the pointers towards the center</span></span><br><span class="line">            left += <span class="number">1</span></span><br><span class="line">            right -= <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># If all checks pass, it&#x27;s a palindrome</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
-<p>其中</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">left, right = <span class="number">0</span>, <span class="built_in">len</span>(str_x) - <span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p>用来初始化两个变量left和right的赋值语句</p>
-<p><code>left = 0</code>: 这表示开始时，左侧的指针（或索引）left位于字符串的最左边，即字符串的第一个字符的位置。在Python中，字符串的索引是从0开始的，所以第一个字符的索引是0。</p>
-<p><code>right = len(str_x) - 1</code>: 这表示右侧的指针（或索引）right最初指向字符串的最右边的字符。len(str_x)获取字符串str_x的长度，然后减一，是因为索引是从0开始的，所以一个长度为n的字符串的最后一个字符的索引是n-1。</p>
-<p>在循环中，比较<code>str_x[left]</code>和<code>str_x[right]</code>这两个位置的字符是否相同，随着循环的进行，left会逐渐增加，right会逐渐减少，直到它们相遇或者交错，从而完成对整个字符串是否为回文的检查。</p>
-<h2><span id="solution-2-聪明方法"> solution 2 聪明方法</span></h2>
-<p>直接用字符串的切片功能</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="comment"># 将整数x转换为字符串y</span></span><br><span class="line">        y = <span class="built_in">str</span>(x)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 使用字符串切片功能 [::-1] 来翻转字符串y，得到z</span></span><br><span class="line">        <span class="comment"># 字符串切片语法 [start:end:step] 中，当step为-1时，会从右向左提取字符，实现反转</span></span><br><span class="line">        z = y[::-<span class="number">1</span>]</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 比较原字符串y和翻转后的字符串z是否相等</span></span><br><span class="line">        <span class="keyword">if</span> y == z:</span><br><span class="line">            <span class="comment"># 如果相等，说明x是一个回文数，返回True</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># 如果不相等，说明x不是一个回文数，返回False</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用字符串，切片</span></span><br></pre></td></tr></table></figure>
-<h2><span id="exploration-不转换成字符串"> exploration 不转换成字符串</span></h2>
-<p>Follow up: Could you solve it without converting the integer to a string?</p>
-<p>利用数学运算逐步比较数字的前后部分，构建翻转数字</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:  <span class="comment"># 负数不是回文数</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        original_x = x</span><br><span class="line">        reversed_x = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> x &gt; <span class="number">0</span>:</span><br><span class="line">            <span class="comment"># 提取最低位数字并添加到反转数的末尾</span></span><br><span class="line">            reversed_x = (reversed_x * <span class="number">10</span>) + (x % <span class="number">10</span>)</span><br><span class="line">            <span class="comment"># 移除x的最低位</span></span><br><span class="line">            x //= <span class="number">10</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 比较原数和反转后的数是否相等</span></span><br><span class="line">        <span class="keyword">return</span> original_x == reversed_x</span><br></pre></td></tr></table></figure>
-<h3><span id="关键句"> 关键句</span></h3>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">reversed_x = (reversed_x * <span class="number">10</span>) + (x % <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
-<p>假设我们有一个整数 x，我们的目标是得到它的翻转版本，记作<code> reversed_x</code>。</p>
-<p><code>x % 10</code>：这一步是取 x 的个位数。<code>% </code>是取余运算符，<code>x % 10 </code>的结果就是 x 除以 10 后的余数，对于任何整数 x，这都将给出其个位上的数字。</p>
-<p><code>(reversed_x * 10) + ...</code>：在开始时，<code>reversed_x</code> 通常初始化为 0。每次循环中，我们先将 <code>reversed_x</code> 左移一位（等效于乘以 10），为添加新的数字到其个位上做准备。</p>
-<p><code>+ (x % 10)</code>：然后，将当前 x 的个位数加到 <code>reversed_x</code> 的末尾。这样逐步构建了 x 翻转后的数字。</p>
-<h3><span id="核心思路"> 核心思路</span></h3>
-<p><strong>1、逐位访问的需求：</strong>
-要反转一个整数，我们需要逐位访问它，这意味着从最低位（个位）开始，一直到最高位。但是，在大多数编程语言中，直接访问整数的某一位并不直接支持，所以我们需要间接方法。</p>
-<p><strong>2、取模运算<code>（%）</code>和整除运算<code>（//）</code>的利用：</strong></p>
-<ul>
-<li>取模运算（%）：<code>x % 10</code> 可以得到 x 的个位数。这是因为任何整数除以10的余数就是它的个位数。</li>
-<li>整除运算（//）：<code>x //= 10</code> 可以去掉 x 的个位数。这实际上是对 x 进行了右移操作，相当于抛弃了当前的个位数，让 x 变成只有高位数字的数。</li>
-</ul>
-<p><strong>3、数字构建：</strong>
-为了构建反转数，每次循环我们都需要把当前的最低位数加到已构建数的末尾。由于数字是以十进制表示的，每向左移动一位，数值就相当于乘以10。因此，我们先将已构建的反转数乘以10，再加当前的最低位数，就能正确地将新位数放置到反转数的末尾。</p>
-<p><strong>4、循环终止条件：</strong>
-选择 <code>while x &gt; 0</code>作为循环终止条件是因为一旦 x 变为0，说明所有的位都已经被处理过了，没有剩余的位需要反转。这也是自然数（正整数）在逐位处理后必然会达到的状态。</p>
-]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>leetcode</tag>
-        <tag>palindrome</tag>
       </tags>
   </entry>
   <entry>
@@ -662,7 +693,7 @@ M             1000</p>
 <p>定义了一个映射表<code>roman_to_int_map</code>，用于快速查找每个罗马数字字符对应的整数值。然后，通过遍历输入的罗马数字字符串，逐个字符进行处理。</p>
 <p>对于每一个字符，先获取其对应的整数值，如果这个值大于前一个字符的值（表明可能涉及到减法规则），则从总结果中减去两倍的前一个值再加当前值（这样做是为了抵消之前加上去的前一个值，并加上当前值）。否则，直接加上当前值。</p>
 <p>在每次迭代后，更新 <code>prev_value</code> 为当前值，以便于下一次迭代时进行比较。最后返回累加的结果 result 即可。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">romanToInt</span>(<span class="params">self, s</span>):</span><br><span class="line"><span class="comment"># 定义一个字典来映射每个罗马数字字符到其对应的整数值</span></span><br><span class="line">        roman_to_int_map = &#123;</span><br><span class="line">            <span class="string">&#x27;I&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">            <span class="string">&#x27;V&#x27;</span>: <span class="number">5</span>,</span><br><span class="line">            <span class="string">&#x27;X&#x27;</span>: <span class="number">10</span>,</span><br><span class="line">            <span class="string">&#x27;L&#x27;</span>: <span class="number">50</span>,</span><br><span class="line">            <span class="string">&#x27;C&#x27;</span>: <span class="number">100</span>,</span><br><span class="line">            <span class="string">&#x27;D&#x27;</span>: <span class="number">500</span>,</span><br><span class="line">            <span class="string">&#x27;M&#x27;</span>: <span class="number">1000</span></span><br><span class="line">        &#125;</span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        prev_value = <span class="number">0</span>  <span class="comment"># 用于存储前一个字符对应的整数值</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> char <span class="keyword">in</span> s:</span><br><span class="line">            current_value = roman_to_int_map[char]  <span class="comment"># 当前字符对应的整数值</span></span><br><span class="line">            <span class="comment"># 如果当前值小于前一个值，说明需要减去这个值（如 IV = 4）</span></span><br><span class="line">            <span class="keyword">if</span> current_value &gt; prev_value:</span><br><span class="line">                result += current_value - <span class="number">2</span> * prev_value</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                result += current_value</span><br><span class="line">            prev_value = current_value  <span class="comment"># 更新前一个值</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">romanToInt</span>(<span class="params">self, s</span>):</span><br><span class="line"><span class="comment"># 定义一个字典来映射每个罗马数字字符到其对应的整数值</span></span><br><span class="line">        roman_to_int_map = &#123;</span><br><span class="line">            <span class="string">&#x27;I&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">            <span class="string">&#x27;V&#x27;</span>: <span class="number">5</span>,</span><br><span class="line">            <span class="string">&#x27;X&#x27;</span>: <span class="number">10</span>,</span><br><span class="line">            <span class="string">&#x27;L&#x27;</span>: <span class="number">50</span>,</span><br><span class="line">            <span class="string">&#x27;C&#x27;</span>: <span class="number">100</span>,</span><br><span class="line">            <span class="string">&#x27;D&#x27;</span>: <span class="number">500</span>,</span><br><span class="line">            <span class="string">&#x27;M&#x27;</span>: <span class="number">1000</span></span><br><span class="line">        &#125;</span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        prev_value = <span class="number">0</span>  <span class="comment"># 用于存储前一个字符对应的整数值</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> char <span class="keyword">in</span> s:   <span class="comment"># 这一行开始遍历输入的罗马数字字符串s中的每一个字符。</span></span><br><span class="line">            current_value = roman_to_int_map[char]  <span class="comment"># 获取当前字符char对应的整数值</span></span><br><span class="line">            <span class="comment"># 如果当前值小于前一个值，说明需要减去这个值（如 IV = 4）需要从总和result中减去两倍的prev_value（因为前面已经加过一次prev_value），然后再加一次current_value。例如，遇到IV时，current_value是5，prev_value是1，执行result += current_value - 2 * prev_value实际上是result += 5 - 2*1 = 3，实现了从I（1）减去的效果，最终得到4。</span></span><br><span class="line">            <span class="keyword">if</span> current_value &gt; prev_value:</span><br><span class="line">                result += current_value - <span class="number">2</span> * prev_value</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># 如果current_value &lt;= prev_value，表示正常累加情况，如III（3）或XX（20），直接将current_value加到结果上。</span></span><br><span class="line">                result += current_value</span><br><span class="line">            prev_value = current_value  <span class="comment"># 更新前一个值</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"><span class="comment"># 遍历完整个字符串后，return result返回累加得到的整数值，即罗马数字转换成的整数结果。</span></span><br></pre></td></tr></table></figure>
 <h2><span id="solution-2-笨蛋方法优化版"> solution 2 笨蛋方法优化版</span></h2>
 <p>不临时判断，直接增加字典里面的对应关系</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">romanToInt</span>(<span class="params">self, s: <span class="built_in">str</span></span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="comment"># 定义罗马数字到整数的映射，同时处理减法规则</span></span><br><span class="line">        roman_values = &#123;</span><br><span class="line">            <span class="string">&#x27;I&#x27;</span>: <span class="number">1</span>,</span><br><span class="line">            <span class="string">&#x27;V&#x27;</span>: <span class="number">5</span>,</span><br><span class="line">            <span class="string">&#x27;X&#x27;</span>: <span class="number">10</span>,</span><br><span class="line">            <span class="string">&#x27;L&#x27;</span>: <span class="number">50</span>,</span><br><span class="line">            <span class="string">&#x27;C&#x27;</span>: <span class="number">100</span>,</span><br><span class="line">            <span class="string">&#x27;D&#x27;</span>: <span class="number">500</span>,</span><br><span class="line">            <span class="string">&#x27;M&#x27;</span>: <span class="number">1000</span>,</span><br><span class="line">            <span class="string">&#x27;IV&#x27;</span>: <span class="number">4</span>,</span><br><span class="line">            <span class="string">&#x27;IX&#x27;</span>: <span class="number">9</span>,</span><br><span class="line">            <span class="string">&#x27;XL&#x27;</span>: <span class="number">40</span>,</span><br><span class="line">            <span class="string">&#x27;XC&#x27;</span>: <span class="number">90</span>,</span><br><span class="line">            <span class="string">&#x27;CD&#x27;</span>: <span class="number">400</span>,</span><br><span class="line">            <span class="string">&#x27;CM&#x27;</span>: <span class="number">900</span></span><br><span class="line">        &#125;</span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> i &lt; <span class="built_in">len</span>(s):</span><br><span class="line">            <span class="comment"># 首先检查是否有特殊的两位数减法规则</span></span><br><span class="line">            <span class="keyword">if</span> i + <span class="number">1</span> &lt; <span class="built_in">len</span>(s) <span class="keyword">and</span> s[i:i+<span class="number">2</span>] <span class="keyword">in</span> roman_values:</span><br><span class="line">                result += roman_values[s[i:i+<span class="number">2</span>]]</span><br><span class="line">                i += <span class="number">2</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                result += roman_values[s[i]]</span><br><span class="line">                i += <span class="number">1</span></span><br><span class="line">                </span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -767,105 +798,81 @@ M             1000</p>
       </tags>
   </entry>
   <entry>
-    <title>leetcode小抄：15. 3Sum</title>
-    <url>/lc5.html</url>
+    <title>leetcode小抄：9. Palindrome Number</title>
+    <url>/lc2.html</url>
     <content><![CDATA[<span id="more"></span>
 <!-- toc -->
 <ul>
-<li><a href="#solution-1-%E7%AC%A8%E8%9B%8B%E6%96%B9%E6%B3%95">solution 1 笨蛋方法</a>
+<li><a href="#solution-1-%E7%AC%A8%E8%9B%8B%E6%96%B9%E6%B3%95">solution 1 笨蛋方法</a></li>
+<li><a href="#solution-2-%E8%81%AA%E6%98%8E%E6%96%B9%E6%B3%95">solution 2 聪明方法</a></li>
+<li><a href="#exploration-%E4%B8%8D%E8%BD%AC%E6%8D%A2%E6%88%90%E5%AD%97%E7%AC%A6%E4%B8%B2">exploration 不转换成字符串</a>
 <ul>
-<li><a href="#%E5%A4%8D%E6%9D%82%E5%BA%A6">复杂度</a></li>
-</ul>
-</li>
-<li><a href="#solution-2-%E8%81%AA%E6%98%8E%E6%96%B9%E6%B3%95">solution 2 聪明方法</a>
-<ul>
+<li><a href="#%E5%85%B3%E9%94%AE%E5%8F%A5">关键句</a></li>
 <li><a href="#%E6%A0%B8%E5%BF%83%E6%80%9D%E8%B7%AF">核心思路</a></li>
-<li><a href="#%E5%A4%8D%E6%9D%82%E5%BA%A6-1">复杂度</a></li>
 </ul>
 </li>
 </ul>
 <!-- tocstop -->
-<p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code> such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p>
-<p>Notice that the solution set must not contain duplicate triplets.</p>
-<p><strong>Example 1:</strong></p>
-<p><strong>Input:</strong> nums = [-1,0,1,2,-1,-4]
-<strong>Output:</strong> [[-1,-1,2],[-1,0,1]]
-<strong>Explanation:</strong>
-nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
-nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
-nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
-The distinct triplets are [-1,0,1] and [-1,-1,2].
-Notice that the order of the output and the order of the triplets does not matter.</p>
-<p><strong>Example 2:</strong></p>
-<p><strong>Input:</strong> nums = [0,1,1]
-<strong>Output:</strong> []
-<strong>Explanation:</strong> The only possible triplet does not sum up to 0.</p>
-<p><strong>Example 3:</strong></p>
-<p><strong>Input:</strong> nums = [0,0,0]
-<strong>Output:</strong> [[0,0,0]]
-<strong>Explanation:</strong> The only possible triplet sums up to 0.</p>
-<p><strong>Constraints:</strong></p>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>&lt;</mo><mo>=</mo><mi>n</mi><mi>u</mi><mi>m</mi><mi>s</mi><mi mathvariant="normal">.</mi><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi><mo>&lt;</mo><mo>=</mo><mn>3000</mn></mrow><annotation encoding="application/x-tex">
-3 &lt;= nums.length &lt;= 3000
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68354em;vertical-align:-0.0391em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mord mathnormal">s</span><span class="mord">.</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>1</mn><msup><mn>0</mn><mn>5</mn></msup><mo>&lt;</mo><mo>=</mo><mi>n</mi><mi>u</mi><mi>m</mi><mi>s</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo>&lt;</mo><mo>=</mo><mn>1</mn><msup><mn>0</mn><mn>5</mn></msup></mrow><annotation encoding="application/x-tex">
--10^{5}  &lt;= nums[i] &lt;= 10^{5}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mord mathnormal">s</span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>“level”、“radar”、“Kayak”、“Madam”、“Racecar”、“Noon”和“12321”都是回文
+9. Palindrome Number
+Given an integer x, return true if x is a palindrome, and false otherwise.</p>
+<p>Example 1:</p>
+<p>Input: x = 121
+Output: true
+Explanation: 121 reads as 121 from left to right and from right to left.
+Example 2:</p>
+<p>Input: x = -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+Example 3:</p>
+<p>Input: x = 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome.</p>
+<p>Constraints:</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><msup><mn>2</mn><mn>31</mn></msup><mo>&lt;</mo><mo>=</mo><mi>x</mi><mo>&lt;</mo><mo>=</mo><msup><mn>2</mn><mn>31</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+-2^{31} &lt;= x &lt;= 2^{31} - 1
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></p>
 <h2><span id="solution-1-笨蛋方法"> solution 1 笨蛋方法</span></h2>
-<p>确保能够正确处理包含多个0的情况以及能够找到所有可能的三元组组合，而不仅仅是和为0的直接相反数情况。关键在于全面地遍历并利用哈希表来记录和检查元素，同时处理特殊情况。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        nums.sort()</span><br><span class="line">        result = []</span><br><span class="line">        n = <span class="built_in">len</span>(nums)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> n &lt; <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">return</span> []</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 特殊情况处理：数组中只包含0的情况</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">set</span>(nums) == &#123;<span class="number">0</span>&#125; <span class="keyword">and</span> n &gt;= <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">return</span> [[<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>]]</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n - <span class="number">2</span>):</span><br><span class="line">            <span class="comment"># 跳过重复的元素</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span> <span class="keyword">and</span> nums[i] == nums[i - <span class="number">1</span>]:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> nums[i] &gt; <span class="number">0</span>:  <span class="comment"># 数组已经排序，如果当前元素大于0，则后续元素也大于0，不可能使和为0</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            </span><br><span class="line">            left, right = i + <span class="number">1</span>, n - <span class="number">1</span></span><br><span class="line">            <span class="keyword">while</span> left &lt; right:</span><br><span class="line">                current_sum = nums[i] + nums[left] + nums[right]</span><br><span class="line">                <span class="keyword">if</span> current_sum == <span class="number">0</span>:</span><br><span class="line">                    <span class="comment"># 对于当前nums[i]，找到一组解，先添加</span></span><br><span class="line">                    result.append([nums[i], nums[left], nums[right]])</span><br><span class="line">                    <span class="comment"># 跳过重复的nums[left]和nums[right]</span></span><br><span class="line">                    <span class="keyword">while</span> left &lt; right <span class="keyword">and</span> nums[left] == nums[left + <span class="number">1</span>]:</span><br><span class="line">                        left += <span class="number">1</span></span><br><span class="line">                    <span class="keyword">while</span> left &lt; right <span class="keyword">and</span> nums[right] == nums[right - <span class="number">1</span>]:</span><br><span class="line">                        right -= <span class="number">1</span></span><br><span class="line">                    <span class="comment"># 移动指针</span></span><br><span class="line">                    left += <span class="number">1</span></span><br><span class="line">                    right -= <span class="number">1</span></span><br><span class="line">                <span class="keyword">elif</span> current_sum &lt; <span class="number">0</span>:</span><br><span class="line">                    left += <span class="number">1</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    right -= <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 去重</span></span><br><span class="line">        unique_results = []</span><br><span class="line">        <span class="keyword">for</span> triplet <span class="keyword">in</span> result:</span><br><span class="line">            <span class="keyword">if</span> triplet <span class="keyword">not</span> <span class="keyword">in</span> unique_results:</span><br><span class="line">                unique_results.append(triplet)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> unique_results</span><br></pre></td></tr></table></figure>
-<h3><span id="复杂度"> 复杂度</span></h3>
-<ul>
-<li><strong>时间复杂度：</strong></li>
-</ul>
-<p>此实现中，首先进行了排序，排序的时间复杂度是O(n log n)。之后是两层循环，外层循环是n次，内层循环在最坏情况下也是n次，但因为有跳过重复元素的逻辑，实际次数会少一些。然而，最内层还涉及了查找target - nums[j]是否在剩余数组中的操作，这在最坏情况下也是O(n)。因此，总体时间复杂度接近但略高于O(n^2)。准确地说，由于排序的存在，最终的时间复杂度应考虑为O(n log n + n<sup>2)，但通常排序的代价在大n下占主导，所以可以粗略估计为O(n</sup>2)。</p>
-<ul>
-<li><strong>空间复杂度：</strong></li>
-</ul>
-<p>此实现中，除了输入数组外，主要额外空间消耗来自于结果列表res，其最坏情况下可能存储n/3个三元组（如果数组中所有元素满足条件的话），因此空间复杂度为O(n)。</p>
+<p>转换成字符串一个个比较，负数一定不是回文，再判断正数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="comment"># Check if the number is negative, which cannot be a palindrome</span></span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Convert the integer to a string</span></span><br><span class="line">        str_x = <span class="built_in">str</span>(x)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Initialize pointers for the start and end of the string</span></span><br><span class="line">        left, right = <span class="number">0</span>, <span class="built_in">len</span>(str_x) - <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># Loop until the pointers meet in the middle</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            <span class="comment"># If the characters at the current pointers don&#x27;t match, it&#x27;s not a palindrome</span></span><br><span class="line">            <span class="keyword">if</span> str_x[left] != str_x[right]:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="comment"># Move the pointers towards the center</span></span><br><span class="line">            left += <span class="number">1</span></span><br><span class="line">            right -= <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># If all checks pass, it&#x27;s a palindrome</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<p>其中</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">left, right = <span class="number">0</span>, <span class="built_in">len</span>(str_x) - <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>用来初始化两个变量left和right的赋值语句</p>
+<p><code>left = 0</code>: 这表示开始时，左侧的指针（或索引）left位于字符串的最左边，即字符串的第一个字符的位置。在Python中，字符串的索引是从0开始的，所以第一个字符的索引是0。</p>
+<p><code>right = len(str_x) - 1</code>: 这表示右侧的指针（或索引）right最初指向字符串的最右边的字符。len(str_x)获取字符串str_x的长度，然后减一，是因为索引是从0开始的，所以一个长度为n的字符串的最后一个字符的索引是n-1。</p>
+<p>在循环中，比较<code>str_x[left]</code>和<code>str_x[right]</code>这两个位置的字符是否相同，随着循环的进行，left会逐渐增加，right会逐渐减少，直到它们相遇或者交错，从而完成对整个字符串是否为回文的检查。</p>
 <h2><span id="solution-2-聪明方法"> solution 2 聪明方法</span></h2>
-<p>双指针法（Two Pointer Technique）是一种在数组或列表中寻找满足特定条件的元素对（或元素组合）的高效算法思想，还适用于许多其他数组处理问题，如“容器盛水”、“寻找目标区间”等。</p>
+<p>直接用字符串的切片功能</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="comment"># 将整数x转换为字符串y</span></span><br><span class="line">        y = <span class="built_in">str</span>(x)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 使用字符串切片功能 [::-1] 来翻转字符串y，得到z</span></span><br><span class="line">        <span class="comment"># 字符串切片语法 [start:end:step] 中，当step为-1时，会从右向左提取字符，实现反转</span></span><br><span class="line">        z = y[::-<span class="number">1</span>]</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 比较原字符串y和翻转后的字符串z是否相等</span></span><br><span class="line">        <span class="keyword">if</span> y == z:</span><br><span class="line">            <span class="comment"># 如果相等，说明x是一个回文数，返回True</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># 如果不相等，说明x不是一个回文数，返回False</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用字符串，切片</span></span><br></pre></td></tr></table></figure>
+<h2><span id="exploration-不转换成字符串"> exploration 不转换成字符串</span></h2>
+<p>Follow up: Could you solve it without converting the integer to a string?</p>
+<p>利用数学运算逐步比较数字的前后部分，构建翻转数字</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">isPalindrome</span>(<span class="params">self, x</span>):</span><br><span class="line">        <span class="keyword">if</span> x &lt; <span class="number">0</span>:  <span class="comment"># 负数不是回文数</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line">        original_x = x</span><br><span class="line">        reversed_x = <span class="number">0</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> x &gt; <span class="number">0</span>:</span><br><span class="line">            <span class="comment"># 提取最低位数字并添加到反转数的末尾</span></span><br><span class="line">            reversed_x = (reversed_x * <span class="number">10</span>) + (x % <span class="number">10</span>)</span><br><span class="line">            <span class="comment"># 移除x的最低位</span></span><br><span class="line">            x //= <span class="number">10</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 比较原数和反转后的数是否相等</span></span><br><span class="line">        <span class="keyword">return</span> original_x == reversed_x</span><br></pre></td></tr></table></figure>
+<h3><span id="关键句"> 关键句</span></h3>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">reversed_x = (reversed_x * <span class="number">10</span>) + (x % <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+<p>假设我们有一个整数 x，我们的目标是得到它的翻转版本，记作<code> reversed_x</code>。</p>
+<p><code>x % 10</code>：这一步是取 x 的个位数。<code>% </code>是取余运算符，<code>x % 10 </code>的结果就是 x 除以 10 后的余数，对于任何整数 x，这都将给出其个位上的数字。</p>
+<p><code>(reversed_x * 10) + ...</code>：在开始时，<code>reversed_x</code> 通常初始化为 0。每次循环中，我们先将 <code>reversed_x</code> 左移一位（等效于乘以 10），为添加新的数字到其个位上做准备。</p>
+<p><code>+ (x % 10)</code>：然后，将当前 x 的个位数加到 <code>reversed_x</code> 的末尾。这样逐步构建了 x 翻转后的数字。</p>
 <h3><span id="核心思路"> 核心思路</span></h3>
-<ol>
-<li>
-<p><strong>排序</strong>：首先对给定数组进行排序。排序是双指针法的基础，它允许我们在不重复检查元素的情况下有效地寻找目标组合。</p>
-</li>
-<li>
-<p><strong>固定一个元素</strong>：遍历排序后的数组，选定一个元素（设为 <code>nums[i]</code>），将它作为三元组的第一个数。因为我们不希望重复使用相同的元素，所以在遍历过程中，如果当前元素与前一个元素相同，则跳过，避免产生重复解。</p>
-</li>
-<li>
-<p><strong>设置两个指针</strong>：在当前元素之后，设置两个指针 <code>left</code> 和 <code>right</code>，初始时分别指向 <code>i+1</code> 和数组的最后一个元素。<code>left</code> 指向的元素和 <code>right</code> 指向的元素将与 <code>nums[i]</code> 组成可能的三元组。</p>
-</li>
-<li>
-<p><strong>移动指针</strong>：</p>
+<p><strong>1、逐位访问的需求：</strong>
+要反转一个整数，我们需要逐位访问它，这意味着从最低位（个位）开始，一直到最高位。但是，在大多数编程语言中，直接访问整数的某一位并不直接支持，所以我们需要间接方法。</p>
+<p><strong>2、取模运算<code>（%）</code>和整除运算<code>（//）</code>的利用：</strong></p>
 <ul>
-<li>如果 <code>nums[i] + nums[left] + nums[right] &lt; 0</code>，说明三数之和太小，为了增大和，需要将左侧指针 <code>left</code> 向右移动一位（即增大左侧元素的值）。</li>
-<li>如果 <code>nums[i] + nums[left] + nums[right] &gt; 0</code>，说明三数之和太大，为了减小和，需要将右侧指针 <code>right</code> 向左移动一位（即减小右侧元素的值）。</li>
-<li>如果 <code>nums[i] + nums[left] + nums[right] == 0</code>，找到了一个符合条件的三元组，将其添加到结果集中。为了避免重复，找到一个解后，需要移动指针继续寻找下一个可能的解，这里同样需要跳过重复元素。</li>
+<li>取模运算（%）：<code>x % 10</code> 可以得到 x 的个位数。这是因为任何整数除以10的余数就是它的个位数。</li>
+<li>整除运算（//）：<code>x //= 10</code> 可以去掉 x 的个位数。这实际上是对 x 进行了右移操作，相当于抛弃了当前的个位数，让 x 变成只有高位数字的数。</li>
 </ul>
-</li>
-<li>
-<p><strong>重复步骤</strong>：重复步骤3和4，直到遍历完所有可能的中间元素 <code>nums[i]</code>。</p>
-</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        nums.sort()   <span class="comment"># 步骤1：排序，这是双指针法的关键前提</span></span><br><span class="line">        res = []      <span class="comment"># 初始化结果列表</span></span><br><span class="line">        n = <span class="built_in">len</span>(nums)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n - <span class="number">2</span>):		  <span class="comment"># 步骤2：遍历数组，固定第一个数nums[i]</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span> <span class="keyword">and</span> nums[i] == nums[i - <span class="number">1</span>]:	  <span class="comment"># 跳过重复的nums[i]</span></span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 步骤3：初始化左右指针，指向i之后的第一个元素和最后一个元素</span></span><br><span class="line">            left, right = i + <span class="number">1</span>, n - <span class="number">1</span>	</span><br><span class="line">            <span class="keyword">while</span> left &lt; right:		 <span class="comment"># 开始双指针遍历</span></span><br><span class="line">                total = nums[i] + nums[left] + nums[right]	<span class="comment"># 计算三数之和</span></span><br><span class="line">           <span class="comment"># 步骤4a：如果和小于0，说明nums[left]太小，需要增大，故向右移动left</span></span><br><span class="line">                <span class="keyword">if</span> total &lt; <span class="number">0</span>:</span><br><span class="line">                    left += <span class="number">1</span></span><br><span class="line">           <span class="comment"># 步骤4b：如果和大于0，说明nums[right]太大，需要减小，故向左移动right</span></span><br><span class="line">                <span class="keyword">elif</span> total &gt; <span class="number">0</span>:</span><br><span class="line">                    right -= <span class="number">1</span></span><br><span class="line">            <span class="comment"># 步骤4c：如果和等于0，找到了一个解，将其加入结果列表</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    res.append([nums[i], nums[left], nums[right]])</span><br><span class="line">                    </span><br><span class="line">           <span class="comment"># 避免重复解：找到一个解后，移动指针前先排除相同元素</span></span><br><span class="line">                    <span class="keyword">while</span> left &lt; right <span class="keyword">and</span> nums[left] == nums[left + <span class="number">1</span>]:</span><br><span class="line">                        left += <span class="number">1</span></span><br><span class="line">                    <span class="keyword">while</span> left &lt; right <span class="keyword">and</span> nums[right] == nums[right - <span class="number">1</span>]:</span><br><span class="line">                        right -= <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 发现解后，移动指针继续寻找下一个可能的解</span></span><br><span class="line">                    left += <span class="number">1</span></span><br><span class="line">                    right -= <span class="number">1</span></span><br><span class="line">                </span><br><span class="line">        <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
-<h3><span id="复杂度"> 复杂度</span></h3>
-<ul>
-<li><strong>时间复杂度：</strong></li>
-</ul>
-<p>此实现中，首先进行了一次排序，时间复杂度为O(n log n)。然后是一层循环遍历数组（n次），内部使用双指针进行线性扫描，每次移动一个指针，直到两个指针相遇，这在最坏情况下也是O(n)。因此，整体时间复杂度为排序的O(n log n)加上O(n)的双指针扫描，最终为O(n log n)。这是因为在大n情况下，排序操作的时间成本占主导地位。</p>
-<ul>
-<li><strong>空间复杂度：</strong></li>
-</ul>
-<p>与之前的实现相似，优化后的版本主要额外空间消耗仍然是用于存储结果的列表res，空间复杂度为O(n)。</p>
+<p><strong>3、数字构建：</strong>
+为了构建反转数，每次循环我们都需要把当前的最低位数加到已构建数的末尾。由于数字是以十进制表示的，每向左移动一位，数值就相当于乘以10。因此，我们先将已构建的反转数乘以10，再加当前的最低位数，就能正确地将新位数放置到反转数的末尾。</p>
+<p><strong>4、循环终止条件：</strong>
+选择 <code>while x &gt; 0</code>作为循环终止条件是因为一旦 x 变为0，说明所有的位都已经被处理过了，没有剩余的位需要反转。这也是自然数（正整数）在逐位处理后必然会达到的状态。</p>
 ]]></content>
       <categories>
         <category>leetcode</category>
       </categories>
       <tags>
         <tag>leetcode</tag>
-        <tag>python</tag>
-        <tag>pointer</tag>
+        <tag>palindrome</tag>
       </tags>
   </entry>
   <entry>
@@ -1058,6 +1065,254 @@ Notice that the order of the output and the order of the triplets does not matte
       </tags>
   </entry>
   <entry>
+    <title>leetcode小抄：15. 3Sum</title>
+    <url>/lc5.html</url>
+    <content><![CDATA[<span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#solution-1-%E7%AC%A8%E8%9B%8B%E6%96%B9%E6%B3%95">solution 1 笨蛋方法</a>
+<ul>
+<li><a href="#%E5%A4%8D%E6%9D%82%E5%BA%A6">复杂度</a></li>
+</ul>
+</li>
+<li><a href="#solution-2-%E8%81%AA%E6%98%8E%E6%96%B9%E6%B3%95">solution 2 聪明方法</a>
+<ul>
+<li><a href="#%E6%A0%B8%E5%BF%83%E6%80%9D%E8%B7%AF">核心思路</a></li>
+<li><a href="#%E5%A4%8D%E6%9D%82%E5%BA%A6-1">复杂度</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code> such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p>
+<p>Notice that the solution set must not contain duplicate triplets.</p>
+<p><strong>Example 1:</strong></p>
+<p><strong>Input:</strong> nums = [-1,0,1,2,-1,-4]
+<strong>Output:</strong> [[-1,-1,2],[-1,0,1]]
+<strong>Explanation:</strong>
+nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
+nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
+nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
+The distinct triplets are [-1,0,1] and [-1,-1,2].
+Notice that the order of the output and the order of the triplets does not matter.</p>
+<p><strong>Example 2:</strong></p>
+<p><strong>Input:</strong> nums = [0,1,1]
+<strong>Output:</strong> []
+<strong>Explanation:</strong> The only possible triplet does not sum up to 0.</p>
+<p><strong>Example 3:</strong></p>
+<p><strong>Input:</strong> nums = [0,0,0]
+<strong>Output:</strong> [[0,0,0]]
+<strong>Explanation:</strong> The only possible triplet sums up to 0.</p>
+<p><strong>Constraints:</strong></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>&lt;</mo><mo>=</mo><mi>n</mi><mi>u</mi><mi>m</mi><mi>s</mi><mi mathvariant="normal">.</mi><mi>l</mi><mi>e</mi><mi>n</mi><mi>g</mi><mi>t</mi><mi>h</mi><mo>&lt;</mo><mo>=</mo><mn>3000</mn></mrow><annotation encoding="application/x-tex">
+3 &lt;= nums.length &lt;= 3000
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68354em;vertical-align:-0.0391em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mord mathnormal">s</span><span class="mord">.</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>1</mn><msup><mn>0</mn><mn>5</mn></msup><mo>&lt;</mo><mo>=</mo><mi>n</mi><mi>u</mi><mi>m</mi><mi>s</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo><mo>&lt;</mo><mo>=</mo><mn>1</mn><msup><mn>0</mn><mn>5</mn></msup></mrow><annotation encoding="application/x-tex">
+-10^{5}  &lt;= nums[i] &lt;= 10^{5}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">m</span><span class="mord mathnormal">s</span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<h2><span id="solution-1-笨蛋方法"> solution 1 笨蛋方法</span></h2>
+<p>确保能够正确处理包含多个0的情况以及能够找到所有可能的三元组组合，而不仅仅是和为0的直接相反数情况。关键在于全面地遍历并利用哈希表来记录和检查元素，同时处理特殊情况。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        nums.sort()</span><br><span class="line">        result = []</span><br><span class="line">        n = <span class="built_in">len</span>(nums)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> n &lt; <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">return</span> []</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 特殊情况处理：数组中只包含0的情况</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">set</span>(nums) == &#123;<span class="number">0</span>&#125; <span class="keyword">and</span> n &gt;= <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">return</span> [[<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>]]</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n - <span class="number">2</span>):</span><br><span class="line">            <span class="comment"># 跳过重复的元素</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span> <span class="keyword">and</span> nums[i] == nums[i - <span class="number">1</span>]:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> nums[i] &gt; <span class="number">0</span>:  <span class="comment"># 数组已经排序，如果当前元素大于0，则后续元素也大于0，不可能使和为0</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            </span><br><span class="line">            left, right = i + <span class="number">1</span>, n - <span class="number">1</span></span><br><span class="line">            <span class="keyword">while</span> left &lt; right:</span><br><span class="line">                current_sum = nums[i] + nums[left] + nums[right]</span><br><span class="line">                <span class="keyword">if</span> current_sum == <span class="number">0</span>:</span><br><span class="line">                    <span class="comment"># 对于当前nums[i]，找到一组解，先添加</span></span><br><span class="line">                    result.append([nums[i], nums[left], nums[right]])</span><br><span class="line">                    <span class="comment"># 跳过重复的nums[left]和nums[right]</span></span><br><span class="line">                    <span class="keyword">while</span> left &lt; right <span class="keyword">and</span> nums[left] == nums[left + <span class="number">1</span>]:</span><br><span class="line">                        left += <span class="number">1</span></span><br><span class="line">                    <span class="keyword">while</span> left &lt; right <span class="keyword">and</span> nums[right] == nums[right - <span class="number">1</span>]:</span><br><span class="line">                        right -= <span class="number">1</span></span><br><span class="line">                    <span class="comment"># 移动指针</span></span><br><span class="line">                    left += <span class="number">1</span></span><br><span class="line">                    right -= <span class="number">1</span></span><br><span class="line">                <span class="keyword">elif</span> current_sum &lt; <span class="number">0</span>:</span><br><span class="line">                    left += <span class="number">1</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    right -= <span class="number">1</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 去重</span></span><br><span class="line">        unique_results = []</span><br><span class="line">        <span class="keyword">for</span> triplet <span class="keyword">in</span> result:</span><br><span class="line">            <span class="keyword">if</span> triplet <span class="keyword">not</span> <span class="keyword">in</span> unique_results:</span><br><span class="line">                unique_results.append(triplet)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> unique_results</span><br></pre></td></tr></table></figure>
+<h3><span id="复杂度"> 复杂度</span></h3>
+<ul>
+<li><strong>时间复杂度：</strong></li>
+</ul>
+<p>此实现中，首先进行了排序，排序的时间复杂度是O(n log n)。之后是两层循环，外层循环是n次，内层循环在最坏情况下也是n次，但因为有跳过重复元素的逻辑，实际次数会少一些。然而，最内层还涉及了查找target - nums[j]是否在剩余数组中的操作，这在最坏情况下也是O(n)。因此，总体时间复杂度接近但略高于O(n^2)。准确地说，由于排序的存在，最终的时间复杂度应考虑为O(n log n + n<sup>2)，但通常排序的代价在大n下占主导，所以可以粗略估计为O(n</sup>2)。</p>
+<ul>
+<li><strong>空间复杂度：</strong></li>
+</ul>
+<p>此实现中，除了输入数组外，主要额外空间消耗来自于结果列表res，其最坏情况下可能存储n/3个三元组（如果数组中所有元素满足条件的话），因此空间复杂度为O(n)。</p>
+<h2><span id="solution-2-聪明方法"> solution 2 聪明方法</span></h2>
+<p>双指针法（Two Pointer Technique）是一种在数组或列表中寻找满足特定条件的元素对（或元素组合）的高效算法思想，还适用于许多其他数组处理问题，如“容器盛水”、“寻找目标区间”等。</p>
+<h3><span id="核心思路"> 核心思路</span></h3>
+<ol>
+<li>
+<p><strong>排序</strong>：首先对给定数组进行排序。排序是双指针法的基础，它允许我们在不重复检查元素的情况下有效地寻找目标组合。</p>
+</li>
+<li>
+<p><strong>固定一个元素</strong>：遍历排序后的数组，选定一个元素（设为 <code>nums[i]</code>），将它作为三元组的第一个数。因为我们不希望重复使用相同的元素，所以在遍历过程中，如果当前元素与前一个元素相同，则跳过，避免产生重复解。</p>
+</li>
+<li>
+<p><strong>设置两个指针</strong>：在当前元素之后，设置两个指针 <code>left</code> 和 <code>right</code>，初始时分别指向 <code>i+1</code> 和数组的最后一个元素。<code>left</code> 指向的元素和 <code>right</code> 指向的元素将与 <code>nums[i]</code> 组成可能的三元组。</p>
+</li>
+<li>
+<p><strong>移动指针</strong>：</p>
+<ul>
+<li>如果 <code>nums[i] + nums[left] + nums[right] &lt; 0</code>，说明三数之和太小，为了增大和，需要将左侧指针 <code>left</code> 向右移动一位（即增大左侧元素的值）。</li>
+<li>如果 <code>nums[i] + nums[left] + nums[right] &gt; 0</code>，说明三数之和太大，为了减小和，需要将右侧指针 <code>right</code> 向左移动一位（即减小右侧元素的值）。</li>
+<li>如果 <code>nums[i] + nums[left] + nums[right] == 0</code>，找到了一个符合条件的三元组，将其添加到结果集中。为了避免重复，找到一个解后，需要移动指针继续寻找下一个可能的解，这里同样需要跳过重复元素。</li>
+</ul>
+</li>
+<li>
+<p><strong>重复步骤</strong>：重复步骤3和4，直到遍历完所有可能的中间元素 <code>nums[i]</code>。</p>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">threeSum</span>(<span class="params">self, nums</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        nums.sort()   <span class="comment"># 步骤1：排序，这是双指针法的关键前提</span></span><br><span class="line">        res = []      <span class="comment"># 初始化结果列表</span></span><br><span class="line">        n = <span class="built_in">len</span>(nums)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n - <span class="number">2</span>):		  <span class="comment"># 步骤2：遍历数组，固定第一个数nums[i]</span></span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span> <span class="keyword">and</span> nums[i] == nums[i - <span class="number">1</span>]:	  <span class="comment"># 跳过重复的nums[i]</span></span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            </span><br><span class="line">            <span class="comment"># 步骤3：初始化左右指针，指向i之后的第一个元素和最后一个元素</span></span><br><span class="line">            left, right = i + <span class="number">1</span>, n - <span class="number">1</span>	</span><br><span class="line">            <span class="keyword">while</span> left &lt; right:		 <span class="comment"># 开始双指针遍历</span></span><br><span class="line">                total = nums[i] + nums[left] + nums[right]	<span class="comment"># 计算三数之和</span></span><br><span class="line">           <span class="comment"># 步骤4a：如果和小于0，说明nums[left]太小，需要增大，故向右移动left</span></span><br><span class="line">                <span class="keyword">if</span> total &lt; <span class="number">0</span>:</span><br><span class="line">                    left += <span class="number">1</span></span><br><span class="line">           <span class="comment"># 步骤4b：如果和大于0，说明nums[right]太大，需要减小，故向左移动right</span></span><br><span class="line">                <span class="keyword">elif</span> total &gt; <span class="number">0</span>:</span><br><span class="line">                    right -= <span class="number">1</span></span><br><span class="line">            <span class="comment"># 步骤4c：如果和等于0，找到了一个解，将其加入结果列表</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    res.append([nums[i], nums[left], nums[right]])</span><br><span class="line">                    </span><br><span class="line">           <span class="comment"># 避免重复解：找到一个解后，移动指针前先排除相同元素</span></span><br><span class="line">                    <span class="keyword">while</span> left &lt; right <span class="keyword">and</span> nums[left] == nums[left + <span class="number">1</span>]:</span><br><span class="line">                        left += <span class="number">1</span></span><br><span class="line">                    <span class="keyword">while</span> left &lt; right <span class="keyword">and</span> nums[right] == nums[right - <span class="number">1</span>]:</span><br><span class="line">                        right -= <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 发现解后，移动指针继续寻找下一个可能的解</span></span><br><span class="line">                    left += <span class="number">1</span></span><br><span class="line">                    right -= <span class="number">1</span></span><br><span class="line">                </span><br><span class="line">        <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
+<h3><span id="复杂度"> 复杂度</span></h3>
+<ul>
+<li><strong>时间复杂度：</strong></li>
+</ul>
+<p>此实现中，首先进行了一次排序，时间复杂度为O(n log n)。然后是一层循环遍历数组（n次），内部使用双指针进行线性扫描，每次移动一个指针，直到两个指针相遇，这在最坏情况下也是O(n)。因此，整体时间复杂度为排序的O(n log n)加上O(n)的双指针扫描，最终为O(n log n)。这是因为在大n情况下，排序操作的时间成本占主导地位。</p>
+<ul>
+<li><strong>空间复杂度：</strong></li>
+</ul>
+<p>与之前的实现相似，优化后的版本主要额外空间消耗仍然是用于存储结果的列表res，空间复杂度为O(n)。</p>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>python</tag>
+        <tag>pointer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>leetcode小抄：21. Merge Two Sorted Lists</title>
+    <url>/lc7.html</url>
+    <content><![CDATA[<span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#solution-1-%E8%81%AA%E6%98%8E%E6%96%B9%E6%B3%95">solution 1 聪明方法</a>
+<ul>
+<li><a href="#%E5%85%B3%E9%94%AE%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8">关键数据结构 链表</a></li>
+<li><a href="#%E5%85%B3%E9%94%AE%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8-%E7%94%A8%E6%B3%95%E8%AF%B4%E6%98%8E">关键数据结构 链表 用法说明</a></li>
+<li><a href="#%E6%A0%B8%E5%BF%83%E6%80%9D%E8%B7%AF">核心思路</a></li>
+</ul>
+</li>
+<li><a href="#solution-2-%E5%A4%A7%E4%BD%AC%E8%A7%A3%E9%87%8Aruby">solution 2 大佬解释ruby</a></li>
+</ul>
+<!-- tocstop -->
+<p>You are given the heads of two sorted linked lists <code>list1</code> and <code>list2</code>.</p>
+<p>Merge the two lists into one <strong>sorted</strong> list. The list should be made by splicing together the nodes of the first two lists.</p>
+<p>Return <em>the head of the merged linked list</em>.</p>
+<p><strong>Example 1:</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg" alt></p>
+<p><strong>Input:</strong> list1 = [1,2,4], list2 = [1,3,4]
+<strong>Output:</strong> [1,1,2,3,4,4]</p>
+<p><strong>Example 2:</strong></p>
+<p><strong>Input:</strong> list1 = [], list2 = []
+<strong>Output:</strong> []</p>
+<p><strong>Example 3:</strong></p>
+<p><strong>Input:</strong> list1 = [], list2 = [0]
+<strong>Output:</strong> [0]</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>The number of nodes in both lists is in the range <code>[0, 50]</code>.</li>
+<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+<li>Both <code>list1</code> and <code>list2</code> are sorted in <strong>non-decreasing</strong> order.</li>
+</ul>
+<h2><span id="solution-1-聪明方法"> solution 1 聪明方法</span></h2>
+<p>用指针</p>
+<p>实际上不需要对链表进行排序操作，因为两个链表已经是排序好的。解决这个问题的高效方法是直接合并这两个链表，同时保持排序。</p>
+<p><code>mergeTwoLists</code> 方法接收两个链表的头节点 <code>list1</code> 和 <code>list2</code>，并返回合并后的新链表的头节点。通过使用哑节点 <code>dummy</code>，我们可以简化合并过程中对头节点的处理，使得逻辑更加清晰。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params">self, list1, list2</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type list1: ListNode</span></span><br><span class="line"><span class="string">        :type list2: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="comment"># 创建一个哑节点作为新链表的起点</span></span><br><span class="line">        dummy = ListNode()</span><br><span class="line">        tail = dummy  <span class="comment"># tail 用于指向新链表的最后一个节点</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 合并链表</span></span><br><span class="line">        <span class="keyword">while</span> list1 <span class="keyword">and</span> list2:</span><br><span class="line">            <span class="keyword">if</span> list1.val &lt;= list2.val:</span><br><span class="line">                tail.<span class="built_in">next</span> = list1</span><br><span class="line">                list1 = list1.<span class="built_in">next</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                tail.<span class="built_in">next</span> = list2</span><br><span class="line">                list2 = list2.<span class="built_in">next</span></span><br><span class="line">            tail = tail.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 如果有链表未完全遍历完，直接连接剩余部分</span></span><br><span class="line">        <span class="keyword">if</span> list1:</span><br><span class="line">            tail.<span class="built_in">next</span> = list1</span><br><span class="line">        <span class="keyword">elif</span> list2:</span><br><span class="line">            tail.<span class="built_in">next</span> = list2</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 返回新链表的头节点，即 dummy 的下一个节点</span></span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="built_in">next</span></span><br></pre></td></tr></table></figure>
+<h3><span id="关键数据结构-链表"> 关键数据结构 链表</span></h3>
+<ul>
+<li>
+<p>链表特性：链表是一种动态数据结构，每个节点包含数据和指向下一个节点的指针。对于有序链表来说，每个节点的值都小于或等于其后续节点的值。</p>
+</li>
+<li>
+<p>问题需求：题目要求合并两个已排序的链表，并保持合并后的链表也是有序的。这意味着新链表中的每个节点值都需要小于等于其后面的节点值。</p>
+</li>
+</ul>
+<h3><span id="关键数据结构-链表-用法说明"> 关键数据结构 链表 用法说明</span></h3>
+<p>尽管Python的标准库没有直接提供链表类，但你可以自定义实现链表结构。链表中的每个元素称为节点，每个节点包含数据和指向下一个节点的引用。
+链表分为单链表、双链表、循环链表等多种类型，下面主要介绍单链表的基本概念和使用示例。</p>
+<p>定义一个链表节点类<code>ListNode</code>：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ListNode</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, value=<span class="number">0</span>, <span class="built_in">next</span>=<span class="literal">None</span></span>):</span><br><span class="line">        self.value = value</span><br><span class="line">        self.<span class="built_in">next</span> = <span class="built_in">next</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>创建链表</strong></li>
+</ul>
+<p>手动创建一个链表，通常从头节点开始，依次创建每个节点并连接它们。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建链表 1-&gt;2-&gt;3</span></span><br><span class="line">node1 = ListNode(<span class="number">1</span>)</span><br><span class="line">node2 = ListNode(<span class="number">2</span>)</span><br><span class="line">node3 = ListNode(<span class="number">3</span>)</span><br><span class="line">node1.<span class="built_in">next</span> = node2</span><br><span class="line">node2.<span class="built_in">next</span> = node3</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>打印链表</strong></li>
+</ul>
+<p>定义一个函数来遍历并打印链表的所有元素：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_list</span>(<span class="params">head</span>):</span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current:</span><br><span class="line">        <span class="built_in">print</span>(current.value, end=<span class="string">&quot; -&gt; &quot;</span>)</span><br><span class="line">        current = current.<span class="built_in">next</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;None&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印链表</span></span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 1 -&gt; 2 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>插入节点</strong></li>
+</ul>
+<p>向链表中插入一个新节点，例如在给定值之后插入：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">insert_after</span>(<span class="params">node, new_value</span>):</span><br><span class="line">    new_node = ListNode(new_value)</span><br><span class="line">    new_node.<span class="built_in">next</span> = node.<span class="built_in">next</span></span><br><span class="line">    node.<span class="built_in">next</span> = new_node</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在值为2的节点后面插入4</span></span><br><span class="line">insert_after(node2, <span class="number">4</span>)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出变为: 1 -&gt; 2 -&gt; 4 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>删除节点</strong></li>
+</ul>
+<p>删除链表中特定值的节点，这里以删除值为4的节点为例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">delete_node</span>(<span class="params">head, value</span>):</span><br><span class="line">    prev = <span class="literal">None</span></span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current <span class="keyword">and</span> current.value != value:</span><br><span class="line">        prev = current</span><br><span class="line">        current = current.<span class="built_in">next</span></span><br><span class="line">    <span class="keyword">if</span> current <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">return</span> head  <span class="comment"># 节点不存在</span></span><br><span class="line">    <span class="keyword">if</span> prev <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">return</span> current.<span class="built_in">next</span>  <span class="comment"># 删除头节点</span></span><br><span class="line">    prev.<span class="built_in">next</span> = current.<span class="built_in">next</span></span><br><span class="line">    <span class="keyword">return</span> head</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除值为4的节点</span></span><br><span class="line">node1 = delete_node(node1, <span class="number">4</span>)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 1 -&gt; 2 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>链表反转</strong></li>
+</ul>
+<p>反转链表是链表操作中的经典问题，可以递归或迭代实现：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">reverse_list</span>(<span class="params">head</span>):</span><br><span class="line">    prev = <span class="literal">None</span></span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current:</span><br><span class="line">        next_temp = current.<span class="built_in">next</span>  <span class="comment"># 临时保存下一个节点</span></span><br><span class="line">        current.<span class="built_in">next</span> = prev  <span class="comment"># 反转指针</span></span><br><span class="line">        prev = current  <span class="comment"># 前进到下一个节点</span></span><br><span class="line">        current = next_temp</span><br><span class="line">    <span class="keyword">return</span> prev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 反转链表</span></span><br><span class="line">node1 = reverse_list(node1)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 3 -&gt; 2 -&gt; 1 -&gt; None</span></span><br></pre></td></tr></table></figure>
+<h3><span id="核心思路"> 核心思路</span></h3>
+<ul>
+<li>
+<p><strong>使用哑节点</strong>：引入一个哑节点（dummy node）作为新链表的起点，这样做可以简化操作，避免在合并开始时对头节点的特殊处理。哑节点的下一个节点（<code>dummy.next</code>）最终会指向合并后链表的实际头节点。</p>
+</li>
+<li>
+<p><strong>双指针遍历</strong>：设置两个指针 <code>p1</code> 和 <code>p2</code> 分别指向两个链表的头部。通过比较这两个指针所指向节点的值，决定哪个节点应该先被添加到新链表中。这样可以保证新链表的排序性质。</p>
+</li>
+<li>
+<p><strong>逐步构建新链表</strong>：每次选择值较小的节点加入新链表，并将对应的指针向前移动。这个过程持续到至少有一个链表被完全遍历完。</p>
+</li>
+<li>
+<p><strong>处理剩余节点</strong>：当一个链表遍历完后，直接将另一个链表剩余的部分链接到新链表的尾部。这是因为剩余链表中的所有节点都已大于当前新链表的末尾节点（根据排序性质），可以直接追加。</p>
+</li>
+<li>
+<p><strong>返回结果</strong>：最后返回哑节点的下一个节点，即新链表的头节点。</p>
+</li>
+</ul>
+<h2><span id="solution-2-大佬解释ruby"> solution 2 大佬解释ruby</span></h2>
+<p><a href="https://leetcode.com/problems/merge-two-sorted-lists/solutions/759870/python3-solution-with-a-detailed-explanation-dummy-explained">Python3 Solution with a Detailed Explanation - dummy explained</a></p>
+<p><a href="https://realpython.com/linked-lists-python/">Linkedlists</a> can be confusing especially if you've recently started to code but (I think) once you understand it fully, it should not be that difficult.</p>
+<p>For this problem, I'm going to explain several ways of solving it <strong>BUT</strong> I want to make something clear. Something that you've seen a lot of times in the posts on this website but probably haven't fully understood. <code>dummy</code> variable! It has been used significantly in the solutions of this problem and not well explained for a newbie level coder! The idea is we're dealing with <code>pointers</code> that point to a memory location! Think of it this way! You want to find gold that is hidden somewhere. Someone has put a set of clues in a sequence! Meaning, if you find the first clue and solve the problem hidden in the clue, you will get to the second clue! Solving the hidden problem of second clue will get you to the thrid clue, and so on! If you keep solving, you'll get to the gold! <code>dummy</code> helps you to find the first clue!!!!</p>
+<p>Throughout the solution below, you'll be asking yourself why <code>dummy</code> is not changing and we eventually return <code>dummy.next</code>???? It doesn't make sense, right? However, if you think that <code>dummy</code> is pointing to the start and there is another variable (<code>temp</code>) that makes the linkes from node to node, you'll have a better filling!<br>
+Similar to the gold example if I tell you the first clue is at location X, then, you can solve clues sequentially (because of course you're smart) and bingo! you find the gold! Watch <a href="https://www.youtube.com/watch?v=3O_f_sk3mFc">this</a>.</p>
+<p>This video shows why we need the <code>dummy</code>! Since we're traversing using <code>temp</code> but once <code>temp</code> gets to the tail of the sorted merged linkedlist, there's no way back to the start of the list to return as a result! So <code>dummy</code> to the rescue! it does not get changed throughout the list traversals <code>temp</code> is doing! So, <code>dummy</code> makes sure we don't loose the head of the thread (result list). Does this make sense? Alright! Enough with <code>dummy</code>!</p>
+<p>I think if you get this, the first solution feels natural! Now, watch <a href="https://www.youtube.com/watch?v=GfRQvf7MB3k">this</a>. You got the idea?? Nice!</p>
+<p>First you initialize <code>dummy</code> and <code>temp</code>. One is sitting at the start of the linkedlist and the other (<code>temp</code>) is going to move forward find which value should be added to the list. Note that it's initialized with a value <code>0</code> but it can be anything! You initialize it with your value of choice! Doesn't matter since we're going to finally return <code>dummy.next</code> which disregards <code>0</code> that we used to start the linkedlist. Line <code>#1</code> makes sure none of the <code>l1</code> and <code>l2</code> are empty! If one of them is empty, we should return the other! If both are nonempty, we check <code>val</code> of each of them to add the smaller one to the result linkedlist! In line <code>#2</code>, <code>l1.val</code> is smaller and we want to add it to the list. How? We use <code>temp</code> POINTER (it's pointer, remember that!). Since we initialized <code>temp</code> to have value <code>0</code> at first node, we use <code>temp.next</code> to point <code>0</code> to the next value we're going to add to the list <code>l1.val</code> (line <code>#3</code>). Once we do that, we update <code>l1</code> to go to the next node of <code>l1</code>. If the <code>if</code> statement of line <code>#2</code> doesn't work, we do similar stuff with <code>l2</code>. And finally, if the length of <code>l1</code> and <code>l2</code> are not the same, we're going to the end of one of them at some point! Line <code>#5</code> adds whatever left from whatever linkedlist to the <code>temp.next</code> (check the above video for a great explanation of this part). Note that both linkedlists were sorted initially. Also, this line takes care of when one of the linkedlists are empty. Finally, we return <code>dummy.next</code> since <code>dummy</code> is pointing to <code>0</code> and <code>next</code> to zero is what we've added throughout the process.</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params"><span class="variable language_">self</span>, <span class="symbol">l1:</span> <span class="title class_">ListNode</span>, <span class="symbol">l2:</span> <span class="title class_">ListNode</span></span>) -&gt; <span class="title class_">ListNode</span>:   </span><br><span class="line">        dummy = temp = <span class="title class_">ListNode</span>(<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">while</span> l1 != <span class="title class_">None</span> <span class="keyword">and</span> l2 != <span class="title class_">None</span>: <span class="comment">#1</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> l1.val &lt; l2.<span class="symbol">val:</span> <span class="comment">#2</span></span><br><span class="line">                temp.<span class="keyword">next</span> = l1 <span class="comment">#3</span></span><br><span class="line">                l1 = l1.<span class="keyword">next</span> <span class="comment">#4</span></span><br><span class="line">            <span class="symbol">else:</span> </span><br><span class="line">                temp.<span class="keyword">next</span> = l2</span><br><span class="line">                l2 = l2.<span class="keyword">next</span></span><br><span class="line">            temp = temp.<span class="keyword">next</span></span><br><span class="line">        temp.<span class="keyword">next</span> = l1 <span class="keyword">or</span> l2  <span class="comment">#5</span></span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="keyword">next</span> <span class="comment">#6</span></span><br></pre></td></tr></table></figure>
+<p>Another way of solving is problem is by doing recursion. This is from <a href="https://leetcode.com/problems/merge-two-sorted-lists/discuss/9735/Python-solutions-(iteratively-recursively-iteratively-in-place)">here</a>. The first check is obvious! If one of them is empty, return the other one! Similar to line <code>#5</code> of previous solution. Here, we have two cases, whatever list has the smaller first element (equal elements also satisfies line <code>#1</code>), will be returned at the end. In the example <code>l1 = [1,2,4], l2 = [1,3,4]</code>, we go in the <code>if</code> statement of line <code>#1</code> first, this means that the first element of <code>l1</code> doesn't get changed! Then, we move the pointer to the second element of <code>l1</code> by calling the function again but with <code>l1.next</code> and <code>l2</code> as input! This round of call, goes to line <code>#2</code> because now we have element <code>1</code> from <code>l2</code> versus <code>2</code> from <code>l1</code>. Now, basically, <code>l2</code> gets connected to the tail of <code>l1</code>. We keep moving forward by switching between <code>l1</code> and <code>l2</code> until the last element. Sorry if it's not clear enough! I'm not a fan of recursion for such a problems! But, let me know which part it's hard to understand, I'll try to explain better!</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params"><span class="variable language_">self</span>, <span class="symbol">l1:</span> <span class="title class_">ListNode</span>, <span class="symbol">l2:</span> <span class="title class_">ListNode</span></span>) -&gt; <span class="title class_">ListNode</span>:   </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> l1 <span class="keyword">or</span> <span class="keyword">not</span> <span class="symbol">l2:</span></span><br><span class="line">            <span class="keyword">return</span> l1 <span class="keyword">or</span> l2</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> l1.val &lt;= l2.<span class="symbol">val:</span> <span class="comment">#1</span></span><br><span class="line">            l1.<span class="keyword">next</span> = <span class="variable language_">self</span>.mergeTwoLists(l1.<span class="keyword">next</span>, l2)</span><br><span class="line">            <span class="keyword">return</span> l1</span><br><span class="line">        <span class="symbol">else:</span> <span class="comment">#2</span></span><br><span class="line">            l2.<span class="keyword">next</span> = <span class="variable language_">self</span>.mergeTwoLists(l1, l2.<span class="keyword">next</span>)</span><br><span class="line">            <span class="keyword">return</span> l2</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>python</tag>
+        <tag>pointer</tag>
+        <tag>list</tag>
+        <tag>merge</tag>
+        <tag>linklist</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo butterfly让TOC生效</title>
+    <url>/hexotoc.html</url>
+    <content><![CDATA[<span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6">安装插件</a></li>
+<li><a href="#%E5%8A%A0%E5%85%A5%E7%9B%AE%E5%BD%95">加入目录</a></li>
+</ul>
+<!-- tocstop -->
+<p>习惯typora的TOC，发现hexo butterfly的侧边栏不太一样，这里没有，新加一个插件</p>
+<h2><span id="安装插件"> 安装插件</span></h2>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-toc --save</span><br></pre></td></tr></table></figure>
+<h2><span id="加入目录"> 加入目录</span></h2>
+<p>带展开的，在每篇文章开头加上</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>toc</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>leetcode小抄：20. Valid Parentheses</title>
     <url>/lc6.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -1191,127 +1446,6 @@ $ 1 &lt;= s.length &lt;= 10^{4} $
       </tags>
   </entry>
   <entry>
-    <title>leetcode小抄：21. Merge Two Sorted Lists</title>
-    <url>/lc7.html</url>
-    <content><![CDATA[<span id="more"></span>
-<!-- toc -->
-<ul>
-<li><a href="#solution-1-%E8%81%AA%E6%98%8E%E6%96%B9%E6%B3%95">solution 1 聪明方法</a>
-<ul>
-<li><a href="#%E5%85%B3%E9%94%AE%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8">关键数据结构 链表</a></li>
-<li><a href="#%E5%85%B3%E9%94%AE%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8-%E7%94%A8%E6%B3%95%E8%AF%B4%E6%98%8E">关键数据结构 链表 用法说明</a></li>
-<li><a href="#%E6%A0%B8%E5%BF%83%E6%80%9D%E8%B7%AF">核心思路</a></li>
-</ul>
-</li>
-<li><a href="#solution-2-%E5%A4%A7%E4%BD%AC%E8%A7%A3%E9%87%8Aruby">solution 2 大佬解释ruby</a></li>
-</ul>
-<!-- tocstop -->
-<p>You are given the heads of two sorted linked lists <code>list1</code> and <code>list2</code>.</p>
-<p>Merge the two lists into one <strong>sorted</strong> list. The list should be made by splicing together the nodes of the first two lists.</p>
-<p>Return <em>the head of the merged linked list</em>.</p>
-<p><strong>Example 1:</strong></p>
-<p><img src="https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg" alt></p>
-<p><strong>Input:</strong> list1 = [1,2,4], list2 = [1,3,4]
-<strong>Output:</strong> [1,1,2,3,4,4]</p>
-<p><strong>Example 2:</strong></p>
-<p><strong>Input:</strong> list1 = [], list2 = []
-<strong>Output:</strong> []</p>
-<p><strong>Example 3:</strong></p>
-<p><strong>Input:</strong> list1 = [], list2 = [0]
-<strong>Output:</strong> [0]</p>
-<p><strong>Constraints:</strong></p>
-<ul>
-<li>The number of nodes in both lists is in the range <code>[0, 50]</code>.</li>
-<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
-<li>Both <code>list1</code> and <code>list2</code> are sorted in <strong>non-decreasing</strong> order.</li>
-</ul>
-<h2><span id="solution-1-聪明方法"> solution 1 聪明方法</span></h2>
-<p>用指针</p>
-<p>实际上不需要对链表进行排序操作，因为两个链表已经是排序好的。解决这个问题的高效方法是直接合并这两个链表，同时保持排序。</p>
-<p><code>mergeTwoLists</code> 方法接收两个链表的头节点 <code>list1</code> 和 <code>list2</code>，并返回合并后的新链表的头节点。通过使用哑节点 <code>dummy</code>，我们可以简化合并过程中对头节点的处理，使得逻辑更加清晰。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params">self, list1, list2</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type list1: ListNode</span></span><br><span class="line"><span class="string">        :type list2: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="comment"># 创建一个哑节点作为新链表的起点</span></span><br><span class="line">        dummy = ListNode()</span><br><span class="line">        tail = dummy  <span class="comment"># tail 用于指向新链表的最后一个节点</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 合并链表</span></span><br><span class="line">        <span class="keyword">while</span> list1 <span class="keyword">and</span> list2:</span><br><span class="line">            <span class="keyword">if</span> list1.val &lt;= list2.val:</span><br><span class="line">                tail.<span class="built_in">next</span> = list1</span><br><span class="line">                list1 = list1.<span class="built_in">next</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                tail.<span class="built_in">next</span> = list2</span><br><span class="line">                list2 = list2.<span class="built_in">next</span></span><br><span class="line">            tail = tail.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 如果有链表未完全遍历完，直接连接剩余部分</span></span><br><span class="line">        <span class="keyword">if</span> list1:</span><br><span class="line">            tail.<span class="built_in">next</span> = list1</span><br><span class="line">        <span class="keyword">elif</span> list2:</span><br><span class="line">            tail.<span class="built_in">next</span> = list2</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 返回新链表的头节点，即 dummy 的下一个节点</span></span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="built_in">next</span></span><br></pre></td></tr></table></figure>
-<h3><span id="关键数据结构-链表"> 关键数据结构 链表</span></h3>
-<ul>
-<li>
-<p>链表特性：链表是一种动态数据结构，每个节点包含数据和指向下一个节点的指针。对于有序链表来说，每个节点的值都小于或等于其后续节点的值。</p>
-</li>
-<li>
-<p>问题需求：题目要求合并两个已排序的链表，并保持合并后的链表也是有序的。这意味着新链表中的每个节点值都需要小于等于其后面的节点值。</p>
-</li>
-</ul>
-<h3><span id="关键数据结构-链表-用法说明"> 关键数据结构 链表 用法说明</span></h3>
-<p>尽管Python的标准库没有直接提供链表类，但你可以自定义实现链表结构。链表中的每个元素称为节点，每个节点包含数据和指向下一个节点的引用。
-链表分为单链表、双链表、循环链表等多种类型，下面主要介绍单链表的基本概念和使用示例。</p>
-<p>定义一个链表节点类<code>ListNode</code>：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ListNode</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, value=<span class="number">0</span>, <span class="built_in">next</span>=<span class="literal">None</span></span>):</span><br><span class="line">        self.value = value</span><br><span class="line">        self.<span class="built_in">next</span> = <span class="built_in">next</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>创建链表</strong></li>
-</ul>
-<p>手动创建一个链表，通常从头节点开始，依次创建每个节点并连接它们。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建链表 1-&gt;2-&gt;3</span></span><br><span class="line">node1 = ListNode(<span class="number">1</span>)</span><br><span class="line">node2 = ListNode(<span class="number">2</span>)</span><br><span class="line">node3 = ListNode(<span class="number">3</span>)</span><br><span class="line">node1.<span class="built_in">next</span> = node2</span><br><span class="line">node2.<span class="built_in">next</span> = node3</span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>打印链表</strong></li>
-</ul>
-<p>定义一个函数来遍历并打印链表的所有元素：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_list</span>(<span class="params">head</span>):</span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current:</span><br><span class="line">        <span class="built_in">print</span>(current.value, end=<span class="string">&quot; -&gt; &quot;</span>)</span><br><span class="line">        current = current.<span class="built_in">next</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;None&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印链表</span></span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 1 -&gt; 2 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>插入节点</strong></li>
-</ul>
-<p>向链表中插入一个新节点，例如在给定值之后插入：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">insert_after</span>(<span class="params">node, new_value</span>):</span><br><span class="line">    new_node = ListNode(new_value)</span><br><span class="line">    new_node.<span class="built_in">next</span> = node.<span class="built_in">next</span></span><br><span class="line">    node.<span class="built_in">next</span> = new_node</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在值为2的节点后面插入4</span></span><br><span class="line">insert_after(node2, <span class="number">4</span>)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出变为: 1 -&gt; 2 -&gt; 4 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>删除节点</strong></li>
-</ul>
-<p>删除链表中特定值的节点，这里以删除值为4的节点为例：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">delete_node</span>(<span class="params">head, value</span>):</span><br><span class="line">    prev = <span class="literal">None</span></span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current <span class="keyword">and</span> current.value != value:</span><br><span class="line">        prev = current</span><br><span class="line">        current = current.<span class="built_in">next</span></span><br><span class="line">    <span class="keyword">if</span> current <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">return</span> head  <span class="comment"># 节点不存在</span></span><br><span class="line">    <span class="keyword">if</span> prev <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">return</span> current.<span class="built_in">next</span>  <span class="comment"># 删除头节点</span></span><br><span class="line">    prev.<span class="built_in">next</span> = current.<span class="built_in">next</span></span><br><span class="line">    <span class="keyword">return</span> head</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除值为4的节点</span></span><br><span class="line">node1 = delete_node(node1, <span class="number">4</span>)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 1 -&gt; 2 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>链表反转</strong></li>
-</ul>
-<p>反转链表是链表操作中的经典问题，可以递归或迭代实现：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">reverse_list</span>(<span class="params">head</span>):</span><br><span class="line">    prev = <span class="literal">None</span></span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current:</span><br><span class="line">        next_temp = current.<span class="built_in">next</span>  <span class="comment"># 临时保存下一个节点</span></span><br><span class="line">        current.<span class="built_in">next</span> = prev  <span class="comment"># 反转指针</span></span><br><span class="line">        prev = current  <span class="comment"># 前进到下一个节点</span></span><br><span class="line">        current = next_temp</span><br><span class="line">    <span class="keyword">return</span> prev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 反转链表</span></span><br><span class="line">node1 = reverse_list(node1)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 3 -&gt; 2 -&gt; 1 -&gt; None</span></span><br></pre></td></tr></table></figure>
-<h3><span id="核心思路"> 核心思路</span></h3>
-<ul>
-<li>
-<p><strong>使用哑节点</strong>：引入一个哑节点（dummy node）作为新链表的起点，这样做可以简化操作，避免在合并开始时对头节点的特殊处理。哑节点的下一个节点（<code>dummy.next</code>）最终会指向合并后链表的实际头节点。</p>
-</li>
-<li>
-<p><strong>双指针遍历</strong>：设置两个指针 <code>p1</code> 和 <code>p2</code> 分别指向两个链表的头部。通过比较这两个指针所指向节点的值，决定哪个节点应该先被添加到新链表中。这样可以保证新链表的排序性质。</p>
-</li>
-<li>
-<p><strong>逐步构建新链表</strong>：每次选择值较小的节点加入新链表，并将对应的指针向前移动。这个过程持续到至少有一个链表被完全遍历完。</p>
-</li>
-<li>
-<p><strong>处理剩余节点</strong>：当一个链表遍历完后，直接将另一个链表剩余的部分链接到新链表的尾部。这是因为剩余链表中的所有节点都已大于当前新链表的末尾节点（根据排序性质），可以直接追加。</p>
-</li>
-<li>
-<p><strong>返回结果</strong>：最后返回哑节点的下一个节点，即新链表的头节点。</p>
-</li>
-</ul>
-<h2><span id="solution-2-大佬解释ruby"> solution 2 大佬解释ruby</span></h2>
-<p><a href="https://leetcode.com/problems/merge-two-sorted-lists/solutions/759870/python3-solution-with-a-detailed-explanation-dummy-explained">Python3 Solution with a Detailed Explanation - dummy explained</a></p>
-<p><a href="https://realpython.com/linked-lists-python/">Linkedlists</a> can be confusing especially if you've recently started to code but (I think) once you understand it fully, it should not be that difficult.</p>
-<p>For this problem, I'm going to explain several ways of solving it <strong>BUT</strong> I want to make something clear. Something that you've seen a lot of times in the posts on this website but probably haven't fully understood. <code>dummy</code> variable! It has been used significantly in the solutions of this problem and not well explained for a newbie level coder! The idea is we're dealing with <code>pointers</code> that point to a memory location! Think of it this way! You want to find gold that is hidden somewhere. Someone has put a set of clues in a sequence! Meaning, if you find the first clue and solve the problem hidden in the clue, you will get to the second clue! Solving the hidden problem of second clue will get you to the thrid clue, and so on! If you keep solving, you'll get to the gold! <code>dummy</code> helps you to find the first clue!!!!</p>
-<p>Throughout the solution below, you'll be asking yourself why <code>dummy</code> is not changing and we eventually return <code>dummy.next</code>???? It doesn't make sense, right? However, if you think that <code>dummy</code> is pointing to the start and there is another variable (<code>temp</code>) that makes the linkes from node to node, you'll have a better filling!<br>
-Similar to the gold example if I tell you the first clue is at location X, then, you can solve clues sequentially (because of course you're smart) and bingo! you find the gold! Watch <a href="https://www.youtube.com/watch?v=3O_f_sk3mFc">this</a>.</p>
-<p>This video shows why we need the <code>dummy</code>! Since we're traversing using <code>temp</code> but once <code>temp</code> gets to the tail of the sorted merged linkedlist, there's no way back to the start of the list to return as a result! So <code>dummy</code> to the rescue! it does not get changed throughout the list traversals <code>temp</code> is doing! So, <code>dummy</code> makes sure we don't loose the head of the thread (result list). Does this make sense? Alright! Enough with <code>dummy</code>!</p>
-<p>I think if you get this, the first solution feels natural! Now, watch <a href="https://www.youtube.com/watch?v=GfRQvf7MB3k">this</a>. You got the idea?? Nice!</p>
-<p>First you initialize <code>dummy</code> and <code>temp</code>. One is sitting at the start of the linkedlist and the other (<code>temp</code>) is going to move forward find which value should be added to the list. Note that it's initialized with a value <code>0</code> but it can be anything! You initialize it with your value of choice! Doesn't matter since we're going to finally return <code>dummy.next</code> which disregards <code>0</code> that we used to start the linkedlist. Line <code>#1</code> makes sure none of the <code>l1</code> and <code>l2</code> are empty! If one of them is empty, we should return the other! If both are nonempty, we check <code>val</code> of each of them to add the smaller one to the result linkedlist! In line <code>#2</code>, <code>l1.val</code> is smaller and we want to add it to the list. How? We use <code>temp</code> POINTER (it's pointer, remember that!). Since we initialized <code>temp</code> to have value <code>0</code> at first node, we use <code>temp.next</code> to point <code>0</code> to the next value we're going to add to the list <code>l1.val</code> (line <code>#3</code>). Once we do that, we update <code>l1</code> to go to the next node of <code>l1</code>. If the <code>if</code> statement of line <code>#2</code> doesn't work, we do similar stuff with <code>l2</code>. And finally, if the length of <code>l1</code> and <code>l2</code> are not the same, we're going to the end of one of them at some point! Line <code>#5</code> adds whatever left from whatever linkedlist to the <code>temp.next</code> (check the above video for a great explanation of this part). Note that both linkedlists were sorted initially. Also, this line takes care of when one of the linkedlists are empty. Finally, we return <code>dummy.next</code> since <code>dummy</code> is pointing to <code>0</code> and <code>next</code> to zero is what we've added throughout the process.</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params"><span class="variable language_">self</span>, <span class="symbol">l1:</span> <span class="title class_">ListNode</span>, <span class="symbol">l2:</span> <span class="title class_">ListNode</span></span>) -&gt; <span class="title class_">ListNode</span>:   </span><br><span class="line">        dummy = temp = <span class="title class_">ListNode</span>(<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">while</span> l1 != <span class="title class_">None</span> <span class="keyword">and</span> l2 != <span class="title class_">None</span>: <span class="comment">#1</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> l1.val &lt; l2.<span class="symbol">val:</span> <span class="comment">#2</span></span><br><span class="line">                temp.<span class="keyword">next</span> = l1 <span class="comment">#3</span></span><br><span class="line">                l1 = l1.<span class="keyword">next</span> <span class="comment">#4</span></span><br><span class="line">            <span class="symbol">else:</span> </span><br><span class="line">                temp.<span class="keyword">next</span> = l2</span><br><span class="line">                l2 = l2.<span class="keyword">next</span></span><br><span class="line">            temp = temp.<span class="keyword">next</span></span><br><span class="line">        temp.<span class="keyword">next</span> = l1 <span class="keyword">or</span> l2  <span class="comment">#5</span></span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="keyword">next</span> <span class="comment">#6</span></span><br></pre></td></tr></table></figure>
-<p>Another way of solving is problem is by doing recursion. This is from <a href="https://leetcode.com/problems/merge-two-sorted-lists/discuss/9735/Python-solutions-(iteratively-recursively-iteratively-in-place)">here</a>. The first check is obvious! If one of them is empty, return the other one! Similar to line <code>#5</code> of previous solution. Here, we have two cases, whatever list has the smaller first element (equal elements also satisfies line <code>#1</code>), will be returned at the end. In the example <code>l1 = [1,2,4], l2 = [1,3,4]</code>, we go in the <code>if</code> statement of line <code>#1</code> first, this means that the first element of <code>l1</code> doesn't get changed! Then, we move the pointer to the second element of <code>l1</code> by calling the function again but with <code>l1.next</code> and <code>l2</code> as input! This round of call, goes to line <code>#2</code> because now we have element <code>1</code> from <code>l2</code> versus <code>2</code> from <code>l1</code>. Now, basically, <code>l2</code> gets connected to the tail of <code>l1</code>. We keep moving forward by switching between <code>l1</code> and <code>l2</code> until the last element. Sorry if it's not clear enough! I'm not a fan of recursion for such a problems! But, let me know which part it's hard to understand, I'll try to explain better!</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params"><span class="variable language_">self</span>, <span class="symbol">l1:</span> <span class="title class_">ListNode</span>, <span class="symbol">l2:</span> <span class="title class_">ListNode</span></span>) -&gt; <span class="title class_">ListNode</span>:   </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> l1 <span class="keyword">or</span> <span class="keyword">not</span> <span class="symbol">l2:</span></span><br><span class="line">            <span class="keyword">return</span> l1 <span class="keyword">or</span> l2</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> l1.val &lt;= l2.<span class="symbol">val:</span> <span class="comment">#1</span></span><br><span class="line">            l1.<span class="keyword">next</span> = <span class="variable language_">self</span>.mergeTwoLists(l1.<span class="keyword">next</span>, l2)</span><br><span class="line">            <span class="keyword">return</span> l1</span><br><span class="line">        <span class="symbol">else:</span> <span class="comment">#2</span></span><br><span class="line">            l2.<span class="keyword">next</span> = <span class="variable language_">self</span>.mergeTwoLists(l1, l2.<span class="keyword">next</span>)</span><br><span class="line">            <span class="keyword">return</span> l2</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>leetcode</tag>
-        <tag>python</tag>
-        <tag>pointer</tag>
-        <tag>list</tag>
-        <tag>merge</tag>
-        <tag>linklist</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>更新hexo报错spawn failed解决办法</title>
     <url>/spawnfailed.html</url>
     <content><![CDATA[<p>执行<code>hexo -d</code>时，出现<code>spawn failed</code>报错</p>
@@ -1321,8 +1455,8 @@ Similar to the gold example if I tell you the first clue is at location X, then,
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>github</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1352,8 +1486,8 @@ Similar to the gold example if I tell you the first clue is at location X, then,
         <category>mifukoIO</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>github</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
