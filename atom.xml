@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mifuko.github.io/"/>
-  <updated>2024-06-03T04:28:35.000Z</updated>
+  <updated>2024-06-06T09:15:53.000Z</updated>
   <id>https://mifuko.github.io/</id>
   
   <author>
@@ -15,6 +15,91 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IBM Data Analyst Capstone Project-Explore the Data Set</title>
+    <link href="https://mifuko.github.io/cadataset.html"/>
+    <id>https://mifuko.github.io/cadataset.html</id>
+    <published>2024-06-06T09:15:53.000Z</published>
+    <updated>2024-06-06T09:15:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><!-- toc --><ul><li><a href="#hands-on-lab-5-explore-the-data-set">Hands-on Lab 5: Explore the Data Set</a><ul><li>[Load the dataset<a href="https://jupyterlab-4-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/labs/module%201/Exploring%20the%20dataset/M1ExploreDataSet-lab.ipynb#Load-the-dataset"></a>](#load-the-datasethttpsjupyterlab-4-labs-prod-jupyterlab-us-east-0labscognitiveclassaiuserrorokowanglabtreelabsmodule201exploring20the20datasetm1exploredataset-labipynbload-the-dataset)</li><li>[Identify the data types of each column<a href="https://jupyterlab-4-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/labs/module%201/Exploring%20the%20dataset/M1ExploreDataSet-lab.ipynb#Identify-the-data-types-of-each-column"></a>](#identify-the-data-types-of-each-columnhttpsjupyterlab-4-labs-prod-jupyterlab-us-east-0labscognitiveclassaiuserrorokowanglabtreelabsmodule201exploring20the20datasetm1exploredataset-labipynbidentify-the-data-types-of-each-column)</li></ul></li></ul><!-- tocstop --><p>作业的数据集和字段说明via <a href="https://author-ide.skills.network/render?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZF9pbnN0cnVjdGlvbnNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuczMudXMuY2xvdWQtb2JqZWN0LXN0b3JhZ2UuYXBwZG9tYWluLmNsb3VkL0lCTS1EQTAzMjFFTi1Ta2lsbHNOZXR3b3JrL2xhYnMvbW9kdWxlJTIwMS9FeHBsb3JpbmclMjB0aGUlMjBkYXRhc2V0L0Fib3V0X3RoZV9kYXRhX3NldC5tZCIsInRvb2xfdHlwZSI6Imluc3RydWN0aW9uYWwtbGFiIiwiYWRtaW4iOmZhbHNlLCJpYXQiOjE3MTE0MjYzMjB9.j7zIPDpSfW-cqHLv6Go-p39TxSqP1NBl6zzDjq8k9LI">About the dataset</a></p><h1><span id="hands-on-lab-5-explore-the-data-set"> Hands-on Lab 5: Explore the Data Set</span></h1><h2><span id="load-the-dataset"> Load the dataset</span></h2><p>Import the required libraries.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br></pre></td></tr></table></figure><p>The dataset is available on the IBM Cloud at the below url.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dataset_url = <span class="string">&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/LargeData/m1_survey_data.csv&quot;</span></span><br></pre></td></tr></table></figure><p>Load the data available at dataset_url into a dataframe.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df = pd.read_csv(dataset_url)</span><br></pre></td></tr></table></figure><p>Explore the data set<a href="https://jupyterlab-4-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/labs/module%201/Exploring%20the%20dataset/M1ExploreDataSet-lab.ipynb#Explore-the-data-set"></a></p><p>It is a good idea to print the top 5 rows of the dataset to get a feel of how the dataset will look.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(df.head())</span><br></pre></td></tr></table></figure><p>Display the top 5 rows and columns from your dataset.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(df.head(<span class="number">5</span>).to_string(index=<span class="literal">False</span>))</span><br></pre></td></tr></table></figure><p>Find out the number of rows and columns<a href="https://jupyterlab-4-labs-prod-jupyterlab-us-east-0.labs.cognitiveclass.ai/user/rorokowang/lab/tree/labs/module%201/Exploring%20the%20dataset/M1ExploreDataSet-lab.ipynb#Find-out-the-number-of-rows-and-columns"></a></p><p>Start by exploring the numbers of rows and columns of data in the dataset.</p><p>Print the number of rows in the dataset.</p><p>Print the number of columns in the dataset.</p><h2><span id="identify-the-data-types-of-each-column"> Identify the data types of each column</span></h2><p>Explore the dataset and identify the data types of each column.</p><p>Print the datatype of all columns.</p><p>Print the mean age of the survey participants.</p><p>The dataset is the result of a world wide survey. Print how many unique countries are there in the Country column.</p><p>隔壁github - <a href="https://github.com/mifuko/CourseraAssignment/blob/cc153802801e5d892ae6092d3236e93cba8a972a/M1ExploreDataSet-lab.ipynb">M1ExploreDataSet-lab.ipynb</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;!-- toc --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#hands-on-lab-5-explore-the-data-set&quot;&gt;Hands-on Lab 5: Explore the Data Set&lt;/a&gt;
+&lt;ul&gt;
+&lt;
+      
+    
+    </summary>
+    
+      <category term="coursera" scheme="https://mifuko.github.io/categories/coursera/"/>
+    
+    
+      <category term="DataAnalysis" scheme="https://mifuko.github.io/tags/DataAnalysis/"/>
+    
+      <category term="coursera" scheme="https://mifuko.github.io/tags/coursera/"/>
+    
+      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
+    
+      <category term="IBM" scheme="https://mifuko.github.io/tags/IBM/"/>
+    
+      <category term="dataset" scheme="https://mifuko.github.io/tags/dataset/"/>
+    
+      <category term="WebScraping" scheme="https://mifuko.github.io/tags/WebScraping/"/>
+    
+      <category term="BeautifulSoup" scheme="https://mifuko.github.io/tags/BeautifulSoup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IBM Data Analyst Capstone Project-Web Scraping Lab</title>
+    <link href="https://mifuko.github.io/cawebscra.html"/>
+    <id>https://mifuko.github.io/cawebscra.html</id>
+    <published>2024-06-06T07:04:23.000Z</published>
+    <updated>2024-06-06T07:04:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><!-- toc --><ul><li><a href="#scrape-wwwibmcom">Scrape www.ibm.com</a></li><li><a href="#scrape-data-from-html-tables">Scrape data from html tables</a></li><li><a href="#extract-information-from-the-given-web-site">Extract information from the given web site</a></li></ul><!-- tocstop --><p>神金这个课到底有没有人在学阿，上一个test的内容是根据github的job回答的，但是那个网页都失效了阿（。而且如果不提供专门的api并不觉得单纯用request就可以抓到（。</p><p>Module 1Hands-on Lab 3: Review Of Web Scraping这个lab来自<a href="https://www.coursera.org/learn/ibm-data-analyst-capstone-project/ungradedLti/cITGy/hands-on-lab-3-review-of-web-scraping">Hands-on Lab 3: Review Of Web Scraping</a>，这篇是用美丽汤爬的。</p><h1><span id="scrape-wwwibmcom"> Scrape </span></h1><p>Import the required modules and functions</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup </span><br><span class="line"><span class="comment"># this module helps in web scrapping.</span></span><br><span class="line"><span class="keyword">import</span> requests  </span><br><span class="line"><span class="comment"># this module helps us to download a web page</span></span><br></pre></td></tr></table></figure><p>Download the contents of the web page</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">&quot;http://www.ibm.com&quot;</span></span><br><span class="line"><span class="comment"># get the contents of the webpage in text format and store in a variable called data</span></span><br><span class="line">data  = requests.get(url).text </span><br></pre></td></tr></table></figure><p>Create a soup object using the class BeautifulSoup</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">soup = BeautifulSoup(data,<span class="string">&quot;html5lib&quot;</span>)  </span><br><span class="line"><span class="comment"># create a soup object using the variable &#x27;data&#x27;</span></span><br></pre></td></tr></table></figure><p>Scrape all links</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> link <span class="keyword">in</span> soup.find_all(<span class="string">&#x27;a&#x27;</span>):  </span><br><span class="line"><span class="comment"># in html anchor/link is represented by the tag &lt;a&gt;</span></span><br><span class="line">    <span class="built_in">print</span>(link.get(<span class="string">&#x27;href&#x27;</span>))</span><br></pre></td></tr></table></figure><p>Scrape all images</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> link <span class="keyword">in</span> soup.find_all(<span class="string">&#x27;img&#x27;</span>):</span><br><span class="line"><span class="comment"># in html image is represented by the tag &lt;img&gt;</span></span><br><span class="line">    <span class="built_in">print</span>(link.get(<span class="string">&#x27;src&#x27;</span>))</span><br></pre></td></tr></table></figure><h1><span id="scrape-data-from-html-tables"> Scrape data from html tables</span></h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#The below url contains a html table with data about colors and color codes.</span></span><br><span class="line">url = <span class="string">&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/labs/datasets/HTMLColorCodes.html&quot;</span></span><br></pre></td></tr></table></figure><p>Before proceeding to scrape a web site, you need to examine the contents, and the way data is organized on the website. Open the above url in your browser and check how many rows and columns are there in the color table.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># get the contents of the webpage in text format and store in a variable called data</span></span><br><span class="line">data  = requests.get(url).text</span><br><span class="line">soup = BeautifulSoup(data,<span class="string">&quot;html5lib&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#find a html table in the web page</span></span><br><span class="line">table = soup.find(<span class="string">&#x27;table&#x27;</span>) </span><br><span class="line"><span class="comment"># in html table is represented by the tag &lt;table&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#Get all rows from the table</span></span><br><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> table.find_all(<span class="string">&#x27;tr&#x27;</span>): </span><br><span class="line"><span class="comment"># in html table row is represented by the tag &lt;tr&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Get all columns in each row.</span></span><br><span class="line">    cols = row.find_all(<span class="string">&#x27;td&#x27;</span>) </span><br><span class="line">    <span class="comment"># in html a column is represented by the tag &lt;td&gt;</span></span><br><span class="line">    color_name = cols[<span class="number">2</span>].getText() </span><br><span class="line">    <span class="comment"># store the value in column 3 as color_name</span></span><br><span class="line">    color_code = cols[<span class="number">3</span>].getText() </span><br><span class="line">    <span class="comment"># store the value in column 4 as color_code</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;&#123;&#125;---&gt;&#123;&#125;&quot;</span>.<span class="built_in">format</span>(color_name,color_code))</span><br></pre></td></tr></table></figure><h1><span id="extract-information-from-the-given-web-site"> Extract information from the given web site</span></h1><p>Extract information from the given web siteYou will extract the data from the below web site:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#this url contains the data you need to scrape</span></span><br><span class="line">url = <span class="string">&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/labs/datasets/Programming_Languages.html&quot;</span></span><br></pre></td></tr></table></figure><p>The data you need to scrape is the name of the programming language and average annual salary.It is a good idea to open the url in your web broswer and study the contents of the web page before you start to scrape.</p><ul><li>Import the required libraries</li><li>Download the webpage at the url</li><li>Create a soup object</li><li>Scrape the <code>Language name</code> and <code>annual average salary</code>.</li><li>Save the scrapped data into a file named <code>popular-languages.csv</code></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/labs/datasets/Programming_Languages.html&quot;</span></span><br><span class="line">data  = requests.get(url).text</span><br><span class="line"></span><br><span class="line">soup = BeautifulSoup(data,<span class="string">&quot;html.parser&quot;</span>)</span><br><span class="line">table = soup.find(<span class="string">&#x27;table&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;popular-languages.csv&#x27;</span>, mode=<span class="string">&#x27;w&#x27;</span>, newline=<span class="string">&#x27;&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">    writer = csv.writer(file)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 遍历表格中的每一行，并写入 CSV 文件</span></span><br><span class="line">    <span class="keyword">for</span> row <span class="keyword">in</span> table.find_all(<span class="string">&#x27;tr&#x27;</span>):</span><br><span class="line">        cols = row.find_all(<span class="string">&#x27;td&#x27;</span>)</span><br><span class="line">        <span class="comment"># 检查列是否足够，避免索引错误</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(cols) &gt;= <span class="number">4</span>:</span><br><span class="line">            Language = cols[<span class="number">1</span>].get_text().strip()  </span><br><span class="line">            <span class="comment"># 获取语言名称并去除多余空格</span></span><br><span class="line">            AAS = cols[<span class="number">3</span>].get_text().strip()       </span><br><span class="line">            <span class="comment"># 获取AAS值并去除多余空格</span></span><br><span class="line">            writer.writerow([Language, AAS])</span><br><span class="line">            <span class="comment"># 将语言名称和AAS值写入 CSV 文件</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;!-- toc --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#scrape-wwwibmcom&quot;&gt;Scrape www.ibm.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#scrape-data-from-html-ta
+      
+    
+    </summary>
+    
+      <category term="coursera" scheme="https://mifuko.github.io/categories/coursera/"/>
+    
+    
+      <category term="DataAnalysis" scheme="https://mifuko.github.io/tags/DataAnalysis/"/>
+    
+      <category term="coursera" scheme="https://mifuko.github.io/tags/coursera/"/>
+    
+      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
+    
+      <category term="IBM" scheme="https://mifuko.github.io/tags/IBM/"/>
+    
+      <category term="WebScraping" scheme="https://mifuko.github.io/tags/WebScraping/"/>
+    
+      <category term="BeautifulSoup" scheme="https://mifuko.github.io/tags/BeautifulSoup/"/>
+    
+      <category term="table" scheme="https://mifuko.github.io/tags/table/"/>
+    
+      <category term="img" scheme="https://mifuko.github.io/tags/img/"/>
+    
+  </entry>
   
   <entry>
     <title>IBM Data Analyst Capstone Project-How to Get Data</title>
@@ -602,42 +687,6 @@
       <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
     
       <category term="hexo" scheme="https://mifuko.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo升级后用butterfly新主题替换next旧主题</title>
-    <link href="https://mifuko.github.io/butterfly2next.html"/>
-    <id>https://mifuko.github.io/butterfly2next.html</id>
-    <published>2024-03-06T02:59:00.000Z</published>
-    <updated>2024-03-06T02:59:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://s2.loli.net/2024/03/06/PzdmfJxOqZMkS9i.png" alt="Pasted image 20240305054228.png"></p><p>版本太旧于是升级</p><p>当前版本如下</p><p><img src="https://s2.loli.net/2024/03/06/dLGmeFpgJiYwncK.png" alt="Pasted image 20240305054304.png"></p><p>升级之后版本如下</p><p><img src="https://s2.loli.net/2024/03/06/4dwZJcCjy8Ssumx.png" alt="Pasted image 20240305054545.png"></p><p>查看过期的包</p><p><img src="https://s2.loli.net/2024/03/06/hrzLb1DI9pPJUqS.png" alt="Pasted image 20240305061218.png"></p><p>修改<code>package.json</code>升级<code>npm install --save</code></p><p>升级后查看版本报错<code>TypeError: Cannot read property 'length' of undefined</code></p><p><img src="https://s2.loli.net/2024/03/06/dW5gy84XMutzbrh.png" alt="Pasted image 20240305061436.png"></p><p>使用这段后</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">进入博客的根目录</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> /blog-root</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除package-lock.json</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">rm</span> -rf package-lock.json</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">更新package.json</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm -upgrade</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除整个模块目录，这样可以避免很多坑</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">rm</span> -rf node_modules</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">更新Hexo的模块</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm update --save</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">或者强制更新 没有用上</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm update --save --force</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>此时再查看版本，权当成功了吧（。</p><p><img src="https://s2.loli.net/2024/03/06/lLE6ptrD4uWVYTZ.png" alt="Pasted image 20240305062121.png"></p><p>继续安装butterfly</p><p><img src="https://s2.loli.net/2024/03/06/jbyRe9LlMv8pzTo.png" alt="Pasted image 20240305055953.png"></p><p><a href="https://blog.csdn.net/tombosky/article/details/135835362#3.%20%E5%AE%9E%E4%BE%8B">npm ERR! code CERT_HAS_EXPIRED：解决证书过期问题的详细步骤-CSDN博客</a></p><p>npm install 安装慢<a href="https://blog.csdn.net/mmklo/article/details/125486612">解决npm install 安装慢！！！_npm 太慢-CSDN博客</a></p><p>换成淘宝源，报错</p><p><a href="https://zhuanlan.zhihu.com/p/683192771">npm 报错 request to https://registry.npm.taobao.org/three failed, reason: certificate has expired - 知乎</a></p><p>解决</p><p><a href="https://zhuanlan.zhihu.com/p/683192771">npm 报错 request to https://registry.npm.taobao.org/three failed, reason: certificate has expired - 知乎</a></p><p>主题替换上之后，报错<code>TypeError: __permalink.startsWith is not a function</code></p><p><img src="https://s2.loli.net/2024/03/06/3OjG6WpdTZNnqmK.png" alt="Pasted image 20240305062936.png"></p><p>大佬的解决方案，大概意思就是先clone了主题，但是再去搞hexo的升级，就会出现不兼容，在顺序上需要先升级完成，包括hexo和node的升级，再去clone需要的主题</p><p><a href="https://cloud.tencent.com/developer/article/2388627">Hexo升级之后Butterfly主题不兼容，发生报错：TypeError: require(...) is not a function-腾讯云开发者社区-腾讯云</a></p><p>仍然不解决，查询其他报错<code>WARN  Deprecated config detected: &quot;use_date_for_updated&quot; i</code></p><p>大佬的解决方案，是从4升到5，我是从4升到了6，完美解决warning和报错<a href="https://github.com/next-theme/hexo-theme-next/issues/104">新版本部署报错 · Issue #104 · next-theme/hexo-theme-next · GitHub</a><a href="https://cyfeng.science/2020/11/20/hexo-use-date-for-updated-warning-solution/">HEXO 新版本 'use_date_for_updated' 警告的解决方法 | CO + 2Fe = COFFee</a></p><p>打开根目录下的 <code>_config.yml</code> 找到 <code>use_date_for_updated: false</code> ，改为：<br><code>updated_option: 'date'</code>: 使用 date 作为 updated 的值。可被用于 Git 工作流之中，因为使用 Git 管理站点时，文件的最后修改日期常常会发生改变<br><code>updated_option: 'mtime'</code>: 使用文件的最后修改时间。这是从 Hexo 3.0.0 开始的默认行为。<br><code>updated_option: 'empty'</code>: 直接删除 updated。使用这一选项可能会导致大部分主题和插件无法正常工作。</p><p>现在的问题剩下，只有一篇文章最新的一篇，而不是历史文章都在</p><p><img src="https://s2.loli.net/2024/03/06/qtXoODCuYdBTrk3.png" alt="Pasted image 20240305063740.png"></p><p>尝试把<code>_post</code>里面的全部挪走清空，报错<code> Unable to call the return value of (posts[&quot;first&quot;])[&quot;updated&quot;][&quot;toISOString&quot;], which is undefined or falsey</code></p><p><img src="https://s2.loli.net/2024/03/06/Tn7QhOYjB2PvKRe.png" alt="Pasted image 20240305064747.png"></p><p>于是再删除<code>.deploy_git</code>文件夹，报错<code>Template render error: (unknown path) [Line 8, Column 25]</code></p><p><img src="https://s2.loli.net/2024/03/06/CbROmKJ9jvr1x4Z.png" alt="Pasted image 20240305065011.png"></p><p>尝试切换版本，无果</p><p><a href="https://blog.csdn.net/birdfly2015/article/details/104216232">Hexo之next主题配置时ERROR Template render error_templaterenderpolicy render error-CSDN博客</a></p><p><img src="https://s2.loli.net/2024/03/06/UHNXJlKZndDCutV.png" alt="Pasted image 20240305070317.png"></p><p>把<code>_post</code>整个文件夹删掉，使用这里的方法clone主题，再来一次</p><p><a href="https://cloud.tencent.com/developer/article/1935545">Butterfly主题的安装及更新-腾讯云开发者社区-腾讯云</a></p><p>重新新建<code>_post</code>文件夹，依然无法解决</p><p>看来看去都是md中有无法转码导致崩溃，但是我已经删完了还是不行</p><p>最后尝试拷贝了一个纯中文的md文件，放到<code>_post</code>下，<code>hexo -g</code>就没报错了……大崩溃……实际显示地址还是这个</p><p><a href="http://localhost:4000/">http://localhost:4000/</a></p><p><img src="https://s2.loli.net/2024/03/06/ZYCKgBl83WtbP6j.png" alt="Pasted image 20240305074525.png"><img src="https://s2.loli.net/2024/03/06/YjELkD4G1cTH6SC.png" alt="Pasted image 20240305074723.png"></p><p>最后再来一波</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure><p>乞丐版发布成功</p><p><img src="https://s2.loli.net/2024/03/06/rT6GZQzuR5UOW9P.png" alt="Pasted image 20240305075002.png"></p><p>美化折腾看这篇</p><p>占个座</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/03/06/PzdmfJxOqZMkS9i.png&quot; alt=&quot;Pasted image 20240305054228.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;版本太旧于是升级&lt;/p&gt;
-&lt;p&gt;当前版本如下&lt;/p&gt;
-&lt;p
-      
-    
-    </summary>
-    
-      <category term="mifukoIO" scheme="https://mifuko.github.io/categories/mifukoIO/"/>
-    
-    
-      <category term="github" scheme="https://mifuko.github.io/tags/github/"/>
-    
-      <category term="hexo" scheme="https://mifuko.github.io/tags/hexo/"/>
-    
-      <category term="butterfly" scheme="https://mifuko.github.io/tags/butterfly/"/>
-    
-      <category term="next" scheme="https://mifuko.github.io/tags/next/"/>
-    
-      <category term="npm" scheme="https://mifuko.github.io/tags/npm/"/>
     
   </entry>
   
