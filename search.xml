@@ -54,84 +54,639 @@ via <a href="https://author-ide.skills.network/render?token=eyJhbGciOiJIUzI1NiIs
       </tags>
   </entry>
   <entry>
-    <title>hexo升级后用butterfly新主题替换next旧主题</title>
-    <url>/butterfly2next.html</url>
-    <content><![CDATA[<p><img src="https://s2.loli.net/2024/03/06/PzdmfJxOqZMkS9i.png" alt="Pasted image 20240305054228.png"></p>
-<p>版本太旧于是升级</p>
-<p>当前版本如下</p>
-<p><img src="https://s2.loli.net/2024/03/06/dLGmeFpgJiYwncK.png" alt="Pasted image 20240305054304.png"></p>
-<p>升级之后版本如下</p>
-<p><img src="https://s2.loli.net/2024/03/06/4dwZJcCjy8Ssumx.png" alt="Pasted image 20240305054545.png"></p>
-<p>查看过期的包</p>
-<p><img src="https://s2.loli.net/2024/03/06/hrzLb1DI9pPJUqS.png" alt="Pasted image 20240305061218.png"></p>
-<p>修改<code>package.json</code>
-升级<code>npm install --save</code></p>
-<p>升级后查看版本报错
-<code>TypeError: Cannot read property 'length' of undefined</code></p>
-<p><img src="https://s2.loli.net/2024/03/06/dW5gy84XMutzbrh.png" alt="Pasted image 20240305061436.png"></p>
-<p>使用这段后</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">进入博客的根目录</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> /blog-root</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除package-lock.json</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">rm</span> -rf package-lock.json</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">更新package.json</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm -upgrade</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除整个模块目录，这样可以避免很多坑</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">rm</span> -rf node_modules</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">更新Hexo的模块</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm update --save</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">或者强制更新 没有用上</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm update --save --force</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>此时再查看版本，权当成功了吧（。</p>
-<p><img src="https://s2.loli.net/2024/03/06/lLE6ptrD4uWVYTZ.png" alt="Pasted image 20240305062121.png"></p>
-<p>继续安装butterfly</p>
-<p><img src="https://s2.loli.net/2024/03/06/jbyRe9LlMv8pzTo.png" alt="Pasted image 20240305055953.png"></p>
-<p><a href="https://blog.csdn.net/tombosky/article/details/135835362#3.%20%E5%AE%9E%E4%BE%8B">npm ERR! code CERT_HAS_EXPIRED：解决证书过期问题的详细步骤-CSDN博客</a></p>
-<p>npm install 安装慢
-<a href="https://blog.csdn.net/mmklo/article/details/125486612">解决npm install 安装慢！！！_npm 太慢-CSDN博客</a></p>
-<p>换成淘宝源，报错</p>
-<p><a href="https://zhuanlan.zhihu.com/p/683192771">npm 报错 request to https://registry.npm.taobao.org/three failed, reason: certificate has expired - 知乎</a></p>
-<p>解决</p>
-<p><a href="https://zhuanlan.zhihu.com/p/683192771">npm 报错 request to https://registry.npm.taobao.org/three failed, reason: certificate has expired - 知乎</a></p>
-<p>主题替换上之后，报错
-<code>TypeError: __permalink.startsWith is not a function</code></p>
-<p><img src="https://s2.loli.net/2024/03/06/3OjG6WpdTZNnqmK.png" alt="Pasted image 20240305062936.png"></p>
-<p>大佬的解决方案，大概意思就是先clone了主题，但是再去搞hexo的升级，就会出现不兼容，在顺序上需要先升级完成，包括hexo和node的升级，再去clone需要的主题</p>
-<p><a href="https://cloud.tencent.com/developer/article/2388627">Hexo升级之后Butterfly主题不兼容，发生报错：TypeError: require(...) is not a function-腾讯云开发者社区-腾讯云</a></p>
-<p>仍然不解决，查询其他报错
-<code>WARN  Deprecated config detected: &quot;use_date_for_updated&quot; i</code></p>
-<p>大佬的解决方案，是从4升到5，我是从4升到了6，完美解决warning和报错
-<a href="https://github.com/next-theme/hexo-theme-next/issues/104">新版本部署报错 · Issue #104 · next-theme/hexo-theme-next · GitHub</a>
-<a href="https://cyfeng.science/2020/11/20/hexo-use-date-for-updated-warning-solution/">HEXO 新版本 'use_date_for_updated' 警告的解决方法 | CO + 2Fe = COFFee</a></p>
-<p>打开根目录下的 <code>_config.yml</code> 找到 <code>use_date_for_updated: false</code> ，改为：<br>
-<code>updated_option: 'date'</code>: 使用 date 作为 updated 的值。可被用于 Git 工作流之中，因为使用 Git 管理站点时，文件的最后修改日期常常会发生改变<br>
-<code>updated_option: 'mtime'</code>: 使用文件的最后修改时间。这是从 Hexo 3.0.0 开始的默认行为。<br>
-<code>updated_option: 'empty'</code>: 直接删除 updated。使用这一选项可能会导致大部分主题和插件无法正常工作。</p>
-<p>现在的问题剩下，只有一篇文章最新的一篇，而不是历史文章都在</p>
-<p><img src="https://s2.loli.net/2024/03/06/qtXoODCuYdBTrk3.png" alt="Pasted image 20240305063740.png"></p>
-<p>尝试把<code>_post</code>里面的全部挪走清空，报错
-<code> Unable to call the return value of (posts[&quot;first&quot;])[&quot;updated&quot;][&quot;toISOString&quot;], which is undefined or falsey</code></p>
-<p><img src="https://s2.loli.net/2024/03/06/Tn7QhOYjB2PvKRe.png" alt="Pasted image 20240305064747.png"></p>
-<p>于是再删除<code>.deploy_git</code>文件夹，报错
-<code>Template render error: (unknown path) [Line 8, Column 25]</code></p>
-<p><img src="https://s2.loli.net/2024/03/06/CbROmKJ9jvr1x4Z.png" alt="Pasted image 20240305065011.png"></p>
-<p>尝试切换版本，无果</p>
-<p><a href="https://blog.csdn.net/birdfly2015/article/details/104216232">Hexo之next主题配置时ERROR Template render error_templaterenderpolicy render error-CSDN博客</a></p>
-<p><img src="https://s2.loli.net/2024/03/06/UHNXJlKZndDCutV.png" alt="Pasted image 20240305070317.png"></p>
-<p>把<code>_post</code>整个文件夹删掉，使用这里的方法clone主题，再来一次</p>
-<p><a href="https://cloud.tencent.com/developer/article/1935545">Butterfly主题的安装及更新-腾讯云开发者社区-腾讯云</a></p>
-<p>重新新建<code>_post</code>文件夹，依然无法解决</p>
-<p>看来看去都是md中有无法转码导致崩溃，但是我已经删完了还是不行</p>
-<p>最后尝试拷贝了一个纯中文的md文件，放到<code>_post</code>下，<code>hexo -g</code>就没报错了……大崩溃……
-实际显示地址还是这个</p>
-<p><a href="http://localhost:4000/">http://localhost:4000/</a></p>
-<p><img src="https://s2.loli.net/2024/03/06/ZYCKgBl83WtbP6j.png" alt="Pasted image 20240305074525.png">
-<img src="https://s2.loli.net/2024/03/06/YjELkD4G1cTH6SC.png" alt="Pasted image 20240305074723.png"></p>
-<p>最后再来一波</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-<p>乞丐版发布成功</p>
-<p><img src="https://s2.loli.net/2024/03/06/rT6GZQzuR5UOW9P.png" alt="Pasted image 20240305075002.png"></p>
-<p>美化折腾看这篇</p>
-<p>占个座</p>
+    <title>English for Common Interactions in the Workplace Basic Level</title>
+    <url>/caennj.html</url>
+    <content><![CDATA[<span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#title">title</a></li>
+<li><a href="#sentences">sentences</a></li>
+</ul>
+<!-- tocstop -->
+<h1><span id="title"> title</span></h1>
+<p><a href="https://www.coursera.org/my-learning?myLearningTab=COMPLETED">工作场所常用互动英语：基础水平</a></p>
+<p>Pontificia Universidad Católica de Chile
+English for Common Interactions in the Workplace: Basic Level</p>
+<h1><span id="sentences"> sentences</span></h1>
+<table>
+<thead>
+<tr>
+<th>NO.</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Together with our team of expert teachers here at English UC, we have developed this Course, English for Common Interactions in the Workplace Basic Level in order to provide learners from around the world with basic lexical and grammatical tools to use English in specific interactions that occur on a daily basis in a typical workplace.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>First, you will see a video with a model situation which simulates an interaction in the workplace that is relevant to the module objective.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>We employ level appropriate instructional language to introduce and explore these structures.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>So you can feel empowered to immerse yourself in English.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Each module also includes a comprehension strategy session during which we will work together to develop reading and listening comprehension through practical level appropriate strategies, delivered using a step-by-step approach that guides you towards autonomy.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Focus on Vocabulary: Nationalities, and Professions.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Focus on Grammar: Present Simple.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>We use &quot;are&quot; in plural form.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Look at the table of the interrogative form of the verb &quot;to be&quot;.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>When meeting someone in a formal situation, we start with a greeting.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Gabriella wants me to explain an ordinary working day to help you understand more about your job and how this department works.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Yes, we are always very busy, but I like to take short breaks during the day, I like to leave my office and talk with colleagues for ten minutes, and then I return and I focus, it's a lot of work, but I love my job.</td>
+</tr>
+<tr>
+<td>13</td>
+<td>To brainstorm ideas means to suggest many ideas before considering some of them more carefully.</td>
+</tr>
+<tr>
+<td>14</td>
+<td>To file documents is to place documents in a cabinet or a folder in a particular order. Number 5.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>In the image, a man arrives at an office.</td>
+</tr>
+<tr>
+<td>16</td>
+<td>We don't start until 8:30, but I like to have a cup of coffee and relax first.</td>
+</tr>
+<tr>
+<td>17</td>
+<td>To form the negative, we use the auxiliary do not or does not, plus the unconjugated form of the main verb.</td>
+</tr>
+<tr>
+<td>18</td>
+<td>I always arrive at the office at 8:30, at the same time as Gabriela.</td>
+</tr>
+<tr>
+<td>19</td>
+<td>I always leave work at 7:00 PM and take the bus home.</td>
+</tr>
+<tr>
+<td>20</td>
+<td>He is Argentinian.</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Gabrielle is in a meeting at the moment.</td>
+</tr>
+<tr>
+<td>22</td>
+<td>This is Sofia, how may I help you?</td>
+</tr>
+<tr>
+<td>23</td>
+<td>I want to schedule a meeting with you to discuss our plans for conference.</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Sometimes the call gets cut off.</td>
+</tr>
+<tr>
+<td>25</td>
+<td>In this area, there's pizza, Peruvian food, vegetarian food and sushi.</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Do you want to eat around 1:30?</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Great, talk to then, bye.</td>
+</tr>
+<tr>
+<td>28</td>
+<td>To answer the phone formally, we say, good morning or good afternoon, depending on the time of day, say the name of the organization, then identify ourselves by saying, this is and her name.</td>
+</tr>
+<tr>
+<td>29</td>
+<td>I'm calling about plus the subject.</td>
+</tr>
+<tr>
+<td>30</td>
+<td>formal:May I please speak to Gabriela?</td>
+</tr>
+<tr>
+<td>31</td>
+<td>informal:Is Gabriela there?</td>
+</tr>
+<tr>
+<td>32</td>
+<td>formal:May I ask who's calling, please?</td>
+</tr>
+<tr>
+<td>33</td>
+<td>informal: Who is this?</td>
+</tr>
+<tr>
+<td>34</td>
+<td>In the interrogative, we use an auxiliary verb before the subject and leave the main verb neutral.</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Does Gabriela work here? Yes, she does.</td>
+</tr>
+<tr>
+<td>36</td>
+<td>It's great to talk to you again to review the plans for the conference. I'm glad to have your help.</td>
+</tr>
+<tr>
+<td>37</td>
+<td>The conference starts on Monday, June 2nd, and ends on Friday, June 6th.</td>
+</tr>
+<tr>
+<td>38</td>
+<td>It has plenty of parking, it's also accessible by metro. Best of all, it has all the facilities we need in one location.</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Two auditoriums, 12 meeting rooms, three banquet halls, and 10 executive suites for special guests.</td>
+</tr>
+<tr>
+<td>40</td>
+<td>We should arrange a social media campaign and connect the website to all of the major social media platforms.</td>
+</tr>
+<tr>
+<td>41</td>
+<td>ith 12 meeting rooms, each session can have 16 or 17 people attend.</td>
+</tr>
+<tr>
+<td>42</td>
+<td>I recommend a standard welcome kit containing a pen, notebook, name tag, and the conference information booklet.</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Please send me the logo by May 19th and expect the materials to be ready by May 26th.</td>
+</tr>
+<tr>
+<td>44</td>
+<td>I think this event is in good hands with Epic Events.</td>
+</tr>
+<tr>
+<td>45</td>
+<td>Let's have a follow-up meeting in two weeks.</td>
+</tr>
+<tr>
+<td>46</td>
+<td>When is a good time for you?</td>
+</tr>
+<tr>
+<td>47</td>
+<td>Okay, 11:00 it is. See you then.</td>
+</tr>
+<tr>
+<td>48</td>
+<td>Let's review the cardinal numbers, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000, 10,000, 100,000, 101, 115, 250, 3,738, 634,975.</td>
+</tr>
+<tr>
+<td>49</td>
+<td>We say the 19th of May, May 19th. In British English, we say the day before the month. In US English, we usually say the month before the day.</td>
+</tr>
+<tr>
+<td>50</td>
+<td>I suggest plus that plus subject. I suggest that we think about.</td>
+</tr>
+<tr>
+<td>51</td>
+<td>I recommend using the online system.</td>
+</tr>
+<tr>
+<td>52</td>
+<td>I recommend a large meeting room.</td>
+</tr>
+<tr>
+<td>53</td>
+<td>It’s not a good idea to call in the evening.</td>
+</tr>
+<tr>
+<td>54</td>
+<td>I suggest that we meet at 10:00.I + suggest+ that + subject + verb.</td>
+</tr>
+<tr>
+<td>55</td>
+<td>How should I prepare for the meeting?</td>
+</tr>
+<tr>
+<td>56</td>
+<td>Do you have any other advice?</td>
+</tr>
+<tr>
+<td>57</td>
+<td>It's not a good idea to wait until the last minute to make this list.</td>
+</tr>
+<tr>
+<td>58</td>
+<td>In order to develop your listening skills, it is recommendable to become familiar with some important listening strategies.</td>
+</tr>
+<tr>
+<td>59</td>
+<td>Gist refers to the most important pieces of information about something, or general information without details.</td>
+</tr>
+<tr>
+<td>60</td>
+<td>When we listen for the gist, we try to understand the main ideas by listening for keywords and intonation.</td>
+</tr>
+<tr>
+<td>61</td>
+<td>Yes. There's an Italian restaurant on 5th Avenue she loves.</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Send me an e-mail with days and times that are good for you.</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Continue this momentum and you'll finish 22 days earlier than expected.</td>
+</tr>
+<tr>
+<td>64</td>
+<td>I'm going to interview three candidates on Friday the 24th for a job in the finance department.</td>
+</tr>
+<tr>
+<td>65</td>
+<td>Please can you book the room from quarter past 9 to 12 o'clock? We're going to interview people from 9:30, but I need a little time to arrive and organize myself before we start.</td>
+</tr>
+<tr>
+<td>66</td>
+<td>The candidacy to come to this reception desk when they arrive to the office to get a visitor's pass.</td>
+</tr>
+<tr>
+<td>67</td>
+<td>Also, what time are they going to arrive?</td>
+</tr>
+<tr>
+<td>68</td>
+<td>Can you remind them to arrive 10 minutes early so we don't start late.</td>
+</tr>
+<tr>
+<td>69</td>
+<td>By the way, I'm not going to be here on that day. I'm going on a holiday from the 13th to the 27th. Karen is going to replace me while I'm away.</td>
+</tr>
+<tr>
+<td>70</td>
+<td>Where are you going? Anywhere nice.</td>
+</tr>
+<tr>
+<td>71</td>
+<td>The time they show is half past 1, or 1:30.</td>
+</tr>
+<tr>
+<td>72</td>
+<td>I need a room for a meeting with a client at 4 o'clock. Can I reserve one?</td>
+</tr>
+<tr>
+<td>73</td>
+<td>I am going to have a meeting at 2:30.</td>
+</tr>
+<tr>
+<td>74</td>
+<td>Am I going to meet with clients on Tuesday?</td>
+</tr>
+<tr>
+<td>75</td>
+<td>Is she going to eat in the cafeteria?</td>
+</tr>
+<tr>
+<td>76</td>
+<td>I am going to leave next Thursday.</td>
+</tr>
+<tr>
+<td>77</td>
+<td>There is a flight at quarter to four or another at 5:30.</td>
+</tr>
+<tr>
+<td>78</td>
+<td>One of them is only five minutes away.</td>
+</tr>
+<tr>
+<td>79</td>
+<td>Leave the office and turn left. Go straight ahead until there's a park in front of you.</td>
+</tr>
+<tr>
+<td>80</td>
+<td>Then turn right, go straight ahead for two blocks and it's on the left, between the pharmacy and the movie theater.</td>
+</tr>
+<tr>
+<td>81</td>
+<td>So I turn left out of this building, walk until the park is in front of me and then turn right?</td>
+</tr>
+<tr>
+<td>82</td>
+<td>There is an amazing coffee shop just around the corner from the bank.</td>
+</tr>
+<tr>
+<td>83</td>
+<td>So when you leave the bank, take a left, then take the first right down Main street. The coffee shop is on the right behind the shopping mall.</td>
+</tr>
+<tr>
+<td>84</td>
+<td>It's only two blocks away.</td>
+</tr>
+<tr>
+<td>85</td>
+<td>We say pharmacy or drug store.</td>
+</tr>
+<tr>
+<td>86</td>
+<td>We can say where is, or how do I get to, to ask for directions.</td>
+</tr>
+<tr>
+<td>87</td>
+<td>Are there any banks near here?</td>
+</tr>
+<tr>
+<td>88</td>
+<td>There is an amazing coffee shop near here.</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Are there any rooms available?</td>
+</tr>
+<tr>
+<td>90</td>
+<td>Are there any clients waiting?</td>
+</tr>
+<tr>
+<td>91</td>
+<td>The coffee shop is to the right of the fast food restaurant.</td>
+</tr>
+<tr>
+<td>92</td>
+<td>The market is around the corner from the school.</td>
+</tr>
+<tr>
+<td>93</td>
+<td>To get from the circus to the school you go straight ahead.</td>
+</tr>
+<tr>
+<td>94</td>
+<td>First, we need to study the question to help us identify what information we need to listen for.</td>
+</tr>
+<tr>
+<td>95</td>
+<td>How many of us are going?</td>
+</tr>
+<tr>
+<td>96</td>
+<td>I'm going to ask for a table for lunchtime at 1 o'clock.</td>
+</tr>
+<tr>
+<td>97</td>
+<td>Turn right out of the office building, and walk straight ahead for two blocks.  The restaurant is on your left.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>If you have any questions, send me a message or come and see me in reception.</td>
+</tr>
+<tr>
+<td>99</td>
+<td>Was everything in good condition?</td>
+</tr>
+<tr>
+<td>100</td>
+<td>The interviews were engaging and the candidates were interesting.</td>
+</tr>
+<tr>
+<td>101</td>
+<td>And how did that call go?</td>
+</tr>
+<tr>
+<td>102</td>
+<td>We decided on dates and a venue for the conference.</td>
+</tr>
+<tr>
+<td>103</td>
+<td>We talked about a website and a marketing plan for the event, the prices for the event, and the materials to provide.</td>
+</tr>
+<tr>
+<td>104</td>
+<td>But Sophia was so organized that I know we will have a good plan.</td>
+</tr>
+<tr>
+<td>105</td>
+<td>Well, we have a lot to follow up on, so let's get started.</td>
+</tr>
+<tr>
+<td>106</td>
+<td>Did you file the plan in our shared folder? Yes, I did. I checked to see that it was saved.</td>
+</tr>
+<tr>
+<td>107</td>
+<td>I reserved the meeting rooms and I reserved a group of hotel rooms for guest speakers and attendees from out of town.</td>
+</tr>
+<tr>
+<td>108</td>
+<td>We arranged for two dinners at restaurants outside the hotel, correct?</td>
+</tr>
+<tr>
+<td>109</td>
+<td>The hotel manager commented on some caterers that he knew, and recommended one in particular.</td>
+</tr>
+<tr>
+<td>110</td>
+<td>Gabriela updated the plan for the conference.</td>
+</tr>
+<tr>
+<td>111</td>
+<td>In the sentence, Gabriela checked in with the guest speaker, and they talked about the speech. The verb 'to check in with' means to talk to someone to find or report new information.</td>
+</tr>
+<tr>
+<td>112</td>
+<td>For example, we can say the man arranged his papers alphabetically.</td>
+</tr>
+<tr>
+<td>113</td>
+<td>There are three different ways to pronounce the 'ed' ending of regular verbs in the simple past: <code>/d/ t/ or/id/</code>.</td>
+</tr>
+<tr>
+<td>114</td>
+<td><code>/D/</code> for verbs that end in a voiced sound. L, N, R, G, V, Z, B, M and vowels.</td>
+</tr>
+<tr>
+<td>115</td>
+<td><code>/T/</code> for verbs that end in a voiceless sound, P,K,F, GH, SH,CH and S. /Id/ for verbs that end in D and T sounds</td>
+</tr>
+<tr>
+<td>116</td>
+<td><code>/d/</code> followed arrived brainstormed filed advised reserved arranged scheduled messaged clarified</td>
+</tr>
+<tr>
+<td>117</td>
+<td><code>/t/</code> discussed cooked checked helped talked typed pushed researched touched worked</td>
+</tr>
+<tr>
+<td>118</td>
+<td>&quot;touched base with&quot;, which means to quickly talk to someone to know if they received the conference schedule.</td>
+</tr>
+<tr>
+<td>119</td>
+<td>I decided on one web designer. 是正确的。这句话的意思是，你已经从多个网页设计师中做出了选择，选定了其中一位。</td>
+</tr>
+<tr>
+<td>120</td>
+<td>Did you arrange for lunch every day of the conference?</td>
+</tr>
+<tr>
+<td>121</td>
+<td>a) &quot;Gabriela called Lucy to follow up on the project.&quot; 这句话意味着Gabriela给Lucy打电话是为了跟进项目的进展情况。&quot;Follow up&quot;通常指的是检查某件事情的当前状态，确保一切按计划进行，或者解决可能出现的问题。</td>
+</tr>
+<tr>
+<td>122</td>
+<td>c) &quot;Gabriela called Lucy to update her about the project.&quot; 这句话意味着Gabriela给Lucy打电话是为了告诉她有关项目的最新消息或进展。&quot;Update&quot;通常指的是提供新的信息或数据，让某人了解最新情况。</td>
+</tr>
+<tr>
+<td>123</td>
+<td>&quot;Follow up&quot;可能包含询问、检查或处理项目中的特定事项或问题。</td>
+</tr>
+<tr>
+<td>124</td>
+<td>&quot;Update&quot;则更侧重于分享信息，可能是关于项目进展、变更或其他相关信息的通报。</td>
+</tr>
+<tr>
+<td>125</td>
+<td>Gabriela: Hi Lucy. Did you finish the project for the new client?  Gabriela called Lucy to follow up on the project.</td>
+</tr>
+<tr>
+<td>126</td>
+<td></td>
+</tr>
+<tr>
+<td>127</td>
+<td></td>
+</tr>
+<tr>
+<td>128</td>
+<td></td>
+</tr>
+<tr>
+<td>129</td>
+<td></td>
+</tr>
+<tr>
+<td>130</td>
+<td></td>
+</tr>
+<tr>
+<td>131</td>
+<td></td>
+</tr>
+<tr>
+<td>132</td>
+<td></td>
+</tr>
+<tr>
+<td>133</td>
+<td></td>
+</tr>
+<tr>
+<td>134</td>
+<td></td>
+</tr>
+<tr>
+<td>135</td>
+<td></td>
+</tr>
+<tr>
+<td>136</td>
+<td></td>
+</tr>
+<tr>
+<td>137</td>
+<td></td>
+</tr>
+<tr>
+<td>138</td>
+<td></td>
+</tr>
+<tr>
+<td>139</td>
+<td></td>
+</tr>
+<tr>
+<td>140</td>
+<td></td>
+</tr>
+<tr>
+<td>141</td>
+<td></td>
+</tr>
+<tr>
+<td>142</td>
+<td></td>
+</tr>
+<tr>
+<td>143</td>
+<td></td>
+</tr>
+<tr>
+<td>144</td>
+<td></td>
+</tr>
+<tr>
+<td>145</td>
+<td></td>
+</tr>
+<tr>
+<td>146</td>
+<td></td>
+</tr>
+<tr>
+<td>147</td>
+<td></td>
+</tr>
+<tr>
+<td>148</td>
+<td></td>
+</tr>
+<tr>
+<td>149</td>
+<td></td>
+</tr>
+<tr>
+<td>150</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 ]]></content>
       <categories>
-        <category>mifukoIO</category>
+        <category>coursera</category>
       </categories>
       <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>next</tag>
-        <tag>npm</tag>
+        <tag>English</tag>
+        <tag>subtitle</tag>
+        <tag>conversation</tag>
+        <tag>SmallTalk</tag>
       </tags>
   </entry>
   <entry>
@@ -269,6 +824,87 @@ We have the response object <code>r</code>, this has information about the reque
       </tags>
   </entry>
   <entry>
+    <title>hexo升级后用butterfly新主题替换next旧主题</title>
+    <url>/butterfly2next.html</url>
+    <content><![CDATA[<p><img src="https://s2.loli.net/2024/03/06/PzdmfJxOqZMkS9i.png" alt="Pasted image 20240305054228.png"></p>
+<p>版本太旧于是升级</p>
+<p>当前版本如下</p>
+<p><img src="https://s2.loli.net/2024/03/06/dLGmeFpgJiYwncK.png" alt="Pasted image 20240305054304.png"></p>
+<p>升级之后版本如下</p>
+<p><img src="https://s2.loli.net/2024/03/06/4dwZJcCjy8Ssumx.png" alt="Pasted image 20240305054545.png"></p>
+<p>查看过期的包</p>
+<p><img src="https://s2.loli.net/2024/03/06/hrzLb1DI9pPJUqS.png" alt="Pasted image 20240305061218.png"></p>
+<p>修改<code>package.json</code>
+升级<code>npm install --save</code></p>
+<p>升级后查看版本报错
+<code>TypeError: Cannot read property 'length' of undefined</code></p>
+<p><img src="https://s2.loli.net/2024/03/06/dW5gy84XMutzbrh.png" alt="Pasted image 20240305061436.png"></p>
+<p>使用这段后</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">进入博客的根目录</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> /blog-root</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除package-lock.json</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">rm</span> -rf package-lock.json</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">更新package.json</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm -upgrade</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除整个模块目录，这样可以避免很多坑</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">rm</span> -rf node_modules</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">更新Hexo的模块</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm update --save</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">或者强制更新 没有用上</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm update --save --force</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>此时再查看版本，权当成功了吧（。</p>
+<p><img src="https://s2.loli.net/2024/03/06/lLE6ptrD4uWVYTZ.png" alt="Pasted image 20240305062121.png"></p>
+<p>继续安装butterfly</p>
+<p><img src="https://s2.loli.net/2024/03/06/jbyRe9LlMv8pzTo.png" alt="Pasted image 20240305055953.png"></p>
+<p><a href="https://blog.csdn.net/tombosky/article/details/135835362#3.%20%E5%AE%9E%E4%BE%8B">npm ERR! code CERT_HAS_EXPIRED：解决证书过期问题的详细步骤-CSDN博客</a></p>
+<p>npm install 安装慢
+<a href="https://blog.csdn.net/mmklo/article/details/125486612">解决npm install 安装慢！！！_npm 太慢-CSDN博客</a></p>
+<p>换成淘宝源，报错</p>
+<p><a href="https://zhuanlan.zhihu.com/p/683192771">npm 报错 request to https://registry.npm.taobao.org/three failed, reason: certificate has expired - 知乎</a></p>
+<p>解决</p>
+<p><a href="https://zhuanlan.zhihu.com/p/683192771">npm 报错 request to https://registry.npm.taobao.org/three failed, reason: certificate has expired - 知乎</a></p>
+<p>主题替换上之后，报错
+<code>TypeError: __permalink.startsWith is not a function</code></p>
+<p><img src="https://s2.loli.net/2024/03/06/3OjG6WpdTZNnqmK.png" alt="Pasted image 20240305062936.png"></p>
+<p>大佬的解决方案，大概意思就是先clone了主题，但是再去搞hexo的升级，就会出现不兼容，在顺序上需要先升级完成，包括hexo和node的升级，再去clone需要的主题</p>
+<p><a href="https://cloud.tencent.com/developer/article/2388627">Hexo升级之后Butterfly主题不兼容，发生报错：TypeError: require(...) is not a function-腾讯云开发者社区-腾讯云</a></p>
+<p>仍然不解决，查询其他报错
+<code>WARN  Deprecated config detected: &quot;use_date_for_updated&quot; i</code></p>
+<p>大佬的解决方案，是从4升到5，我是从4升到了6，完美解决warning和报错
+<a href="https://github.com/next-theme/hexo-theme-next/issues/104">新版本部署报错 · Issue #104 · next-theme/hexo-theme-next · GitHub</a>
+<a href="https://cyfeng.science/2020/11/20/hexo-use-date-for-updated-warning-solution/">HEXO 新版本 'use_date_for_updated' 警告的解决方法 | CO + 2Fe = COFFee</a></p>
+<p>打开根目录下的 <code>_config.yml</code> 找到 <code>use_date_for_updated: false</code> ，改为：<br>
+<code>updated_option: 'date'</code>: 使用 date 作为 updated 的值。可被用于 Git 工作流之中，因为使用 Git 管理站点时，文件的最后修改日期常常会发生改变<br>
+<code>updated_option: 'mtime'</code>: 使用文件的最后修改时间。这是从 Hexo 3.0.0 开始的默认行为。<br>
+<code>updated_option: 'empty'</code>: 直接删除 updated。使用这一选项可能会导致大部分主题和插件无法正常工作。</p>
+<p>现在的问题剩下，只有一篇文章最新的一篇，而不是历史文章都在</p>
+<p><img src="https://s2.loli.net/2024/03/06/qtXoODCuYdBTrk3.png" alt="Pasted image 20240305063740.png"></p>
+<p>尝试把<code>_post</code>里面的全部挪走清空，报错
+<code> Unable to call the return value of (posts[&quot;first&quot;])[&quot;updated&quot;][&quot;toISOString&quot;], which is undefined or falsey</code></p>
+<p><img src="https://s2.loli.net/2024/03/06/Tn7QhOYjB2PvKRe.png" alt="Pasted image 20240305064747.png"></p>
+<p>于是再删除<code>.deploy_git</code>文件夹，报错
+<code>Template render error: (unknown path) [Line 8, Column 25]</code></p>
+<p><img src="https://s2.loli.net/2024/03/06/CbROmKJ9jvr1x4Z.png" alt="Pasted image 20240305065011.png"></p>
+<p>尝试切换版本，无果</p>
+<p><a href="https://blog.csdn.net/birdfly2015/article/details/104216232">Hexo之next主题配置时ERROR Template render error_templaterenderpolicy render error-CSDN博客</a></p>
+<p><img src="https://s2.loli.net/2024/03/06/UHNXJlKZndDCutV.png" alt="Pasted image 20240305070317.png"></p>
+<p>把<code>_post</code>整个文件夹删掉，使用这里的方法clone主题，再来一次</p>
+<p><a href="https://cloud.tencent.com/developer/article/1935545">Butterfly主题的安装及更新-腾讯云开发者社区-腾讯云</a></p>
+<p>重新新建<code>_post</code>文件夹，依然无法解决</p>
+<p>看来看去都是md中有无法转码导致崩溃，但是我已经删完了还是不行</p>
+<p>最后尝试拷贝了一个纯中文的md文件，放到<code>_post</code>下，<code>hexo -g</code>就没报错了……大崩溃……
+实际显示地址还是这个</p>
+<p><a href="http://localhost:4000/">http://localhost:4000/</a></p>
+<p><img src="https://s2.loli.net/2024/03/06/ZYCKgBl83WtbP6j.png" alt="Pasted image 20240305074525.png">
+<img src="https://s2.loli.net/2024/03/06/YjELkD4G1cTH6SC.png" alt="Pasted image 20240305074723.png"></p>
+<p>最后再来一波</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<p>乞丐版发布成功</p>
+<p><img src="https://s2.loli.net/2024/03/06/rT6GZQzuR5UOW9P.png" alt="Pasted image 20240305075002.png"></p>
+<p>美化折腾看这篇</p>
+<p>占个座</p>
+]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>next</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>IBM Data Analyst Capstone Project-Web Scraping Lab</title>
     <url>/cawebscra.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -324,38 +960,6 @@ It is a good idea to open the url in your web broswer and study the contents of 
         <tag>BeautifulSoup</tag>
         <tag>table</tag>
         <tag>img</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo部署完博客查看google是否收录github pages</title>
-    <url>/gooio.html</url>
-    <content><![CDATA[<p>参考文档来自</p>
-<p>[让google收录github pages（hexo） | 珠 (<a href="http://huanglizhu.github.io">huanglizhu.github.io</a>)](<a href="https://huanglizhu.github.io/2020/02/21/%E8%AE%A9google%E6%94%B6%E5%BD%95github">https://huanglizhu.github.io/2020/02/21/让google收录github</a> pages（hexo）/#:~:text=查看是否被收录 首先查看你的博客地址是否已经被Google收录，在Google的搜索栏中搜索： 1 site%3Ahttps%3A%2F%<a href="http://2Fxxxx.github.io">2Fxxxx.github.io</a>,其中 https%3A%2F%2Fxxxx.github.io为你的博客地址，如果结果是尝试使用Google Search Console，则意味着没有被收录。)</p>
-<h1><span id="确定是否被收录"> 确定是否被收录</span></h1>
-<p>去google输入网址<code>http://oushiro.xyz</code></p>
-<p>如果是Google Search Console，则意味着没有被收录</p>
-<p><img src="https://s2.loli.net/2024/03/07/ENI6cQyCW1ta5po.jpg" alt="微信截图_20240307100750.png"></p>
-<h1><span id="点开google-search-console"> 点开Google Search Console</span></h1>
-<p>顺其自然登陆一网通（。
-有两个选择，网域和网域前缀，选择前缀验证</p>
-<p><img src="https://s2.loli.net/2024/03/07/upLcf6kmj9QIbTy.jpg" alt="微信截图_20240307101044.png"></p>
-<h1><span id="下载html文件放到指定位置"> 下载html文件放到指定位置</span></h1>
-<p>这里下载没有问题，但是大佬是这样操作的，多了一步修改html文件，我试了一下验证没有通过，最后是重新放了一个没修改的html文件过去就通过了
-比如下载的文件叫做<code>google233.html</code>，我先根据下面的修改了放到<code>D:\nodejs\hexo\source</code>
-下，验证失败，我再把原文件拖到相同目录比如文件叫<code>google233（1）.html</code>，验证通过了</p>
-<p><strong>修改HTML文件
-注意！！：
-为了使 hexo 不处理这个HTML验证文件，并且不生成关于这个文件的 sitemap，我们需要打开验证文件，在最上面添加以下代码，总共3行最后一行是空行需保留</strong></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">layout: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://s2.loli.net/2024/03/07/SuMUdeKhzFPT2p5.jpg" alt="微信截图_20240307102330.png"></p>
-]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
-        <tag>google</tag>
       </tags>
   </entry>
   <entry>
@@ -569,30 +1173,46 @@ It is a good idea to open the url in your web broswer and study the contents of 
       </tags>
   </entry>
   <entry>
-    <title>hexo butterfly美化之修改头图且文章内不显示头图</title>
-    <url>/hbtopimage.html</url>
-    <content><![CDATA[<h1><span id="修改头图"> 修改头图</span></h1>
-<p>修改地址
-<code>D:\nodejs\hexo</code>下的<code>_config.butterfly.yml</code>
-其中<code>image</code>是相对地址，文件夹的路径在<code>D:\nodejs\hexo\themes\butterfly\source\image</code></p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># The banner image of home page</span></span><br><span class="line"><span class="attr">index_img:</span> <span class="string">/image/微信图片_20240307025058.jpg</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)</span></span><br><span class="line"><span class="attr">index_top_img_height:</span> <span class="string">800px</span></span><br></pre></td></tr></table></figure>
-<h1><span id="只在首页显示且单篇文章内不显示"> 只在首页显示且单篇文章内不显示</span></h1>
-<p><a href="https://blog.csdn.net/zzq0523/article/details/122954271">Hexo-Butterfly主题优化-设置网站首页显示背景、文章最上方不显示背景_butterfly设置top img-CSDN博客</a></p>
-<p>参考这位的需要修改显示逻辑，完美满足我的要求……要是没有这篇是真不知道从哪里改起好</p>
-<p>修改地址
-<code>D:\nodejs\hexo\themes\butterfly\layout\includes\header</code>下的<code>index.pug</code></p>
-<p>注释里是原来的，现在生效的就是修改后的</p>
-<p><img src="https://s2.loli.net/2024/03/07/4Ji7GCBUqrId1Es.png" alt="Pasted image 20240307060711.png"></p>
-<p>其中主要修改的是这两行</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">if</span> <span class="string">is_post()</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">var</span> <span class="string">top_img</span> <span class="string">=</span> <span class="literal">false</span> <span class="string">//page.top_img</span> <span class="string">||</span> <span class="string">page.cover</span> <span class="string">||</span> <span class="string">theme.default_top_img</span></span><br><span class="line"></span><br><span class="line"><span class="string">else</span> <span class="string">if</span> <span class="string">is_home()</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">var</span> <span class="string">top_img</span> <span class="string">=</span> <span class="string">theme.index_img</span> <span class="string">//</span> <span class="type">!==</span> <span class="literal">false</span> <span class="string">?</span> <span class="string">theme.index_img</span> <span class="string">||</span> <span class="attr">theme.default_top_img :</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p>以下是文件完整内容仅供参考</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">if !theme.disable_top_img &amp;&amp; page.top_img !== false</span><br><span class="line">  if is_post()</span><br><span class="line">    - var top_img = false //page.top_img || page.cover || theme.default_top_img</span><br><span class="line">  else if is_page()</span><br><span class="line">    - var top_img = page.top_img || theme.default_top_img</span><br><span class="line">  else if is_tag()</span><br><span class="line">    - var top_img = theme.tag_per_img &amp;&amp; theme.tag_per_img[page.tag] </span><br><span class="line">    - top_img = top_img ? top_img : (theme.tag_img !== false ? theme.tag_img || theme.default_top_img : false)</span><br><span class="line">  else if is_category()</span><br><span class="line">    - var top_img = theme.category_per_img &amp;&amp; theme.category_per_img[page.category]</span><br><span class="line">    - top_img = top_img ? top_img : (theme.category_img !== false ? theme.category_img || theme.default_top_img : false)</span><br><span class="line">  else if is_home()</span><br><span class="line">    - var top_img = theme.index_img // !== false ? theme.index_img || theme.default_top_img : false</span><br><span class="line">  else if is_archive()</span><br><span class="line">    - var top_img = theme.archive_img !== false ? theme.archive_img || theme.default_top_img : false</span><br><span class="line">  else</span><br><span class="line">    - var top_img = page.top_img || theme.default_top_img</span><br><span class="line"></span><br><span class="line">  if top_img !== false</span><br><span class="line">    - var imgSource = top_img &amp;&amp; isImgOrUrl(top_img) ? `background-image: url(&#x27;$&#123;url_for(top_img)&#125;&#x27;)` : `background: $&#123;top_img&#125;`</span><br><span class="line">    - var bg_img = top_img ? imgSource : &#x27;&#x27;</span><br><span class="line">    - var site_title = page.title || page.tag || page.category || config.title</span><br><span class="line">    - var isHomeClass = is_home() ? &#x27;full_page&#x27; : &#x27;not-home-page&#x27;</span><br><span class="line">    - is_post() ? isHomeClass = &#x27;post-bg&#x27; : isHomeClass</span><br><span class="line">  else</span><br><span class="line">    - var isHomeClass = &#x27;not-top-img&#x27;</span><br><span class="line">else</span><br><span class="line">  - var top_img = false</span><br><span class="line">  - var isHomeClass = &#x27;not-top-img&#x27;</span><br><span class="line"></span><br><span class="line">- const isFixedClass = theme.nav.fixed ? &#x27; fixed&#x27; : &#x27;&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">header#</span><span class="language-bash">page-header(class=`<span class="variable">$&#123;isHomeClass+isFixedClass&#125;</span>` style=bg_img)</span></span><br><span class="line">  !=partial(&#x27;includes/header/nav&#x27;, &#123;&#125;, &#123;cache: true&#125;)</span><br><span class="line">  if top_img !== false</span><br><span class="line">    if is_post()</span><br><span class="line">      include ./post-info.pug</span><br><span class="line">    else if is_home() </span><br><span class="line">      #site-info</span><br><span class="line">        h1#site-title=site_title</span><br><span class="line">        if theme.subtitle.enable</span><br><span class="line">          - var loadSubJs = true</span><br><span class="line">          #site-subtitle</span><br><span class="line">            span#subtitle</span><br><span class="line">        if(theme.social)</span><br><span class="line">          #site_social_icons</span><br><span class="line">            !=partial(&#x27;includes/header/social&#x27;, &#123;&#125;, &#123;cache: true&#125;)</span><br><span class="line">      #scroll-down</span><br><span class="line">        i.fas.fa-angle-down.scroll-down-effects</span><br><span class="line">    else</span><br><span class="line">      #page-site-info</span><br><span class="line">        h1#site-title=site_title</span><br></pre></td></tr></table></figure>
-<p>显示效果如下：</p>
-<p>在首页时</p>
-<p><img src="https://s2.loli.net/2024/03/07/bp4lkycvHn9YaIo.jpg" alt="微信截图_20240307062136.png"></p>
-<p>在单独文章页面时</p>
-<p><img src="https://s2.loli.net/2024/03/07/te8jMx3OEwcTW7k.jpg" alt="微信截图_20240307062840.png"></p>
+    <title>hexo部署完博客查看google是否收录github pages</title>
+    <url>/gooio.html</url>
+    <content><![CDATA[<p>参考文档来自</p>
+<p>[让google收录github pages（hexo） | 珠 (<a href="http://huanglizhu.github.io">huanglizhu.github.io</a>)](<a href="https://huanglizhu.github.io/2020/02/21/%E8%AE%A9google%E6%94%B6%E5%BD%95github">https://huanglizhu.github.io/2020/02/21/让google收录github</a> pages（hexo）/#:~:text=查看是否被收录 首先查看你的博客地址是否已经被Google收录，在Google的搜索栏中搜索： 1 site%3Ahttps%3A%2F%<a href="http://2Fxxxx.github.io">2Fxxxx.github.io</a>,其中 https%3A%2F%2Fxxxx.github.io为你的博客地址，如果结果是尝试使用Google Search Console，则意味着没有被收录。)</p>
+<h1><span id="确定是否被收录"> 确定是否被收录</span></h1>
+<p>去google输入网址<code>http://oushiro.xyz</code></p>
+<p>如果是Google Search Console，则意味着没有被收录</p>
+<p><img src="https://s2.loli.net/2024/03/07/ENI6cQyCW1ta5po.jpg" alt="微信截图_20240307100750.png"></p>
+<h1><span id="点开google-search-console"> 点开Google Search Console</span></h1>
+<p>顺其自然登陆一网通（。
+有两个选择，网域和网域前缀，选择前缀验证</p>
+<p><img src="https://s2.loli.net/2024/03/07/upLcf6kmj9QIbTy.jpg" alt="微信截图_20240307101044.png"></p>
+<h1><span id="下载html文件放到指定位置"> 下载html文件放到指定位置</span></h1>
+<p>这里下载没有问题，但是大佬是这样操作的，多了一步修改html文件，我试了一下验证没有通过，最后是重新放了一个没修改的html文件过去就通过了
+比如下载的文件叫做<code>google233.html</code>，我先根据下面的修改了放到<code>D:\nodejs\hexo\source</code>
+下，验证失败，我再把原文件拖到相同目录比如文件叫<code>google233（1）.html</code>，验证通过了</p>
+<p><strong>修改HTML文件
+注意！！：
+为了使 hexo 不处理这个HTML验证文件，并且不生成关于这个文件的 sitemap，我们需要打开验证文件，在最上面添加以下代码，总共3行最后一行是空行需保留</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">layout: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://s2.loli.net/2024/03/07/SuMUdeKhzFPT2p5.jpg" alt="微信截图_20240307102330.png"></p>
 ]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>hexo</tag>
+        <tag>google</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo butterfly美化之字数统计</title>
+    <url>/hbwords.html</url>
+    <content><![CDATA[<h1><span id="引入字数统计相关插件"> 引入字数统计相关插件</span></h1>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
+<h1><span id="修改配置文件"> 修改配置文件</span></h1>
+<p>改的是路径<code>D:\nodejs\hexo</code>
+下的<code>_config.butterfly.yml</code></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wordcount (字數統計)</span></span><br><span class="line"><span class="comment"># see https://butterfly.js.org/posts/ceeb73f/#字數統計</span></span><br><span class="line"><span class="attr">wordcount:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_wordcount:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">min2read:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_wordcount:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>mifukoIO</category>
       </categories>
@@ -633,14 +1253,30 @@ It is a good idea to open the url in your web broswer and study the contents of 
       </tags>
   </entry>
   <entry>
-    <title>hexo butterfly美化之字数统计</title>
-    <url>/hbwords.html</url>
-    <content><![CDATA[<h1><span id="引入字数统计相关插件"> 引入字数统计相关插件</span></h1>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
-<h1><span id="修改配置文件"> 修改配置文件</span></h1>
-<p>改的是路径<code>D:\nodejs\hexo</code>
-下的<code>_config.butterfly.yml</code></p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># wordcount (字數統計)</span></span><br><span class="line"><span class="comment"># see https://butterfly.js.org/posts/ceeb73f/#字數統計</span></span><br><span class="line"><span class="attr">wordcount:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_wordcount:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">min2read:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_wordcount:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>]]></content>
+    <title>hexo butterfly美化之修改头图且文章内不显示头图</title>
+    <url>/hbtopimage.html</url>
+    <content><![CDATA[<h1><span id="修改头图"> 修改头图</span></h1>
+<p>修改地址
+<code>D:\nodejs\hexo</code>下的<code>_config.butterfly.yml</code>
+其中<code>image</code>是相对地址，文件夹的路径在<code>D:\nodejs\hexo\themes\butterfly\source\image</code></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># The banner image of home page</span></span><br><span class="line"><span class="attr">index_img:</span> <span class="string">/image/微信图片_20240307025058.jpg</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)</span></span><br><span class="line"><span class="attr">index_top_img_height:</span> <span class="string">800px</span></span><br></pre></td></tr></table></figure>
+<h1><span id="只在首页显示且单篇文章内不显示"> 只在首页显示且单篇文章内不显示</span></h1>
+<p><a href="https://blog.csdn.net/zzq0523/article/details/122954271">Hexo-Butterfly主题优化-设置网站首页显示背景、文章最上方不显示背景_butterfly设置top img-CSDN博客</a></p>
+<p>参考这位的需要修改显示逻辑，完美满足我的要求……要是没有这篇是真不知道从哪里改起好</p>
+<p>修改地址
+<code>D:\nodejs\hexo\themes\butterfly\layout\includes\header</code>下的<code>index.pug</code></p>
+<p>注释里是原来的，现在生效的就是修改后的</p>
+<p><img src="https://s2.loli.net/2024/03/07/4Ji7GCBUqrId1Es.png" alt="Pasted image 20240307060711.png"></p>
+<p>其中主要修改的是这两行</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">if</span> <span class="string">is_post()</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">var</span> <span class="string">top_img</span> <span class="string">=</span> <span class="literal">false</span> <span class="string">//page.top_img</span> <span class="string">||</span> <span class="string">page.cover</span> <span class="string">||</span> <span class="string">theme.default_top_img</span></span><br><span class="line"></span><br><span class="line"><span class="string">else</span> <span class="string">if</span> <span class="string">is_home()</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">var</span> <span class="string">top_img</span> <span class="string">=</span> <span class="string">theme.index_img</span> <span class="string">//</span> <span class="type">!==</span> <span class="literal">false</span> <span class="string">?</span> <span class="string">theme.index_img</span> <span class="string">||</span> <span class="attr">theme.default_top_img :</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>以下是文件完整内容仅供参考</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">if !theme.disable_top_img &amp;&amp; page.top_img !== false</span><br><span class="line">  if is_post()</span><br><span class="line">    - var top_img = false //page.top_img || page.cover || theme.default_top_img</span><br><span class="line">  else if is_page()</span><br><span class="line">    - var top_img = page.top_img || theme.default_top_img</span><br><span class="line">  else if is_tag()</span><br><span class="line">    - var top_img = theme.tag_per_img &amp;&amp; theme.tag_per_img[page.tag] </span><br><span class="line">    - top_img = top_img ? top_img : (theme.tag_img !== false ? theme.tag_img || theme.default_top_img : false)</span><br><span class="line">  else if is_category()</span><br><span class="line">    - var top_img = theme.category_per_img &amp;&amp; theme.category_per_img[page.category]</span><br><span class="line">    - top_img = top_img ? top_img : (theme.category_img !== false ? theme.category_img || theme.default_top_img : false)</span><br><span class="line">  else if is_home()</span><br><span class="line">    - var top_img = theme.index_img // !== false ? theme.index_img || theme.default_top_img : false</span><br><span class="line">  else if is_archive()</span><br><span class="line">    - var top_img = theme.archive_img !== false ? theme.archive_img || theme.default_top_img : false</span><br><span class="line">  else</span><br><span class="line">    - var top_img = page.top_img || theme.default_top_img</span><br><span class="line"></span><br><span class="line">  if top_img !== false</span><br><span class="line">    - var imgSource = top_img &amp;&amp; isImgOrUrl(top_img) ? `background-image: url(&#x27;$&#123;url_for(top_img)&#125;&#x27;)` : `background: $&#123;top_img&#125;`</span><br><span class="line">    - var bg_img = top_img ? imgSource : &#x27;&#x27;</span><br><span class="line">    - var site_title = page.title || page.tag || page.category || config.title</span><br><span class="line">    - var isHomeClass = is_home() ? &#x27;full_page&#x27; : &#x27;not-home-page&#x27;</span><br><span class="line">    - is_post() ? isHomeClass = &#x27;post-bg&#x27; : isHomeClass</span><br><span class="line">  else</span><br><span class="line">    - var isHomeClass = &#x27;not-top-img&#x27;</span><br><span class="line">else</span><br><span class="line">  - var top_img = false</span><br><span class="line">  - var isHomeClass = &#x27;not-top-img&#x27;</span><br><span class="line"></span><br><span class="line">- const isFixedClass = theme.nav.fixed ? &#x27; fixed&#x27; : &#x27;&#x27;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">header#</span><span class="language-bash">page-header(class=`<span class="variable">$&#123;isHomeClass+isFixedClass&#125;</span>` style=bg_img)</span></span><br><span class="line">  !=partial(&#x27;includes/header/nav&#x27;, &#123;&#125;, &#123;cache: true&#125;)</span><br><span class="line">  if top_img !== false</span><br><span class="line">    if is_post()</span><br><span class="line">      include ./post-info.pug</span><br><span class="line">    else if is_home() </span><br><span class="line">      #site-info</span><br><span class="line">        h1#site-title=site_title</span><br><span class="line">        if theme.subtitle.enable</span><br><span class="line">          - var loadSubJs = true</span><br><span class="line">          #site-subtitle</span><br><span class="line">            span#subtitle</span><br><span class="line">        if(theme.social)</span><br><span class="line">          #site_social_icons</span><br><span class="line">            !=partial(&#x27;includes/header/social&#x27;, &#123;&#125;, &#123;cache: true&#125;)</span><br><span class="line">      #scroll-down</span><br><span class="line">        i.fas.fa-angle-down.scroll-down-effects</span><br><span class="line">    else</span><br><span class="line">      #page-site-info</span><br><span class="line">        h1#site-title=site_title</span><br></pre></td></tr></table></figure>
+<p>显示效果如下：</p>
+<p>在首页时</p>
+<p><img src="https://s2.loli.net/2024/03/07/bp4lkycvHn9YaIo.jpg" alt="微信截图_20240307062136.png"></p>
+<p>在单独文章页面时</p>
+<p><img src="https://s2.loli.net/2024/03/07/te8jMx3OEwcTW7k.jpg" alt="微信截图_20240307062840.png"></p>
+]]></content>
       <categories>
         <category>mifukoIO</category>
       </categories>
@@ -746,31 +1382,6 @@ target=2</p>
       </tags>
   </entry>
   <entry>
-    <title>hexo butterfly让TOC生效</title>
-    <url>/hexotoc.html</url>
-    <content><![CDATA[<span id="more"></span>
-<!-- toc -->
-<ul>
-<li><a href="#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6">安装插件</a></li>
-<li><a href="#%E5%8A%A0%E5%85%A5%E7%9B%AE%E5%BD%95">加入目录</a></li>
-</ul>
-<!-- tocstop -->
-<p>习惯typora的TOC，发现hexo butterfly的侧边栏不太一样，这里没有，新加一个插件</p>
-<h2><span id="安装插件"> 安装插件</span></h2>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-toc --save</span><br></pre></td></tr></table></figure>
-<h2><span id="加入目录"> 加入目录</span></h2>
-<p>带展开的，在每篇文章开头加上</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>mifukoIO</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>butterfly</tag>
-        <tag>toc</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>leetcode小抄：9. Palindrome Number</title>
     <url>/lc2.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -846,6 +1457,31 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.</p>
       <tags>
         <tag>leetcode</tag>
         <tag>palindrome</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo butterfly让TOC生效</title>
+    <url>/hexotoc.html</url>
+    <content><![CDATA[<span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6">安装插件</a></li>
+<li><a href="#%E5%8A%A0%E5%85%A5%E7%9B%AE%E5%BD%95">加入目录</a></li>
+</ul>
+<!-- tocstop -->
+<p>习惯typora的TOC，发现hexo butterfly的侧边栏不太一样，这里没有，新加一个插件</p>
+<h2><span id="安装插件"> 安装插件</span></h2>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-toc --save</span><br></pre></td></tr></table></figure>
+<h2><span id="加入目录"> 加入目录</span></h2>
+<p>带展开的，在每篇文章开头加上</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>butterfly</tag>
+        <tag>toc</tag>
       </tags>
   </entry>
   <entry>
@@ -1303,127 +1939,6 @@ Notice that the order of the output and the order of the triplets does not matte
       </tags>
   </entry>
   <entry>
-    <title>leetcode小抄：21. Merge Two Sorted Lists</title>
-    <url>/lc7.html</url>
-    <content><![CDATA[<span id="more"></span>
-<!-- toc -->
-<ul>
-<li><a href="#solution-1-%E8%81%AA%E6%98%8E%E6%96%B9%E6%B3%95">solution 1 聪明方法</a>
-<ul>
-<li><a href="#%E5%85%B3%E9%94%AE%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8">关键数据结构 链表</a></li>
-<li><a href="#%E5%85%B3%E9%94%AE%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8-%E7%94%A8%E6%B3%95%E8%AF%B4%E6%98%8E">关键数据结构 链表 用法说明</a></li>
-<li><a href="#%E6%A0%B8%E5%BF%83%E6%80%9D%E8%B7%AF">核心思路</a></li>
-</ul>
-</li>
-<li><a href="#solution-2-%E5%A4%A7%E4%BD%AC%E8%A7%A3%E9%87%8Aruby">solution 2 大佬解释ruby</a></li>
-</ul>
-<!-- tocstop -->
-<p>You are given the heads of two sorted linked lists <code>list1</code> and <code>list2</code>.</p>
-<p>Merge the two lists into one <strong>sorted</strong> list. The list should be made by splicing together the nodes of the first two lists.</p>
-<p>Return <em>the head of the merged linked list</em>.</p>
-<p><strong>Example 1:</strong></p>
-<p><img src="https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg" alt></p>
-<p><strong>Input:</strong> list1 = [1,2,4], list2 = [1,3,4]
-<strong>Output:</strong> [1,1,2,3,4,4]</p>
-<p><strong>Example 2:</strong></p>
-<p><strong>Input:</strong> list1 = [], list2 = []
-<strong>Output:</strong> []</p>
-<p><strong>Example 3:</strong></p>
-<p><strong>Input:</strong> list1 = [], list2 = [0]
-<strong>Output:</strong> [0]</p>
-<p><strong>Constraints:</strong></p>
-<ul>
-<li>The number of nodes in both lists is in the range <code>[0, 50]</code>.</li>
-<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
-<li>Both <code>list1</code> and <code>list2</code> are sorted in <strong>non-decreasing</strong> order.</li>
-</ul>
-<h2><span id="solution-1-聪明方法"> solution 1 聪明方法</span></h2>
-<p>用指针</p>
-<p>实际上不需要对链表进行排序操作，因为两个链表已经是排序好的。解决这个问题的高效方法是直接合并这两个链表，同时保持排序。</p>
-<p><code>mergeTwoLists</code> 方法接收两个链表的头节点 <code>list1</code> 和 <code>list2</code>，并返回合并后的新链表的头节点。通过使用哑节点 <code>dummy</code>，我们可以简化合并过程中对头节点的处理，使得逻辑更加清晰。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params">self, list1, list2</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type list1: ListNode</span></span><br><span class="line"><span class="string">        :type list2: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="comment"># 创建一个哑节点作为新链表的起点</span></span><br><span class="line">        dummy = ListNode()</span><br><span class="line">        tail = dummy  <span class="comment"># tail 用于指向新链表的最后一个节点</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 合并链表</span></span><br><span class="line">        <span class="keyword">while</span> list1 <span class="keyword">and</span> list2:</span><br><span class="line">            <span class="keyword">if</span> list1.val &lt;= list2.val:</span><br><span class="line">                tail.<span class="built_in">next</span> = list1</span><br><span class="line">                list1 = list1.<span class="built_in">next</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                tail.<span class="built_in">next</span> = list2</span><br><span class="line">                list2 = list2.<span class="built_in">next</span></span><br><span class="line">            tail = tail.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 如果有链表未完全遍历完，直接连接剩余部分</span></span><br><span class="line">        <span class="keyword">if</span> list1:</span><br><span class="line">            tail.<span class="built_in">next</span> = list1</span><br><span class="line">        <span class="keyword">elif</span> list2:</span><br><span class="line">            tail.<span class="built_in">next</span> = list2</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 返回新链表的头节点，即 dummy 的下一个节点</span></span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="built_in">next</span></span><br></pre></td></tr></table></figure>
-<h3><span id="关键数据结构-链表"> 关键数据结构 链表</span></h3>
-<ul>
-<li>
-<p>链表特性：链表是一种动态数据结构，每个节点包含数据和指向下一个节点的指针。对于有序链表来说，每个节点的值都小于或等于其后续节点的值。</p>
-</li>
-<li>
-<p>问题需求：题目要求合并两个已排序的链表，并保持合并后的链表也是有序的。这意味着新链表中的每个节点值都需要小于等于其后面的节点值。</p>
-</li>
-</ul>
-<h3><span id="关键数据结构-链表-用法说明"> 关键数据结构 链表 用法说明</span></h3>
-<p>尽管Python的标准库没有直接提供链表类，但你可以自定义实现链表结构。链表中的每个元素称为节点，每个节点包含数据和指向下一个节点的引用。
-链表分为单链表、双链表、循环链表等多种类型，下面主要介绍单链表的基本概念和使用示例。</p>
-<p>定义一个链表节点类<code>ListNode</code>：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ListNode</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, value=<span class="number">0</span>, <span class="built_in">next</span>=<span class="literal">None</span></span>):</span><br><span class="line">        self.value = value</span><br><span class="line">        self.<span class="built_in">next</span> = <span class="built_in">next</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>创建链表</strong></li>
-</ul>
-<p>手动创建一个链表，通常从头节点开始，依次创建每个节点并连接它们。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建链表 1-&gt;2-&gt;3</span></span><br><span class="line">node1 = ListNode(<span class="number">1</span>)</span><br><span class="line">node2 = ListNode(<span class="number">2</span>)</span><br><span class="line">node3 = ListNode(<span class="number">3</span>)</span><br><span class="line">node1.<span class="built_in">next</span> = node2</span><br><span class="line">node2.<span class="built_in">next</span> = node3</span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>打印链表</strong></li>
-</ul>
-<p>定义一个函数来遍历并打印链表的所有元素：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_list</span>(<span class="params">head</span>):</span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current:</span><br><span class="line">        <span class="built_in">print</span>(current.value, end=<span class="string">&quot; -&gt; &quot;</span>)</span><br><span class="line">        current = current.<span class="built_in">next</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;None&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印链表</span></span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 1 -&gt; 2 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>插入节点</strong></li>
-</ul>
-<p>向链表中插入一个新节点，例如在给定值之后插入：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">insert_after</span>(<span class="params">node, new_value</span>):</span><br><span class="line">    new_node = ListNode(new_value)</span><br><span class="line">    new_node.<span class="built_in">next</span> = node.<span class="built_in">next</span></span><br><span class="line">    node.<span class="built_in">next</span> = new_node</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在值为2的节点后面插入4</span></span><br><span class="line">insert_after(node2, <span class="number">4</span>)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出变为: 1 -&gt; 2 -&gt; 4 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>删除节点</strong></li>
-</ul>
-<p>删除链表中特定值的节点，这里以删除值为4的节点为例：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">delete_node</span>(<span class="params">head, value</span>):</span><br><span class="line">    prev = <span class="literal">None</span></span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current <span class="keyword">and</span> current.value != value:</span><br><span class="line">        prev = current</span><br><span class="line">        current = current.<span class="built_in">next</span></span><br><span class="line">    <span class="keyword">if</span> current <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">return</span> head  <span class="comment"># 节点不存在</span></span><br><span class="line">    <span class="keyword">if</span> prev <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">return</span> current.<span class="built_in">next</span>  <span class="comment"># 删除头节点</span></span><br><span class="line">    prev.<span class="built_in">next</span> = current.<span class="built_in">next</span></span><br><span class="line">    <span class="keyword">return</span> head</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除值为4的节点</span></span><br><span class="line">node1 = delete_node(node1, <span class="number">4</span>)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 1 -&gt; 2 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><strong>链表反转</strong></li>
-</ul>
-<p>反转链表是链表操作中的经典问题，可以递归或迭代实现：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">reverse_list</span>(<span class="params">head</span>):</span><br><span class="line">    prev = <span class="literal">None</span></span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current:</span><br><span class="line">        next_temp = current.<span class="built_in">next</span>  <span class="comment"># 临时保存下一个节点</span></span><br><span class="line">        current.<span class="built_in">next</span> = prev  <span class="comment"># 反转指针</span></span><br><span class="line">        prev = current  <span class="comment"># 前进到下一个节点</span></span><br><span class="line">        current = next_temp</span><br><span class="line">    <span class="keyword">return</span> prev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 反转链表</span></span><br><span class="line">node1 = reverse_list(node1)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 3 -&gt; 2 -&gt; 1 -&gt; None</span></span><br></pre></td></tr></table></figure>
-<h3><span id="核心思路"> 核心思路</span></h3>
-<ul>
-<li>
-<p><strong>使用哑节点</strong>：引入一个哑节点（dummy node）作为新链表的起点，这样做可以简化操作，避免在合并开始时对头节点的特殊处理。哑节点的下一个节点（<code>dummy.next</code>）最终会指向合并后链表的实际头节点。</p>
-</li>
-<li>
-<p><strong>双指针遍历</strong>：设置两个指针 <code>p1</code> 和 <code>p2</code> 分别指向两个链表的头部。通过比较这两个指针所指向节点的值，决定哪个节点应该先被添加到新链表中。这样可以保证新链表的排序性质。</p>
-</li>
-<li>
-<p><strong>逐步构建新链表</strong>：每次选择值较小的节点加入新链表，并将对应的指针向前移动。这个过程持续到至少有一个链表被完全遍历完。</p>
-</li>
-<li>
-<p><strong>处理剩余节点</strong>：当一个链表遍历完后，直接将另一个链表剩余的部分链接到新链表的尾部。这是因为剩余链表中的所有节点都已大于当前新链表的末尾节点（根据排序性质），可以直接追加。</p>
-</li>
-<li>
-<p><strong>返回结果</strong>：最后返回哑节点的下一个节点，即新链表的头节点。</p>
-</li>
-</ul>
-<h2><span id="solution-2-大佬解释ruby"> solution 2 大佬解释ruby</span></h2>
-<p><a href="https://leetcode.com/problems/merge-two-sorted-lists/solutions/759870/python3-solution-with-a-detailed-explanation-dummy-explained">Python3 Solution with a Detailed Explanation - dummy explained</a></p>
-<p><a href="https://realpython.com/linked-lists-python/">Linkedlists</a> can be confusing especially if you've recently started to code but (I think) once you understand it fully, it should not be that difficult.</p>
-<p>For this problem, I'm going to explain several ways of solving it <strong>BUT</strong> I want to make something clear. Something that you've seen a lot of times in the posts on this website but probably haven't fully understood. <code>dummy</code> variable! It has been used significantly in the solutions of this problem and not well explained for a newbie level coder! The idea is we're dealing with <code>pointers</code> that point to a memory location! Think of it this way! You want to find gold that is hidden somewhere. Someone has put a set of clues in a sequence! Meaning, if you find the first clue and solve the problem hidden in the clue, you will get to the second clue! Solving the hidden problem of second clue will get you to the thrid clue, and so on! If you keep solving, you'll get to the gold! <code>dummy</code> helps you to find the first clue!!!!</p>
-<p>Throughout the solution below, you'll be asking yourself why <code>dummy</code> is not changing and we eventually return <code>dummy.next</code>???? It doesn't make sense, right? However, if you think that <code>dummy</code> is pointing to the start and there is another variable (<code>temp</code>) that makes the linkes from node to node, you'll have a better filling!<br>
-Similar to the gold example if I tell you the first clue is at location X, then, you can solve clues sequentially (because of course you're smart) and bingo! you find the gold! Watch <a href="https://www.youtube.com/watch?v=3O_f_sk3mFc">this</a>.</p>
-<p>This video shows why we need the <code>dummy</code>! Since we're traversing using <code>temp</code> but once <code>temp</code> gets to the tail of the sorted merged linkedlist, there's no way back to the start of the list to return as a result! So <code>dummy</code> to the rescue! it does not get changed throughout the list traversals <code>temp</code> is doing! So, <code>dummy</code> makes sure we don't loose the head of the thread (result list). Does this make sense? Alright! Enough with <code>dummy</code>!</p>
-<p>I think if you get this, the first solution feels natural! Now, watch <a href="https://www.youtube.com/watch?v=GfRQvf7MB3k">this</a>. You got the idea?? Nice!</p>
-<p>First you initialize <code>dummy</code> and <code>temp</code>. One is sitting at the start of the linkedlist and the other (<code>temp</code>) is going to move forward find which value should be added to the list. Note that it's initialized with a value <code>0</code> but it can be anything! You initialize it with your value of choice! Doesn't matter since we're going to finally return <code>dummy.next</code> which disregards <code>0</code> that we used to start the linkedlist. Line <code>#1</code> makes sure none of the <code>l1</code> and <code>l2</code> are empty! If one of them is empty, we should return the other! If both are nonempty, we check <code>val</code> of each of them to add the smaller one to the result linkedlist! In line <code>#2</code>, <code>l1.val</code> is smaller and we want to add it to the list. How? We use <code>temp</code> POINTER (it's pointer, remember that!). Since we initialized <code>temp</code> to have value <code>0</code> at first node, we use <code>temp.next</code> to point <code>0</code> to the next value we're going to add to the list <code>l1.val</code> (line <code>#3</code>). Once we do that, we update <code>l1</code> to go to the next node of <code>l1</code>. If the <code>if</code> statement of line <code>#2</code> doesn't work, we do similar stuff with <code>l2</code>. And finally, if the length of <code>l1</code> and <code>l2</code> are not the same, we're going to the end of one of them at some point! Line <code>#5</code> adds whatever left from whatever linkedlist to the <code>temp.next</code> (check the above video for a great explanation of this part). Note that both linkedlists were sorted initially. Also, this line takes care of when one of the linkedlists are empty. Finally, we return <code>dummy.next</code> since <code>dummy</code> is pointing to <code>0</code> and <code>next</code> to zero is what we've added throughout the process.</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params"><span class="variable language_">self</span>, <span class="symbol">l1:</span> <span class="title class_">ListNode</span>, <span class="symbol">l2:</span> <span class="title class_">ListNode</span></span>) -&gt; <span class="title class_">ListNode</span>:   </span><br><span class="line">        dummy = temp = <span class="title class_">ListNode</span>(<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">while</span> l1 != <span class="title class_">None</span> <span class="keyword">and</span> l2 != <span class="title class_">None</span>: <span class="comment">#1</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> l1.val &lt; l2.<span class="symbol">val:</span> <span class="comment">#2</span></span><br><span class="line">                temp.<span class="keyword">next</span> = l1 <span class="comment">#3</span></span><br><span class="line">                l1 = l1.<span class="keyword">next</span> <span class="comment">#4</span></span><br><span class="line">            <span class="symbol">else:</span> </span><br><span class="line">                temp.<span class="keyword">next</span> = l2</span><br><span class="line">                l2 = l2.<span class="keyword">next</span></span><br><span class="line">            temp = temp.<span class="keyword">next</span></span><br><span class="line">        temp.<span class="keyword">next</span> = l1 <span class="keyword">or</span> l2  <span class="comment">#5</span></span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="keyword">next</span> <span class="comment">#6</span></span><br></pre></td></tr></table></figure>
-<p>Another way of solving is problem is by doing recursion. This is from <a href="https://leetcode.com/problems/merge-two-sorted-lists/discuss/9735/Python-solutions-(iteratively-recursively-iteratively-in-place)">here</a>. The first check is obvious! If one of them is empty, return the other one! Similar to line <code>#5</code> of previous solution. Here, we have two cases, whatever list has the smaller first element (equal elements also satisfies line <code>#1</code>), will be returned at the end. In the example <code>l1 = [1,2,4], l2 = [1,3,4]</code>, we go in the <code>if</code> statement of line <code>#1</code> first, this means that the first element of <code>l1</code> doesn't get changed! Then, we move the pointer to the second element of <code>l1</code> by calling the function again but with <code>l1.next</code> and <code>l2</code> as input! This round of call, goes to line <code>#2</code> because now we have element <code>1</code> from <code>l2</code> versus <code>2</code> from <code>l1</code>. Now, basically, <code>l2</code> gets connected to the tail of <code>l1</code>. We keep moving forward by switching between <code>l1</code> and <code>l2</code> until the last element. Sorry if it's not clear enough! I'm not a fan of recursion for such a problems! But, let me know which part it's hard to understand, I'll try to explain better!</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params"><span class="variable language_">self</span>, <span class="symbol">l1:</span> <span class="title class_">ListNode</span>, <span class="symbol">l2:</span> <span class="title class_">ListNode</span></span>) -&gt; <span class="title class_">ListNode</span>:   </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> l1 <span class="keyword">or</span> <span class="keyword">not</span> <span class="symbol">l2:</span></span><br><span class="line">            <span class="keyword">return</span> l1 <span class="keyword">or</span> l2</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> l1.val &lt;= l2.<span class="symbol">val:</span> <span class="comment">#1</span></span><br><span class="line">            l1.<span class="keyword">next</span> = <span class="variable language_">self</span>.mergeTwoLists(l1.<span class="keyword">next</span>, l2)</span><br><span class="line">            <span class="keyword">return</span> l1</span><br><span class="line">        <span class="symbol">else:</span> <span class="comment">#2</span></span><br><span class="line">            l2.<span class="keyword">next</span> = <span class="variable language_">self</span>.mergeTwoLists(l1, l2.<span class="keyword">next</span>)</span><br><span class="line">            <span class="keyword">return</span> l2</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>leetcode</tag>
-        <tag>python</tag>
-        <tag>pointer</tag>
-        <tag>list</tag>
-        <tag>merge</tag>
-        <tag>linklist</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>leetcode小抄：20. Valid Parentheses</title>
     <url>/lc6.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -1557,17 +2072,124 @@ $ 1 &lt;= s.length &lt;= 10^{4} $
       </tags>
   </entry>
   <entry>
-    <title>更新hexo报错spawn failed解决办法</title>
-    <url>/spawnfailed.html</url>
-    <content><![CDATA[<p>执行<code>hexo -d</code>时，出现<code>spawn failed</code>报错</p>
-<p><img src="https://s2.loli.net/2024/03/07/Nc2RAxvjESeTKYO.png" alt="Pasted image 20240307021936.png"></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">删除`.deploy_git`文件之后</span><br><span class="line">执行命令行`git config --global core.autocrlf false`</span><br><span class="line">最后：`hexo g -d`</span><br></pre></td></tr></table></figure>]]></content>
+    <title>leetcode小抄：21. Merge Two Sorted Lists</title>
+    <url>/lc7.html</url>
+    <content><![CDATA[<span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#solution-1-%E8%81%AA%E6%98%8E%E6%96%B9%E6%B3%95">solution 1 聪明方法</a>
+<ul>
+<li><a href="#%E5%85%B3%E9%94%AE%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8">关键数据结构 链表</a></li>
+<li><a href="#%E5%85%B3%E9%94%AE%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%93%BE%E8%A1%A8-%E7%94%A8%E6%B3%95%E8%AF%B4%E6%98%8E">关键数据结构 链表 用法说明</a></li>
+<li><a href="#%E6%A0%B8%E5%BF%83%E6%80%9D%E8%B7%AF">核心思路</a></li>
+</ul>
+</li>
+<li><a href="#solution-2-%E5%A4%A7%E4%BD%AC%E8%A7%A3%E9%87%8Aruby">solution 2 大佬解释ruby</a></li>
+</ul>
+<!-- tocstop -->
+<p>You are given the heads of two sorted linked lists <code>list1</code> and <code>list2</code>.</p>
+<p>Merge the two lists into one <strong>sorted</strong> list. The list should be made by splicing together the nodes of the first two lists.</p>
+<p>Return <em>the head of the merged linked list</em>.</p>
+<p><strong>Example 1:</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg" alt></p>
+<p><strong>Input:</strong> list1 = [1,2,4], list2 = [1,3,4]
+<strong>Output:</strong> [1,1,2,3,4,4]</p>
+<p><strong>Example 2:</strong></p>
+<p><strong>Input:</strong> list1 = [], list2 = []
+<strong>Output:</strong> []</p>
+<p><strong>Example 3:</strong></p>
+<p><strong>Input:</strong> list1 = [], list2 = [0]
+<strong>Output:</strong> [0]</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>The number of nodes in both lists is in the range <code>[0, 50]</code>.</li>
+<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+<li>Both <code>list1</code> and <code>list2</code> are sorted in <strong>non-decreasing</strong> order.</li>
+</ul>
+<h2><span id="solution-1-聪明方法"> solution 1 聪明方法</span></h2>
+<p>用指针</p>
+<p>实际上不需要对链表进行排序操作，因为两个链表已经是排序好的。解决这个问题的高效方法是直接合并这两个链表，同时保持排序。</p>
+<p><code>mergeTwoLists</code> 方法接收两个链表的头节点 <code>list1</code> 和 <code>list2</code>，并返回合并后的新链表的头节点。通过使用哑节点 <code>dummy</code>，我们可以简化合并过程中对头节点的处理，使得逻辑更加清晰。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params">self, list1, list2</span>):</span><br><span class="line">        <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        :type list1: ListNode</span></span><br><span class="line"><span class="string">        :type list2: ListNode</span></span><br><span class="line"><span class="string">        :rtype: ListNode</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="comment"># 创建一个哑节点作为新链表的起点</span></span><br><span class="line">        dummy = ListNode()</span><br><span class="line">        tail = dummy  <span class="comment"># tail 用于指向新链表的最后一个节点</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 合并链表</span></span><br><span class="line">        <span class="keyword">while</span> list1 <span class="keyword">and</span> list2:</span><br><span class="line">            <span class="keyword">if</span> list1.val &lt;= list2.val:</span><br><span class="line">                tail.<span class="built_in">next</span> = list1</span><br><span class="line">                list1 = list1.<span class="built_in">next</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                tail.<span class="built_in">next</span> = list2</span><br><span class="line">                list2 = list2.<span class="built_in">next</span></span><br><span class="line">            tail = tail.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 如果有链表未完全遍历完，直接连接剩余部分</span></span><br><span class="line">        <span class="keyword">if</span> list1:</span><br><span class="line">            tail.<span class="built_in">next</span> = list1</span><br><span class="line">        <span class="keyword">elif</span> list2:</span><br><span class="line">            tail.<span class="built_in">next</span> = list2</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 返回新链表的头节点，即 dummy 的下一个节点</span></span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="built_in">next</span></span><br></pre></td></tr></table></figure>
+<h3><span id="关键数据结构-链表"> 关键数据结构 链表</span></h3>
+<ul>
+<li>
+<p>链表特性：链表是一种动态数据结构，每个节点包含数据和指向下一个节点的指针。对于有序链表来说，每个节点的值都小于或等于其后续节点的值。</p>
+</li>
+<li>
+<p>问题需求：题目要求合并两个已排序的链表，并保持合并后的链表也是有序的。这意味着新链表中的每个节点值都需要小于等于其后面的节点值。</p>
+</li>
+</ul>
+<h3><span id="关键数据结构-链表-用法说明"> 关键数据结构 链表 用法说明</span></h3>
+<p>尽管Python的标准库没有直接提供链表类，但你可以自定义实现链表结构。链表中的每个元素称为节点，每个节点包含数据和指向下一个节点的引用。
+链表分为单链表、双链表、循环链表等多种类型，下面主要介绍单链表的基本概念和使用示例。</p>
+<p>定义一个链表节点类<code>ListNode</code>：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ListNode</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, value=<span class="number">0</span>, <span class="built_in">next</span>=<span class="literal">None</span></span>):</span><br><span class="line">        self.value = value</span><br><span class="line">        self.<span class="built_in">next</span> = <span class="built_in">next</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>创建链表</strong></li>
+</ul>
+<p>手动创建一个链表，通常从头节点开始，依次创建每个节点并连接它们。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建链表 1-&gt;2-&gt;3</span></span><br><span class="line">node1 = ListNode(<span class="number">1</span>)</span><br><span class="line">node2 = ListNode(<span class="number">2</span>)</span><br><span class="line">node3 = ListNode(<span class="number">3</span>)</span><br><span class="line">node1.<span class="built_in">next</span> = node2</span><br><span class="line">node2.<span class="built_in">next</span> = node3</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>打印链表</strong></li>
+</ul>
+<p>定义一个函数来遍历并打印链表的所有元素：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_list</span>(<span class="params">head</span>):</span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current:</span><br><span class="line">        <span class="built_in">print</span>(current.value, end=<span class="string">&quot; -&gt; &quot;</span>)</span><br><span class="line">        current = current.<span class="built_in">next</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;None&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印链表</span></span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 1 -&gt; 2 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>插入节点</strong></li>
+</ul>
+<p>向链表中插入一个新节点，例如在给定值之后插入：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">insert_after</span>(<span class="params">node, new_value</span>):</span><br><span class="line">    new_node = ListNode(new_value)</span><br><span class="line">    new_node.<span class="built_in">next</span> = node.<span class="built_in">next</span></span><br><span class="line">    node.<span class="built_in">next</span> = new_node</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在值为2的节点后面插入4</span></span><br><span class="line">insert_after(node2, <span class="number">4</span>)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出变为: 1 -&gt; 2 -&gt; 4 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>删除节点</strong></li>
+</ul>
+<p>删除链表中特定值的节点，这里以删除值为4的节点为例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">delete_node</span>(<span class="params">head, value</span>):</span><br><span class="line">    prev = <span class="literal">None</span></span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current <span class="keyword">and</span> current.value != value:</span><br><span class="line">        prev = current</span><br><span class="line">        current = current.<span class="built_in">next</span></span><br><span class="line">    <span class="keyword">if</span> current <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">return</span> head  <span class="comment"># 节点不存在</span></span><br><span class="line">    <span class="keyword">if</span> prev <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">return</span> current.<span class="built_in">next</span>  <span class="comment"># 删除头节点</span></span><br><span class="line">    prev.<span class="built_in">next</span> = current.<span class="built_in">next</span></span><br><span class="line">    <span class="keyword">return</span> head</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除值为4的节点</span></span><br><span class="line">node1 = delete_node(node1, <span class="number">4</span>)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 1 -&gt; 2 -&gt; 3 -&gt; None</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>链表反转</strong></li>
+</ul>
+<p>反转链表是链表操作中的经典问题，可以递归或迭代实现：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">reverse_list</span>(<span class="params">head</span>):</span><br><span class="line">    prev = <span class="literal">None</span></span><br><span class="line">    current = head</span><br><span class="line">    <span class="keyword">while</span> current:</span><br><span class="line">        next_temp = current.<span class="built_in">next</span>  <span class="comment"># 临时保存下一个节点</span></span><br><span class="line">        current.<span class="built_in">next</span> = prev  <span class="comment"># 反转指针</span></span><br><span class="line">        prev = current  <span class="comment"># 前进到下一个节点</span></span><br><span class="line">        current = next_temp</span><br><span class="line">    <span class="keyword">return</span> prev</span><br><span class="line"></span><br><span class="line"><span class="comment"># 反转链表</span></span><br><span class="line">node1 = reverse_list(node1)</span><br><span class="line">print_list(node1)  <span class="comment"># 输出: 3 -&gt; 2 -&gt; 1 -&gt; None</span></span><br></pre></td></tr></table></figure>
+<h3><span id="核心思路"> 核心思路</span></h3>
+<ul>
+<li>
+<p><strong>使用哑节点</strong>：引入一个哑节点（dummy node）作为新链表的起点，这样做可以简化操作，避免在合并开始时对头节点的特殊处理。哑节点的下一个节点（<code>dummy.next</code>）最终会指向合并后链表的实际头节点。</p>
+</li>
+<li>
+<p><strong>双指针遍历</strong>：设置两个指针 <code>p1</code> 和 <code>p2</code> 分别指向两个链表的头部。通过比较这两个指针所指向节点的值，决定哪个节点应该先被添加到新链表中。这样可以保证新链表的排序性质。</p>
+</li>
+<li>
+<p><strong>逐步构建新链表</strong>：每次选择值较小的节点加入新链表，并将对应的指针向前移动。这个过程持续到至少有一个链表被完全遍历完。</p>
+</li>
+<li>
+<p><strong>处理剩余节点</strong>：当一个链表遍历完后，直接将另一个链表剩余的部分链接到新链表的尾部。这是因为剩余链表中的所有节点都已大于当前新链表的末尾节点（根据排序性质），可以直接追加。</p>
+</li>
+<li>
+<p><strong>返回结果</strong>：最后返回哑节点的下一个节点，即新链表的头节点。</p>
+</li>
+</ul>
+<h2><span id="solution-2-大佬解释ruby"> solution 2 大佬解释ruby</span></h2>
+<p><a href="https://leetcode.com/problems/merge-two-sorted-lists/solutions/759870/python3-solution-with-a-detailed-explanation-dummy-explained">Python3 Solution with a Detailed Explanation - dummy explained</a></p>
+<p><a href="https://realpython.com/linked-lists-python/">Linkedlists</a> can be confusing especially if you've recently started to code but (I think) once you understand it fully, it should not be that difficult.</p>
+<p>For this problem, I'm going to explain several ways of solving it <strong>BUT</strong> I want to make something clear. Something that you've seen a lot of times in the posts on this website but probably haven't fully understood. <code>dummy</code> variable! It has been used significantly in the solutions of this problem and not well explained for a newbie level coder! The idea is we're dealing with <code>pointers</code> that point to a memory location! Think of it this way! You want to find gold that is hidden somewhere. Someone has put a set of clues in a sequence! Meaning, if you find the first clue and solve the problem hidden in the clue, you will get to the second clue! Solving the hidden problem of second clue will get you to the thrid clue, and so on! If you keep solving, you'll get to the gold! <code>dummy</code> helps you to find the first clue!!!!</p>
+<p>Throughout the solution below, you'll be asking yourself why <code>dummy</code> is not changing and we eventually return <code>dummy.next</code>???? It doesn't make sense, right? However, if you think that <code>dummy</code> is pointing to the start and there is another variable (<code>temp</code>) that makes the linkes from node to node, you'll have a better filling!<br>
+Similar to the gold example if I tell you the first clue is at location X, then, you can solve clues sequentially (because of course you're smart) and bingo! you find the gold! Watch <a href="https://www.youtube.com/watch?v=3O_f_sk3mFc">this</a>.</p>
+<p>This video shows why we need the <code>dummy</code>! Since we're traversing using <code>temp</code> but once <code>temp</code> gets to the tail of the sorted merged linkedlist, there's no way back to the start of the list to return as a result! So <code>dummy</code> to the rescue! it does not get changed throughout the list traversals <code>temp</code> is doing! So, <code>dummy</code> makes sure we don't loose the head of the thread (result list). Does this make sense? Alright! Enough with <code>dummy</code>!</p>
+<p>I think if you get this, the first solution feels natural! Now, watch <a href="https://www.youtube.com/watch?v=GfRQvf7MB3k">this</a>. You got the idea?? Nice!</p>
+<p>First you initialize <code>dummy</code> and <code>temp</code>. One is sitting at the start of the linkedlist and the other (<code>temp</code>) is going to move forward find which value should be added to the list. Note that it's initialized with a value <code>0</code> but it can be anything! You initialize it with your value of choice! Doesn't matter since we're going to finally return <code>dummy.next</code> which disregards <code>0</code> that we used to start the linkedlist. Line <code>#1</code> makes sure none of the <code>l1</code> and <code>l2</code> are empty! If one of them is empty, we should return the other! If both are nonempty, we check <code>val</code> of each of them to add the smaller one to the result linkedlist! In line <code>#2</code>, <code>l1.val</code> is smaller and we want to add it to the list. How? We use <code>temp</code> POINTER (it's pointer, remember that!). Since we initialized <code>temp</code> to have value <code>0</code> at first node, we use <code>temp.next</code> to point <code>0</code> to the next value we're going to add to the list <code>l1.val</code> (line <code>#3</code>). Once we do that, we update <code>l1</code> to go to the next node of <code>l1</code>. If the <code>if</code> statement of line <code>#2</code> doesn't work, we do similar stuff with <code>l2</code>. And finally, if the length of <code>l1</code> and <code>l2</code> are not the same, we're going to the end of one of them at some point! Line <code>#5</code> adds whatever left from whatever linkedlist to the <code>temp.next</code> (check the above video for a great explanation of this part). Note that both linkedlists were sorted initially. Also, this line takes care of when one of the linkedlists are empty. Finally, we return <code>dummy.next</code> since <code>dummy</code> is pointing to <code>0</code> and <code>next</code> to zero is what we've added throughout the process.</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params"><span class="variable language_">self</span>, <span class="symbol">l1:</span> <span class="title class_">ListNode</span>, <span class="symbol">l2:</span> <span class="title class_">ListNode</span></span>) -&gt; <span class="title class_">ListNode</span>:   </span><br><span class="line">        dummy = temp = <span class="title class_">ListNode</span>(<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">while</span> l1 != <span class="title class_">None</span> <span class="keyword">and</span> l2 != <span class="title class_">None</span>: <span class="comment">#1</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> l1.val &lt; l2.<span class="symbol">val:</span> <span class="comment">#2</span></span><br><span class="line">                temp.<span class="keyword">next</span> = l1 <span class="comment">#3</span></span><br><span class="line">                l1 = l1.<span class="keyword">next</span> <span class="comment">#4</span></span><br><span class="line">            <span class="symbol">else:</span> </span><br><span class="line">                temp.<span class="keyword">next</span> = l2</span><br><span class="line">                l2 = l2.<span class="keyword">next</span></span><br><span class="line">            temp = temp.<span class="keyword">next</span></span><br><span class="line">        temp.<span class="keyword">next</span> = l1 <span class="keyword">or</span> l2  <span class="comment">#5</span></span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="keyword">next</span> <span class="comment">#6</span></span><br></pre></td></tr></table></figure>
+<p>Another way of solving is problem is by doing recursion. This is from <a href="https://leetcode.com/problems/merge-two-sorted-lists/discuss/9735/Python-solutions-(iteratively-recursively-iteratively-in-place)">here</a>. The first check is obvious! If one of them is empty, return the other one! Similar to line <code>#5</code> of previous solution. Here, we have two cases, whatever list has the smaller first element (equal elements also satisfies line <code>#1</code>), will be returned at the end. In the example <code>l1 = [1,2,4], l2 = [1,3,4]</code>, we go in the <code>if</code> statement of line <code>#1</code> first, this means that the first element of <code>l1</code> doesn't get changed! Then, we move the pointer to the second element of <code>l1</code> by calling the function again but with <code>l1.next</code> and <code>l2</code> as input! This round of call, goes to line <code>#2</code> because now we have element <code>1</code> from <code>l2</code> versus <code>2</code> from <code>l1</code>. Now, basically, <code>l2</code> gets connected to the tail of <code>l1</code>. We keep moving forward by switching between <code>l1</code> and <code>l2</code> until the last element. Sorry if it's not clear enough! I'm not a fan of recursion for such a problems! But, let me know which part it's hard to understand, I'll try to explain better!</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">mergeTwoLists</span>(<span class="params"><span class="variable language_">self</span>, <span class="symbol">l1:</span> <span class="title class_">ListNode</span>, <span class="symbol">l2:</span> <span class="title class_">ListNode</span></span>) -&gt; <span class="title class_">ListNode</span>:   </span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> l1 <span class="keyword">or</span> <span class="keyword">not</span> <span class="symbol">l2:</span></span><br><span class="line">            <span class="keyword">return</span> l1 <span class="keyword">or</span> l2</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> l1.val &lt;= l2.<span class="symbol">val:</span> <span class="comment">#1</span></span><br><span class="line">            l1.<span class="keyword">next</span> = <span class="variable language_">self</span>.mergeTwoLists(l1.<span class="keyword">next</span>, l2)</span><br><span class="line">            <span class="keyword">return</span> l1</span><br><span class="line">        <span class="symbol">else:</span> <span class="comment">#2</span></span><br><span class="line">            l2.<span class="keyword">next</span> = <span class="variable language_">self</span>.mergeTwoLists(l1, l2.<span class="keyword">next</span>)</span><br><span class="line">            <span class="keyword">return</span> l2</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>mifukoIO</category>
+        <category>leetcode</category>
       </categories>
       <tags>
-        <tag>github</tag>
-        <tag>hexo</tag>
+        <tag>leetcode</tag>
+        <tag>python</tag>
+        <tag>pointer</tag>
+        <tag>list</tag>
+        <tag>merge</tag>
+        <tag>linklist</tag>
       </tags>
   </entry>
   <entry>
@@ -1593,6 +2215,20 @@ $ 1 &lt;= s.length &lt;= 10^{4} $
 <p><img src="https://s2.loli.net/2024/03/07/utpfIj5Hnv3oNds.png" alt="Pasted image 20240305014915.png"></p>
 <p>重新执行<code>hexo g -d</code>，还是有两次登录框，在密码的地方输入token</p>
 ]]></content>
+      <categories>
+        <category>mifukoIO</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更新hexo报错spawn failed解决办法</title>
+    <url>/spawnfailed.html</url>
+    <content><![CDATA[<p>执行<code>hexo -d</code>时，出现<code>spawn failed</code>报错</p>
+<p><img src="https://s2.loli.net/2024/03/07/Nc2RAxvjESeTKYO.png" alt="Pasted image 20240307021936.png"></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">删除`.deploy_git`文件之后</span><br><span class="line">执行命令行`git config --global core.autocrlf false`</span><br><span class="line">最后：`hexo g -d`</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>mifukoIO</category>
       </categories>
@@ -1628,8 +2264,6 @@ $ 1 &lt;= s.length &lt;= 10^{4} $
 <li><a href="#basic-syntax-1">Basic Syntax:</a></li>
 <li><a href="#working-principle">Working Principle:</a></li>
 <li><a href="#example-1">Example:</a></li>
-</ul>
-<ul>
 <li><a href="#considerations">Considerations:</a></li>
 </ul>
 </li>
@@ -1639,6 +2273,11 @@ $ 1 &lt;= s.length &lt;= 10^{4} $
 <ul>
 <li><a href="#part-a">part A</a></li>
 <li><a href="#part-b">part B</a></li>
+</ul>
+</li>
+<li><a href="#qa">QA</a>
+<ul>
+<li><a href="#the-column-convertedcomp-contains-the-annual-compensation-of-the-survey-respondents-what-is-the-best-approach-to-impute-the-missing-values-in-this-column">The column ‘ConvertedComp’ contains the annual compensation of the survey respondents. What is the best approach to impute the missing values in this column?</a></li>
 </ul>
 </li>
 </ul>
@@ -1744,7 +2383,7 @@ $ 1 &lt;= s.length &lt;= 10^{4} $
 <h4><span id="example"> Example:</span></h4>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np </span><br><span class="line"></span><br><span class="line"><span class="comment"># Define conditions </span></span><br><span class="line">conditions = [np.array([<span class="literal">True</span>, <span class="literal">False</span>, <span class="literal">True</span>, <span class="literal">False</span>]),  np.array([<span class="literal">False</span>, <span class="literal">True</span>, <span class="literal">False</span>, <span class="literal">True</span>])] </span><br><span class="line"></span><br><span class="line"><span class="comment"># Define choices </span></span><br><span class="line">choices = [<span class="number">1</span>, <span class="number">5</span>] <span class="comment"># Simplified for the example </span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Use np.select </span></span><br><span class="line">selected = np.select(conditions, choices) </span><br><span class="line"><span class="built_in">print</span>(selected) <span class="comment"># The output will be array([1, 5, 1, 5])`</span></span><br></pre></td></tr></table></figure>
 <p>In this example, <code>np.select</code> checks the first condition array <code>[True, False, True, False]</code>. For each index, if the condition is <code>True</code>, it selects the value <code>1</code> from the <code>choices</code>. If the condition is <code>False</code>, it moves to the next condition. Since the <code>choicelist</code> is simplified to single values in this example, it alternates between the two values based on the conditions.</p>
-<h3><span id="considerations"> Considerations:</span></h3>
+<h4><span id="considerations"> Considerations:</span></h4>
 <ul>
 <li>All arrays in <code>condlist</code> must be of the same length.</li>
 <li>The number of elements in <code>choicelist</code> must match the number of conditions in <code>condlist</code>.</li>
@@ -1753,14 +2392,82 @@ $ 1 &lt;= s.length &lt;= 10^{4} $
 <p><code>np.select</code> is a powerful tool for efficiently selecting data based on multiple conditions, especially when you need to quickly arrive at a result array based on various criteria.</p>
 <h1><span id="full-code-executed"> full code executed</span></h1>
 <h2><span id="part-a"> part A</span></h2>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">df = pd.read_csv(<span class="string">&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/LargeData/m1_survey_data.csv&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find duplicate rows</span></span><br><span class="line">duplicates = df.duplicated()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find how many duplicate rows exist in the dataframe. 154</span></span><br><span class="line">original_num_duplicates = df.duplicated().<span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The number of duplicate rows in the dataframe is: <span class="subst">&#123;original_num_duplicates&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Remove the duplicate rows from the dataframe.</span></span><br><span class="line">df = df.drop_duplicates()</span><br><span class="line">new_num_duplicates = df.duplicated().<span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Number of duplicates after removing: <span class="subst">&#123;new_num_duplicates&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the missing values for all columns.</span></span><br><span class="line">missing_values = df.isnull()</span><br><span class="line"><span class="comment"># print(missing_values) 全表True and False就不输出了</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Find out how many rows are missing in the column &#x27;WorkLoc&#x27;</span></span><br><span class="line">missing_in_workloc = df[<span class="string">&#x27;WorkLoc&#x27;</span>].isnull().<span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The number of rows with missing values in &#x27;WorkLoc&#x27; is: <span class="subst">&#123;missing_in_workloc&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the value counts for the column WorkLoc.</span></span><br><span class="line">value_counts_workloc = df[<span class="string">&#x27;WorkLoc&#x27;</span>].value_counts()</span><br><span class="line"><span class="built_in">print</span>(value_counts_workloc)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Identify the value that is most frequent (majority) in the WorkLoc column.</span></span><br><span class="line">most_frequent_workloc = df[<span class="string">&#x27;WorkLoc&#x27;</span>].mode()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The most frequent value in &#x27;WorkLoc&#x27; is: <span class="subst">&#123;most_frequent_workloc[<span class="number">0</span>]&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Replace missing values in &#x27;WorkLoc&#x27; with the most frequent value</span></span><br><span class="line">df[<span class="string">&#x27;WorkLoc&#x27;</span>].fillna(most_frequent_workloc, inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Check for missing values in &#x27;WorkLoc&#x27; after imputation</span></span><br><span class="line">missing_values_after_imputation = df[<span class="string">&#x27;WorkLoc&#x27;</span>].isnull().<span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Number of missing values in &#x27;WorkLoc&#x27; after imputation: <span class="subst">&#123;missing_values_after_imputation&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Verify the most frequent value in &#x27;WorkLoc&#x27; after imputation</span></span><br><span class="line">most_frequent_after_imputation = df[<span class="string">&#x27;WorkLoc&#x27;</span>].mode()[<span class="number">0</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The most frequent value in &#x27;WorkLoc&#x27; after imputation is: <span class="subst">&#123;most_frequent_after_imputation&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Count the occurrences of the most frequent value after imputation</span></span><br><span class="line">count_of_most_frequent = df[<span class="string">&#x27;WorkLoc&#x27;</span>].value_counts(normalize=<span class="literal">True</span>).<span class="built_in">max</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The proportion of the most frequent value in &#x27;WorkLoc&#x27; after imputation: <span class="subst">&#123;count_of_most_frequent&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">df = pd.read_csv(<span class="string">&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/LargeData/m1_survey_data.csv&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find duplicate rows</span></span><br><span class="line">duplicates = df.duplicated()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find how many duplicate rows exist in the dataframe. 154</span></span><br><span class="line">original_num_duplicates = df.duplicated().<span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The number of duplicate rows in the dataframe is: <span class="subst">&#123;original_num_duplicates&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Remove the duplicate rows from the dataframe.</span></span><br><span class="line">df = df.drop_duplicates()</span><br><span class="line">new_num_duplicates = df.duplicated().<span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Number of duplicates after removing: <span class="subst">&#123;new_num_duplicates&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the missing values for all columns.</span></span><br><span class="line">missing_values = df.isnull()</span><br><span class="line"><span class="comment"># print(missing_values) 全表True and False就不输出了</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Find out how many rows are missing in the column &#x27;WorkLoc&#x27;</span></span><br><span class="line">missing_in_workloc = df[<span class="string">&#x27;WorkLoc&#x27;</span>].isnull().<span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The number of rows with missing values in &#x27;WorkLoc&#x27; is: <span class="subst">&#123;missing_in_workloc&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the value counts for the column WorkLoc.</span></span><br><span class="line">value_counts_workloc = df[<span class="string">&#x27;WorkLoc&#x27;</span>].value_counts()</span><br><span class="line"><span class="built_in">print</span>(value_counts_workloc)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Identify the value that is most frequent (majority) in the WorkLoc column.</span></span><br><span class="line">most_frequent_workloc = df[<span class="string">&#x27;WorkLoc&#x27;</span>].mode()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The most frequent value in &#x27;WorkLoc&#x27; is: <span class="subst">&#123;most_frequent_workloc[<span class="number">0</span>]&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Replace missing values in &#x27;WorkLoc&#x27; with the most frequent value</span></span><br><span class="line">df[<span class="string">&#x27;WorkLoc&#x27;</span>].fillna(most_frequent_workloc, inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Check for missing values in &#x27;WorkLoc&#x27; after imputation</span></span><br><span class="line">missing_values_after_imputation = df[<span class="string">&#x27;WorkLoc&#x27;</span>].isnull().<span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Number of missing values in &#x27;WorkLoc&#x27; after imputation: <span class="subst">&#123;missing_values_after_imputation&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Verify the most frequent value in &#x27;WorkLoc&#x27; after imputation</span></span><br><span class="line">most_frequent_after_imputation = df[<span class="string">&#x27;WorkLoc&#x27;</span>].mode()[<span class="number">0</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The most frequent value in &#x27;WorkLoc&#x27; after imputation is: <span class="subst">&#123;most_frequent_after_imputation&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Count the occurrences of the most frequent value after imputation</span></span><br><span class="line">count_of_most_frequent = df[<span class="string">&#x27;WorkLoc&#x27;</span>].value_counts(normalize=<span class="literal">True</span>).<span class="built_in">max</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The proportion of the most frequent value in &#x27;WorkLoc&#x27; after imputation: <span class="subst">&#123;count_of_most_frequent&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># How many duplicate values are there in the column Respondent?</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Find duplicate values in the &#x27;Respondent&#x27; column</span></span><br><span class="line">duplicates = df[<span class="string">&#x27;Respondent&#x27;</span>].duplicated()</span><br><span class="line"><span class="comment"># Count the number of duplicate values</span></span><br><span class="line">num_duplicates = duplicates.<span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The number of duplicate values in the &#x27;Respondent&#x27; column is: <span class="subst">&#123;num_duplicates&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># After removing the duplicate rows, how many rows are there in the dataset?11398</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Remove duplicate rows</span></span><br><span class="line">df = df.drop_duplicates()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Check the number of rows after removing duplicates</span></span><br><span class="line">num_rows_after_deduplication = df.shape[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The number of rows in the dataset after removing duplicates is: <span class="subst">&#123;num_rows_after_deduplication&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># After removing the duplicate rows, how many unique rows are there in the column Respondent? 11398</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Remove duplicate rows</span></span><br><span class="line">df = df.drop_duplicates()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Count the number of unique values in the &#x27;Respondent&#x27; column</span></span><br><span class="line">num_unique_respondents = df[<span class="string">&#x27;Respondent&#x27;</span>].nunique()</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The number of unique rows in the &#x27;Respondent&#x27; column is: <span class="subst">&#123;num_unique_respondents&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># After removing the duplicate rows, how many blank rows are there under the column EdLevel?</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Assuming &#x27;df&#x27; is your DataFrame after removing duplicate rows</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Count the number of blank rows in the &#x27;EdLevel&#x27; column</span></span><br><span class="line">num_blank_rows_edlevel = df[<span class="string">&#x27;EdLevel&#x27;</span>].isnull().<span class="built_in">sum</span>()</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The number of blank rows in the &#x27;EdLevel&#x27; column is: <span class="subst">&#123;num_blank_rows_edlevel&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># After removing the duplicate rows, how many rows are missing under the column Country?</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Assuming &#x27;df&#x27; is your DataFrame after removing duplicate rows</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Count the number of missing values in the &#x27;Country&#x27; column</span></span><br><span class="line">num_missing_rows_country = df[<span class="string">&#x27;Country&#x27;</span>].isnull().<span class="built_in">sum</span>()</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The number of rows missing data in the &#x27;Country&#x27; column is: <span class="subst">&#123;num_missing_rows_country&#125;</span>&quot;</span>) <span class="comment"># answer is 0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># What is the majority category under the column Employment?</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Calculate the mode of the &#x27;Employment&#x27; column</span></span><br><span class="line">employment_mode = mode(df[<span class="string">&#x27;Employment&#x27;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># The mode function returns a Series with the mode value and its count</span></span><br><span class="line">majority_category_scipy = employment_mode.mode[<span class="number">0</span>]</span><br><span class="line">count_of_majority = employment_mode.count[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The majority category under the &#x27;Employment&#x27; column is: <span class="subst">&#123;majority_category_scipy&#125;</span>, which appears <span class="subst">&#123;count_of_majority&#125;</span> times.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># output: The majority category under the &#x27;Employment&#x27; column is: Employed full-time, which appears 10968 times.</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Assuming &#x27;df&#x27; is your DataFrame after removing duplicate rows</span></span><br><span class="line"><span class="comment"># Get the value counts for the &#x27;Employment&#x27; column</span></span><br><span class="line">employment_counts = df[<span class="string">&#x27;Employment&#x27;</span>].value_counts()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the majority category</span></span><br><span class="line">majority_category = employment_counts.idxmax()</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The majority category under the &#x27;Employment&#x27; column is: <span class="subst">&#123;majority_category&#125;</span>&quot;</span>)</span><br><span class="line"><span class="comment"># Under the column &quot; UndergradMajor&quot;, which category has the minimum number of rows?</span></span><br><span class="line"></span><br><span class="line">major_counts = df[<span class="string">&#x27;UndergradMajor&#x27;</span>].value_counts()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Find the category with the minimum number of rows</span></span><br><span class="line">minority_category = major_counts.idxmin()</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The category with the minimum number of rows under &#x27;UndergradMajor&#x27; is: <span class="subst">&#123;minority_category&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># output:The category with the minimum number of rows under &#x27;UndergradMajor&#x27; is: A health science (ex. nursing, pharmacy, radiology)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p><strong>output:</strong></p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">D:\Python\Python37\PROJ\xele_latency\venv\Scripts\python.exe D:/Python/Python37/PROJ/exc/courtest.py</span><br><span class="line">The number of duplicate rows in the dataframe is: 154</span><br><span class="line">Number of duplicates after removing: 0</span><br><span class="line">The number of rows with missing values in &#x27;WorkLoc&#x27; is: 32</span><br><span class="line">Office                                            6806</span><br><span class="line">Home                                              3589</span><br><span class="line">Other place, such as a coworking space or cafe     971</span><br><span class="line">Name: WorkLoc, dtype: int64</span><br><span class="line">The most frequent value in &#x27;WorkLoc&#x27; is: Office</span><br><span class="line">Number of missing values in &#x27;WorkLoc&#x27; after imputation: 32</span><br><span class="line">The most frequent value in &#x27;WorkLoc&#x27; after imputation is: Office</span><br><span class="line">The proportion of the most frequent value in &#x27;WorkLoc&#x27; after imputation: 0.5988034488826324</span><br><span class="line"></span><br><span class="line">Process finished with exit code 0</span><br></pre></td></tr></table></figure>
 <h2><span id="part-b"> part B</span></h2>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">df = pd.read_csv(<span class="string">&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/LargeData/m1_survey_data.csv&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># List out the various categories in the column &#x27;CompFreq&#x27;</span></span><br><span class="line">comp_freq_categories = df[<span class="string">&#x27;CompFreq&#x27;</span>].unique()</span><br><span class="line"><span class="built_in">print</span>(comp_freq_categories)</span><br></pre></td></tr></table></figure>
 <p><strong>output:</strong></p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[&#x27;Yearly&#x27; &#x27;Monthly&#x27; &#x27;Weekly&#x27; nan]</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">df = pd.read_csv(<span class="string">&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/LargeData/m1_survey_data.csv&quot;</span>)</span><br><span class="line">comp_freq_categories = df[<span class="string">&#x27;CompFreq&#x27;</span>].dropna().unique()</span><br><span class="line">comp_freq_categories = df[<span class="string">&#x27;CompFreq&#x27;</span>].unique()</span><br><span class="line"><span class="built_in">print</span>(comp_freq_categories)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Method 1: Using apply() with a lambda function</span></span><br><span class="line">df[<span class="string">&#x27;NormalizedAnnualCompensation&#x27;</span>] = df.apply(</span><br><span class="line">    <span class="keyword">lambda</span> row: row[<span class="string">&#x27;CompTotal&#x27;</span>] <span class="keyword">if</span> row[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Yearly&#x27;</span></span><br><span class="line">           <span class="keyword">else</span> row[<span class="string">&#x27;CompTotal&#x27;</span>] * <span class="number">12</span> <span class="keyword">if</span> row[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Monthly&#x27;</span></span><br><span class="line">           <span class="keyword">else</span> row[<span class="string">&#x27;CompTotal&#x27;</span>] * <span class="number">52</span> <span class="keyword">if</span> row[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Weekly&#x27;</span> <span class="keyword">else</span> <span class="literal">None</span>,</span><br><span class="line">    axis=<span class="number">1</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Method 2: Using conditional expressions (more efficient)</span></span><br><span class="line">df[<span class="string">&#x27;NormalizedAnnualCompensation&#x27;</span>] = (</span><br><span class="line">    df[<span class="string">&#x27;CompFreq&#x27;</span>].<span class="built_in">map</span>(&#123;<span class="string">&#x27;Yearly&#x27;</span>: <span class="keyword">lambda</span> x: x, <span class="string">&#x27;Monthly&#x27;</span>: <span class="keyword">lambda</span> x: x * <span class="number">12</span>, <span class="string">&#x27;Weekly&#x27;</span>: <span class="keyword">lambda</span> x: x * <span class="number">52</span>&#125;)(<span class="string">&#x27;CompTotal&#x27;</span>)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Method 3: Using np.select() (vectorized approach)</span></span><br><span class="line"><span class="comment"># Define conditions and corresponding calculations</span></span><br><span class="line">conditions = [</span><br><span class="line">    df[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Yearly&#x27;</span>,</span><br><span class="line">    df[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Monthly&#x27;</span>,</span><br><span class="line">    df[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Weekly&#x27;</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Define choices for the conditions</span></span><br><span class="line">choices = [</span><br><span class="line">    df[<span class="string">&#x27;CompTotal&#x27;</span>],  <span class="comment"># If Yearly, use CompTotal directly</span></span><br><span class="line">    df[<span class="string">&#x27;CompTotal&#x27;</span>] * <span class="number">12</span>,  <span class="comment"># If Monthly, multiply by 12</span></span><br><span class="line">    df[<span class="string">&#x27;CompTotal&#x27;</span>] * <span class="number">52</span>  <span class="comment"># If Weekly, multiply by 52</span></span><br><span class="line">]</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">df = pd.read_csv(<span class="string">&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/LargeData/m1_survey_data.csv&quot;</span>)</span><br><span class="line">comp_freq_categories = df[<span class="string">&#x27;CompFreq&#x27;</span>].dropna().unique()</span><br><span class="line">comp_freq_categories = df[<span class="string">&#x27;CompFreq&#x27;</span>].unique()</span><br><span class="line"><span class="built_in">print</span>(comp_freq_categories)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Method 1: Using apply() with a lambda function</span></span><br><span class="line">df[<span class="string">&#x27;NormalizedAnnualCompensation&#x27;</span>] = df.apply(</span><br><span class="line">    <span class="keyword">lambda</span> row: row[<span class="string">&#x27;CompTotal&#x27;</span>] <span class="keyword">if</span> row[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Yearly&#x27;</span></span><br><span class="line">           <span class="keyword">else</span> row[<span class="string">&#x27;CompTotal&#x27;</span>] * <span class="number">12</span> <span class="keyword">if</span> row[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Monthly&#x27;</span></span><br><span class="line">           <span class="keyword">else</span> row[<span class="string">&#x27;CompTotal&#x27;</span>] * <span class="number">52</span> <span class="keyword">if</span> row[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Weekly&#x27;</span> <span class="keyword">else</span> <span class="literal">None</span>,</span><br><span class="line">    axis=<span class="number">1</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Method 2: Using conditional expressions (more efficient)</span></span><br><span class="line">df[<span class="string">&#x27;NormalizedAnnualCompensation&#x27;</span>] = (</span><br><span class="line">    df[<span class="string">&#x27;CompFreq&#x27;</span>].<span class="built_in">map</span>(&#123;<span class="string">&#x27;Yearly&#x27;</span>: <span class="keyword">lambda</span> x: x, <span class="string">&#x27;Monthly&#x27;</span>: <span class="keyword">lambda</span> x: x * <span class="number">12</span>, <span class="string">&#x27;Weekly&#x27;</span>: <span class="keyword">lambda</span> x: x * <span class="number">52</span>&#125;)(<span class="string">&#x27;CompTotal&#x27;</span>)</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Method 3: Using np.select() (vectorized approach)</span></span><br><span class="line"><span class="comment"># Define conditions and corresponding calculations</span></span><br><span class="line">conditions = [</span><br><span class="line">    df[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Yearly&#x27;</span>,</span><br><span class="line">    df[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Monthly&#x27;</span>,</span><br><span class="line">    df[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Weekly&#x27;</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Define choices for the conditions</span></span><br><span class="line">choices = [</span><br><span class="line">    df[<span class="string">&#x27;CompTotal&#x27;</span>],  <span class="comment"># If Yearly, use CompTotal directly</span></span><br><span class="line">    df[<span class="string">&#x27;CompTotal&#x27;</span>] * <span class="number">12</span>,  <span class="comment"># If Monthly, multiply by 12</span></span><br><span class="line">    df[<span class="string">&#x27;CompTotal&#x27;</span>] * <span class="number">52</span>  <span class="comment"># If Weekly, multiply by 52</span></span><br><span class="line">]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># How many unique values are there in the CompFreq column?     </span></span><br><span class="line">unique_comp_freq_values = df[<span class="string">&#x27;CompFreq&#x27;</span>].nunique()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The &#x27;CompFreq&#x27; column has <span class="subst">&#123;unique_comp_freq_values&#125;</span> unique values.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># After removing the duplicate rows, how many respondents are being paid yearly?</span></span><br><span class="line"><span class="comment"># Remove duplicate rows</span></span><br><span class="line">df_unique = df.drop_duplicates()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Assuming df_unique is the DataFrame after removing duplicates</span></span><br><span class="line">yearly_comp_count = df_unique[<span class="string">&#x27;CompFreq&#x27;</span>].value_counts()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Now, filter the count for those who are paid &#x27;Yearly&#x27;</span></span><br><span class="line">yearly_comp_count = yearly_comp_count.get(<span class="string">&#x27;Yearly&#x27;</span>, <span class="number">0</span>)  <span class="comment"># Use dict.get() method with a default of 0</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;After removing duplicates, <span class="subst">&#123;yearly_comp_count&#125;</span> respondents are being paid yearly.&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># What is the median NormalizedAnnualCompensation? </span></span><br><span class="line"></span><br><span class="line">df = pd.read_csv(<span class="string">&quot;https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DA0321EN-SkillsNetwork/LargeData/m1_survey_data.csv&quot;</span>)</span><br><span class="line"></span><br><span class="line">df[<span class="string">&#x27;NormalizedAnnualCompensation&#x27;</span>] = df.apply(</span><br><span class="line">    <span class="keyword">lambda</span> row: row[<span class="string">&#x27;CompTotal&#x27;</span>] <span class="keyword">if</span> row[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Yearly&#x27;</span></span><br><span class="line">           <span class="keyword">else</span> row[<span class="string">&#x27;CompTotal&#x27;</span>] * <span class="number">12</span> <span class="keyword">if</span> row[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Monthly&#x27;</span></span><br><span class="line">           <span class="keyword">else</span> row[<span class="string">&#x27;CompTotal&#x27;</span>] * <span class="number">52</span> <span class="keyword">if</span> row[<span class="string">&#x27;CompFreq&#x27;</span>] == <span class="string">&#x27;Weekly&#x27;</span> <span class="keyword">else</span> <span class="literal">None</span>,</span><br><span class="line">    axis=<span class="number">1</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Calculate the median NormalizedAnnualCompensation</span></span><br><span class="line">median_annual_compensation = df[<span class="string">&#x27;NormalizedAnnualCompensation&#x27;</span>].median()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Print the median value</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;The median NormalizedAnnualCompensation is: <span class="subst">&#123;median_annual_compensation&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># output:The median NormalizedAnnualCompensation is: 100000.0</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1><span id="qa"> QA</span></h1>
+<h2><span id="the-column-convertedcomp-contains-the-annual-compensation-of-the-survey-respondents-what-is-the-best-approach-to-impute-the-missing-values-in-this-column"> The column ‘ConvertedComp’ contains the annual compensation of the survey respondents. What is the best approach to impute the missing values in this column?</span></h2>
+<p>If mean imputation is not suitable for the 'ConvertedComp' column, possibly due to the presence of outliers or because the data is not normally distributed, here are some alternative approaches to consider:</p>
+<ol>
+<li>
+<p><strong>Median Imputation</strong>:</p>
+<ul>
+<li>The median is a more robust measure of central tendency and is not affected by extreme values or outliers. Replace missing values with the median compensation.</li>
+</ul>
+<p><code>median_comp = df['ConvertedComp'].median() df['ConvertedComp'].fillna(median_comp, inplace=True)</code></p>
+</li>
+<li>
+<p><strong>Mode Imputation</strong>:</p>
+<ul>
+<li>If there is a mode (the most frequently occurring value), it can be a good representative for imputation, especially if the data has a peak at a certain value.</li>
+</ul>
+<p><code>mode_comp = df['ConvertedComp'].mode()[0] df['ConvertedComp'].fillna(mode_comp, inplace=True)</code></p>
+</li>
+<li>
+<p><strong>Quantile-Based Imputation</strong>:</p>
+<ul>
+<li>Use a quantile that is less affected by outliers, such as the first or third quartile (25th or 75th percentile).</li>
+</ul>
+<p><code>from scipy.stats import scoreatpercentile  lower_quartile = scoreatpercentile(df['ConvertedComp'], 25) upper_quartile = scoreatpercentile(df['ConvertedComp'], 75) df['ConvertedComp'].fillna(lower_quartile, inplace=True) # or upper_quartile</code></p>
+</li>
+<li>
+<p><strong>Imputation Using a Model</strong>:</p>
+<ul>
+<li>Build a regression model or use another predictive algorithm to estimate missing values based on other related variables in the dataset.</li>
+</ul>
+<p><code>from sklearn.ensemble import RandomForestRegressor  features = df.drop(columns=['ConvertedComp']) model = RandomForestRegressor() model.fit(features, df['ConvertedComp'].dropna()) df['ConvertedComp'].fillna(model.predict(df[features.columns]), inplace=True)</code></p>
+</li>
+<li>
+<p><strong>K-Nearest Neighbors (KNN) Imputation</strong>:</p>
+<ul>
+<li>KNN can be used to find similar observations and impute missing values based on the values of the nearest neighbors.</li>
+</ul>
+<p><code>from sklearn.impute import KNNImputer  imputer = KNNImputer(n_neighbors=5) df['ConvertedComp'] = imputer.fit_transform(df[['ConvertedComp']])</code></p>
+</li>
+<li>
+<p><strong>Multiple Imputation</strong>:</p>
+<ul>
+<li>Use a method like MICE (Multiple Imputation by Chained Equations) to perform multiple imputations and create several complete datasets.</li>
+</ul>
+</li>
+<li>
+<p><strong>Interpolation</strong>:</p>
+<ul>
+<li>If there is a logical order to the data, interpolation can be used to estimate missing values based on surrounding known values.</li>
+</ul>
+</li>
+<li>
+<p><strong>Domain-Specific Knowledge</strong>:</p>
+<ul>
+<li>If there is domain knowledge available, use it to inform the imputation strategy, such as using industry-specific average compensations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Flag Missing Values</strong>:</p>
+<ul>
+<li>Instead of imputing, you might choose to flag missing values and handle them separately in your analysis.</li>
+</ul>
+</li>
+</ol>
+<p>When choosing an imputation method, it's important to consider the nature of the data and the context of the analysis. It's also a good practice to perform sensitivity analyses to understand how different imputation methods might affect your results.</p>
+<p>github在这里 <a href="https://github.com/mifuko/CourseraAssignment/blob/5acf8c08d46f7df03b74b76f481824b8d75543a7/M2DataWrangling-lab.ipynb">M2DataWrangling-lab.ipynb</a></p>
+]]></content>
       <categories>
         <category>coursera</category>
       </categories>
